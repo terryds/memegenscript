@@ -657,8 +657,9 @@
       .reverse()
       .forEach(function (layer) {
         var item = document.createElement("li");
-        item.className = "me-layer" + (layer.id === selectedId ? " active" : "");
-        var label = layer.type === "text" ? (displayText(layer) || layer.placeholder || layer.name) : layer.name;
+        var empty = layer.type === "text" && !layer.text;
+        item.className = "me-layer" + (layer.id === selectedId ? " active" : "") + (empty ? " empty" : "");
+        var label = layer.type === "text" ? (displayText(layer) || layer.name + " (empty, type to fill)") : layer.name;
         item.innerHTML =
           '<button type="button" class="me-layer-select"><span class="me-layer-kind">' +
           (layer.type === "text" ? "T" : "▣") +
@@ -712,7 +713,7 @@
     props.querySelector('[data-for="image"]').hidden = isText;
     if (isText) {
       $("me-text").value = sel.text;
-      $("me-text").placeholder = sel.placeholder;
+      $("me-text").placeholder = "e.g. " + sel.placeholder;
       fontSelect.value = sel.font;
       var auto = sel.size <= 0;
       $("me-auto-size").checked = auto;

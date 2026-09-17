@@ -99,7 +99,8 @@ input[type="text"], input[type="search"], input[type="url"], input[type="number"
   box-shadow: var(--shadow-sm);
 }
 textarea { resize: vertical; }
-input::placeholder, textarea::placeholder { color: #6b6787; }
+input::placeholder, textarea::placeholder { color: #aaa6c4; font-style: italic; opacity: 1; }
+.me-layer.empty .me-layer-name { color: #6b6787; font-style: italic; }
 input:focus, select:focus, textarea:focus, button:focus-visible { outline: 3px solid var(--cyan); outline-offset: 2px; }
 button, .button, .me-btn, .me-file {
   display: inline-flex;
