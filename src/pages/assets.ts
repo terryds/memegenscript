@@ -4,7 +4,7 @@
  */
 import { sha1Hex } from "../utils/sha1";
 
-const FILES = ["site.css", "editor.js", "index.js"];
+const FILES = ["site.css", "editor.js", "index.js", "pwa.js", "sw.js"];
 
 let cached: Promise<string> | null = null;
 

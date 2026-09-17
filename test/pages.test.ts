@@ -142,6 +142,37 @@ describe("GET /memes/{id}", () => {
   });
 });
 
+describe("PWA", () => {
+  it("serves a web app manifest with icons", async () => {
+    const response = await get("/manifest.webmanifest");
+    expect(response.status).toBe(200);
+    expect(response.headers.get("content-type")).toContain("manifest+json");
+    const manifest = (await response.json()) as { name: string; display: string; icons: Array<{ purpose: string }> };
+    expect(manifest.display).toBe("standalone");
+    expect(manifest.icons.some((i) => i.purpose === "maskable")).toBe(true);
+    for (const icon of ["icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png"]) {
+      expect((await get(`/static/icons/${icon}`)).status, icon).toBe(200);
+    }
+  });
+
+  it("serves the service worker with a versioned cache name", async () => {
+    const response = await get("/sw.js");
+    expect(response.status).toBe(200);
+    expect(response.headers.get("content-type")).toContain("javascript");
+    const source = await response.text();
+    expect(source).not.toContain("__VERSION__");
+    expect(source).toContain('addEventListener("fetch"');
+  });
+
+  it("links the manifest and renders the install banner on pages", async () => {
+    const body = await (await get("/memes/fry")).text();
+    expect(body).toContain('<link rel="manifest" href="/manifest.webmanifest">');
+    expect(body).toContain('id="install-banner"');
+    expect(body).toContain("/static/pwa.js?v=");
+    expect((await get("/offline")).status).toBe(200);
+  });
+});
+
 describe("crawler files", () => {
   it("lists every editor page in the sitemap", async () => {
     const response = await get("/sitemap.xml");
