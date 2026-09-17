@@ -1,0 +1,27 @@
+name: "If Those Kids Could Read They'd Be Very Upset"
+source: "https://knowyourmeme.com/memes/if-those-kids-could-read-theyd-be-very-upset"
+keywords:
+  - "Simpsons"
+  - "Skinner"
+  - "kids could read"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.05
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.45
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "if those users could read the docs"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

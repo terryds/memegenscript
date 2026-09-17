@@ -1,0 +1,39 @@
+name: "Car Salesman Slaps Roof of Car"
+source: "https://knowyourmeme.com/memes/slaps-roof-of-car"
+keywords:
+  - "car salesman"
+  - "slaps roof"
+  - "this bad boy can fit"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "this bad boy can fit"
+  - "so many bugs in it"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

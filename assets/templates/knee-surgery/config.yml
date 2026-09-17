@@ -1,0 +1,28 @@
+name: "Knee Surgery Is Tomorrow"
+source: "https://knowyourmeme.com/memes/blue-grinch-that-feeling-when-knee-surgery-is-tomorrow"
+keywords:
+  - "Grinch"
+  - "knee surgery"
+  - "blue grinch"
+  - "2024"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.24
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "that feeling when the release is tomorrow"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

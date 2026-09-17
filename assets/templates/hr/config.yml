@@ -1,0 +1,40 @@
+name: "Hello Human Resources"
+source: "https://knowyourmeme.com/memes/hello-human-resources"
+keywords:
+  - "HR"
+  - "human resources"
+  - "phone"
+  - "Ron Swanson"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.28
+    anchor_y: 0.04
+    angle: 0.0
+    scale_x: 0.26
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.28
+    anchor_y: 0.55
+    angle: 0.0
+    scale_x: 0.26
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "when the intern says"
+  - "'i deleted the prod database'"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

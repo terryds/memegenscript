@@ -1,0 +1,27 @@
+name: "Never Ask a Woman Her Age"
+source: "https://knowyourmeme.com/sensitive/memes/all-three-are-going-to-lie-to-you-never-ask-a-woman-her-age"
+keywords:
+  - "never ask"
+  - "man his salary"
+  - "three panel"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.34
+    anchor_y: 0.7
+    angle: 0.0
+    scale_x: 0.62
+    scale_y: 0.24
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "a developer their test coverage"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

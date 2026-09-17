@@ -1,0 +1,28 @@
+name: "X Will Return in Avengers: Doomsday"
+source: "https://knowyourmeme.com/memes/x-will-return-in-avengers-doomsday-avengers-doomsday-cast-announcement-parodies"
+keywords:
+  - "Avengers Doomsday"
+  - "Marvel"
+  - "will return"
+  - "2026"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.05
+    anchor_y: 0.3
+    angle: 0.0
+    scale_x: 0.9
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "my motivation"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

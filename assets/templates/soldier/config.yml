@@ -1,0 +1,51 @@
+name: "Soldier Protecting Sleeping Child"
+source: "https://knowyourmeme.com/memes/the-silent-protector"
+keywords:
+  - "soldier"
+  - "protect"
+  - "sleeping child"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.5
+    anchor_y: 0.05
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0.6
+    angle: 0.0
+    scale_x: 0.45
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "my sleep schedule"
+  - "me"
+  - "one more episode"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

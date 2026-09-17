@@ -1,0 +1,1423 @@
+{
+  "_comment": "Round 2 plan: Batch B (trending Sept 2026), Batch C (evergreen gaps), Batch D (KYM 2024-2025 image formats).",
+  "templates": [
+    {
+      "id": "deceive",
+      "name": "Why Would I Deceive You?",
+      "imgflip": 666269451,
+      "kym": "elizabeth-holmes-and-nathan-fielder-why-would-i-deceive-you",
+      "keywords": [
+        "Nathan Fielder",
+        "Elizabeth Holmes",
+        "The Rehearsal",
+        "deceive"
+      ],
+      "example": [
+        "i tested it locally",
+        "why would i deceive you?"
+      ]
+    },
+    {
+      "id": "pattinson-hansen",
+      "name": "Robert Pattinson as Chris Hansen",
+      "imgflip": 666796567,
+      "kym": "robert-pattinson-as-chris-hansen",
+      "keywords": [
+        "Robert Pattinson",
+        "Chris Hansen",
+        "To Catch a Predator",
+        "why don't you have a seat"
+      ],
+      "example": [
+        "why don't you have a seat",
+        "and explain this commit"
+      ]
+    },
+    {
+      "id": "beggars",
+      "name": "Somebody Get These Beggars Outta Here",
+      "imgflip": 660951005,
+      "kym": "somebody-get-these-beggars-outta-here",
+      "keywords": [
+        "The Odyssey",
+        "Christopher Nolan",
+        "beggars",
+        "2026"
+      ],
+      "example": [
+        "recruiters in my inbox",
+        "somebody get these beggars outta here"
+      ]
+    },
+    {
+      "id": "odysseus",
+      "name": "Distraught Odysseus",
+      "imgflip": 660300975,
+      "kym": "distraught-odysseus",
+      "keywords": [
+        "The Odyssey",
+        "Matt Damon",
+        "Odysseus",
+        "2026"
+      ],
+      "example": [
+        "when the ci fails",
+        "on the last commit before the weekend"
+      ],
+      "source": "https://knowyourmeme.com/memes/matt-damon-yelling-odysseus-screaming"
+    },
+    {
+      "id": "doomsday-return",
+      "name": "X Will Return in Avengers: Doomsday",
+      "imgflip": 665520834,
+      "kym": "x-will-return-in-avengers-doomsday",
+      "keywords": [
+        "Avengers Doomsday",
+        "Marvel",
+        "will return",
+        "2026"
+      ],
+      "example": [
+        "my motivation"
+      ],
+      "boxes": [
+        [
+          0.05,
+          0.3,
+          0.9,
+          0.3
+        ]
+      ]
+    },
+    {
+      "id": "la-peace",
+      "name": "La Peace",
+      "imgflip": 665020221,
+      "kym": "la-peace",
+      "keywords": [
+        "la peace",
+        "peace sign",
+        "2026"
+      ],
+      "example": [
+        "when the meeting ends early",
+        "la peace"
+      ]
+    },
+    {
+      "id": "verity",
+      "name": "Verity Live Reaction",
+      "imgflip": 658241337,
+      "kym": "verity-live-reaction",
+      "keywords": [
+        "Verity",
+        "live reaction",
+        "2026"
+      ],
+      "example": [
+        "me reading the code review",
+        "live reaction"
+      ],
+      "source": ""
+    },
+    {
+      "id": "lanterns",
+      "name": "Lanterns Interrogation",
+      "imgflip": 663682793,
+      "kym": "lanterns-interrogation",
+      "keywords": [
+        "Lanterns",
+        "Green Lantern",
+        "interrogation",
+        "2026"
+      ],
+      "example": [
+        "so you're saying",
+        "you never ran the tests?"
+      ],
+      "source": ""
+    },
+    {
+      "id": "ignore-it",
+      "name": "He Tryna Ignore It",
+      "imgflip": 661256495,
+      "kym": "he-tryna-ignore-it",
+      "keywords": [
+        "ignore",
+        "pretending not to notice",
+        "2026"
+      ],
+      "example": [
+        "the bug in production",
+        "he tryna ignore it"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "anime-hiding",
+      "name": "Anime Girl Hiding from Terminator",
+      "imgflip": 224514655,
+      "kym": "anime-girl-hiding-from-a-terminator",
+      "keywords": [
+        "Terminator",
+        "hiding",
+        "anime girl"
+      ],
+      "example": [
+        "me",
+        "the bug i introduced"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.25,
+          "default"
+        ],
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.25,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "reaper-door",
+      "name": "Grim Reaper Knocking Door",
+      "imgflip": 104893621,
+      "kym": "grim-reaper-knocking-door",
+      "keywords": [
+        "death",
+        "doors",
+        "Family Guy",
+        "knocking"
+      ],
+      "example": [
+        "cigarettes",
+        "junk food",
+        "opening the group chat"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.33,
+          0.3,
+          "default"
+        ],
+        [
+          0.33,
+          0.0,
+          0.34,
+          0.3,
+          "default"
+        ],
+        [
+          0.67,
+          0.0,
+          0.33,
+          0.3,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "soldier",
+      "name": "Soldier Protecting Sleeping Child",
+      "imgflip": 171305372,
+      "kym": "soldier-protecting-sleeping-child",
+      "keywords": [
+        "soldier",
+        "protect",
+        "sleeping child"
+      ],
+      "example": [
+        "my sleep schedule",
+        "me",
+        "one more episode"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.25,
+          "default"
+        ],
+        [
+          0.5,
+          0.05,
+          0.5,
+          0.25,
+          "default"
+        ],
+        [
+          0.02,
+          0.6,
+          0.45,
+          0.3,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "train-bus",
+      "name": "Train Hitting a School Bus",
+      "imgflip": 247113703,
+      "kym": "train-hitting-a-school-bus",
+      "keywords": [
+        "train",
+        "school bus",
+        "crash"
+      ],
+      "example": [
+        "my plans",
+        "monday"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.18
+        ],
+        [
+          0,
+          0.52,
+          1,
+          0.18
+        ]
+      ]
+    },
+    {
+      "id": "aj-undertaker",
+      "name": "AJ Styles & Undertaker",
+      "imgflip": 234202281,
+      "kym": "aj-styles-and-undertaker",
+      "keywords": [
+        "WWE",
+        "Undertaker",
+        "AJ Styles",
+        "looming"
+      ],
+      "example": [
+        "me enjoying the weekend",
+        "monday"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.25,
+          "default"
+        ],
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.25,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "no-yes",
+      "name": "No / Yes",
+      "imgflip": 129315248,
+      "kym": "drakeposting",
+      "keywords": [
+        "no yes",
+        "two panel",
+        "approve",
+        "reject"
+      ],
+      "example": [
+        "fixing the bug",
+        "adding a workaround"
+      ],
+      "boxes": [
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.5,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "grandma",
+      "name": "Grandma Finds the Internet",
+      "imgflip": 61556,
+      "kym": "grandma-finds-the-internet",
+      "keywords": [
+        "grandma",
+        "internet",
+        "computer"
+      ],
+      "example": [
+        "what's a meme?",
+        "and why is it about me"
+      ]
+    },
+    {
+      "id": "nut-button",
+      "name": "Blank Nut Button",
+      "imgflip": 119139145,
+      "kym": "nut-button",
+      "keywords": [
+        "button",
+        "smash",
+        "press"
+      ],
+      "example": [
+        "me",
+        "refactor everything"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.22,
+          "default"
+        ],
+        [
+          0.08,
+          0.5,
+          0.42,
+          0.22,
+          "default",
+          "white",
+          "center",
+          "thick"
+        ]
+      ]
+    },
+    {
+      "id": "imagination",
+      "name": "Imagination SpongeBob",
+      "imgflip": 163573,
+      "kym": "imagination-spongebob",
+      "keywords": [
+        "SpongeBob",
+        "rainbow",
+        "imagination"
+      ],
+      "example": [
+        "",
+        "unit tests"
+      ]
+    },
+    {
+      "id": "where-monkey",
+      "name": "Where Monkey",
+      "imgflip": 316466202,
+      "kym": "where-monkey",
+      "keywords": [
+        "monkey",
+        "where",
+        "looking"
+      ],
+      "example": [
+        "where is",
+        "the documentation"
+      ]
+    },
+    {
+      "id": "laughing-leo",
+      "name": "Laughing Leo",
+      "imgflip": 259237855,
+      "kym": "laughing-leo",
+      "keywords": [
+        "Leonardo DiCaprio",
+        "laughing",
+        "Django"
+      ],
+      "example": [
+        "when they say",
+        "'it should be a quick fix'"
+      ]
+    },
+    {
+      "id": "wolverine",
+      "name": "Wolverine Remember",
+      "imgflip": 47169131,
+      "kym": "wolverine-looking-at-picture",
+      "keywords": [
+        "Wolverine",
+        "picture frame",
+        "remembering",
+        "sad"
+      ],
+      "example": [
+        "remembering when",
+        "the code worked"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.02,
+          1,
+          0.18
+        ],
+        [
+          0.3,
+          0.58,
+          0.42,
+          0.3,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "do-something",
+      "name": "C'mon, Do Something",
+      "imgflip": 20007896,
+      "kym": "cmon-do-something",
+      "keywords": [
+        "do something",
+        "poking",
+        "stick"
+      ],
+      "example": [
+        "me poking my motivation",
+        "c'mon, do something"
+      ]
+    },
+    {
+      "id": "yoda",
+      "name": "Star Wars Yoda",
+      "imgflip": 14371066,
+      "kym": "yoda",
+      "keywords": [
+        "Yoda",
+        "Star Wars",
+        "wise"
+      ],
+      "example": [
+        "fix the bug, you must",
+        "before friday"
+      ]
+    },
+    {
+      "id": "not-the-same",
+      "name": "We Are Not the Same",
+      "imgflip": "gus fring we are not the same",
+      "kym": "we-are-not-the-same",
+      "keywords": [
+        "Gus Fring",
+        "Breaking Bad",
+        "we are not the same"
+      ],
+      "example": [
+        "you write comments",
+        "i write self-documenting code",
+        "we are not the same"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          1,
+          0.16
+        ],
+        [
+          0.0,
+          0.42,
+          1,
+          0.16
+        ],
+        [
+          0.0,
+          0.84,
+          1,
+          0.16
+        ]
+      ]
+    },
+    {
+      "id": "rock-driving",
+      "name": "The Rock Driving",
+      "imgflip": "the rock driving",
+      "kym": "the-rock-driving",
+      "keywords": [
+        "Dwayne Johnson",
+        "driving",
+        "reaction",
+        "car"
+      ],
+      "example": [
+        "did you push to main?",
+        "yes",
+        "without tests?",
+        "..."
+      ],
+      "boxes": [
+        [
+          0.55,
+          0.03,
+          0.43,
+          0.19,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.55,
+          0.28,
+          0.43,
+          0.19,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.55,
+          0.53,
+          0.43,
+          0.19,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.55,
+          0.78,
+          0.43,
+          0.19,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "disappointed",
+      "name": "Disappointed Black Guy",
+      "imgflip": "disappointed black guy",
+      "kym": "disappointed-black-guy",
+      "keywords": [
+        "disappointed",
+        "expectation",
+        "two panel"
+      ],
+      "example": [
+        "opening the pr",
+        "reading the pr"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.02,
+          1,
+          0.2
+        ],
+        [
+          0.0,
+          0.52,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "tap-sign",
+      "name": "Don't Make Me Tap the Sign",
+      "imgflip": "don't make me tap the sign",
+      "kym": "dont-make-me-tap-the-sign",
+      "keywords": [
+        "bus driver",
+        "sign",
+        "tap the sign",
+        "Simpsons"
+      ],
+      "example": [
+        "read the docs first"
+      ],
+      "boxes": [
+        [
+          0.06,
+          0.56,
+          0.88,
+          0.34,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "goose-chase",
+      "name": "Goose Chase",
+      "imgflip": "goose chase",
+      "kym": "goose-chasing-child",
+      "keywords": [
+        "goose",
+        "chasing",
+        "running"
+      ],
+      "example": [
+        "me",
+        "my deadlines"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.25,
+          "default"
+        ],
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.25,
+          "default"
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "grandma-bed",
+      "name": "Sure Grandma, Let's Get You to Bed",
+      "imgflip": "sure grandma let's get you to bed",
+      "kym": "sure-grandma-lets-get-you-to-bed",
+      "keywords": [
+        "grandma",
+        "bed",
+        "dismissive"
+      ],
+      "example": [
+        "'in my day we wrote assembly'",
+        "sure grandma, let's get you to bed"
+      ]
+    },
+    {
+      "id": "here-it-comes",
+      "name": "Here It Comes",
+      "imgflip": "here it comes",
+      "kym": "here-it-comes",
+      "keywords": [
+        "here it comes",
+        "bracing",
+        "anticipation"
+      ],
+      "example": [
+        "monday morning",
+        "here it comes"
+      ]
+    },
+    {
+      "id": "moe-barney",
+      "name": "Moe Throws Barney",
+      "imgflip": "moe throws barney",
+      "kym": "moe-throws-barney",
+      "keywords": [
+        "Simpsons",
+        "Moe",
+        "Barney",
+        "thrown out"
+      ],
+      "example": [
+        "me",
+        "my bad ideas"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.25,
+          "default"
+        ],
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.25,
+          "default"
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "car-salesman",
+      "name": "Car Salesman Slaps Roof of Car",
+      "imgflip": "car salesman slaps roof of car",
+      "kym": "car-salesman-slaps-roof-of-car",
+      "keywords": [
+        "car salesman",
+        "slaps roof",
+        "this bad boy can fit"
+      ],
+      "example": [
+        "this bad boy can fit",
+        "so many bugs in it"
+      ]
+    },
+    {
+      "id": "hr",
+      "name": "Hello Human Resources",
+      "imgflip": "hello human resources",
+      "kym": "hello-human-resources",
+      "keywords": [
+        "HR",
+        "human resources",
+        "phone",
+        "Ron Swanson"
+      ],
+      "example": [
+        "when the intern says",
+        "'i deleted the prod database'"
+      ],
+      "boxes": [
+        [
+          0.28,
+          0.04,
+          0.26,
+          0.16,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.28,
+          0.55,
+          0.26,
+          0.16,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "congrats",
+      "name": "The Office: Congratulations",
+      "imgflip": "the office congratulations",
+      "kym": "the-office-congratulations",
+      "keywords": [
+        "The Office",
+        "congratulations",
+        "sarcastic"
+      ],
+      "example": [
+        "you fixed the bug",
+        "congratulations"
+      ],
+      "source": ""
+    },
+    {
+      "id": "not-playing",
+      "name": "I Don't Want to Play With You Anymore",
+      "imgflip": "i don't want to play with you anymore",
+      "kym": "i-dont-want-to-play-with-you-anymore",
+      "keywords": [
+        "Woody",
+        "Toy Story",
+        "abandoned",
+        "dropped"
+      ],
+      "example": [
+        "me",
+        "my side project"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.02,
+          0.5,
+          0.2,
+          "default"
+        ],
+        [
+          0.5,
+          0.02,
+          0.5,
+          0.2,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "millionaire",
+      "name": "Who Wants to Be a Millionaire?",
+      "imgflip": "who wants to be a millionaire",
+      "kym": "who-wants-to-be-a-millionaire",
+      "keywords": [
+        "quiz",
+        "game show",
+        "four answers"
+      ],
+      "example": [
+        "what fixes the bug?",
+        "restart",
+        "reinstall",
+        "cry",
+        "restart again"
+      ],
+      "boxes": [
+        [
+          0.05,
+          0.03,
+          0.9,
+          0.2
+        ],
+        [
+          0.14,
+          0.775,
+          0.33,
+          0.09,
+          "default",
+          "white",
+          "left",
+          "thin"
+        ],
+        [
+          0.6,
+          0.775,
+          0.33,
+          0.09,
+          "default",
+          "white",
+          "left",
+          "thin"
+        ],
+        [
+          0.14,
+          0.885,
+          0.33,
+          0.09,
+          "default",
+          "white",
+          "left",
+          "thin"
+        ],
+        [
+          0.6,
+          0.885,
+          0.33,
+          0.09,
+          "default",
+          "white",
+          "left",
+          "thin"
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "second-breakfast",
+      "name": "Second Breakfast",
+      "imgflip": "second breakfast",
+      "kym": "second-breakfast",
+      "keywords": [
+        "Lord of the Rings",
+        "Pippin",
+        "hobbit",
+        "breakfast"
+      ],
+      "example": [
+        "what about",
+        "second coffee?"
+      ]
+    },
+    {
+      "id": "kids-read",
+      "name": "If Those Kids Could Read They'd Be Very Upset",
+      "imgflip": "if those kids could read they'd be very upset",
+      "kym": "if-those-kids-could-read-theyd-be-very-upset",
+      "keywords": [
+        "Simpsons",
+        "Skinner",
+        "kids could read"
+      ],
+      "example": [
+        "if those users could read the docs"
+      ],
+      "boxes": [
+        [
+          0.05,
+          0.02,
+          0.45,
+          0.3,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "live-reaction",
+      "name": "Live Reaction",
+      "imgflip": "live reaction",
+      "kym": "live-reaction",
+      "keywords": [
+        "live reaction",
+        "reaction"
+      ],
+      "example": [
+        "me watching the demo break"
+      ],
+      "boxes": [
+        [
+          0.05,
+          0.3,
+          0.9,
+          0.6,
+          "upper",
+          "white",
+          "center",
+          "thick"
+        ]
+      ]
+    },
+    {
+      "id": "dinkleberg",
+      "name": "Dinkleberg",
+      "imgflip": "dinkleberg",
+      "kym": "dinkleberg",
+      "keywords": [
+        "Fairly OddParents",
+        "Timmy's dad",
+        "Dinkleberg",
+        "blame"
+      ],
+      "example": [
+        "who broke the build?"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.02,
+          1,
+          0.22
+        ]
+      ]
+    },
+    {
+      "id": "dog-fate",
+      "name": "Dog Accepting Fate",
+      "imgflip": "dog accepting fate",
+      "kym": "dog-accepting-fate",
+      "keywords": [
+        "dog",
+        "acceptance",
+        "fate"
+      ],
+      "example": [
+        "me at the 4th meeting",
+        "of the day"
+      ]
+    },
+    {
+      "id": "gentlemen",
+      "name": "Gentlemen, It Is With Great Pleasure...",
+      "imgflip": "gentlemen it is with great pleasure to inform you that",
+      "kym": "gentlemen-it-is-with-great-pleasure-to-inform-you-that",
+      "keywords": [
+        "Wolf of Wall Street",
+        "gentlemen",
+        "announcement"
+      ],
+      "example": [
+        "the build is green"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.7,
+          1,
+          0.28
+        ]
+      ]
+    },
+    {
+      "id": "mr-bean",
+      "name": "Mr. Bean Waiting",
+      "imgflip": "mr bean waiting",
+      "kym": "mr-bean-waiting",
+      "keywords": [
+        "Mr Bean",
+        "waiting",
+        "watch"
+      ],
+      "example": [
+        "me waiting",
+        "for the pipeline"
+      ]
+    },
+    {
+      "id": "never-ask",
+      "name": "Never Ask a Woman Her Age",
+      "imgflip": "never ask a woman her age",
+      "kym": "never-ask-a-woman-her-age",
+      "keywords": [
+        "never ask",
+        "man his salary",
+        "three panel"
+      ],
+      "example": [
+        "a developer their test coverage"
+      ],
+      "boxes": [
+        [
+          0.34,
+          0.7,
+          0.62,
+          0.24,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "machine",
+      "name": "My Body Is a Machine",
+      "imgflip": "my body is machine",
+      "kym": "my-body-is-a-machine",
+      "keywords": [
+        "machine",
+        "body",
+        "that turns"
+      ],
+      "example": [
+        "coffee",
+        "bugs"
+      ],
+      "boxes": [
+        [
+          0.44,
+          0.38,
+          0.53,
+          0.14,
+          "upper",
+          "white",
+          "center",
+          "thick"
+        ],
+        [
+          0.3,
+          0.7,
+          0.66,
+          0.16,
+          "upper",
+          "white",
+          "center",
+          "thick"
+        ]
+      ]
+    },
+    {
+      "id": "jarvis",
+      "name": "Jarvis",
+      "imgflip": "jarvis template",
+      "kym": "jarvis",
+      "keywords": [
+        "Iron Man",
+        "Tony Stark",
+        "Jarvis",
+        "AI assistant"
+      ],
+      "example": [
+        "jarvis",
+        "delete the production database"
+      ]
+    },
+    {
+      "id": "power",
+      "name": "What Gives People Feelings of Power",
+      "imgflip": "what gives people feelings of power",
+      "kym": "what-gives-people-feelings-of-power",
+      "keywords": [
+        "power",
+        "bar chart",
+        "money",
+        "status"
+      ],
+      "example": [
+        "the build passing first try"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.79,
+          0.3,
+          0.14,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "bugs-no",
+      "name": "Bugs Bunny No",
+      "imgflip": "bugs bunny no",
+      "kym": "bugs-bunnys-no",
+      "keywords": [
+        "Bugs Bunny",
+        "no",
+        "Looney Tunes"
+      ],
+      "example": [
+        "can we ship it friday?",
+        "no"
+      ]
+    },
+    {
+      "id": "frieren",
+      "name": "Frieren Looking Up",
+      "imgflip": "frieren looking up",
+      "kym": "frieren-looking-up",
+      "keywords": [
+        "Frieren",
+        "anime",
+        "looking up",
+        "nostalgia"
+      ],
+      "example": [
+        "remembering when",
+        "the tests passed"
+      ]
+    },
+    {
+      "id": "doakes",
+      "name": "James Doakes Reaction",
+      "imgflip": "james doakes",
+      "kym": "james-doakes-reaction-images",
+      "keywords": [
+        "Dexter",
+        "James Doakes",
+        "surprise",
+        "reaction"
+      ],
+      "example": [
+        "surprise",
+        "the deploy failed"
+      ]
+    },
+    {
+      "id": "queen-cry",
+      "name": "Queen Never Cry",
+      "imgflip": "queen never cry",
+      "kym": "queen-never-cry",
+      "keywords": [
+        "queen never cry",
+        "stoic",
+        "2024"
+      ],
+      "example": [
+        "the build fails again",
+        "queen never cry"
+      ]
+    },
+    {
+      "id": "knee-surgery",
+      "name": "Knee Surgery Is Tomorrow",
+      "imgflip": "knee surgery tomorrow",
+      "kym": "that-feeling-when-knee-surgery-is-tomorrow",
+      "keywords": [
+        "Grinch",
+        "knee surgery",
+        "blue grinch",
+        "2024"
+      ],
+      "example": [
+        "that feeling when the release is tomorrow"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.02,
+          1,
+          0.24
+        ]
+      ]
+    },
+    {
+      "id": "bro-visited",
+      "name": "Bro Visited His Friend",
+      "imgflip": "bro visited his friend",
+      "kym": "bro-visited-his-friend",
+      "keywords": [
+        "visited his friend",
+        "two panel comic",
+        "2024"
+      ],
+      "example": [
+        "bro visited his friend",
+        "bro visited his friend's fridge"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.02,
+          0.5,
+          0.2,
+          "default"
+        ],
+        [
+          0.5,
+          0.02,
+          0.5,
+          0.2,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "triangle",
+      "name": "A Circle in the Triangle Factory",
+      "imgflip": "circle triangle factory",
+      "kym": "a-circle-in-the-triangle-factory",
+      "keywords": [
+        "triangle factory",
+        "circle",
+        "exploitable",
+        "2024"
+      ],
+      "example": [
+        "a bug??",
+        "in my code??"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.02,
+          1,
+          0.2
+        ],
+        [
+          0.0,
+          0.52,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "dikec",
+      "name": "Yusuf Dikeç",
+      "imgflip": "yusuf dikec",
+      "kym": "yusuf-dikec",
+      "keywords": [
+        "Turkish shooter",
+        "Olympics",
+        "casual",
+        "hand in pocket",
+        "2024"
+      ],
+      "example": [
+        "me fixing production",
+        "with one hand in my pocket"
+      ],
+      "source": ""
+    },
+    {
+      "id": "sad-hamster",
+      "name": "Sad Hamster",
+      "imgflip": "sad hamster",
+      "kym": "sad-hamster",
+      "keywords": [
+        "hamster",
+        "sad",
+        "sparkles",
+        "2024"
+      ],
+      "example": [
+        "when the meme",
+        "gets no likes"
+      ]
+    },
+    {
+      "id": "aura",
+      "name": "Aura Farming",
+      "imgflip": 664174246,
+      "kym": "aura-farming",
+      "keywords": [
+        "aura",
+        "aura farming",
+        "boat kid",
+        "2025"
+      ],
+      "example": [
+        "me after fixing",
+        "one typo"
+      ]
+    },
+    {
+      "id": "great-reset",
+      "name": "The Great Meme Reset of 2026",
+      "imgflip": "great meme reset 2026",
+      "kym": "the-great-meme-reset-of-2026",
+      "keywords": [
+        "meme reset",
+        "2026",
+        "nostalgia",
+        "2016"
+      ],
+      "example": [
+        "2026 is the new 2016",
+        "bring back rage comics"
+      ]
+    },
+    {
+      "id": "buzz-clones",
+      "name": "Buzz Lightyear Clones",
+      "imgflip": "buzz lightyear clones",
+      "kym": "buzz-lightyear-clones",
+      "keywords": [
+        "Toy Story",
+        "Buzz Lightyear",
+        "clones",
+        "Al's Toy Barn",
+        "identical"
+      ],
+      "example": [
+        "javascript frameworks",
+        "every week"
+      ]
+    }
+  ]
+}

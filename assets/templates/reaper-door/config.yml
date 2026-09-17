@@ -1,0 +1,52 @@
+name: "Grim Reaper Knocking Door"
+source: "https://knowyourmeme.com/memes/death-knocking-on-doors"
+keywords:
+  - "death"
+  - "doors"
+  - "Family Guy"
+  - "knocking"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.33
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.33
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.34
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.67
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.33
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "cigarettes"
+  - "junk food"
+  - "opening the group chat"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

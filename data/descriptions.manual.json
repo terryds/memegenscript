@@ -919,5 +919,164 @@
       "lumber",
       "10/10"
     ]
+  },
+  "verity": {
+    "aka": [
+      "Verity Live Reaction",
+      "Verity Minecraft Face"
+    ],
+    "about": "Verity Live Reaction is a still of a yellow Minecraft-style face with a worried expression, used as a \"live reaction\" caption for watching something go wrong in real time. It took off in 2026 as a cleaner, cuter alternative to the classic Live Tucker Reaction format.",
+    "origin": "The image spread on TikTok and imgflip in mid-2026 as a reaction template for edits and commentary videos.",
+    "tags": [
+      "live reaction",
+      "verity",
+      "minecraft",
+      "worried",
+      "reaction image",
+      "2026"
+    ]
+  },
+  "lanterns": {
+    "aka": [
+      "Lanterns Interrogation",
+      "Kyle Chandler Interrogation",
+      "Hal Jordan Interrogation"
+    ],
+    "about": "Lanterns Interrogation is a three-panel template from HBO's Lanterns (2026) in which Kyle Chandler's Hal Jordan and Aaron Pierre's John Stewart question a suspect. The panels set up a question, a stare, and a verdict, which makes it a natural format for grilling someone about a bad decision.",
+    "origin": "The stills come from the interrogation scene in Lanterns, the Green Lantern series released in 2026, and spread on imgflip within weeks of the episode.",
+    "tags": [
+      "lanterns",
+      "green lantern",
+      "interrogation",
+      "kyle chandler",
+      "three panel",
+      "hbo",
+      "2026"
+    ]
+  },
+  "moe-barney": {
+    "aka": [
+      "Moe Throws Barney",
+      "Moe Throws Barney Out of the Bar",
+      "Get Out of My Bar"
+    ],
+    "about": "Moe Throws Barney is a three-panel Simpsons template in which Moe grabs Barney, hauls him to the door, and throws him out of the tavern. Each panel gets a label, so it's the go-to format for anything being unceremoniously kicked out of somewhere.",
+    "origin": "The scene is from The Simpsons; the three-panel version has been an object-labeling template on Reddit since 2019.",
+    "tags": [
+      "the simpsons",
+      "moe",
+      "barney",
+      "thrown out",
+      "three panel",
+      "object labeling",
+      "cartoon"
+    ]
+  },
+  "dikec": {
+    "aka": [
+      "Yusuf Dikeç",
+      "Turkish Pistol Shooter",
+      "Hand in Pocket Shooter",
+      "Olympic Shooter Meme"
+    ],
+    "about": "Yusuf Dikeç is the Turkish sport shooter who won Olympic silver in 2024 with one hand in his pocket, plain glasses, and no special gear, next to competitors covered in equipment. The two-panel comparison captions the difference between overprepared and effortlessly competent.",
+    "origin": "Photos from the Paris 2024 Olympics 10 m air pistol mixed team event went viral in July 2024.",
+    "tags": [
+      "yusuf dikec",
+      "olympics",
+      "shooter",
+      "effortless",
+      "hand in pocket",
+      "comparison",
+      "2024"
+    ]
+  },
+  "congrats": {
+    "aka": [
+      "The Office Congratulations",
+      "Michael Scott Congratulations",
+      "Sarcastic Congratulations Handshake"
+    ],
+    "about": "The Office: Congratulations shows Michael Scott shaking hands with a dead-eyed, forced smile in the Dunder Mifflin office. The caption is a backhanded \"congratulations\" for an achievement that is not actually impressive.",
+    "origin": "The still is from the US version of The Office and became a reaction image in the late 2010s.",
+    "tags": [
+      "the office",
+      "michael scott",
+      "congratulations",
+      "sarcastic",
+      "handshake",
+      "tv"
+    ]
+  },
+  "goose-chase": {
+    "aka": [
+      "Goose Chase",
+      "Goose Chasing Kid",
+      "Angry Goose"
+    ],
+    "about": "Goose Chase is a two-panel drawing of a goose standing still and then chasing someone, with a label for the goose and a label for its victim. It captions anything that relentlessly pursues you, from deadlines to your own mistakes.",
+    "origin": "The comic-style drawing spread on Reddit in 2019 alongside the wave of \"geese are terrifying\" memes.",
+    "tags": [
+      "goose",
+      "chase",
+      "running",
+      "two panel",
+      "object labeling",
+      "animal"
+    ]
+  },
+  "millionaire": {
+    "aka": [
+      "Who Wants to Be a Millionaire?",
+      "Millionaire Answers",
+      "Four Answers Meme"
+    ],
+    "about": "Who Wants to Be a Millionaire? is the quiz-show template with a contestant staring at four answer boxes. The caption sets the question and fills in A, B, C and D, usually with one obviously wrong answer everyone picks anyway.",
+    "origin": "The format uses a still from the long-running game show and has been an exploitable on Reddit since the mid 2010s.",
+    "tags": [
+      "millionaire",
+      "quiz",
+      "game show",
+      "four answers",
+      "multiple choice",
+      "tv"
+    ]
+  },
+  "doakes": {
+    "aka": [
+      "James Doakes",
+      "Doakes Stakeout",
+      "But You Can't Prove It",
+      "Surprise Motherfucker"
+    ],
+    "about": "James Doakes Reaction Images are stills of Sergeant Doakes from Dexter, here glaring from his car during a stakeout. They caption suspicion, an unwelcome reveal, or someone who knows exactly what you did but can't prove it.",
+    "origin": "Doakes, played by Erik King, appears in the first two seasons of Dexter (2006-2007); his stares and the \"Surprise, motherf***er\" line resurfaced as reaction formats in 2024.",
+    "tags": [
+      "dexter",
+      "doakes",
+      "stakeout",
+      "suspicious",
+      "reaction image",
+      "tv",
+      "2024"
+    ]
+  },
+  "triangle": {
+    "aka": [
+      "A Circle in the Triangle Factory",
+      "Triangle Factory",
+      "I Guess We Doin' Circles Now"
+    ],
+    "about": "A Circle in the Triangle Factory is a two-panel stick-figure comic: a worker in a triangle factory is baffled by a circle, then shrugs and decides \"I guess we doin' circles now.\" It captions any rule, convention, or codebase that quietly changes as soon as one exception shows up.",
+    "origin": "The comic spread on Twitter and Reddit in 2024 and was one of Know Your Meme's top memes of that year.",
+    "tags": [
+      "triangle factory",
+      "circle",
+      "stick figure",
+      "comic",
+      "exception",
+      "two panel",
+      "2024"
+    ]
   }
 }

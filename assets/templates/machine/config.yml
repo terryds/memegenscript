@@ -1,0 +1,39 @@
+name: "My Body Is a Machine"
+source: "https://knowyourmeme.com/memes/my-body-is-a-machine-that-turns-x-into-y"
+keywords:
+  - "machine"
+  - "body"
+  - "that turns"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.44
+    anchor_y: 0.38
+    angle: 0.0
+    scale_x: 0.53
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.3
+    anchor_y: 0.7
+    angle: 0.0
+    scale_x: 0.66
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "coffee"
+  - "bugs"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

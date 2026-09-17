@@ -1,0 +1,40 @@
+name: "No / Yes"
+source: "https://knowyourmeme.com/memes/drakeposting"
+keywords:
+  - "no yes"
+  - "two panel"
+  - "approve"
+  - "reject"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.5
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.5
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.5
+    anchor_y: 0.5
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.5
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "fixing the bug"
+  - "adding a workaround"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

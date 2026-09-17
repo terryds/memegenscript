@@ -1,0 +1,40 @@
+name: "Why Would I Deceive You?"
+source: "https://knowyourmeme.com/memes/elizabeth-holmes-and-nathan-fielder-why-would-i-deceive-you"
+keywords:
+  - "Nathan Fielder"
+  - "Elizabeth Holmes"
+  - "The Rehearsal"
+  - "deceive"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "i tested it locally"
+  - "why would i deceive you?"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

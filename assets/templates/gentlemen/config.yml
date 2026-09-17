@@ -1,0 +1,27 @@
+name: "Gentlemen, It Is With Great Pleasure..."
+source: "https://knowyourmeme.com/memes/colonel-toad"
+keywords:
+  - "Wolf of Wall Street"
+  - "gentlemen"
+  - "announcement"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.7
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.28
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "the build is green"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

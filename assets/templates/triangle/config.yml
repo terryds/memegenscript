@@ -1,0 +1,40 @@
+name: "A Circle in the Triangle Factory"
+source: "https://knowyourmeme.com/memes/a-circle-in-the-triangle-factory-i-guess-we-doin-circles-now"
+keywords:
+  - "triangle factory"
+  - "circle"
+  - "exploitable"
+  - "2024"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.52
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "a bug??"
+  - "in my code??"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

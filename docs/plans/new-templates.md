@@ -1,7 +1,10 @@
 # Plan: template library, round 2
 
-Status: **proposal for review.** Round 1 (58 templates, September 2026) shipped; see "Done".
-Nothing from Batches B–D below is added yet.
+Status: **Batches B–D approved and imported (September 2026).** 58 of the 63 candidates
+shipped; dropped: Matt Damon Meme (same still as Distraught Odysseus), Jimothy (imgflip's
+template is an unrelated animal), Odyssey Sirens, Oh Yeah! Oh No, and Brother Ew (video-only
+templates with no clean still). Also added on request: Buzz Lightyear Clones. The tables
+below are kept as the record of what was considered.
 
 ## How templates get added
 

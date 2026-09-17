@@ -1,0 +1,28 @@
+name: "Don't Make Me Tap the Sign"
+source: "https://knowyourmeme.com/memes/dont-make-me-tap-the-sign"
+keywords:
+  - "bus driver"
+  - "sign"
+  - "tap the sign"
+  - "Simpsons"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.06
+    anchor_y: 0.56
+    angle: 0.0
+    scale_x: 0.88
+    scale_y: 0.34
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "read the docs first"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,40 @@
+name: "James Doakes Reaction"
+source: "https://knowyourmeme.com/memes/but-you-cant-prove-it-james-doakes-reaction-images"
+keywords:
+  - "Dexter"
+  - "James Doakes"
+  - "surprise"
+  - "reaction"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "surprise"
+  - "the deploy failed"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

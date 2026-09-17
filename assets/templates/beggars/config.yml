@@ -1,0 +1,40 @@
+name: "Somebody Get These Beggars Outta Here"
+source: "https://knowyourmeme.com/memes/robert-pattinson-somebody-get-these-beggars-out-of-here"
+keywords:
+  - "The Odyssey"
+  - "Christopher Nolan"
+  - "beggars"
+  - "2026"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "recruiters in my inbox"
+  - "somebody get these beggars outta here"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

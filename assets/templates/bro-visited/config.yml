@@ -1,0 +1,39 @@
+name: "Bro Visited His Friend"
+source: "https://knowyourmeme.com/memes/bro-visited-his-friend-friendpilled-visitmaxxer"
+keywords:
+  - "visited his friend"
+  - "two panel comic"
+  - "2024"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.5
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "bro visited his friend"
+  - "bro visited his friend's fridge"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,64 @@
+name: "The Rock Driving"
+source: "https://knowyourmeme.com/memes/the-rock-driving"
+keywords:
+  - "Dwayne Johnson"
+  - "driving"
+  - "reaction"
+  - "car"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.55
+    anchor_y: 0.03
+    angle: 0.0
+    scale_x: 0.43
+    scale_y: 0.19
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.55
+    anchor_y: 0.28
+    angle: 0.0
+    scale_x: 0.43
+    scale_y: 0.19
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.55
+    anchor_y: 0.53
+    angle: 0.0
+    scale_x: 0.43
+    scale_y: 0.19
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.55
+    anchor_y: 0.78
+    angle: 0.0
+    scale_x: 0.43
+    scale_y: 0.19
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "did you push to main?"
+  - "yes"
+  - "without tests?"
+  - "..."
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
