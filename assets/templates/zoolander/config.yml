@@ -1,0 +1,44 @@
+name: Zoolander Walk-Off Stare
+source: https://knowyourmeme.com/memes/zoolander-stare-zoolander-sees-hansel-on-the-red-carpet
+keywords:
+  - Zoolander
+  - Derek Zoolander
+  - Hansel
+  - Ben Stiller
+  - Owen Wilson
+  - Lightskin Stare
+  - Who Is She
+  - Walk-Off
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.0
+    anchor_y: 0.0
+    angle: 0.0
+    scale_x: 1.0
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1.0
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - when someone in the group chat says
+  - "\"i don't really get memes\""
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

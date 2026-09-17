@@ -1,0 +1,42 @@
+name: Three Kittens Dancing
+source: https://knowyourmeme.com/memes/three-kittens-dancing-the-dark-triad
+keywords:
+  - The Dark Triad
+  - AI Kittens Dancing
+  - dancing cats
+  - three cats dancing
+  - TikTok
+  - Sora
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.0
+    anchor_y: 0.0
+    angle: 0.0
+    scale_x: 1.0
+    scale_y: 0.18
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.0
+    anchor_y: 0.84
+    angle: 0.0
+    scale_x: 1.0
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - me and the boys
+  - when the group project is due tomorrow
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

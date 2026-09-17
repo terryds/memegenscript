@@ -720,5 +720,52 @@
       "multi panel",
       "tv"
     ]
+  },
+  "zoolander": {
+    "aka": [
+      "Zoolander Stare",
+      "Lightskin Stare",
+      "Zoolander Sees Hansel on the Red Carpet",
+      "Oh, Who Is She?"
+    ],
+    "about": "Zoolander Walk-Off Stare is a split-screen of Derek Zoolander (Ben Stiller) and Hansel (Owen Wilson) locking eyes across the red carpet in the 2001 comedy Zoolander. The format took off on TikTok in late 2022 alongside the \"lightskin stare\" trend: a caption describes an awkward, cringey, or oddly relatable moment while the two models stare each other down.",
+    "origin": "The frame comes from the red-carpet scene in Zoolander (2001) that leads to the walk-off; the meme spread in November and December 2022, usually set to \"Who Is She?\" by I Monster.",
+    "tags": [
+      "zoolander",
+      "ben stiller",
+      "owen wilson",
+      "stare",
+      "staring",
+      "lightskin stare",
+      "who is she",
+      "tiktok",
+      "walk off",
+      "awkward",
+      "movie"
+    ]
+  },
+  "kittens": {
+    "aka": [
+      "The Dark Triad",
+      "AI Kittens Dancing",
+      "Three Cats Dancing",
+      "Dancing Kittens"
+    ],
+    "about": "Three Kittens Dancing is the AI-generated TikTok video of three fluffy kittens standing upright and dancing in perfect sync, often captioned as \"the dark triad\" or used as a green-screen template. The trio's deadpan choreography makes it a go-to format for any group of three, from friends to symptoms to your three unfinished tasks.",
+    "origin": "TikTok user @meowtakeover posted the original Sora-generated clip on June 28th, 2026, set to \"Spencer Hill Cool\" by GFY1994; within weeks it had tens of millions of views and countless edits, remixes and dance recreations.",
+    "tags": [
+      "kittens",
+      "cats",
+      "dancing",
+      "ai video",
+      "ai cats",
+      "sora",
+      "tiktok",
+      "dark triad",
+      "trio",
+      "group of three",
+      "green screen",
+      "2026"
+    ]
   }
 }
