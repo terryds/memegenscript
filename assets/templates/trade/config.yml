@@ -1,0 +1,39 @@
+name: "Trade Offer"
+source: "https://knowyourmeme.com/memes/trade-offer"
+keywords:
+  - "TikTok"
+  - "i receive"
+  - "you receive"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.03
+    anchor_y: 0.22
+    angle: 0.0
+    scale_x: 0.44
+    scale_y: 0.26
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.53
+    anchor_y: 0.22
+    angle: 0.0
+    scale_x: 0.44
+    scale_y: 0.26
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "your attention"
+  - "a meme"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,38 @@
+name: "Tom Reading the Newspaper"
+source: "https://knowyourmeme.com/memes/tom-reading-the-newspaper"
+keywords:
+  - "Tom and Jerry"
+  - "unimpressed"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.6
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.55
+    anchor_y: 0.65
+    angle: 0.0
+    scale_x: 0.45
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "news: the meme is dead"
+  - "me making another one"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -34,6 +34,8 @@ export interface TemplateData {
   descriptionSource?: string;
   /** 1-based position in the featured list, or null */
   featured?: number | null;
+  /** Hidden from browsing (index, featured, related, sitemap); API and editor URL still work */
+  archived?: boolean;
 }
 
 const MANIFEST = manifest as unknown as Record<string, TemplateData>;
@@ -86,6 +88,7 @@ export class Template {
   aka: string[];
   descriptionSource: string;
   featured: number | null;
+  archived: boolean;
 
   /** Does this template come from the manifest (vs. transient/custom)? */
   exists: boolean;
@@ -113,6 +116,7 @@ export class Template {
     this.aka = data.aka ?? [];
     this.descriptionSource = data.descriptionSource ?? "none";
     this.featured = data.featured ?? null;
+    this.archived = data.archived ?? false;
     this.exists = exists;
   }
 
@@ -148,9 +152,14 @@ export class Template {
     return Template.all().filter((t) => !t.id.startsWith("_custom") && t.valid);
   }
 
+  /** Templates shown when browsing: valid and not archived. */
+  static browsable(): Template[] {
+    return Template.filterValid().filter((t) => !t.archived);
+  }
+
   /** Curated templates from `data/featured.json`, in order. */
   static featured(): Template[] {
-    return Template.filterValid()
+    return Template.browsable()
       .filter((t) => t.featured !== null)
       .sort((a, b) => (a.featured ?? 0) - (b.featured ?? 0));
   }
@@ -499,6 +508,7 @@ export class Template {
         aka: this.aka,
         descriptionSource: this.descriptionSource,
         featured: this.featured,
+        archived: this.archived,
       },
       this.exists,
     );

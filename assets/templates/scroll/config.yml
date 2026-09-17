@@ -1,0 +1,26 @@
+name: "The Scroll of Truth"
+source: "https://knowyourmeme.com/memes/the-scroll-of-truth"
+keywords:
+  - "nyeh"
+  - "unwanted truth"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.08
+    anchor_y: 0.6
+    angle: 0.0
+    scale_x: 0.36
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "the bug is in your code"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

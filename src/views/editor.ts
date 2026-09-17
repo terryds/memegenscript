@@ -129,7 +129,7 @@ export async function index(app: AppContext): Promise<Response> {
   const { settings } = app;
   const version = await assetVersion(app.env.ASSETS, { memoize: settings.DEPLOYED });
   const query = (app.params.get("q") ?? "").trim().toLowerCase();
-  const all = Template.filterValid();
+  const all = Template.browsable();
   const templates = query ? all.filter((t) => t.matchesText(query)) : all;
   const site = siteName(settings);
 
@@ -232,7 +232,7 @@ export async function detail(app: AppContext, id: string): Promise<Response> {
   }
 
   const site = siteName(settings);
-  const all = Template.filterValid();
+  const all = Template.browsable();
   const canonical = editorUrl(settings, template);
   const exampleUrl = template.buildExampleUrl(settings);
   const exampleStill = clean(`${settings.BASE_URL}/images/${template.id}/${encode(template.example)}.png`);
@@ -463,6 +463,7 @@ ${related.map((t) => templateCard(settings, t)).join("\n")}
         image: exampleStill,
         imageAlt: `${template.name} meme: ${exampleText(template)}`,
         type: "article",
+        robots: template.archived ? "noindex, follow" : undefined,
         structuredData,
         head: `<link rel="alternate" type="application/json" href="/templates/${escapeHtml(template.id)}">\n<link rel="preload" as="image" href="${escapeHtml(exampleStill)}?width=600">`,
         scripts: ["editor.js"],
@@ -479,7 +480,7 @@ export async function sitemap(app: AppContext): Promise<Response> {
   const { settings } = app;
   const urls = [
     { loc: settings.BASE_URL + "/", priority: "1.0", changefreq: "weekly" },
-    ...Template.filterValid().map((t) => ({ loc: editorUrl(settings, t), priority: "0.8", changefreq: "monthly" })),
+    ...Template.browsable().map((t) => ({ loc: editorUrl(settings, t), priority: "0.8", changefreq: "monthly" })),
   ];
   const xml =
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +

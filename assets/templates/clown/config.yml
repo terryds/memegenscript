@@ -1,0 +1,62 @@
+name: "Clown Applying Makeup"
+source: "https://knowyourmeme.com/memes/putting-on-clown-makeup"
+keywords:
+  - "putting on clown makeup"
+  - "four panel"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.46
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.54
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.46
+    anchor_y: 0.25
+    angle: 0.0
+    scale_x: 0.54
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.46
+    anchor_y: 0.5
+    angle: 0.0
+    scale_x: 0.54
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.46
+    anchor_y: 0.75
+    angle: 0.0
+    scale_x: 0.54
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "i'll start the task early"
+  - "i'll do it after lunch"
+  - "i'll do it tonight"
+  - "i work best under pressure"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

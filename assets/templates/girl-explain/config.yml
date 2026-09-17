@@ -1,0 +1,39 @@
+name: "Girl Explaining"
+source: "https://knowyourmeme.com/memes/girl-explaining"
+keywords:
+  - "explaining"
+  - "party"
+  - "listening"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.55
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.55
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.45
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me explaining why the meme is funny"
+  - "my friend"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

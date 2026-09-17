@@ -1,7 +1,11 @@
 # Plan: refreshing the template library
 
-Status: **proposal under review.** Already added: `zoolander` (walk-off stare) and
-`kittens` (Three Kittens Dancing, still + animated GIF). Batches 1–3 wait for your go.
+Status: **approved and shipped (September 2026).** Batches 1–3, the imgflip top-100 bonus
+set, Zoolander, Three Kittens Dancing (original night-road footage, still + GIF), Coffin
+Dance, and Homer Backs Into the Bushes (GIF) are live. Imports are reproducible from
+`data/imports/batch-2026-09.json` via `scripts/import-templates.ts`; descriptions come from
+Know Your Meme or `data/descriptions.manual.json`. The `archived: true` flag hides dated
+templates from browsing while keeping their URLs working.
 
 ## Why
 

@@ -767,5 +767,116 @@
       "green screen",
       "2026"
     ]
+  },
+  "leo-cheers": {
+    "aka": [
+      "Leonardo DiCaprio Toast",
+      "Gatsby Cheers",
+      "Leo Cheers"
+    ],
+    "about": "Leonardo DiCaprio Cheers is a still of Jay Gatsby raising a champagne glass toward the camera with a knowing smile, from the 2013 film The Great Gatsby. It is used to toast, congratulate, or sarcastically salute whoever the caption describes.",
+    "origin": "The frame comes from the party scene in Baz Luhrmann's The Great Gatsby (2013) and became a reaction image the same year.",
+    "tags": [
+      "leonardo dicaprio",
+      "gatsby",
+      "cheers",
+      "toast",
+      "congratulations",
+      "movie",
+      "reaction image"
+    ]
+  },
+  "theydontknow": {
+    "aka": [
+      "They Don't Know",
+      "Wojak at the Party",
+      "Standing in the Corner Wojak"
+    ],
+    "about": "They Don't Know shows a Wojak in a party hat standing alone in the corner of a party, thinking a caption that starts with \"They don't know…\". It is used for private thoughts, niche obsessions, or secrets that nobody around you would care about.",
+    "origin": "The drawing spread on 4chan and Reddit in early 2020 and became a caption template for awkward, self-aware thoughts.",
+    "tags": [
+      "wojak",
+      "party",
+      "they dont know",
+      "introvert",
+      "awkward",
+      "corner",
+      "thought bubble"
+    ]
+  },
+  "cardboard": {
+    "aka": [
+      "Guy Holding Cardboard Sign",
+      "Man Holding Sign",
+      "Protest Sign Guy"
+    ],
+    "about": "Guy Holding Cardboard Sign is a photo of a man in a crowd holding a blank cardboard sign above his head, ready for whatever message the caption writes on it. It is a general-purpose format for unpopular opinions, announcements, and public service reminders.",
+    "origin": "The blank-sign photo circulated as an exploitable in 2019 and stays popular because the sign fits any short statement.",
+    "tags": [
+      "sign",
+      "cardboard",
+      "protest",
+      "announcement",
+      "opinion",
+      "exploitable"
+    ]
+  },
+  "homelander": {
+    "aka": [
+      "Homelander Stare",
+      "Homelander Looking at Phone",
+      "Antony Starr Stare"
+    ],
+    "about": "Homelander Stare is a still of Homelander from The Boys (Antony Starr) glaring over a phone with a tight, barely contained expression. It captions moments of silent rage, disbelief, or the calm before an overreaction.",
+    "origin": "The shot is from Amazon's The Boys, and the stare became a reaction image during the show's fourth season in 2024.",
+    "tags": [
+      "the boys",
+      "homelander",
+      "antony starr",
+      "stare",
+      "rage",
+      "phone",
+      "tv"
+    ]
+  },
+  "homer-bush": {
+    "aka": [
+      "Homer Disappears Into the Bushes",
+      "Homer Backing Into Hedge",
+      "Homer Bush GIF"
+    ],
+    "about": "Homer Backs Into the Bushes is the reaction GIF of Homer Simpson slowly stepping backward into a hedge until he vanishes. It is the universal way to say \"I'm going to pretend I was never here\" after an embarrassing moment.",
+    "origin": "The clip is from The Simpsons season 5 episode \"Homer Loves Flanders\" (1994) and became one of the internet's most reused GIFs.",
+    "tags": [
+      "the simpsons",
+      "homer",
+      "bushes",
+      "disappear",
+      "embarrassment",
+      "leave",
+      "reaction gif"
+    ]
+  },
+  "coffin": {
+    "aka": [
+      "Coffin Dance",
+      "Astronomia",
+      "Dancing Pallbearers",
+      "Ghana Funeral Dance",
+      "Coffin Dance Meme"
+    ],
+    "about": "Coffin Dance shows the Ghanaian dancing pallbearers carrying a casket in step, forever paired with the song \"Astronomia\" by Vicetone and Tony Igy. The meme caps off any clip or caption where someone is about to meet their doom, from a bad decision to a Friday deploy.",
+    "origin": "The pallbearers, led by Benjamin Aidoo, were filmed by BBC in 2017; the clips took over TikTok and YouTube in early 2020 as the go-to punchline for fatal mistakes.",
+    "tags": [
+      "coffin dance",
+      "astronomia",
+      "pallbearers",
+      "ghana",
+      "funeral",
+      "doom",
+      "fail",
+      "2020",
+      "tiktok"
+    ]
   }
 }

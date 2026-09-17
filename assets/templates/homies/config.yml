@@ -1,0 +1,26 @@
+name: "All My Homies Hate"
+source: "https://knowyourmeme.com/memes/fuck-x-all-my-homies-use-y"
+keywords:
+  - "fuck X all my homies hate X"
+  - "chad"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.7
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.28
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "all my homies hate tabs"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

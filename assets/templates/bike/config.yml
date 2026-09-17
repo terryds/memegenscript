@@ -1,0 +1,50 @@
+name: "Bike Fall"
+source: "https://knowyourmeme.com/memes/baton-roue"
+keywords:
+  - "stick in bicycle wheel"
+  - "self sabotage"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0.01
+    angle: 0.0
+    scale_x: 0.96
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0.35
+    angle: 0.0
+    scale_x: 0.96
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0.69
+    angle: 0.0
+    scale_x: 0.96
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me, ready to be productive"
+  - "opens social media"
+  - "why does this keep happening"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

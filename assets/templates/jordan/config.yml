@@ -1,0 +1,27 @@
+name: "And I Took That Personally"
+source: "https://knowyourmeme.com/memes/michael-jordans-and-i-took-that-personally"
+keywords:
+  - "Michael Jordan"
+  - "The Last Dance"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.22
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "someone said memes were dead"
+  - "and i took that personally"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

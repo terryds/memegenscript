@@ -111,6 +111,17 @@ describe("GET /memes/{id}", () => {
     }
   });
 
+  it("hides archived templates from browsing but keeps their pages and API working", async () => {
+    const index = await (await get("/")).text();
+    expect(index).not.toContain('href="/memes/sad-bush"');
+    const sitemap = await (await get("/sitemap.xml")).text();
+    expect(sitemap).not.toContain("/memes/sad-bush</loc>");
+    const page = await get("/memes/sad-bush");
+    expect(page.status).toBe(200);
+    expect(await page.text()).toContain('content="noindex, follow"');
+    expect((await get("/templates/sad-bush")).status).toBe(200);
+  });
+
   it("lists alternate styles as editor backgrounds", async () => {
     const body = await (await get("/memes/ds")).text();
     const config = JSON.parse(/data-config="([^"]+)"/.exec(body)![1].replace(/&quot;/g, '"').replace(/&amp;/g, "&"));

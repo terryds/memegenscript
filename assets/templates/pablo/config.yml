@@ -1,0 +1,39 @@
+name: "Sad Pablo Escobar"
+source: "https://knowyourmeme.com/memes/pablo-escobar-waiting"
+keywords:
+  - "Narcos"
+  - "waiting"
+  - "lonely"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.22
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.78
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.22
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me waiting for someone"
+  - "to laugh at my meme"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

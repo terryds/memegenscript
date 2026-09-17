@@ -167,6 +167,7 @@ for (const id of readdirSync(TEMPLATES).sort()) {
     files,
     ...description,
     featured: featuredIds.indexOf(id) === -1 ? null : featuredIds.indexOf(id) + 1,
+    archived: raw.archived === true,
   };
 }
 const unknownFeatured = featuredIds.filter((id) => !manifest[id]);

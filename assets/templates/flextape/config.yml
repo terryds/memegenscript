@@ -1,0 +1,39 @@
+name: "Flex Tape"
+source: "https://knowyourmeme.com/memes/phil-swift-slaps-on-flex-tape"
+keywords:
+  - "Phil Swift"
+  - "leak"
+  - "quick fix"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.22
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.5
+    anchor_y: 0.42
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "production bug"
+  - "restart the server"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

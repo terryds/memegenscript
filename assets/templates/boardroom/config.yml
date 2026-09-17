@@ -1,0 +1,62 @@
+name: "Boardroom Meeting Suggestion"
+source: "https://knowyourmeme.com/memes/boardroom-suggestion"
+keywords:
+  - "thrown out the window"
+  - "meeting"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.5
+    anchor_y: 0.03
+    angle: 0.0
+    scale_x: 0.46
+    scale_y: 0.12
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.04
+    anchor_y: 0.36
+    angle: 0.0
+    scale_x: 0.27
+    scale_y: 0.11
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.35
+    anchor_y: 0.36
+    angle: 0.0
+    scale_x: 0.27
+    scale_y: 0.11
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.64
+    anchor_y: 0.36
+    angle: 0.0
+    scale_x: 0.32
+    scale_y: 0.11
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "how do we make the app faster?"
+  - "better caching"
+  - "fewer requests"
+  - "remove the loading spinner"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,27 @@
+name: "Bernie: I Am Once Again Asking"
+source: "https://knowyourmeme.com/memes/i-am-once-again-asking-for-your-financial-support"
+keywords:
+  - "Bernie Sanders"
+  - "once again asking"
+  - "financial support"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.83
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.17
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "i am once again asking for your homework"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

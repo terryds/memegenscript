@@ -35,3 +35,4 @@ overlay:
     scale: 0.25
     start: 0.0
     stop: 1.0
+archived: true

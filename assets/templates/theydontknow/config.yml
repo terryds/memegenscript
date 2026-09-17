@@ -1,0 +1,27 @@
+name: "They Don't Know"
+source: "https://knowyourmeme.com/memes/they-dont-know"
+keywords:
+  - "wojak"
+  - "party"
+  - "standing in the corner"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.32
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.66
+    scale_y: 0.28
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "they don't know i make memes"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,1360 @@
+{
+  "_comment": "Templates imported by scripts/import-templates.ts. imgflip: numeric template id or a search query. kym: Know Your Meme slug or search query. boxes: optional text boxes [x, y, w, h, style?, color?, align?, font?] as fractions; default is top/bottom captions.",
+  "templates": [
+    {
+      "id": "bernie",
+      "name": "Bernie: I Am Once Again Asking",
+      "imgflip": 222403160,
+      "kym": "bernie-sanders-i-am-once-again-asking-for-your-support",
+      "keywords": [
+        "Bernie Sanders",
+        "once again asking",
+        "financial support"
+      ],
+      "example": [
+        "i am once again asking for your homework"
+      ],
+      "boxes": [
+        [
+          0,
+          0.83,
+          1,
+          0.17
+        ]
+      ]
+    },
+    {
+      "id": "trade",
+      "name": "Trade Offer",
+      "imgflip": 309868304,
+      "kym": "trade-offer",
+      "keywords": [
+        "TikTok",
+        "i receive",
+        "you receive"
+      ],
+      "example": [
+        "your attention",
+        "a meme"
+      ],
+      "boxes": [
+        [
+          0.03,
+          0.22,
+          0.44,
+          0.26,
+          "default",
+          "white",
+          "center",
+          "thick"
+        ],
+        [
+          0.53,
+          0.22,
+          0.44,
+          0.26,
+          "default",
+          "white",
+          "center",
+          "thick"
+        ]
+      ]
+    },
+    {
+      "id": "soyjaks",
+      "name": "Two Soyjaks Pointing",
+      "imgflip": "two soyjaks pointing",
+      "kym": "two-soyjaks-pointing",
+      "keywords": [
+        "wojak",
+        "soyjak",
+        "pointing"
+      ],
+      "example": [
+        "a new meme format"
+      ],
+      "boxes": [
+        [
+          0.2,
+          0.02,
+          0.6,
+          0.24,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "gigachad",
+      "name": "Gigachad",
+      "imgflip": "giga chad",
+      "kym": "gigachad",
+      "keywords": [
+        "chad",
+        "average enjoyer",
+        "sigma"
+      ],
+      "example": [
+        "me when",
+        "i finish a task"
+      ]
+    },
+    {
+      "id": "pikachu",
+      "name": "Surprised Pikachu",
+      "imgflip": 155067746,
+      "kym": "surprised-pikachu",
+      "keywords": [
+        "Pokemon",
+        "shocked"
+      ],
+      "example": [
+        "doesn't study",
+        "fails the exam"
+      ]
+    },
+    {
+      "id": "mathlady",
+      "name": "Confused Math Lady",
+      "imgflip": "math lady confused",
+      "kym": "math-lady-confused-lady",
+      "keywords": [
+        "Nazaré Tedesco",
+        "confused",
+        "calculating"
+      ],
+      "example": [
+        "me trying to remember",
+        "why i walked into the room"
+      ]
+    },
+    {
+      "id": "leo-point",
+      "name": "Leonardo DiCaprio Pointing",
+      "imgflip": "leonardo dicaprio pointing",
+      "kym": "rick-dalton-pointing",
+      "keywords": [
+        "Rick Dalton",
+        "Once Upon a Time in Hollywood",
+        "pointing at TV"
+      ],
+      "example": [
+        "when the meme is about me"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "leo-cheers",
+      "name": "Leonardo DiCaprio Cheers",
+      "imgflip": 5496396,
+      "kym": "leonardo-dicaprio-cheers",
+      "keywords": [
+        "Great Gatsby",
+        "toast"
+      ],
+      "example": [
+        "to everyone who",
+        "reads the whole meme"
+      ],
+      "source": "https://knowyourmeme.com/memes/leonardo-dicaprio-toast"
+    },
+    {
+      "id": "uno",
+      "name": "UNO Draw 25",
+      "imgflip": 217743513,
+      "kym": "uno-draw-25-cards",
+      "keywords": [
+        "draw 25",
+        "or draw 25"
+      ],
+      "example": [
+        "admit you were wrong",
+        "me"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.1,
+          0.44,
+          0.26,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.5,
+          0.82,
+          0.5,
+          0.16
+        ]
+      ]
+    },
+    {
+      "id": "bike",
+      "name": "Bike Fall",
+      "imgflip": 79132341,
+      "kym": "bike-fall",
+      "keywords": [
+        "stick in bicycle wheel",
+        "self sabotage"
+      ],
+      "example": [
+        "me, ready to be productive",
+        "opens social media",
+        "why does this keep happening"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.01,
+          0.96,
+          0.3,
+          "default"
+        ],
+        [
+          0.02,
+          0.35,
+          0.96,
+          0.3,
+          "default"
+        ],
+        [
+          0.02,
+          0.69,
+          0.96,
+          0.3,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "squidward",
+      "name": "Squidward Looking Out the Window",
+      "imgflip": 67452763,
+      "kym": "squidward-window",
+      "keywords": [
+        "SpongeBob",
+        "Patrick",
+        "jealous"
+      ],
+      "example": [
+        "everyone having fun outside",
+        "me with my deadlines"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.02,
+          0.62,
+          0.3,
+          "default"
+        ],
+        [
+          0.6,
+          0.55,
+          0.38,
+          0.4,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "monkey",
+      "name": "Monkey Puppet",
+      "imgflip": 148909805,
+      "kym": "awkward-look-monkey-puppet",
+      "keywords": [
+        "awkward look",
+        "side eye",
+        "Pedro"
+      ],
+      "example": [
+        "when someone says",
+        "'we need to talk'"
+      ]
+    },
+    {
+      "id": "clown",
+      "name": "Clown Applying Makeup",
+      "imgflip": 195515965,
+      "kym": "putting-on-clown-makeup",
+      "keywords": [
+        "putting on clown makeup",
+        "four panel"
+      ],
+      "example": [
+        "i'll start the task early",
+        "i'll do it after lunch",
+        "i'll do it tonight",
+        "i work best under pressure"
+      ],
+      "boxes": [
+        [
+          0.46,
+          0.0,
+          0.54,
+          0.25,
+          "default"
+        ],
+        [
+          0.46,
+          0.25,
+          0.54,
+          0.25,
+          "default"
+        ],
+        [
+          0.46,
+          0.5,
+          0.54,
+          0.25,
+          "default"
+        ],
+        [
+          0.46,
+          0.75,
+          0.54,
+          0.25,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "lisa",
+      "name": "Lisa Simpson's Presentation",
+      "imgflip": "lisa simpson presentation",
+      "kym": "lisa-simpsons-presentation",
+      "keywords": [
+        "The Simpsons",
+        "whiteboard",
+        "PSA"
+      ],
+      "example": [
+        "memes are just modern folklore"
+      ],
+      "boxes": [
+        [
+          0.12,
+          0.08,
+          0.76,
+          0.42,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "shaq",
+      "name": "Sleeping Shaq",
+      "imgflip": 99683372,
+      "kym": "sleeping-shaq",
+      "keywords": [
+        "Shaquille O'Neal",
+        "wide awake",
+        "asleep"
+      ],
+      "example": [
+        "someone says the meeting could be an email",
+        "someone says the email could be a meeting"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          "default"
+        ],
+        [
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "newspaper",
+      "name": "Tom Reading the Newspaper",
+      "imgflip": "tom reading newspaper",
+      "kym": "tom-reading-the-newspaper",
+      "keywords": [
+        "Tom and Jerry",
+        "unimpressed"
+      ],
+      "example": [
+        "news: the meme is dead",
+        "me making another one"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.6,
+          0.3,
+          "default"
+        ],
+        [
+          0.55,
+          0.65,
+          0.45,
+          0.3,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "swole",
+      "name": "Swole Doge vs. Cheems",
+      "imgflip": 247375501,
+      "kym": "swole-doge-vs-cheems",
+      "keywords": [
+        "buff doge",
+        "cheems",
+        "then vs now"
+      ],
+      "example": [
+        "memes in 2010",
+        "memes in 2026"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.25
+        ],
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.25
+        ]
+      ]
+    },
+    {
+      "id": "yesbutno",
+      "name": "Well Yes, But Actually No",
+      "imgflip": "well yes but actually no",
+      "kym": "well-yes-but-actually-no",
+      "keywords": [
+        "pirate",
+        "Guybrush",
+        "Monkey Island"
+      ],
+      "example": [
+        "did you test it before deploying?",
+        ""
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.22
+        ]
+      ]
+    },
+    {
+      "id": "evilkermit",
+      "name": "Evil Kermit",
+      "imgflip": 84341851,
+      "kym": "evil-kermit",
+      "keywords": [
+        "Kermit the Frog",
+        "hooded",
+        "me to me"
+      ],
+      "example": [
+        "me: i should sleep",
+        "me to me: one more meme"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.28,
+          "default"
+        ],
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.28,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "pablo",
+      "name": "Sad Pablo Escobar",
+      "imgflip": 80707627,
+      "kym": "sad-pablo-escobar",
+      "keywords": [
+        "Narcos",
+        "waiting",
+        "lonely"
+      ],
+      "example": [
+        "me waiting for someone",
+        "to laugh at my meme"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          1,
+          0.22
+        ],
+        [
+          0.0,
+          0.78,
+          1,
+          0.22
+        ]
+      ]
+    },
+    {
+      "id": "theydontknow",
+      "name": "They Don't Know",
+      "imgflip": 284929871,
+      "kym": "they-dont-know",
+      "keywords": [
+        "wojak",
+        "party",
+        "standing in the corner"
+      ],
+      "example": [
+        "they don't know i make memes"
+      ],
+      "boxes": [
+        [
+          0.32,
+          0.02,
+          0.66,
+          0.28,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ],
+      "source": "https://knowyourmeme.com/memes/they-dont-know"
+    },
+    {
+      "id": "homer-bush",
+      "name": "Homer Backs Into the Bushes",
+      "imgflip": "homer simpson bushes",
+      "kym": "homer-simpson-backs-into-bushes",
+      "keywords": [
+        "The Simpsons",
+        "disappear",
+        "leave quietly"
+      ],
+      "example": [
+        "when someone asks",
+        "who broke production"
+      ],
+      "source": "https://knowyourmeme.com/memes/homer-simpson-backs-into-bushes"
+    },
+    {
+      "id": "arthur",
+      "name": "Arthur's Fist",
+      "imgflip": "arthur fist",
+      "kym": "arthurs-fist",
+      "keywords": [
+        "Arthur",
+        "clenched fist",
+        "frustrated"
+      ],
+      "example": [
+        "when the meme",
+        "loads slowly"
+      ]
+    },
+    {
+      "id": "unsettled",
+      "name": "Unsettled Tom",
+      "imgflip": "unsettled tom",
+      "kym": "unsettled-tom",
+      "keywords": [
+        "Tom and Jerry",
+        "disturbed",
+        "concerned"
+      ],
+      "example": [
+        "when your friend says",
+        "'i don't use memes'"
+      ]
+    },
+    {
+      "id": "pepe-silvia",
+      "name": "Charlie Conspiracy (Pepe Silvia)",
+      "imgflip": 92084495,
+      "kym": "pepe-silvia",
+      "keywords": [
+        "It's Always Sunny",
+        "conspiracy board",
+        "Charlie Day"
+      ],
+      "example": [
+        "me explaining",
+        "why the meme is funny"
+      ]
+    },
+    {
+      "id": "domino",
+      "name": "Domino Effect",
+      "imgflip": 162372564,
+      "kym": "domino-effect",
+      "keywords": [
+        "small domino big domino",
+        "chain reaction"
+      ],
+      "example": [
+        "learned to code",
+        "spent years fixing bugs"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.35,
+          0.3,
+          0.3,
+          "default"
+        ],
+        [
+          0.55,
+          0.02,
+          0.45,
+          0.3,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "trophy",
+      "name": "This Is Where I'd Put My Trophy",
+      "imgflip": 3218037,
+      "kym": "this-is-where-id-put-my-trophy-if-i-had-one",
+      "keywords": [
+        "Fairly OddParents",
+        "if i had one"
+      ],
+      "example": [
+        "this is where i'd put my free time",
+        "if i had any"
+      ]
+    },
+    {
+      "id": "ahshit",
+      "name": "Ah Shit, Here We Go Again",
+      "imgflip": "ah shit here we go again",
+      "kym": "ah-shit-here-we-go-again",
+      "keywords": [
+        "GTA San Andreas",
+        "CJ"
+      ],
+      "example": [
+        "monday morning",
+        "ah shit, here we go again"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.22
+        ]
+      ]
+    },
+    {
+      "id": "modern",
+      "name": "Modern Problems Require Modern Solutions",
+      "imgflip": "modern problems require modern solutions",
+      "kym": "modern-problems-require-modern-solutions",
+      "keywords": [
+        "Dave Chappelle"
+      ],
+      "example": [
+        "can't fix the bug?",
+        "delete the test"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.22
+        ]
+      ]
+    },
+    {
+      "id": "babyyoda",
+      "name": "Baby Yoda Sipping Soup",
+      "imgflip": "baby yoda drinking soup",
+      "kym": "baby-yoda-sipping-soup",
+      "keywords": [
+        "Grogu",
+        "The Mandalorian",
+        "sipping tea"
+      ],
+      "example": [
+        "me watching the group chat",
+        "argue about nothing"
+      ]
+    },
+    {
+      "id": "cardboard",
+      "name": "Guy Holding Cardboard Sign",
+      "imgflip": "guy holding cardboard sign",
+      "kym": "guy-holding-cardboard-sign",
+      "keywords": [
+        "sign",
+        "protest",
+        "unpopular opinion"
+      ],
+      "example": [
+        "pineapple belongs on pizza"
+      ],
+      "boxes": [
+        [
+          0.4,
+          0.04,
+          0.34,
+          0.28,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "rock",
+      "name": "The Rock Eyebrow Raise",
+      "imgflip": "the rock eyebrow",
+      "kym": "the-rock-eyebrow-raise",
+      "keywords": [
+        "Dwayne Johnson",
+        "suspicious",
+        "sus"
+      ],
+      "example": [
+        "you said the feature",
+        "was 'basically done'?"
+      ]
+    },
+    {
+      "id": "pooh-3",
+      "name": "Tuxedo Winnie the Pooh (3 panels)",
+      "imgflip": "tuxedo winnie the pooh 3 panel",
+      "kym": "tuxedo-winnie-the-pooh",
+      "keywords": [
+        "fancy pooh",
+        "three panel",
+        "escalation"
+      ],
+      "example": [
+        "cat",
+        "feline",
+        "small tiger"
+      ],
+      "boxes": [
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.333,
+          "default"
+        ],
+        [
+          0.5,
+          0.333,
+          0.5,
+          0.333,
+          "default"
+        ],
+        [
+          0.5,
+          0.666,
+          0.5,
+          0.334,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "girl-explain",
+      "name": "Girl Explaining",
+      "imgflip": "girl explaining",
+      "kym": "girl-explaining",
+      "keywords": [
+        "explaining",
+        "party",
+        "listening"
+      ],
+      "example": [
+        "me explaining why the meme is funny",
+        "my friend"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.55,
+          0.25,
+          "default"
+        ],
+        [
+          0.55,
+          0.0,
+          0.45,
+          0.25,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "hotdog",
+      "name": "We're All Trying to Find the Guy Who Did This",
+      "imgflip": "hot dog guy find the guy who did this",
+      "kym": "were-all-trying-to-find-the-guy-who-did-this",
+      "keywords": [
+        "I Think You Should Leave",
+        "hot dog car",
+        "Tim Robinson"
+      ],
+      "example": [
+        "who broke the build?",
+        "we're all trying to find the guy who did this"
+      ]
+    },
+    {
+      "id": "pedro",
+      "name": "Pedro Pascal Laughing Then Crying",
+      "imgflip": "pedro pascal laughing crying",
+      "kym": "pedro-pascal-laughing-then-crying",
+      "keywords": [
+        "laughing",
+        "crying",
+        "mood swing"
+      ],
+      "example": [
+        "reading the meme",
+        "realizing it's about me"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.2
+        ],
+        [
+          0,
+          0.52,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "homelander",
+      "name": "Homelander Stare",
+      "imgflip": "homelander stare",
+      "kym": "homelander-stare",
+      "keywords": [
+        "The Boys",
+        "Antony Starr",
+        "menacing"
+      ],
+      "example": [
+        "when someone says",
+        "'it works on my machine'"
+      ],
+      "source": ""
+    },
+    {
+      "id": "megamind",
+      "name": "Megamind Peeking",
+      "imgflip": 370867422,
+      "kym": "megamind-peeking",
+      "keywords": [
+        "no bitches",
+        "peeking",
+        "Megamind"
+      ],
+      "example": [
+        "no tests?"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.02,
+          1,
+          0.24
+        ]
+      ]
+    },
+    {
+      "id": "jordan",
+      "name": "And I Took That Personally",
+      "imgflip": "and i took that personally",
+      "kym": "and-i-took-that-personally",
+      "keywords": [
+        "Michael Jordan",
+        "The Last Dance"
+      ],
+      "example": [
+        "someone said memes were dead",
+        "and i took that personally"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.22
+        ]
+      ]
+    },
+    {
+      "id": "hardpills",
+      "name": "Hard to Swallow Pills",
+      "imgflip": "hard to swallow pills",
+      "kym": "hard-to-swallow-pills",
+      "keywords": [
+        "pills",
+        "truth"
+      ],
+      "example": [
+        "your code has bugs"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.56,
+          0.96,
+          0.4,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "batman-slap",
+      "name": "Batman Slapping Robin",
+      "imgflip": 438680,
+      "kym": "my-parents-are-dead-batman-slapping-robin",
+      "keywords": [
+        "Batman",
+        "Robin",
+        "slap",
+        "comic"
+      ],
+      "example": [
+        "so i was thinking about memes",
+        "no"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.28,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.28,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "nick-young",
+      "name": "Confused Nick Young",
+      "imgflip": "confused nick young",
+      "kym": "confused-nick-young",
+      "keywords": [
+        "question marks",
+        "confused black guy"
+      ],
+      "example": [
+        "you want the meme",
+        "by when?"
+      ]
+    },
+    {
+      "id": "blinking",
+      "name": "Blinking White Guy",
+      "imgflip": "blinking white guy",
+      "kym": "blinking-white-guy",
+      "keywords": [
+        "Drew Scanlon",
+        "reaction gif",
+        "confused blink"
+      ],
+      "example": [
+        "when they say",
+        "'we'll fix it in production'"
+      ]
+    },
+    {
+      "id": "cinema",
+      "name": "Absolute Cinema",
+      "imgflip": 505705955,
+      "kym": "absolute-cinema",
+      "keywords": [
+        "Martin Scorsese",
+        "arms raised",
+        "2024"
+      ],
+      "example": [
+        "watching the group chat",
+        "absolute cinema"
+      ]
+    },
+    {
+      "id": "marked-safe",
+      "name": "Marked Safe From",
+      "imgflip": 161865971,
+      "kym": "marked-safe-from",
+      "keywords": [
+        "Facebook",
+        "safety check"
+      ],
+      "example": [
+        "productive work"
+      ],
+      "boxes": [
+        [
+          0.08,
+          0.52,
+          0.84,
+          0.15,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "skeleton",
+      "name": "Waiting Skeleton",
+      "imgflip": 4087833,
+      "kym": "waiting-skeleton",
+      "keywords": [
+        "still waiting",
+        "skeleton on bench"
+      ],
+      "example": [
+        "me waiting",
+        "for the ci pipeline"
+      ]
+    },
+    {
+      "id": "friendship",
+      "name": "Friendship Ended",
+      "imgflip": 137501417,
+      "kym": "friendship-ended-with-mudasir",
+      "keywords": [
+        "Mudasir",
+        "Salman",
+        "now X is my best friend"
+      ],
+      "example": [
+        "friendship ended with jpeg",
+        "now webp is my best friend"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.2
+        ],
+        [
+          0,
+          0.78,
+          1,
+          0.22
+        ]
+      ]
+    },
+    {
+      "id": "flextape",
+      "name": "Flex Tape",
+      "imgflip": 166969924,
+      "kym": "phil-swift-flex-tape",
+      "keywords": [
+        "Phil Swift",
+        "leak",
+        "quick fix"
+      ],
+      "example": [
+        "production bug",
+        "restart the server"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.0,
+          0.5,
+          0.22,
+          "default"
+        ],
+        [
+          0.5,
+          0.42,
+          0.5,
+          0.2,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "boardroom",
+      "name": "Boardroom Meeting Suggestion",
+      "imgflip": 1035805,
+      "kym": "boardroom-suggestion",
+      "keywords": [
+        "thrown out the window",
+        "meeting"
+      ],
+      "example": [
+        "how do we make the app faster?",
+        "better caching",
+        "fewer requests",
+        "remove the loading spinner"
+      ],
+      "boxes": [
+        [
+          0.5,
+          0.03,
+          0.46,
+          0.12,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.04,
+          0.36,
+          0.27,
+          0.11,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.35,
+          0.36,
+          0.27,
+          0.11,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.64,
+          0.36,
+          0.32,
+          0.11,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "other-women",
+      "name": "I Bet He's Thinking About Other Women",
+      "imgflip": 110163934,
+      "kym": "i-bet-hes-thinking-about-other-women",
+      "keywords": [
+        "couple in bed",
+        "thinking about"
+      ],
+      "example": [
+        "i bet he's thinking about other women",
+        "is a hot dog a sandwich?"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.5,
+          0.3,
+          "default"
+        ],
+        [
+          0.5,
+          0.0,
+          0.5,
+          0.3,
+          "default"
+        ]
+      ]
+    },
+    {
+      "id": "homies",
+      "name": "All My Homies Hate",
+      "imgflip": 216523697,
+      "kym": "all-my-homies-hate",
+      "keywords": [
+        "fuck X all my homies hate X",
+        "chad"
+      ],
+      "example": [
+        "all my homies hate tabs"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.7,
+          1,
+          0.28
+        ]
+      ]
+    },
+    {
+      "id": "scroll",
+      "name": "The Scroll of Truth",
+      "imgflip": 123999232,
+      "kym": "the-scroll-of-truth",
+      "keywords": [
+        "nyeh",
+        "unwanted truth"
+      ],
+      "example": [
+        "the bug is in your code"
+      ],
+      "boxes": [
+        [
+          0.08,
+          0.6,
+          0.36,
+          0.3,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "scientist",
+      "name": "I'm Something of a Scientist Myself",
+      "imgflip": 133946291,
+      "kym": "im-something-of-a-scientist-myself",
+      "keywords": [
+        "Norman Osborn",
+        "Willem Dafoe",
+        "Spider-Man"
+      ],
+      "example": [
+        "i copied it from stack overflow",
+        "i'm something of a scientist myself"
+      ]
+    },
+    {
+      "id": "best-i-can-do",
+      "name": "Best I Can Do",
+      "imgflip": 77045868,
+      "kym": "pawn-stars-best-i-can-do",
+      "keywords": [
+        "Pawn Stars",
+        "Rick Harrison",
+        "lowball"
+      ],
+      "example": [
+        "i need this by friday",
+        "best i can do is next quarter"
+      ]
+    },
+    {
+      "id": "whisper",
+      "name": "Whisper and Goosebumps",
+      "imgflip": 101956210,
+      "kym": "whisper-and-goosebumps",
+      "keywords": [
+        "ear whisper",
+        "goosebumps"
+      ],
+      "example": [
+        "'the build passed'"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.02,
+          1,
+          0.22
+        ]
+      ]
+    },
+    {
+      "id": "coffin",
+      "name": "Coffin Dance (Astronomia)",
+      "imgflip": "coffin dance meme",
+      "kym": "coffin-dance",
+      "keywords": [
+        "Astronomia",
+        "Dancing Pallbearers",
+        "Ghana",
+        "funeral",
+        "Vicetone Tony Igy"
+      ],
+      "example": [
+        "when you deploy on friday",
+        "at 5pm"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ],
+        [
+          0,
+          0.8,
+          1,
+          0.2
+        ]
+      ]
+    }
+  ]
+}

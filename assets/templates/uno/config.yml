@@ -1,0 +1,38 @@
+name: "UNO Draw 25"
+source: "https://knowyourmeme.com/memes/draw-25"
+keywords:
+  - "draw 25"
+  - "or draw 25"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.02
+    anchor_y: 0.1
+    angle: 0.0
+    scale_x: 0.44
+    scale_y: 0.26
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.5
+    anchor_y: 0.82
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "admit you were wrong"
+  - "me"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

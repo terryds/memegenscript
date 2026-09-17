@@ -1,0 +1,40 @@
+name: "Batman Slapping Robin"
+source: "https://knowyourmeme.com/memes/my-parents-are-dead-batman-slapping-robin"
+keywords:
+  - "Batman"
+  - "Robin"
+  - "slap"
+  - "comic"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.28
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.5
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.28
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "so i was thinking about memes"
+  - "no"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
