@@ -1,0 +1,1090 @@
+{
+  "_comment": "Round 3, Batch F2: evergreen formats from imgflip popular pages 7-8.",
+  "templates": [
+    {
+      "id": "in-the-room",
+      "name": "Are They in the Room With Us Right Now?",
+      "imgflip": "are they in the room with us right now",
+      "kym": "are-they-in-the-room-with-us-right-now",
+      "keywords": [
+        "in the room with us",
+        "therapist",
+        "paranoid",
+        "right now"
+      ],
+      "example": [
+        "the users who need this feature",
+        "are they in the room with us right now?"
+      ],
+      "source": ""
+    },
+    {
+      "id": "ol-reliable",
+      "name": "Ol' Reliable",
+      "imgflip": "ol reliable",
+      "kym": "ol-reliable",
+      "keywords": [
+        "SpongeBob",
+        "ol' reliable",
+        "jellyfish net",
+        "old faithful"
+      ],
+      "example": [
+        "when the smart fix fails",
+        "console.log"
+      ]
+    },
+    {
+      "id": "elmo-fire",
+      "name": "Elmo Fire",
+      "imgflip": "elmo fire",
+      "kym": "elmo-rise",
+      "keywords": [
+        "Elmo",
+        "fire",
+        "flames",
+        "chaos",
+        "burning"
+      ],
+      "example": [
+        "me watching",
+        "the prod logs"
+      ]
+    },
+    {
+      "id": "batman-signal",
+      "name": "Bat Signal",
+      "imgflip": "batman signal",
+      "kym": "bat signal",
+      "keywords": [
+        "Batman",
+        "bat signal",
+        "Gotham",
+        "sky",
+        "summon"
+      ],
+      "example": [
+        "it works on my machine",
+        "someone said the words"
+      ],
+      "source": "",
+      "boxes": [
+        [
+          0.05,
+          0.2,
+          0.3,
+          0.3,
+          "default",
+          "black"
+        ],
+        [
+          0,
+          0.8,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "taken",
+      "name": "Liam Neeson Taken",
+      "imgflip": "liam neeson taken",
+      "kym": "i-will-find-you-and-i-will-kill-you",
+      "keywords": [
+        "Liam Neeson",
+        "Taken",
+        "particular set of skills",
+        "phone",
+        "I will find you"
+      ],
+      "example": [
+        "i will find whoever wrote this regex",
+        "and i will kill them"
+      ]
+    },
+    {
+      "id": "all-the-things",
+      "name": "Do All the Things",
+      "imgflip": "do all the things",
+      "kym": "x-all-the-y",
+      "keywords": [
+        "all the things",
+        "Hyperbole and a Half",
+        "Allie Brosh",
+        "clean all the things"
+      ],
+      "example": [
+        "refactor",
+        "all the things!"
+      ]
+    },
+    {
+      "id": "twilight-aro",
+      "name": "Twilight Aro",
+      "imgflip": "twilight aro",
+      "kym": "twilight aro laugh",
+      "keywords": [
+        "Twilight",
+        "Aro",
+        "Volturi",
+        "laughing",
+        "Michael Sheen"
+      ],
+      "example": [
+        "you wrote unit tests?",
+        "*laughs in volturi*"
+      ]
+    },
+    {
+      "id": "drooling-puzzle",
+      "name": "Stupid Dumb Drooling Puzzle",
+      "imgflip": "stupid dumb drooling puzzle",
+      "kym": "stupid dumb drooling puzzle",
+      "keywords": [
+        "puzzle",
+        "drooling",
+        "dumb",
+        "toddler",
+        "shape sorter"
+      ],
+      "example": [
+        "me trying to",
+        "center a div"
+      ],
+      "source": ""
+    },
+    {
+      "id": "meat-menu",
+      "name": "Meat's Back on the Menu",
+      "imgflip": "meat's back on the menu",
+      "kym": "looks-like-meats-back-on-the-menu-boys",
+      "keywords": [
+        "Lord of the Rings",
+        "Uruk-hai",
+        "meat's back on the menu",
+        "boys"
+      ],
+      "example": [
+        "looks like overtime's",
+        "back on the menu, boys"
+      ]
+    },
+    {
+      "id": "dw-sign",
+      "name": "That Sign Won't Stop Me",
+      "imgflip": "dw sign won't stop me",
+      "kym": "that-sign-cant-stop-me-because-i-cant-read",
+      "keywords": [
+        "D.W.",
+        "Arthur",
+        "sign",
+        "can't read",
+        "won't stop me"
+      ],
+      "example": [
+        "no pushing to main"
+      ],
+      "boxes": [
+        [
+          0.05,
+          0.04,
+          0.7,
+          0.28,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "recording-fight",
+      "name": "Guy Recording a Fight",
+      "imgflip": "guy recording a fight",
+      "kym": "guy recording a fight",
+      "keywords": [
+        "recording",
+        "fight",
+        "phone",
+        "bystander",
+        "filming"
+      ],
+      "example": [
+        "me watching two seniors",
+        "argue about tabs vs spaces"
+      ],
+      "source": ""
+    },
+    {
+      "id": "mirror-guy",
+      "name": "Pointing Mirror Guy",
+      "imgflip": "pointing mirror guy",
+      "kym": "pointing mirror guy",
+      "keywords": [
+        "mirror",
+        "pointing",
+        "self",
+        "you got this",
+        "reflection"
+      ],
+      "example": [
+        "you",
+        "are the reason ci is red"
+      ]
+    },
+    {
+      "id": "happy-dolphin",
+      "name": "Happy Dolphin Rainbow",
+      "imgflip": "happy dolphin",
+      "kym": "happy dolphin",
+      "keywords": [
+        "dolphin",
+        "happy",
+        "rainbow",
+        "joy"
+      ],
+      "example": [
+        "when the intern",
+        "finds the bug"
+      ],
+      "source": ""
+    },
+    {
+      "id": "mr-incredible-mad",
+      "name": "Mr. Incredible Mad",
+      "imgflip": "mr incredible mad",
+      "kym": "mr-incredible-becoming-uncanny",
+      "keywords": [
+        "Mr. Incredible",
+        "mad",
+        "angry",
+        "Incredibles",
+        "furious"
+      ],
+      "example": [
+        "the pm after",
+        "one more scope change"
+      ]
+    },
+    {
+      "id": "fear-no-man",
+      "name": "I Fear No Man",
+      "imgflip": "i fear no man",
+      "kym": "i-fear-no-man",
+      "keywords": [
+        "Heavy",
+        "Team Fortress 2",
+        "I fear no man",
+        "but that thing",
+        "scares me"
+      ],
+      "example": [
+        "merge conflicts"
+      ],
+      "boxes": [
+        [
+          0.36,
+          0.6,
+          0.28,
+          0.35,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "straight-to-jail",
+      "name": "Straight to Jail",
+      "imgflip": "straight to jail",
+      "kym": "right-away",
+      "keywords": [
+        "Parks and Recreation",
+        "straight to jail",
+        "right away",
+        "Fred Armisen",
+        "believe it or not"
+      ],
+      "example": [
+        "push to main without review?",
+        "believe it or not, straight to jail"
+      ],
+      "source": "https://knowyourmeme.com/memes/right-away"
+    },
+    {
+      "id": "cute-cat",
+      "name": "Cute Cat Hehe / Not Hehe",
+      "imgflip": "cute cat",
+      "kym": "cute cat",
+      "keywords": [
+        "cat",
+        "cute",
+        "hehe",
+        "not hehe",
+        "kitten",
+        "mood"
+      ],
+      "example": [
+        "pr approved",
+        "pr with 40 comments"
+      ],
+      "source": "",
+      "boxes": [
+        [
+          0.5,
+          0.04,
+          0.48,
+          0.4,
+          "default",
+          "black"
+        ],
+        [
+          0.5,
+          0.54,
+          0.48,
+          0.4,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "crying-cat",
+      "name": "Crying Cat",
+      "imgflip": "crying cat",
+      "kym": "crying-cat",
+      "keywords": [
+        "crying cat",
+        "sad cat",
+        "tears",
+        "schmuserkadser"
+      ],
+      "example": [
+        "me when the tests",
+        "pass but the app is broken"
+      ]
+    },
+    {
+      "id": "finally",
+      "name": "FINALLY",
+      "imgflip": "finally",
+      "kym": "finally meme",
+      "keywords": [
+        "finally",
+        "relief",
+        "at last",
+        "done"
+      ],
+      "example": [
+        "finally",
+        "the build passed"
+      ],
+      "source": ""
+    },
+    {
+      "id": "laughing-suits",
+      "name": "Laughing Men in Suits",
+      "imgflip": "laughing men in suits",
+      "kym": "laughing-businessmen",
+      "keywords": [
+        "laughing",
+        "men in suits",
+        "businessmen",
+        "boardroom",
+        "joke"
+      ],
+      "example": [
+        "\"we'll fix it after launch\"",
+        "hahahaha"
+      ],
+      "source": ""
+    },
+    {
+      "id": "avatar-guy",
+      "name": "Avatar Guy",
+      "imgflip": "avatar guy",
+      "kym": "avatar guy",
+      "keywords": [
+        "Avatar",
+        "Na'vi",
+        "Pandora",
+        "guy",
+        "blue"
+      ],
+      "example": [
+        "me waiting for",
+        "the sequel of my pr review"
+      ]
+    },
+    {
+      "id": "momoa-cavill",
+      "name": "Jason Momoa and Henry Cavill",
+      "imgflip": "jason momoa henry cavill",
+      "kym": "jason-momoa-henry-cavill",
+      "keywords": [
+        "Jason Momoa",
+        "Henry Cavill",
+        "sneaking up",
+        "Aquaman",
+        "Superman"
+      ],
+      "example": [
+        "my deadline",
+        "me enjoying the weekend"
+      ]
+    },
+    {
+      "id": "math-is-math",
+      "name": "Math Is Math",
+      "imgflip": "math is math incredibles",
+      "kym": "math-is-math",
+      "keywords": [
+        "Mr. Incredible",
+        "math is math",
+        "new math",
+        "Incredibles 2",
+        "why would they change"
+      ],
+      "example": [
+        "why would they change syntax?",
+        "javascript is javascript!"
+      ]
+    },
+    {
+      "id": "yelling-beaver",
+      "name": "Yelling Beaver (Screaming Marmot)",
+      "imgflip": "yelling beaver",
+      "kym": "yelling beaver",
+      "keywords": [
+        "beaver",
+        "marmot",
+        "yelling",
+        "screaming",
+        "angry"
+      ],
+      "example": [
+        "who merged",
+        "without running tests"
+      ],
+      "source": ""
+    },
+    {
+      "id": "shrek-running",
+      "name": "Shrek Running",
+      "imgflip": "shrek running",
+      "kym": "shrek running",
+      "keywords": [
+        "Shrek",
+        "running",
+        "escape",
+        "chase",
+        "get out"
+      ],
+      "example": [
+        "me leaving",
+        "the 5pm friday meeting"
+      ],
+      "source": ""
+    },
+    {
+      "id": "big-book-small-book",
+      "name": "Big Book, Small Book",
+      "imgflip": "big book small book",
+      "kym": "big book small book",
+      "keywords": [
+        "big book",
+        "small book",
+        "comparison",
+        "thick",
+        "thin"
+      ],
+      "example": [
+        "the docs",
+        "what i actually read"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          0.5,
+          0.2
+        ],
+        [
+          0.5,
+          0,
+          0.5,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "first-time",
+      "name": "First Time?",
+      "imgflip": "first time",
+      "kym": "first-time",
+      "keywords": [
+        "First Time?",
+        "James Franco",
+        "Buster Scruggs",
+        "hanging",
+        "gallows"
+      ],
+      "example": [
+        "you broke prod on your first day?"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "did-you-mean",
+      "name": "Did You Mean?",
+      "imgflip": "did you mean",
+      "kym": "did you mean google",
+      "keywords": [
+        "did you mean",
+        "google",
+        "search",
+        "suggestion"
+      ],
+      "example": [
+        "typescript",
+        "javascript with extra steps"
+      ],
+      "boxes": [
+        [
+          0.12,
+          0.22,
+          0.75,
+          0.15,
+          "default",
+          "black",
+          "left"
+        ],
+        [
+          0.33,
+          0.74,
+          0.62,
+          0.14,
+          "default",
+          "red",
+          "left"
+        ]
+      ]
+    },
+    {
+      "id": "butter-robot",
+      "name": "What Is My Purpose?",
+      "imgflip": "butter robot",
+      "kym": "butter-robot",
+      "keywords": [
+        "Rick and Morty",
+        "butter robot",
+        "what is my purpose",
+        "you pass butter",
+        "oh my god"
+      ],
+      "example": [
+        "what is my purpose?",
+        "you pass butter"
+      ]
+    },
+    {
+      "id": "my-salad",
+      "name": "Really? Right in Front of My Salad?",
+      "imgflip": "front of my salad",
+      "kym": "right-in-front-of-my-salad",
+      "keywords": [
+        "right in front of my salad",
+        "really",
+        "salad",
+        "shocked"
+      ],
+      "example": [
+        "really? a merge conflict?",
+        "right in front of my salad?"
+      ]
+    },
+    {
+      "id": "pink-guy-bane",
+      "name": "Pink Guy vs. Bane",
+      "imgflip": "pink guy vs bane",
+      "kym": "pink guy vs bane",
+      "keywords": [
+        "Pink Guy",
+        "Bane",
+        "Filthy Frank",
+        "big guy",
+        "for you"
+      ],
+      "example": [
+        "you merged first?",
+        "for you"
+      ]
+    },
+    {
+      "id": "be-honest",
+      "name": "Be Honest",
+      "imgflip": "be honest beckham",
+      "kym": "be-honest",
+      "keywords": [
+        "Beckham",
+        "be honest",
+        "Victoria Beckham",
+        "David Beckham",
+        "working class"
+      ],
+      "example": [
+        "i'm a full-stack developer",
+        "be honest",
+        "...i write html"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.14
+        ],
+        [
+          0,
+          0.35,
+          1,
+          0.14
+        ],
+        [
+          0,
+          0.68,
+          1,
+          0.14
+        ]
+      ]
+    },
+    {
+      "id": "confused-travolta",
+      "name": "Confused John Travolta",
+      "imgflip": "confused john travolta",
+      "kym": "confused-john-travolta",
+      "keywords": [
+        "John Travolta",
+        "confused",
+        "Pulp Fiction",
+        "looking around",
+        "where"
+      ],
+      "example": [
+        "me looking for",
+        "the documentation"
+      ],
+      "source": "https://knowyourmeme.com/memes/confused-john-travolta"
+    },
+    {
+      "id": "black-gate",
+      "name": "Aragorn at the Black Gate",
+      "imgflip": "aragorn black gate",
+      "kym": "aragorn black gate for frodo",
+      "keywords": [
+        "Aragorn",
+        "Black Gate",
+        "for Frodo",
+        "Lord of the Rings",
+        "charge"
+      ],
+      "example": [
+        "for frodo",
+        "for the deadline"
+      ]
+    },
+    {
+      "id": "surprised-koala",
+      "name": "Surprised Koala",
+      "imgflip": "surprised koala",
+      "kym": "surprised koala",
+      "keywords": [
+        "koala",
+        "surprised",
+        "shocked",
+        "wow"
+      ],
+      "example": [
+        "when the code",
+        "works first try"
+      ],
+      "source": ""
+    },
+    {
+      "id": "hulk-secret",
+      "name": "That's My Secret, Cap",
+      "imgflip": "that's my secret",
+      "kym": "thats-my-secret-cap-im-always-angry",
+      "keywords": [
+        "Hulk",
+        "Bruce Banner",
+        "that's my secret",
+        "I'm always angry",
+        "Avengers"
+      ],
+      "example": [
+        "that's my secret cap",
+        "i'm always debugging"
+      ],
+      "source": "https://knowyourmeme.com/memes/thats-my-secret-cap-im-always-angry"
+    },
+    {
+      "id": "pure-shit",
+      "name": "Feel Like Pure Shit",
+      "imgflip": "feel like pure shit",
+      "kym": "feel-like-pure-shit-just-want-her-back-x",
+      "keywords": [
+        "feel like pure shit",
+        "just want her back",
+        "sad",
+        "crying"
+      ],
+      "example": [
+        "feel like pure shit",
+        "just want the old api back"
+      ]
+    },
+    {
+      "id": "shipping-label",
+      "name": "Penguin Pointing at Shipping Label",
+      "imgflip": "penguin pointing at shipping label",
+      "kym": "penguin pointing at shipping label",
+      "keywords": [
+        "penguin",
+        "shipping label",
+        "pointing",
+        "it says right here"
+      ],
+      "example": [
+        "minor change"
+      ],
+      "boxes": [
+        [
+          0.5,
+          0.05,
+          0.48,
+          0.3,
+          "default",
+          "black"
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "squidward-chair",
+      "name": "Squidward Chair",
+      "imgflip": "squidward chair",
+      "kym": "squidward chair",
+      "keywords": [
+        "Squidward",
+        "chair",
+        "sitting",
+        "waiting",
+        "bored"
+      ],
+      "example": [
+        "waiting for",
+        "the pipeline"
+      ]
+    },
+    {
+      "id": "dead-people",
+      "name": "I See Dead People",
+      "imgflip": "i see dead people",
+      "kym": "i-see-dead-people",
+      "keywords": [
+        "The Sixth Sense",
+        "I see dead people",
+        "Haley Joel Osment",
+        "whisper"
+      ],
+      "example": [
+        "i see",
+        "dead code"
+      ]
+    },
+    {
+      "id": "chemistry-cat",
+      "name": "Chemistry Cat",
+      "imgflip": "chemistry cat",
+      "kym": "chemistry-cat",
+      "keywords": [
+        "Chemistry Cat",
+        "science cat",
+        "pun",
+        "lab",
+        "glasses"
+      ],
+      "example": [
+        "i'd tell you a udp joke",
+        "but you might not get it"
+      ]
+    },
+    {
+      "id": "gentleman-frog",
+      "name": "Gentleman Frog",
+      "imgflip": "gentleman frog",
+      "kym": "gentleman frog",
+      "keywords": [
+        "frog",
+        "gentleman",
+        "top hat",
+        "monocle",
+        "classy"
+      ],
+      "example": [
+        "ah yes",
+        "a well-formatted commit"
+      ]
+    },
+    {
+      "id": "dumbest-man",
+      "name": "I'm the Dumbest Man Alive",
+      "imgflip": "i'm the dumbest man alive",
+      "kym": "im-the-dumbest-man-alive",
+      "keywords": [
+        "dumbest man alive",
+        "Wheel of Fortune",
+        "Pat Sajak",
+        "stupid"
+      ],
+      "example": [
+        "i pushed to main"
+      ],
+      "source": "",
+      "boxes": [
+        [
+          0.04,
+          0.58,
+          0.4,
+          0.25,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "sweating-bullets",
+      "name": "Sweating Bullets",
+      "imgflip": "sweating bullets",
+      "kym": "sweating-towel-guy",
+      "keywords": [
+        "sweating",
+        "nervous",
+        "bullets",
+        "anxious",
+        "towel"
+      ],
+      "example": [
+        "when the demo",
+        "is on prod"
+      ]
+    },
+    {
+      "id": "neat-part",
+      "name": "That's the Neat Part, You Don't",
+      "imgflip": "that's the neat part you don't",
+      "kym": "thats-the-neat-part-you-dont",
+      "keywords": [
+        "Invincible",
+        "Omni-Man",
+        "neat part",
+        "you don't",
+        "how do I"
+      ],
+      "example": [
+        "how do i test this?",
+        "that's the neat part, you don't"
+      ]
+    },
+    {
+      "id": "gru-gun",
+      "name": "Gru's Gun",
+      "imgflip": "gru gun",
+      "kym": "gru gun",
+      "keywords": [
+        "Gru",
+        "Despicable Me",
+        "gun",
+        "freeze ray",
+        "pointing"
+      ],
+      "example": [
+        "explain why",
+        "your pr has 400 files"
+      ]
+    },
+    {
+      "id": "goodfellas",
+      "name": "Goodfellas Laughing",
+      "imgflip": "good fellas hilarious",
+      "kym": "goodfellas-laughing",
+      "keywords": [
+        "Goodfellas",
+        "laughing",
+        "Ray Liotta",
+        "Joe Pesci",
+        "hilarious"
+      ],
+      "example": [
+        "\"we'll document it later\"",
+        "hahaha"
+      ],
+      "source": ""
+    },
+    {
+      "id": "two-wolves",
+      "name": "Inside You There Are Two Wolves",
+      "imgflip": "inside you there are two wolves",
+      "kym": "inside-you-there-are-two-wolves",
+      "keywords": [
+        "two wolves",
+        "inside you",
+        "Cherokee",
+        "wolf",
+        "choice"
+      ],
+      "example": [
+        "one uses tabs, one uses spaces. both are you."
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.8,
+          0.96,
+          0.18,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "what-did-it-cost",
+      "name": "What Did It Cost? Everything.",
+      "imgflip": "thanos what did it cost",
+      "kym": "what-did-it-cost-everything",
+      "keywords": [
+        "Thanos",
+        "what did it cost",
+        "everything",
+        "Avengers",
+        "Infinity War"
+      ],
+      "example": [
+        "did you fix the bug?",
+        "yes",
+        "what did it cost?",
+        "everything"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          0.5,
+          0.14
+        ],
+        [
+          0.5,
+          0.02,
+          0.5,
+          0.14
+        ],
+        [
+          0,
+          0.52,
+          0.5,
+          0.14
+        ],
+        [
+          0.5,
+          0.52,
+          0.5,
+          0.14
+        ]
+      ]
+    },
+    {
+      "id": "rubbing-hands",
+      "name": "Anthony Adams Rubbing Hands",
+      "imgflip": "anthony adams rubbing hands",
+      "kym": "anthony-adams-rubbing-hands",
+      "keywords": [
+        "Anthony Adams",
+        "rubbing hands",
+        "scheming",
+        "excited",
+        "smirk"
+      ],
+      "example": [
+        "me when the new hire",
+        "asks what tabs vs spaces means"
+      ]
+    },
+    {
+      "id": "dog-werewolf",
+      "name": "Dog vs. Werewolf",
+      "imgflip": "dog vs werewolf",
+      "kym": "dog vs werewolf",
+      "keywords": [
+        "dog",
+        "werewolf",
+        "day",
+        "night",
+        "transformation"
+      ],
+      "example": [
+        "me at 9am",
+        "me at 11pm"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          0.5,
+          0.2
+        ],
+        [
+          0.5,
+          0,
+          0.5,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "i-like-this",
+      "name": "This Is Brilliant, But I Like This",
+      "imgflip": "this is brilliant but i like this",
+      "kym": "this-is-brilliant-but-i-like-this",
+      "keywords": [
+        "brilliant",
+        "but I like this",
+        "Captain America",
+        "Iron Man",
+        "comparison"
+      ],
+      "example": [
+        "kubernetes",
+        "a single vps"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.14
+        ],
+        [
+          0,
+          0.52,
+          1,
+          0.14
+        ]
+      ]
+    }
+  ]
+}

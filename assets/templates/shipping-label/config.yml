@@ -1,0 +1,28 @@
+name: "Penguin Pointing at Shipping Label"
+source: 
+keywords:
+  - "penguin"
+  - "shipping label"
+  - "pointing"
+  - "it says right here"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.5
+    anchor_y: 0.05
+    angle: 0.0
+    scale_x: 0.48
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "minor change"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

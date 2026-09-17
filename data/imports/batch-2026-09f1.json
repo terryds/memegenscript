@@ -1,0 +1,923 @@
+{
+  "_comment": "Round 3, Batch F1: evergreen formats from imgflip popular pages 5-6.",
+  "templates": [
+    {
+      "id": "oliver-twist",
+      "name": "Please Sir, May I Have Some More",
+      "imgflip": "please sir may i have some more",
+      "kym": "please-sir-i-want-some-more",
+      "keywords": [
+        "Oliver Twist",
+        "please sir",
+        "some more",
+        "bowl"
+      ],
+      "example": [
+        "please sir",
+        "may i have some more ram"
+      ],
+      "source": ""
+    },
+    {
+      "id": "sun-tzu",
+      "name": "Sun Tzu, The Art of War",
+      "imgflip": "sun tzu",
+      "kym": "sun tzu art of war quote",
+      "keywords": [
+        "Sun Tzu",
+        "Art of War",
+        "fake quote",
+        "wisdom"
+      ],
+      "example": [
+        "ship it on friday",
+        "- sun tzu, the art of war"
+      ],
+      "source": ""
+    },
+    {
+      "id": "dr-evil-laser",
+      "name": "Dr. Evil Air Quotes",
+      "imgflip": "dr evil laser",
+      "kym": "dr-evil-air-quotes",
+      "keywords": [
+        "Dr. Evil",
+        "Austin Powers",
+        "air quotes",
+        "laser"
+      ],
+      "example": [
+        "we are",
+        "\"agile\""
+      ]
+    },
+    {
+      "id": "trojan-horse",
+      "name": "Trojan Horse",
+      "imgflip": "trojan horse",
+      "kym": "trojan horse meme",
+      "keywords": [
+        "Trojan Horse",
+        "Troy",
+        "hidden",
+        "gift"
+      ],
+      "example": [
+        "free trial",
+        "recurring subscription"
+      ]
+    },
+    {
+      "id": "both-buttons",
+      "name": "Both Buttons Pressed",
+      "imgflip": "both buttons pressed",
+      "kym": "daily-struggle",
+      "keywords": [
+        "two buttons",
+        "both buttons",
+        "daily struggle",
+        "press both"
+      ],
+      "example": [
+        "fix the bug",
+        "add a feature"
+      ],
+      "boxes": [
+        [
+          0.08,
+          0.04,
+          0.38,
+          0.14,
+          "default",
+          "black"
+        ],
+        [
+          0.54,
+          0.04,
+          0.38,
+          0.14,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "cat-looks-inside",
+      "name": "Cat Looks Inside",
+      "imgflip": "cat looks inside",
+      "kym": "looks-inside",
+      "keywords": [
+        "cat",
+        "looks inside",
+        "surprise",
+        "box"
+      ],
+      "example": [
+        "> looks inside \"quick fix\" pr",
+        "> 3000-line diff"
+      ],
+      "boxes": [
+        [
+          0.03,
+          0.01,
+          0.94,
+          0.1,
+          "default",
+          "black",
+          "left"
+        ],
+        [
+          0.03,
+          0.12,
+          0.94,
+          0.1,
+          "default",
+          "black",
+          "left"
+        ]
+      ]
+    },
+    {
+      "id": "so-far",
+      "name": "Simpsons So Far",
+      "imgflip": "simpsons so far",
+      "kym": "so far so good simpsons",
+      "keywords": [
+        "Simpsons",
+        "so far",
+        "Homer",
+        "Bart"
+      ],
+      "example": [
+        "everything is fine",
+        "so far"
+      ],
+      "source": "",
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.15
+        ],
+        [
+          0,
+          0.5,
+          1,
+          0.15
+        ]
+      ]
+    },
+    {
+      "id": "fellow-kids",
+      "name": "How Do You Do, Fellow Kids?",
+      "imgflip": "steve buscemi fellow kids",
+      "kym": "how-do-you-do-fellow-kids",
+      "keywords": [
+        "Steve Buscemi",
+        "fellow kids",
+        "30 Rock",
+        "skateboard"
+      ],
+      "example": [
+        "how do you do",
+        "fellow junior devs"
+      ]
+    },
+    {
+      "id": "nickel",
+      "name": "If I Had a Nickel",
+      "imgflip": "doof if i had a nickel",
+      "kym": "if-i-had-a-nickel-for-every-time",
+      "keywords": [
+        "Doofenshmirtz",
+        "Phineas and Ferb",
+        "nickel",
+        "twice"
+      ],
+      "example": [
+        "if i had a nickel for every friday prod outage"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "dafoe-up",
+      "name": "Willem Dafoe Looking Up",
+      "imgflip": "willem dafoe looking up",
+      "kym": "willem-dafoe-looking-up",
+      "keywords": [
+        "Willem Dafoe",
+        "looking up",
+        "Spider-Man",
+        "Green Goblin"
+      ],
+      "example": [
+        "me looking at",
+        "the ci queue"
+      ]
+    },
+    {
+      "id": "just-be-normal",
+      "name": "Why Can't You Just Be Normal",
+      "imgflip": "why can't you just be normal",
+      "kym": "why-cant-you-just-be-normal",
+      "keywords": [
+        "The Babadook",
+        "just be normal",
+        "screaming",
+        "mother"
+      ],
+      "example": [
+        "why can't you just be normal?",
+        "*screams in javascript*"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.18
+        ],
+        [
+          0.35,
+          0.6,
+          0.65,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "uncle-sam",
+      "name": "Uncle Sam I Want You",
+      "imgflip": "uncle sam",
+      "kym": "uncle-sam-i-want-you",
+      "keywords": [
+        "Uncle Sam",
+        "I want you",
+        "poster",
+        "recruitment"
+      ],
+      "example": [
+        "i want you",
+        "to review my pr"
+      ]
+    },
+    {
+      "id": "behind-tree",
+      "name": "Guy Hiding Behind Tree",
+      "imgflip": "black guy hiding behind tree",
+      "kym": "black-guy-hiding-behind-tree",
+      "keywords": [
+        "hiding behind tree",
+        "watching",
+        "peeking",
+        "lurking"
+      ],
+      "example": [
+        "me watching the",
+        "prod deploy from a distance"
+      ],
+      "source": ""
+    },
+    {
+      "id": "hand-on-shoulder",
+      "name": "Hand on Shoulder Guy",
+      "imgflip": "hand on shoulder guy",
+      "kym": "hand on shoulder guy",
+      "keywords": [
+        "hand on shoulder",
+        "comfort",
+        "reassuring",
+        "friend"
+      ],
+      "example": [
+        "it's okay",
+        "we all break prod once"
+      ],
+      "source": ""
+    },
+    {
+      "id": "kermit-window",
+      "name": "Kermit Looking Out Window",
+      "imgflip": "kermit window",
+      "kym": "kermit window rain",
+      "keywords": [
+        "Kermit",
+        "window",
+        "rain",
+        "sad",
+        "waiting"
+      ],
+      "example": [
+        "waiting for",
+        "the pipeline to finish"
+      ]
+    },
+    {
+      "id": "lois-pills",
+      "name": "Lois Griffin Pills",
+      "imgflip": "lois pills",
+      "kym": "lois griffin pills",
+      "keywords": [
+        "Lois Griffin",
+        "Family Guy",
+        "pills",
+        "take",
+        "prescription"
+      ],
+      "example": [
+        "two tabs not spaces",
+        "ma'am you're gonna have to take these"
+      ],
+      "source": "https://knowyourmeme.com/memes/yass-pills",
+      "boxes": [
+        [
+          0.04,
+          0.42,
+          0.28,
+          0.35,
+          "default",
+          "black"
+        ],
+        [
+          0.38,
+          0.02,
+          0.6,
+          0.18
+        ]
+      ]
+    },
+    {
+      "id": "horse-drawing",
+      "name": "Horse Drawing",
+      "imgflip": "horse drawing",
+      "kym": "horse-drawing",
+      "keywords": [
+        "horse drawing",
+        "detailed",
+        "lazy",
+        "unfinished"
+      ],
+      "example": [
+        "testing",
+        "coding",
+        "planning"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          0.33,
+          0.2
+        ],
+        [
+          0.33,
+          0,
+          0.34,
+          0.2
+        ],
+        [
+          0.67,
+          0,
+          0.33,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "confused-monkey",
+      "name": "Confused Monkey",
+      "imgflip": "confused monkey",
+      "kym": "confused monkey",
+      "keywords": [
+        "monkey",
+        "confused",
+        "puzzled",
+        "what"
+      ],
+      "example": [
+        "me reading",
+        "my own code from last year"
+      ],
+      "source": ""
+    },
+    {
+      "id": "soyboy-chad",
+      "name": "Soyboy vs. Yes Chad",
+      "imgflip": "soyboy vs yes chad",
+      "kym": "yes-chad",
+      "keywords": [
+        "soyboy",
+        "yes chad",
+        "Nordic gamer",
+        "soyjak",
+        "yes"
+      ],
+      "example": [
+        "you wrote no tests?!",
+        "yes"
+      ],
+      "boxes": [
+        [
+          0,
+          0.8,
+          0.5,
+          0.2
+        ],
+        [
+          0.5,
+          0.8,
+          0.5,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "squid-game",
+      "name": "Squid Game",
+      "imgflip": "squid game",
+      "kym": "squid-game",
+      "keywords": [
+        "Squid Game",
+        "Gi-hun",
+        "Netflix",
+        "happy",
+        "serious",
+        "before after"
+      ],
+      "example": [
+        "player 456",
+        "has been eliminated"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.15
+        ],
+        [
+          0,
+          0.5,
+          1,
+          0.15
+        ]
+      ]
+    },
+    {
+      "id": "incoming-call",
+      "name": "Incoming Call",
+      "imgflip": "incoming call",
+      "kym": "incoming call meme",
+      "keywords": [
+        "incoming call",
+        "phone",
+        "decline",
+        "accept"
+      ],
+      "example": [
+        "3 a.m. pagerduty"
+      ],
+      "source": "",
+      "boxes": [
+        [
+          0.1,
+          0.08,
+          0.8,
+          0.2,
+          "default",
+          "white"
+        ]
+      ]
+    },
+    {
+      "id": "free-choice",
+      "name": "The Illusion of Free Choice",
+      "imgflip": "illusion of free choice",
+      "kym": "the-illusion-of-free-choice",
+      "keywords": [
+        "illusion of free choice",
+        "two doors",
+        "same",
+        "choice"
+      ],
+      "example": [
+        "vim",
+        "vim with plugins"
+      ],
+      "boxes": [
+        [
+          0.12,
+          0.33,
+          0.3,
+          0.2,
+          "default",
+          "black"
+        ],
+        [
+          0.48,
+          0.28,
+          0.3,
+          0.2,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "get-in-loser",
+      "name": "Get In Loser",
+      "imgflip": "get in loser",
+      "kym": "get-in-loser-were-going-shopping",
+      "keywords": [
+        "Mean Girls",
+        "get in loser",
+        "Regina George",
+        "car"
+      ],
+      "example": [
+        "get in loser",
+        "we're going to refactor"
+      ]
+    },
+    {
+      "id": "skinner-letter",
+      "name": "Chef Skinner Reading a Letter",
+      "imgflip": "chef skinner reading a letter",
+      "kym": "chef skinner reading letter",
+      "keywords": [
+        "Ratatouille",
+        "Chef Skinner",
+        "letter",
+        "reading",
+        "shocked"
+      ],
+      "example": [
+        "reading the",
+        "release notes"
+      ]
+    },
+    {
+      "id": "homer-back-fat",
+      "name": "Homer's Back Fat",
+      "imgflip": "homer's back fat",
+      "kym": "homer back fat",
+      "keywords": [
+        "Homer Simpson",
+        "back fat",
+        "sit up",
+        "Simpsons"
+      ],
+      "example": [
+        "my legacy code",
+        "one more feature"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.15
+        ],
+        [
+          0,
+          0.5,
+          1,
+          0.15
+        ]
+      ]
+    },
+    {
+      "id": "brace-yourselves",
+      "name": "Brace Yourselves, X Is Coming",
+      "imgflip": "brace yourselves x is coming",
+      "kym": "brace-yourselves-x-is-coming",
+      "keywords": [
+        "Ned Stark",
+        "Game of Thrones",
+        "brace yourselves",
+        "winter is coming"
+      ],
+      "example": [
+        "brace yourselves",
+        "q4 is coming"
+      ]
+    },
+    {
+      "id": "yes-honey",
+      "name": "Yes Honey",
+      "imgflip": "yes honey",
+      "kym": "yes-honey",
+      "keywords": [
+        "yes honey",
+        "wife",
+        "husband",
+        "agree",
+        "listening"
+      ],
+      "example": [
+        "we should rewrite it in rust",
+        "yes honey"
+      ],
+      "source": ""
+    },
+    {
+      "id": "affleck-smoking",
+      "name": "Ben Affleck Smoking",
+      "imgflip": "ben affleck smoking",
+      "kym": "sad-ben-affleck",
+      "keywords": [
+        "Ben Affleck",
+        "smoking",
+        "tired",
+        "sad",
+        "cigarette"
+      ],
+      "example": [
+        "me after reading",
+        "the jira backlog"
+      ],
+      "source": "https://knowyourmeme.com/memes/sad-affleck"
+    },
+    {
+      "id": "who-would-win",
+      "name": "Who Would Win?",
+      "imgflip": "who would win",
+      "kym": "who-would-win",
+      "keywords": [
+        "who would win",
+        "versus",
+        "one boi",
+        "fight"
+      ],
+      "example": [
+        "who would win?",
+        "a team of 10 engineers",
+        "one missing semicolon"
+      ],
+      "boxes": [
+        [
+          0,
+          0.01,
+          1,
+          0.15,
+          "upper",
+          "black"
+        ],
+        [
+          0.02,
+          0.25,
+          0.46,
+          0.6,
+          "default",
+          "black"
+        ],
+        [
+          0.52,
+          0.25,
+          0.46,
+          0.6,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "ba-sing-se",
+      "name": "There Is No War in Ba Sing Se",
+      "imgflip": "there is no war in ba sing se",
+      "kym": "there-is-no-war-in-ba-sing-se",
+      "keywords": [
+        "Avatar",
+        "Ba Sing Se",
+        "Joo Dee",
+        "denial",
+        "no war"
+      ],
+      "example": [
+        "there is no tech debt",
+        "in ba sing se"
+      ]
+    },
+    {
+      "id": "palpatine-returned",
+      "name": "Somehow Palpatine Returned",
+      "imgflip": "somehow palpatine returned",
+      "kym": "somehow-palpatine-returned",
+      "keywords": [
+        "Palpatine",
+        "Star Wars",
+        "Poe Dameron",
+        "somehow",
+        "returned"
+      ],
+      "example": [
+        "somehow",
+        "the bug returned"
+      ]
+    },
+    {
+      "id": "greedy-pipe",
+      "name": "Greedy Pipe Man",
+      "imgflip": "greedy pipe man",
+      "kym": "greedy pipe man",
+      "keywords": [
+        "pipe",
+        "greedy",
+        "cartoon",
+        "grabbing",
+        "vacuum"
+      ],
+      "example": [
+        "my company",
+        "my weekend"
+      ]
+    },
+    {
+      "id": "brain-sleep",
+      "name": "Brain Before Sleep",
+      "imgflip": "brain before sleep",
+      "kym": "brain-before-sleep",
+      "keywords": [
+        "brain",
+        "before sleep",
+        "3 a.m.",
+        "thoughts",
+        "insomnia"
+      ],
+      "example": [
+        "time to sleep",
+        "remember that bug from 2019?",
+        "no"
+      ],
+      "source": "",
+      "boxes": [
+        [
+          0.04,
+          0.03,
+          0.42,
+          0.12,
+          "default",
+          "black"
+        ],
+        [
+          0.55,
+          0.03,
+          0.4,
+          0.12,
+          "default",
+          "black"
+        ],
+        [
+          0.04,
+          0.52,
+          0.42,
+          0.12,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "makima",
+      "name": "Makima Is Listening",
+      "imgflip": "makima is listening",
+      "kym": "makima is listening",
+      "keywords": [
+        "Makima",
+        "Chainsaw Man",
+        "listening",
+        "anime",
+        "attentive"
+      ],
+      "example": [
+        "the rubber duck"
+      ],
+      "boxes": [
+        [
+          0.57,
+          0.36,
+          0.3,
+          0.14,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "spongebob-yelling",
+      "name": "SpongeBob Yelling",
+      "imgflip": "spongebob yelling",
+      "kym": "spongebob yelling",
+      "keywords": [
+        "SpongeBob",
+        "yelling",
+        "screaming",
+        "angry"
+      ],
+      "example": [
+        "who deleted",
+        "the .env file"
+      ]
+    },
+    {
+      "id": "satisfied-seal",
+      "name": "Satisfied Seal",
+      "imgflip": "satisfied seal",
+      "kym": "satisfied-seal",
+      "keywords": [
+        "seal",
+        "satisfied",
+        "happy",
+        "content",
+        "smug"
+      ],
+      "example": [
+        "when the build",
+        "passes first try"
+      ],
+      "source": ""
+    },
+    {
+      "id": "wait-here",
+      "name": "I'll Just Wait Here (Skeleton Waiting)",
+      "imgflip": "i'll just wait here",
+      "kym": "i'll just wait here",
+      "keywords": [
+        "skeleton",
+        "still waiting",
+        "wait here",
+        "computer",
+        "forever"
+      ],
+      "example": [
+        "i'll just wait here",
+        "for the code review"
+      ],
+      "source": "",
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.15
+        ],
+        [
+          0,
+          0.5,
+          1,
+          0.15
+        ]
+      ]
+    },
+    {
+      "id": "wake-up-babe",
+      "name": "Wake Up Babe",
+      "imgflip": "wake up babe",
+      "kym": "wake-up-babe-new-x-just-dropped",
+      "keywords": [
+        "wake up babe",
+        "new",
+        "just dropped",
+        "couple"
+      ],
+      "example": [
+        "wake up babe",
+        "new javascript framework just dropped"
+      ]
+    },
+    {
+      "id": "zero-days",
+      "name": "Zero Days Since Last Accident",
+      "imgflip": "futurama zero days",
+      "kym": "days since last accident",
+      "keywords": [
+        "Futurama",
+        "zero days",
+        "since last accident",
+        "sign",
+        "Hermes"
+      ],
+      "example": [
+        "broken build"
+      ],
+      "boxes": [
+        [
+          0.12,
+          0.62,
+          0.72,
+          0.14,
+          "upper",
+          "black"
+        ]
+      ]
+    }
+  ]
+}

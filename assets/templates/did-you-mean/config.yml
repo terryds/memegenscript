@@ -1,0 +1,40 @@
+name: "Did You Mean?"
+source: "https://knowyourmeme.com/memes/did-you-mean"
+keywords:
+  - "did you mean"
+  - "google"
+  - "search"
+  - "suggestion"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.12
+    anchor_y: 0.22
+    angle: 0.0
+    scale_x: 0.75
+    scale_y: 0.15
+    align: left
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: red
+    font: thick
+    anchor_x: 0.33
+    anchor_y: 0.74
+    angle: 0.0
+    scale_x: 0.62
+    scale_y: 0.14
+    align: left
+    start: 0.0
+    stop: 1.0
+example:
+  - "typescript"
+  - "javascript with extra steps"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

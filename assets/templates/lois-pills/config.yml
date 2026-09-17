@@ -1,0 +1,41 @@
+name: "Lois Griffin Pills"
+source: "https://knowyourmeme.com/memes/yass-pills"
+keywords:
+  - "Lois Griffin"
+  - "Family Guy"
+  - "pills"
+  - "take"
+  - "prescription"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.04
+    anchor_y: 0.42
+    angle: 0.0
+    scale_x: 0.28
+    scale_y: 0.35
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.38
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.6
+    scale_y: 0.18
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "two tabs not spaces"
+  - "ma'am you're gonna have to take these"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,339 @@
+{
+  "_comment": "Round 3, Batch G: SpongeBob pack.",
+  "templates": [
+    {
+      "id": "imma-head-out",
+      "name": "Ight Imma Head Out",
+      "imgflip": "ight imma head out",
+      "kym": "ight-imma-head-out",
+      "keywords": [
+        "SpongeBob",
+        "imma head out",
+        "leaving",
+        "ight"
+      ],
+      "example": [
+        "when the meeting could have been an email"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "tired-spongebob",
+      "name": "Tired SpongeBob",
+      "imgflip": "tired spongebob",
+      "kym": "tired-spongebob",
+      "keywords": [
+        "SpongeBob",
+        "tired",
+        "exhausted",
+        "sleepy"
+      ],
+      "example": [
+        "me after",
+        "one standup"
+      ],
+      "boxes": [
+        [
+          0,
+          0.02,
+          1,
+          0.2,
+          "upper",
+          "black"
+        ],
+        [
+          0,
+          0.8,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "krusty-krab",
+      "name": "Krusty Krab vs. Chum Bucket",
+      "imgflip": "krusty krab vs chum bucket",
+      "kym": "krusty-krab-vs-chum-bucket",
+      "keywords": [
+        "SpongeBob",
+        "Krusty Krab",
+        "Chum Bucket",
+        "versus",
+        "comparison"
+      ],
+      "example": [
+        "typescript",
+        "javascript"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          0.5,
+          0.2
+        ],
+        [
+          0.5,
+          0,
+          0.5,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "burning-paper",
+      "name": "SpongeBob Burning Paper",
+      "imgflip": "spongebob burning paper",
+      "kym": "spongebob-burning-paper",
+      "keywords": [
+        "SpongeBob",
+        "burning paper",
+        "fire",
+        "throw away",
+        "trash"
+      ],
+      "example": [
+        "my sleep schedule"
+      ],
+      "boxes": [
+        [
+          0.06,
+          0.08,
+          0.36,
+          0.3,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "handsome-squidward",
+      "name": "Handsome Squidward",
+      "imgflip": "handsome squidward",
+      "kym": "handsome-squidward",
+      "keywords": [
+        "Squidward",
+        "handsome",
+        "SpongeBob",
+        "glow up",
+        "makeover"
+      ],
+      "example": [
+        "my code",
+        "after running prettier"
+      ]
+    },
+    {
+      "id": "krabs-blur",
+      "name": "Mr. Krabs Blur",
+      "imgflip": "mr krabs blur",
+      "kym": "mr-krabs-blur",
+      "keywords": [
+        "Mr. Krabs",
+        "blur",
+        "confused",
+        "dizzy",
+        "SpongeBob"
+      ],
+      "example": [
+        "me after the",
+        "5-hour incident call"
+      ]
+    },
+    {
+      "id": "squidward-spare",
+      "name": "Squidward Spare",
+      "imgflip": "squidward spare change",
+      "kym": "squidward spare",
+      "keywords": [
+        "Squidward",
+        "spare",
+        "begging",
+        "SpongeBob",
+        "poor"
+      ],
+      "example": [
+        "spare",
+        "some code review?"
+      ],
+      "source": ""
+    },
+    {
+      "id": "went-to-college",
+      "name": "Plankton I Went to College",
+      "imgflip": "plankton i went to college",
+      "kym": "i-went-to-college",
+      "keywords": [
+        "Plankton",
+        "went to college",
+        "SpongeBob",
+        "smart",
+        "education"
+      ],
+      "example": [
+        "how do you know cs?",
+        "i went to college!"
+      ],
+      "source": ""
+    },
+    {
+      "id": "mayonnaise",
+      "name": "Is Mayonnaise an Instrument?",
+      "imgflip": "is mayonnaise an instrument",
+      "kym": "is-mayonnaise-an-instrument",
+      "keywords": [
+        "Patrick",
+        "mayonnaise",
+        "instrument",
+        "SpongeBob",
+        "dumb question"
+      ],
+      "example": [
+        "is html",
+        "a programming language?"
+      ]
+    },
+    {
+      "id": "moments-later",
+      "name": "A Few Moments Later",
+      "imgflip": "spongebob time card blank",
+      "kym": "spongebob-time-cards",
+      "keywords": [
+        "SpongeBob",
+        "time card",
+        "a few moments later",
+        "later",
+        "narrator"
+      ],
+      "example": [
+        "a few moments later"
+      ],
+      "boxes": [
+        [
+          0.05,
+          0.3,
+          0.9,
+          0.4,
+          "default",
+          "white"
+        ]
+      ]
+    },
+    {
+      "id": "this-is-patrick",
+      "name": "No, This Is Patrick",
+      "imgflip": "no this is patrick",
+      "kym": "no-this-is-patrick",
+      "keywords": [
+        "Patrick",
+        "no this is Patrick",
+        "SpongeBob",
+        "phone",
+        "Krusty Krab"
+      ],
+      "example": [
+        "is this the on-call engineer?",
+        "no, this is patrick"
+      ],
+      "boxes": [
+        [
+          0.3,
+          0,
+          0.7,
+          0.2
+        ],
+        [
+          0,
+          0.8,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "chocolate",
+      "name": "Chocolate! (SpongeBob)",
+      "imgflip": "spongebob chocolate",
+      "kym": "chocolate-spongebob",
+      "keywords": [
+        "SpongeBob",
+        "chocolate",
+        "Tom",
+        "screaming",
+        "chocolate with nuts"
+      ],
+      "example": [
+        "free",
+        "chocolate!"
+      ]
+    },
+    {
+      "id": "inner-machinations",
+      "name": "The Inner Machinations of My Mind Are an Enigma",
+      "imgflip": "inner machinations of my mind",
+      "kym": "the-inner-machinations-of-my-mind-are-an-enigma",
+      "keywords": [
+        "Patrick",
+        "inner machinations",
+        "enigma",
+        "SpongeBob",
+        "mind"
+      ],
+      "example": [
+        "how to exit vim"
+      ],
+      "boxes": [
+        [
+          0.1,
+          0.58,
+          0.8,
+          0.3,
+          "default",
+          "black"
+        ]
+      ]
+    },
+    {
+      "id": "hes-hot",
+      "name": "Oh No, He's Hot!",
+      "imgflip": "oh no he's hot",
+      "kym": "oh-no-hes-hot",
+      "keywords": [
+        "Squidward",
+        "oh no he's hot",
+        "SpongeBob",
+        "attractive",
+        "handsome"
+      ],
+      "example": [
+        "saw his commit history",
+        "oh no, he's hot"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.05,
+          0.46,
+          0.4,
+          "default",
+          "black"
+        ],
+        [
+          0.02,
+          0.55,
+          0.46,
+          0.4,
+          "default",
+          "black"
+        ]
+      ]
+    }
+  ]
+}

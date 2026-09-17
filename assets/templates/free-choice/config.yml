@@ -1,0 +1,40 @@
+name: "The Illusion of Free Choice"
+source: "https://knowyourmeme.com/memes/the-illusion-of-free-choice"
+keywords:
+  - "illusion of free choice"
+  - "two doors"
+  - "same"
+  - "choice"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.12
+    anchor_y: 0.33
+    angle: 0.0
+    scale_x: 0.3
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.48
+    anchor_y: 0.28
+    angle: 0.0
+    scale_x: 0.3
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "vim"
+  - "vim with plugins"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

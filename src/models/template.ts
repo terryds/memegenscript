@@ -36,9 +36,12 @@ export interface TemplateData {
   featured?: number | null;
   /** Hidden from browsing (index, featured, related, sitemap); API and editor URL still work */
   archived?: boolean;
+  /** Name-based path segment of the editor page (`/memes/<slug>`), unique across slugs and ids */
+  slug?: string;
 }
 
 const MANIFEST = manifest as unknown as Record<string, TemplateData>;
+const SLUG_TO_ID = new Map(Object.values(MANIFEST).map((t) => [t.slug ?? t.id, t.id]));
 
 export type ImageRef =
   | { kind: "asset"; path: string; filename: string; suffix: string }
@@ -89,6 +92,8 @@ export class Template {
   descriptionSource: string;
   featured: number | null;
   archived: boolean;
+  /** Editor page path segment; falls back to the id for transient templates */
+  slug: string;
 
   /** Does this template come from the manifest (vs. transient/custom)? */
   exists: boolean;
@@ -117,6 +122,7 @@ export class Template {
     this.descriptionSource = data.descriptionSource ?? "none";
     this.featured = data.featured ?? null;
     this.archived = data.archived ?? false;
+    this.slug = data.slug || data.id;
     this.exists = exists;
   }
 
@@ -135,6 +141,12 @@ export class Template {
   static getOrNull(id: string): Template | null {
     const data = MANIFEST[id];
     return data ? new Template(data, true) : null;
+  }
+
+  /** Look a template up by its editor page slug (`/memes/<slug>`). */
+  static getBySlug(slug: string): Template | null {
+    const id = SLUG_TO_ID.get(slug);
+    return id === undefined ? null : Template.getOrNull(id);
   }
 
   /** Like `Template.objects.get_or_create`: unknown IDs yield a transient default. */

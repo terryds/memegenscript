@@ -1,3 +1,77 @@
+# Plan: template library, round 3
+
+Status: **Batches E, F1, F2 and G done (122 templates, library at 454).** Nothing is pending; the
+round-2 record is kept further down.
+
+## Done: Batch E, Tobey Maguire pack (17 templates, 2026-09-17)
+
+Imported via `data/imports/batch-2026-09e.json`: `bully-maguire` (GIF + still), `peter-cry`,
+`peter-cry-happy`, `dirt-eye`, `pizza-time` (GIF + still), `fix-door` (two fill-in boxes over
+the blanks), `franco-staring`, `maguire-face`, `deepfake-tobey`, `tobey-smirk`, `my-back`,
+`ripped-mask`, `visible-fear`, `thought-earlier`, `ad-said-3000`, `tobey-dance` (GIF + still),
+`spiderman-triple`. Dropped `harry-glare` (same frame as `franco-staring`). Seven without a
+Know Your Meme entry got hand-written descriptions. `bully-maguire` and `peter-cry` are featured.
+
+## Batch F: evergreen formats from imgflip pages 5–8
+
+Everything on those pages that we don't have and that isn't excluded. F1 is the higher-ranked
+half; F2 the long tail. Boxes are 2 (top/bottom) unless noted.
+
+### Done: F1 (39 templates, 2026-09-17)
+
+Imported via `data/imports/batch-2026-09f1.json`. Custom layouts: `both-buttons` (labels on the
+buttons), `cat-looks-inside` (two greentext lines, black, left-aligned), `lois-pills` (bottle
+label + Lois), `incoming-call` (caller name), `who-would-win` (header + two columns),
+`brain-sleep` (three speech bubbles), `makima` (note), `zero-days` (sign), `free-choice`
+(two doors), `horse-drawing`/`soyboy-chad` (side-by-side labels), two-panel tops for `so-far`,
+`squid-game`, `homer-back-fat`, `wait-here`. `confused-monkey` and `skinner-letter` are video-
+only on imgflip, converted to GIF + still. Dropped "The Night Before" (baked text leaves no
+room). Twelve without a Know Your Meme entry got hand-written descriptions.
+
+### Done: F2 (52 templates, 2026-09-17)
+
+Imported via `data/imports/batch-2026-09f2.json`. Custom layouts: `batman-signal` (text in the
+signal), `dw-sign` (sign), `fear-no-man` (bottom-middle panel), `cute-cat` (blank right column
+per panel), `did-you-mean` (search field + suggestion), `be-honest` (three panels),
+`dumbest-man` (empty bubble), `two-wolves` (white strip), `what-did-it-cost` (four panels),
+`shipping-label` (label), `first-time` (top only, caption is baked). Video-only on imgflip,
+converted to GIF + still: `yelling-beaver`, `shrek-running`, `confused-travolta`;
+`shipping-label` is a single frame, kept as PNG. Re-fetched by a better query: `math-is-math`
+(first hit was Math Lady), `my-salad` (first hit was the McDonald's variant). Dropped: "They
+Hated Jesus" (baked comic), "What Do We Want" (unclear textbox layout), "Big Dog Small Dog"
+(same as `swole`). Twenty without a Know Your Meme entry got hand-written descriptions.
+
+## Done: Batch G, SpongeBob pack (14 templates, 2026-09-17)
+
+Imported via `data/imports/batch-2026-09g.json`: `imma-head-out` (top box only, the bottom line
+is baked in; featured), `tired-spongebob` (black text in the white band), `krusty-krab`
+(side-by-side labels), `burning-paper` (text on the blank paper), `handsome-squidward`,
+`krabs-blur`, `squidward-spare`, `went-to-college`, `mayonnaise`, `moments-later` (blank time
+card, centered text), `this-is-patrick` (top box shifted off the "Order Here" sign), `chocolate`,
+`inner-machinations` (text in the thought cloud), `hes-hot` (text in the two blank left panels).
+Dropped "SpongeBob Diapers" (seven panels, no sensible caption slots). Already in the library
+before this pack: Mocking SpongeBob, Imagination, Squidward Window, Squidward Chair, Push It
+Somewhere Else Patrick, Patrick's Wallet, Stop It Patrick, Ol' Reliable, SpongeBob Yelling.
+
+## Next packs (not planned in detail yet)
+
+Simpsons, Breaking Bad, The Office, Star Wars, Wojak/Pepe, cats & dogs, anime, Marvel, Harry
+Potter, gaming, K-pop. Each gets its own spec file and a review pass when its turn comes.
+
+## Excluded on purpose
+
+- Racial or sexual "templates" from the imgflip pages: 5 Black Guys and Blonde, Riley Reid,
+  Peter Griffin skin color chart, Coomer, Bush Learning About 9/11.
+- Duplicates of what we have (Afraid to Ask Andy, Math Lady, Oprah, Elmo Cocaine, Success
+  Kid, Doge, Grumpy Cat, Bernie, Two Guys on a Bus, Buzz Clones, Wolverine, and about 25
+  others that appear on those pages).
+
+## Recommendation
+
+One franchise pack per deploy so the featured row and sitemap grow gradually.
+
+---
+
 # Plan: template library, round 2
 
 Status: **Batches B–D approved and imported (September 2026).** 58 of the 63 candidates
@@ -132,9 +206,8 @@ The first 15 rows are the most-searched; the rest are nice-to-have.
 
 ## Recommendation
 
-Do Batch B now (12 templates, half a day, ride the wave while it lasts), then Batch C as one
-deploy (40, about a day of image review and box tuning), then Batch D (11). Refresh
-`data/featured.json` after each batch so the homepage leads with current formats.
+When additions resume: Batch G one franchise pack per deploy, then new packs (Marvel, Harry
+Potter, gaming, K-pop) planned the same way.
 
 ## Questions
 

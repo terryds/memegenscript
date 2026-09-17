@@ -1,0 +1,29 @@
+name: "Inside You There Are Two Wolves"
+source: "https://knowyourmeme.com/memes/inside-you-there-are-two-wolves"
+keywords:
+  - "two wolves"
+  - "inside you"
+  - "Cherokee"
+  - "wolf"
+  - "choice"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 0.96
+    scale_y: 0.18
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "one uses tabs, one uses spaces. both are you."
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

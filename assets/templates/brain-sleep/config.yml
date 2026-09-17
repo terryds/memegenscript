@@ -1,0 +1,53 @@
+name: "Brain Before Sleep"
+source: 
+keywords:
+  - "brain"
+  - "before sleep"
+  - "3 a.m."
+  - "thoughts"
+  - "insomnia"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.04
+    anchor_y: 0.03
+    angle: 0.0
+    scale_x: 0.42
+    scale_y: 0.12
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.55
+    anchor_y: 0.03
+    angle: 0.0
+    scale_x: 0.4
+    scale_y: 0.12
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.04
+    anchor_y: 0.52
+    angle: 0.0
+    scale_x: 0.42
+    scale_y: 0.12
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "time to sleep"
+  - "remember that bug from 2019?"
+  - "no"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

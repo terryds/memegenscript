@@ -1,0 +1,41 @@
+name: "That's the Neat Part, You Don't"
+source: "https://knowyourmeme.com/memes/thats-the-neat-part-you-dont"
+keywords:
+  - "Invincible"
+  - "Omni-Man"
+  - "neat part"
+  - "you don't"
+  - "how do I"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "how do i test this?"
+  - "that's the neat part, you don't"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

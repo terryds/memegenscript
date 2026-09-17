@@ -1,0 +1,41 @@
+name: "Mr. Incredible Mad"
+source: "https://knowyourmeme.com/memes/mr-incredible-becoming-uncanny"
+keywords:
+  - "Mr. Incredible"
+  - "mad"
+  - "angry"
+  - "Incredibles"
+  - "furious"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "the pm after"
+  - "one more scope change"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

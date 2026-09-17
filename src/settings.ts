@@ -104,16 +104,20 @@ export function resolveSettings(env: EnvVars, request: Request): Settings {
   const url = new URL(request.url);
   const DEBUG = (env.DEBUG ?? "false").toLowerCase() === "true";
 
+  const LOCAL_HOST = /^(localhost|127\.0\.0\.1|0\.0\.0\.0|\[::1\])(:\d+)?$/;
   let SERVER_NAME: string;
   let SCHEME: string;
-  if (env.DOMAIN) {
+  // DOMAIN pins absolute URLs (canonical links, sitemap, API example URLs) to the
+  // public site, so the workers.dev alias never leaks into them. Requests to a
+  // local dev server or test runner keep their own origin.
+  if (env.DOMAIN && !LOCAL_HOST.test(url.host)) {
     SERVER_NAME = env.DOMAIN.replace(/^https?:\/\//, "").replace(/\/$/, "");
-    SCHEME = /^(localhost|127\.0\.0\.1)(:\d+)?$/.test(SERVER_NAME) ? "http" : "https";
+    SCHEME = LOCAL_HOST.test(SERVER_NAME) ? "http" : "https";
   } else {
     SERVER_NAME = url.host;
     SCHEME = url.protocol.replace(":", "");
   }
-  const local = /^(localhost|127\.0\.0\.1|0\.0\.0\.0|\[::1\])(:\d+)?$/.test(SERVER_NAME);
+  const local = LOCAL_HOST.test(SERVER_NAME);
   const RELEASE_STAGE = local ? "local" : "production";
   const DEFAULT_STATIC_EXTENSION = env.DEFAULT_STATIC_EXTENSION || "png";
 

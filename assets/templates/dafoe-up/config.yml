@@ -1,0 +1,40 @@
+name: "Willem Dafoe Looking Up"
+source: "https://knowyourmeme.com/memes/willem-dafoe-looking-up"
+keywords:
+  - "Willem Dafoe"
+  - "looking up"
+  - "Spider-Man"
+  - "Green Goblin"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me looking at"
+  - "the ci queue"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -14,27 +14,42 @@ describe("GET /", () => {
     expect(body).toContain('<meta name="description"');
     expect(body).toContain('"@type":"WebSite"');
     expect(body).toContain('"@type":"ItemList"');
-    expect(body).toContain('href="/memes/fry"');
+    expect(body).toContain('href="/memes/futurama-fry"');
     expect(body).toContain("Futurama Fry");
+  });
+
+  it("pins absolute URLs to DOMAIN for public hosts but keeps a local origin", async () => {
+    const { SELF } = await import("cloudflare:test");
+    // Tests bind DOMAIN to localhost:5000; a request via another host must still canonicalize to it
+    const alias = await (await SELF.fetch("https://memegenscript.example.workers.dev/memes/futurama-fry")).text();
+    expect(alias).toContain('<link rel="canonical" href="http://localhost:5000/memes/futurama-fry">');
+    const local = await (await SELF.fetch("http://127.0.0.1:8787/memes/futurama-fry")).text();
+    expect(local).toContain('<link rel="canonical" href="http://127.0.0.1:8787/memes/futurama-fry">');
   });
 
   it("shows the featured memes section only on the unfiltered index", async () => {
     const body = await (await get("/")).text();
     expect(body).toContain("<h2 id=\"featured-title\">Featured memes</h2>");
     const section = body.slice(body.indexOf('class="featured"'), body.indexOf('id="all-title"'));
-    expect(section).toContain('href="/memes/drake"');
-    expect(section).toContain('href="/memes/db"');
+    expect(section).toContain('href="/memes/drakeposting"');
+    expect(section).toContain('href="/memes/distracted-boyfriend"');
     expect((section.match(/class="card"/g) ?? []).length).toBeGreaterThanOrEqual(12);
     const filtered = await (await get("/?q=fry")).text();
     expect(filtered).not.toContain("Featured memes");
   });
 
+  it("matches every word of the query separately, like the live filter", async () => {
+    const body = await (await get("/?q=buzz+clone")).text();
+    expect(body).toContain('href="/memes/buzz-lightyear-clones"');
+    expect(body).not.toContain('href="/memes/drakeposting"');
+  });
+
   it("finds templates by description, alias, or tag, not just name", async () => {
     // "squinting" only appears in the Know Your Meme description of Futurama Fry
     const body = await (await get("/?q=squinting")).text();
-    expect(body).toContain('href="/memes/fry"');
+    expect(body).toContain('href="/memes/futurama-fry"');
     const dog = await (await get("/?q=dog+burning+room")).text();
-    expect(dog).toContain('href="/memes/fine"');
+    expect(dog).toContain('href="/memes/this-is-fine"');
     const cards = (dog.match(/class="card"/g) ?? []).length;
     expect(cards).toBeGreaterThanOrEqual(1);
   });
@@ -42,8 +57,8 @@ describe("GET /", () => {
   it("filters templates with ?q= and marks the page noindex", async () => {
     const body = await (await get("/?q=awesome")).text();
     expect(body).toContain('content="noindex, follow"');
-    expect(body).toContain('href="/memes/awesome"');
-    expect(body).toContain('href="/memes/awesome-awkward"');
+    expect(body).toContain('href="/memes/socially-awesome-penguin"');
+    expect(body).toContain('href="/memes/socially-awesome-awkward-penguin"');
     const cards = (body.match(/class="card"/g) ?? []).length;
     expect(cards).toBeGreaterThanOrEqual(3);
     expect(cards).toBeLessThan(20);
@@ -56,13 +71,13 @@ describe("GET /", () => {
   });
 });
 
-describe("GET /memes/{id}", () => {
+describe("GET /memes/{slug}", () => {
   it("serves an editor page per template with meta tags", async () => {
-    const response = await get("/memes/fry");
+    const response = await get("/memes/futurama-fry");
     expect(response.status).toBe(200);
     const body = await response.text();
     expect(body).toContain("<title>Futurama Fry Meme Generator | Memegenscript</title>");
-    expect(body).toContain('<link rel="canonical" href="http://localhost:5000/memes/fry">');
+    expect(body).toContain('<link rel="canonical" href="http://localhost:5000/memes/futurama-fry">');
     expect(body).toContain('<meta property="og:title" content="Futurama Fry Meme Generator | Memegenscript">');
     expect(body).toContain('<meta property="og:image" content="http://localhost:5000/images/fry/not_sure_if_trolling/or_just_stupid.png">');
     expect(body).toContain('<meta name="twitter:card" content="summary_large_image">');
@@ -74,7 +89,7 @@ describe("GET /memes/{id}", () => {
   });
 
   it("embeds the editor configuration and a no-script fallback form", async () => {
-    const body = await (await get("/memes/fry")).text();
+    const body = await (await get("/memes/futurama-fry")).text();
     expect(body).toContain('id="meme-editor"');
     const match = /data-config="([^"]+)"/.exec(body);
     expect(match).not.toBeNull();
@@ -91,13 +106,13 @@ describe("GET /memes/{id}", () => {
   });
 
   it("describes the meme on every editor page", async () => {
-    const body = await (await get("/memes/fry")).text();
+    const body = await (await get("/memes/futurama-fry")).text();
     expect(body).toContain("<h2>What is the Futurama Fry meme?</h2>");
     expect(body).toContain("image macro");
     expect(body).toContain("Know Your Meme");
     expect(body).toContain("Also known as:");
     expect(body).toContain('"alternateName"');
-    const manual = await (await get("/memes/fine")).text();
+    const manual = await (await get("/memes/this-is-fine")).text();
     expect(manual).toContain("What is the This is Fine meme?");
     expect(manual).toContain("Gunshow");
   });
@@ -106,27 +121,52 @@ describe("GET /memes/{id}", () => {
     const response = await get("/templates");
     const templates = (await response.json()) as Array<{ id: string }>;
     for (const template of templates) {
-      const body = await (await get(`/memes/${template.id}`)).text();
+      // The API exposes ids; the id URL redirects to the slug page
+      const body = await (await get(`/memes/${template.id}`, { redirect: "follow" })).text();
       expect(body, template.id).toContain(`What is the `);
     }
   });
 
   it("hides archived templates from browsing but keeps their pages and API working", async () => {
     const index = await (await get("/")).text();
-    expect(index).not.toContain('href="/memes/sad-bush"');
+    expect(index).not.toContain('href="/memes/sad-george-bush"');
     const sitemap = await (await get("/sitemap.xml")).text();
-    expect(sitemap).not.toContain("/memes/sad-bush</loc>");
-    const page = await get("/memes/sad-bush");
+    expect(sitemap).not.toContain("/memes/sad-george-bush</loc>");
+    const page = await get("/memes/sad-george-bush");
     expect(page.status).toBe(200);
     expect(await page.text()).toContain('content="noindex, follow"');
     expect((await get("/templates/sad-bush")).status).toBe(200);
   });
 
   it("lists alternate styles as editor backgrounds", async () => {
-    const body = await (await get("/memes/ds")).text();
+    const body = await (await get("/memes/daily-struggle")).text();
     const config = JSON.parse(/data-config="([^"]+)"/.exec(body)![1].replace(/&quot;/g, '"').replace(/&amp;/g, "&"));
     expect(config.boxes).toHaveLength(3);
     expect(config.images.map((i: { style: string }) => i.style)).toEqual(["default", "maga"]);
+  });
+
+  it("redirects the old id-based URL to the name-based slug permanently", async () => {
+    const response = await get("/memes/kittens?text=hi");
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe("/memes/three-kittens-dancing?text=hi");
+    const page = await get("/memes/three-kittens-dancing");
+    expect(page.status).toBe(200);
+    expect(await page.text()).toContain('<link rel="canonical" href="http://localhost:5000/memes/three-kittens-dancing">');
+  });
+
+  it("gives every template a unique slug that is a valid path segment", async () => {
+    const { Template } = await import("../src/models/template");
+    const seen = new Set<string>();
+    for (const template of Template.all()) {
+      expect(template.slug).toMatch(/^[a-z0-9_]+(?:-[a-z0-9_]+)*$/);
+      expect(seen.has(template.slug)).toBe(false);
+      seen.add(template.slug);
+    }
+    // An id may not double as another template's slug, or the redirect would be ambiguous
+    for (const template of Template.all()) {
+      const other = Template.getBySlug(template.id);
+      expect(other === null || other.id === template.id).toBe(true);
+    }
   });
 
   it("returns an HTML 404 for unknown templates", async () => {
@@ -167,7 +207,7 @@ describe("PWA", () => {
   });
 
   it("links the manifest and renders the install banner on pages", async () => {
-    const body = await (await get("/memes/fry")).text();
+    const body = await (await get("/memes/futurama-fry")).text();
     expect(body).toContain('<link rel="manifest" href="/manifest.webmanifest">');
     expect(body).toContain('id="install-banner"');
     expect(body).toContain("/static/pwa.js?v=");
@@ -182,7 +222,7 @@ describe("crawler files", () => {
     expect(response.headers.get("content-type")).toContain("application/xml");
     const body = await response.text();
     expect(body).toContain("<loc>http://localhost:5000/</loc>");
-    expect(body).toContain("<loc>http://localhost:5000/memes/fry</loc>");
+    expect(body).toContain("<loc>http://localhost:5000/memes/futurama-fry</loc>");
     expect((body.match(/<url>/g) ?? []).length).toBeGreaterThanOrEqual(200);
   });
 

@@ -170,6 +170,26 @@ for (const id of readdirSync(TEMPLATES).sort()) {
     archived: raw.archived === true,
   };
 }
+// Editor page slugs: derived from the name ("Three Kittens Dancing" -> "three-kittens-dancing")
+// so the URL carries the meme's name for search engines. A slug must be unique across all slugs
+// AND all ids, because /memes/<id> keeps redirecting to /memes/<slug>; collisions get "-<id>".
+function slugify(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+const ids = Object.keys(manifest).sort();
+const taken = new Set<string>(ids);
+for (const id of ids) {
+  const entry = manifest[id] as { name: string; slug?: string };
+  let slug = id.startsWith("_") ? id : slugify(entry.name) || id;
+  if (slug !== id && taken.has(slug)) slug = `${slug}-${id}`;
+  taken.add(slug);
+  entry.slug = slug;
+}
+
 const unknownFeatured = featuredIds.filter((id) => !manifest[id]);
 if (unknownFeatured.length) console.warn(`Unknown featured template IDs: ${unknownFeatured.join(", ")}`);
 if (missing) console.warn(`${missing} template(s) have no description`);

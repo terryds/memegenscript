@@ -1,0 +1,52 @@
+name: "Who Would Win?"
+source: "https://knowyourmeme.com/memes/who-would-win"
+keywords:
+  - "who would win"
+  - "versus"
+  - "one boi"
+  - "fight"
+text:
+  - style: upper
+    color: black
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.01
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.15
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0.25
+    angle: 0.0
+    scale_x: 0.46
+    scale_y: 0.6
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.52
+    anchor_y: 0.25
+    angle: 0.0
+    scale_x: 0.46
+    scale_y: 0.6
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "who would win?"
+  - "a team of 10 engineers"
+  - "one missing semicolon"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

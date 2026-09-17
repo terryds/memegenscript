@@ -1,0 +1,40 @@
+name: "Both Buttons Pressed"
+source: "https://knowyourmeme.com/memes/daily-struggle-two-buttons"
+keywords:
+  - "two buttons"
+  - "both buttons"
+  - "daily struggle"
+  - "press both"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.08
+    anchor_y: 0.04
+    angle: 0.0
+    scale_x: 0.38
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.54
+    anchor_y: 0.04
+    angle: 0.0
+    scale_x: 0.38
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "fix the bug"
+  - "add a feature"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

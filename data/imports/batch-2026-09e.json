@@ -1,0 +1,414 @@
+{
+  "_comment": "Round 3, Batch E: Tobey Maguire pack.",
+  "templates": [
+    {
+      "id": "bully-maguire",
+      "name": "Bully Maguire Walking",
+      "imgflip": 435198568,
+      "kym": "bully-maguire",
+      "keywords": [
+        "Tobey Maguire",
+        "Bully Maguire",
+        "Spider-Man 3",
+        "strut",
+        "walking",
+        "emo Peter Parker"
+      ],
+      "example": [
+        "me after fixing one bug",
+        "on a friday"
+      ],
+      "source": "https://knowyourmeme.com/memes/bully-maguire"
+    },
+    {
+      "id": "peter-cry",
+      "name": "Tobey Maguire Crying",
+      "imgflip": 24327496,
+      "kym": "tobey-maguire-face",
+      "keywords": [
+        "Tobey Maguire",
+        "Peter Parker",
+        "crying",
+        "Spider-Man",
+        "ugly cry"
+      ],
+      "example": [
+        "when the tests pass",
+        "but only on my machine"
+      ],
+      "source": "https://knowyourmeme.com/memes/peter-parker-crying"
+    },
+    {
+      "id": "peter-cry-happy",
+      "name": "Peter Parker Crying / Happy",
+      "imgflip": 237078588,
+      "kym": "tobey maguire crying happy",
+      "keywords": [
+        "Tobey Maguire",
+        "Peter Parker",
+        "crying",
+        "happy",
+        "Spider-Man 2"
+      ],
+      "example": [
+        "ci is red",
+        "ci is green"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.15
+        ],
+        [
+          0,
+          0.5,
+          1,
+          0.15
+        ]
+      ],
+      "source": "https://knowyourmeme.com/memes/peter-parker-crying"
+    },
+    {
+      "id": "dirt-eye",
+      "name": "I'm Gonna Put Some Dirt in Your Eye",
+      "imgflip": 346873973,
+      "kym": "im-gonna-put-some-dirt-in-your-eye",
+      "keywords": [
+        "Tobey Maguire",
+        "Bully Maguire",
+        "Spider-Man 3",
+        "dirt in your eye",
+        "Peter Parker"
+      ],
+      "example": [
+        "you said my code was messy"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ]
+      ],
+      "source": "https://knowyourmeme.com/memes/bully-maguire"
+    },
+    {
+      "id": "pizza-time",
+      "name": "Pizza Time",
+      "imgflip": 607528793,
+      "kym": "pizza-time",
+      "keywords": [
+        "Tobey Maguire",
+        "Spider-Man 2",
+        "pizza time",
+        "Peter Parker",
+        "delivery"
+      ],
+      "example": [
+        "lunch break",
+        "pizza time"
+      ],
+      "source": "https://knowyourmeme.com/memes/pizza-time"
+    },
+    {
+      "id": "fix-door",
+      "name": "You'll Get Your Rent When You Fix This Damn Door",
+      "imgflip": 618580633,
+      "kym": "youll-get-your-rent-when-you-fix-this-damn-door",
+      "keywords": [
+        "Tobey Maguire",
+        "Spider-Man 2",
+        "Mr. Ditkovich",
+        "rent",
+        "fix this damn door"
+      ],
+      "example": [
+        "pr review",
+        "lint"
+      ],
+      "boxes": [
+        [
+          0.54,
+          0.77,
+          0.11,
+          0.06,
+          "upper",
+          "white",
+          "center",
+          "thick"
+        ],
+        [
+          0.635,
+          0.875,
+          0.14,
+          0.06,
+          "upper",
+          "white",
+          "center",
+          "thick"
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "franco-staring",
+      "name": "James Franco Staring at Tobey Maguire",
+      "imgflip": 217984766,
+      "kym": "james-franco-staring-at-tobey-maguire",
+      "keywords": [
+        "James Franco",
+        "Tobey Maguire",
+        "Harry Osborn",
+        "Spider-Man 3",
+        "staring"
+      ],
+      "example": [
+        "me pretending i read the docs",
+        "the docs"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.15
+        ],
+        [
+          0,
+          0.5,
+          1,
+          0.15
+        ]
+      ]
+    },
+    {
+      "id": "maguire-face",
+      "name": "Tobey Maguire Face",
+      "imgflip": 339052487,
+      "kym": "tobey-maguire-face",
+      "keywords": [
+        "Tobey Maguire",
+        "Spider-Man 3",
+        "bloopers",
+        "rage face",
+        "Peter Parker"
+      ],
+      "example": [
+        "when someone force pushes",
+        "to main"
+      ]
+    },
+    {
+      "id": "deepfake-tobey",
+      "name": "Deepfake Tobey Maguire",
+      "imgflip": "deepfake tobey maguire",
+      "kym": "deepfake-tobey-maguire",
+      "keywords": [
+        "Tobey Maguire",
+        "deepfake",
+        "Spider-Man",
+        "leak",
+        "2021"
+      ],
+      "example": [
+        "he's in it",
+        "trust me bro"
+      ]
+    },
+    {
+      "id": "tobey-smirk",
+      "name": "Peter Parker Smirk",
+      "imgflip": 352820012,
+      "kym": "tobey maguire smirk",
+      "keywords": [
+        "Tobey Maguire",
+        "Peter Parker",
+        "smirk",
+        "Spider-Man",
+        "smug"
+      ],
+      "example": [
+        "when the senior dev",
+        "approves my hack"
+      ],
+      "source": ""
+    },
+    {
+      "id": "my-back",
+      "name": "My Back (Old Peter Parker)",
+      "imgflip": 363087116,
+      "kym": "my back tobey maguire",
+      "keywords": [
+        "Tobey Maguire",
+        "Spider-Man 2",
+        "my back",
+        "old",
+        "Peter Parker"
+      ],
+      "example": [
+        "standing up after a 4-hour meeting"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "ripped-mask",
+      "name": "Spider-Man Ripped Mask",
+      "imgflip": 366128892,
+      "kym": "tobey maguire ripped mask",
+      "keywords": [
+        "Tobey Maguire",
+        "Spider-Man",
+        "ripped mask",
+        "torn",
+        "Peter Parker"
+      ],
+      "example": [
+        "me after the",
+        "production incident"
+      ],
+      "source": ""
+    },
+    {
+      "id": "visible-fear",
+      "name": "Spider-Man Visible Fear",
+      "imgflip": 301912769,
+      "kym": "tobey maguire visible fear",
+      "keywords": [
+        "Tobey Maguire",
+        "Spider-Man",
+        "visible fear",
+        "scared",
+        "Peter Parker"
+      ],
+      "example": [
+        "when the intern says \"i optimized the database\""
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "thought-earlier",
+      "name": "You Should Have Thought of That Earlier",
+      "imgflip": 355898266,
+      "kym": "you should have thought of that earlier spider-man",
+      "keywords": [
+        "Tobey Maguire",
+        "Spider-Man 3",
+        "should have thought of that earlier",
+        "Eddie Brock",
+        "Peter Parker"
+      ],
+      "example": [
+        "but i need the weekend off"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "ad-said-3000",
+      "name": "But the Ad Said 3000",
+      "imgflip": 355368971,
+      "kym": "but the ad said 3000",
+      "keywords": [
+        "Tobey Maguire",
+        "Spider-Man",
+        "ad said 3000",
+        "wrestling",
+        "Bonesaw"
+      ],
+      "example": [
+        "you get 2 days off"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ]
+      ],
+      "source": ""
+    },
+    {
+      "id": "tobey-dance",
+      "name": "Bully Maguire Dancing",
+      "imgflip": 405300030,
+      "kym": "bully-maguire",
+      "keywords": [
+        "Tobey Maguire",
+        "Bully Maguire",
+        "dancing",
+        "jazz club",
+        "Spider-Man 3"
+      ],
+      "example": [
+        "me at the office party",
+        "after one drink"
+      ],
+      "source": "https://knowyourmeme.com/memes/bully-maguire"
+    },
+    {
+      "id": "spiderman-triple",
+      "name": "Spider-Man Triple Pointing",
+      "imgflip": "spider man triple",
+      "kym": "spider-man-pointing-at-spider-man",
+      "keywords": [
+        "Spider-Man",
+        "pointing",
+        "triple",
+        "three",
+        "identical"
+      ],
+      "example": [
+        "frontend dev",
+        "backend dev",
+        "devops"
+      ],
+      "boxes": [
+        [
+          0,
+          0.8,
+          0.33,
+          0.2
+        ],
+        [
+          0.33,
+          0.8,
+          0.34,
+          0.2
+        ],
+        [
+          0.67,
+          0.8,
+          0.33,
+          0.2
+        ]
+      ]
+    }
+  ]
+}

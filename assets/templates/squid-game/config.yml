@@ -1,0 +1,42 @@
+name: "Squid Game"
+source: "https://knowyourmeme.com/memes/subcultures/squid-game"
+keywords:
+  - "Squid Game"
+  - "Gi-hun"
+  - "Netflix"
+  - "happy"
+  - "serious"
+  - "before after"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.15
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.5
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.15
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "player 456"
+  - "has been eliminated"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

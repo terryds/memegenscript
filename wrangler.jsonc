@@ -20,6 +20,10 @@
     "cpu_ms": 30000
   },
 
+  // The custom domain memegenscript.com is attached in the Cloudflare dashboard.
+  // Don't declare it as a route here: `wrangler dev` would then treat local
+  // requests as coming from that host and the DOMAIN override would apply locally.
+
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1
@@ -32,8 +36,9 @@
     "SITE_NAME": "Memegenscript",
     // Source repository linked from the pages (set to "" to hide)
     "REPO_URL": "https://github.com/terryds/memegenscript",
-    // Override the origin used to build absolute URLs (defaults to the request origin)
-    "DOMAIN": "",
+    // Public origin used for absolute URLs (canonical, sitemap, API examples).
+    // Ignored for requests to localhost, so `wrangler dev` and tests keep their origin.
+    "DOMAIN": "https://memegenscript.com",
     "DEFAULT_STATIC_EXTENSION": "png",
     "DEFAULT_ANIMATED_EXTENSION": "gif",
     // Seconds to keep rendered images in the edge cache

@@ -1,0 +1,41 @@
+name: "Math Is Math"
+source: "https://knowyourmeme.com/memes/math-is-math"
+keywords:
+  - "Mr. Incredible"
+  - "math is math"
+  - "new math"
+  - "Incredibles 2"
+  - "why would they change"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "why would they change syntax?"
+  - "javascript is javascript!"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

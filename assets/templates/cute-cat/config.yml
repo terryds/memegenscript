@@ -1,0 +1,42 @@
+name: "Cute Cat Hehe / Not Hehe"
+source: 
+keywords:
+  - "cat"
+  - "cute"
+  - "hehe"
+  - "not hehe"
+  - "kitten"
+  - "mood"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.5
+    anchor_y: 0.04
+    angle: 0.0
+    scale_x: 0.48
+    scale_y: 0.4
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.5
+    anchor_y: 0.54
+    angle: 0.0
+    scale_x: 0.48
+    scale_y: 0.4
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "pr approved"
+  - "pr with 40 comments"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,28 @@
+name: "Incoming Call"
+source: 
+keywords:
+  - "incoming call"
+  - "phone"
+  - "decline"
+  - "accept"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.1
+    anchor_y: 0.08
+    angle: 0.0
+    scale_x: 0.8
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "3 a.m. pagerduty"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

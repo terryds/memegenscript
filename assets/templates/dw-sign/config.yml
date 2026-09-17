@@ -1,0 +1,29 @@
+name: "That Sign Won't Stop Me"
+source: "https://knowyourmeme.com/memes/that-sign-cant-stop-me-because-i-cant-read"
+keywords:
+  - "D.W."
+  - "Arthur"
+  - "sign"
+  - "can't read"
+  - "won't stop me"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.05
+    anchor_y: 0.04
+    angle: 0.0
+    scale_x: 0.7
+    scale_y: 0.28
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "no pushing to main"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

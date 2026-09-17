@@ -1,0 +1,40 @@
+name: "Cat Looks Inside"
+source: "https://knowyourmeme.com/memes/cat-looks-inside"
+keywords:
+  - "cat"
+  - "looks inside"
+  - "surprise"
+  - "box"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.03
+    anchor_y: 0.01
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.1
+    align: left
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.03
+    anchor_y: 0.12
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.1
+    align: left
+    start: 0.0
+    stop: 1.0
+example:
+  - "> looks inside \"quick fix\" pr"
+  - "> 3000-line diff"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

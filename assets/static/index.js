@@ -11,13 +11,19 @@
 
   function apply() {
     var query = input.value.trim().toLowerCase();
+    // Word-based like the server's ?q= filter: every term must appear somewhere,
+    // so "buzz clone" finds "Buzz Lightyear Clones".
+    var terms = query.split(/\s+/).filter(Boolean);
     var visible = 0;
     cards.forEach(function (card) {
-      var match = !query || card.getAttribute("data-search").indexOf(query) !== -1 || card.getAttribute("data-id").indexOf(query) !== -1;
+      var haystack = card.getAttribute("data-search") + " " + card.getAttribute("data-id");
+      var match = terms.every(function (term) {
+        return haystack.indexOf(term) !== -1;
+      });
       card.hidden = !match;
       if (match) visible += 1;
     });
-    if (count) count.textContent = visible + " templates";
+    if (count) count.textContent = visible + (visible === 1 ? " template" : " templates");
     if (featured) featured.hidden = !!query;
     if (empty) empty.hidden = visible > 0;
     if (history.replaceState) {

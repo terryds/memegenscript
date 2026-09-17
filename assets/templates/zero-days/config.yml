@@ -1,0 +1,29 @@
+name: "Zero Days Since Last Accident"
+source: "https://knowyourmeme.com/memes/days-since-last-x"
+keywords:
+  - "Futurama"
+  - "zero days"
+  - "since last accident"
+  - "sign"
+  - "Hermes"
+text:
+  - style: upper
+    color: black
+    font: thick
+    anchor_x: 0.12
+    anchor_y: 0.62
+    angle: 0.0
+    scale_x: 0.72
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "broken build"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,41 @@
+name: "This Is Brilliant, But I Like This"
+source: "https://knowyourmeme.com/memes/this-is-brilliant-but-i-like-this"
+keywords:
+  - "brilliant"
+  - "but I like this"
+  - "Captain America"
+  - "Iron Man"
+  - "comparison"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.52
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "kubernetes"
+  - "a single vps"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

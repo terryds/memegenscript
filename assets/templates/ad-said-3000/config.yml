@@ -1,0 +1,29 @@
+name: "But the Ad Said 3000"
+source: 
+keywords:
+  - "Tobey Maguire"
+  - "Spider-Man"
+  - "ad said 3000"
+  - "wrestling"
+  - "Bonesaw"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "you get 2 days off"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

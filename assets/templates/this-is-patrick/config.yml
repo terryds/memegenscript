@@ -1,0 +1,41 @@
+name: "No, This Is Patrick"
+source: "https://knowyourmeme.com/memes/no-this-is-patrick"
+keywords:
+  - "Patrick"
+  - "no this is Patrick"
+  - "SpongeBob"
+  - "phone"
+  - "Krusty Krab"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.3
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.7
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "is this the on-call engineer?"
+  - "no, this is patrick"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

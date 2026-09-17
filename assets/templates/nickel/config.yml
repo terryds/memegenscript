@@ -1,0 +1,28 @@
+name: "If I Had a Nickel"
+source: "https://knowyourmeme.com/memes/dr-doofenshmirtz-if-i-had-a-nickel"
+keywords:
+  - "Doofenshmirtz"
+  - "Phineas and Ferb"
+  - "nickel"
+  - "twice"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "if i had a nickel for every friday prod outage"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

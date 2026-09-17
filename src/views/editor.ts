@@ -1,6 +1,6 @@
 /**
  * Server-rendered pages: the template index (`/`), one meme editor per
- * template (`/memes/{id}`), `sitemap.xml`, and `robots.txt`.
+ * template (`/memes/{slug}`; `/memes/{id}` redirects there), `sitemap.xml`, and `robots.txt`.
  */
 import type { AppContext } from "../context";
 import { Font } from "../models/font";
@@ -29,7 +29,7 @@ function page(settings: Settings, content: string, status = 200): Response {
 }
 
 function editorPath(template: Template): string {
-  return `/memes/${template.id}`;
+  return `/memes/${template.slug}`;
 }
 
 function editorUrl(settings: Settings, template: Template): string {
@@ -221,14 +221,23 @@ export async function memesIndex(): Promise<Response> {
   return redirect("/", 301);
 }
 
-// --- GET /memes/{id} ---------------------------------------------------------
+// --- GET /memes/{slug} ---------------------------------------------------------
 
-export async function detail(app: AppContext, id: string): Promise<Response> {
+export async function detail(app: AppContext, slug: string): Promise<Response> {
   const { settings } = app;
   const version = await assetVersion(app.env.ASSETS, { memoize: settings.DEPLOYED });
-  const template = Template.getOrNull(id);
+  let template = Template.getBySlug(slug);
+  if (!template) {
+    // Old id-based URLs (/memes/kittens) live on as permanent redirects to the name-based page
+    const byId = Template.getOrNull(slug);
+    if (byId && byId.valid && byId.slug !== slug) {
+      const url = new URL(app.request.url);
+      return redirect(editorPath(byId) + url.search, 301);
+    }
+    template = byId;
+  }
   if (!template || !template.valid) {
-    return page(settings, notFoundPage(settings, `There is no meme template called "${id}".`, version), 404);
+    return page(settings, notFoundPage(settings, `There is no meme template called "${slug}".`, version), 404);
   }
 
   const site = siteName(settings);

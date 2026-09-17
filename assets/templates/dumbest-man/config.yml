@@ -1,0 +1,28 @@
+name: "I'm the Dumbest Man Alive"
+source: 
+keywords:
+  - "dumbest man alive"
+  - "Wheel of Fortune"
+  - "Pat Sajak"
+  - "stupid"
+text:
+  - style: default
+    color: black
+    font: thick
+    anchor_x: 0.04
+    anchor_y: 0.58
+    angle: 0.0
+    scale_x: 0.4
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "i pushed to main"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,53 @@
+name: "Be Honest"
+source: "https://knowyourmeme.com/memes/david-beckhams-be-honest-thank-you"
+keywords:
+  - "Beckham"
+  - "be honest"
+  - "Victoria Beckham"
+  - "David Beckham"
+  - "working class"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.35
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.68
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "i'm a full-stack developer"
+  - "be honest"
+  - "...i write html"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

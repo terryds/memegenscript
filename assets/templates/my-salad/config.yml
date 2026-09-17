@@ -1,0 +1,40 @@
+name: "Really? Right in Front of My Salad?"
+source: "https://knowyourmeme.com/sensitive/memes/right-in-front-of-my-salad"
+keywords:
+  - "right in front of my salad"
+  - "really"
+  - "salad"
+  - "shocked"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "really? a merge conflict?"
+  - "right in front of my salad?"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
