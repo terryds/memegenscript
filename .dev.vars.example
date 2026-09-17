@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local development (never commit .dev.vars)
+DEBUG=true
+# REMOTE_TRACKING_URL=https://memecomplete.com/api/memes/
+# BUGSNAG_API_KEY=

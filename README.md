@@ -1,0 +1,176 @@
+# memegenscript
+
+The [memegen.link](https://memegen.link) API, rewritten in TypeScript to run on
+[Cloudflare Workers](https://workers.cloudflare.com). It is a feature-parity port of
+[jacebrowning/memegen](https://github.com/jacebrowning/memegen) (Python/Sanic/Pillow):
+same URLs, same query parameters, same JSON responses, same OpenAPI docs.
+
+```
+GET /images/buzz/memes/memes_everywhere.png
+GET /images/ds/small_file/high_quality.jpg?style=maga&width=800
+GET /images/oprah/you_get/animated_text.gif
+POST /images  {"template_id": "fry", "text": ["not sure if", "or just"]}
+```
+
+Browse the interactive API docs at `/docs` once it is running.
+
+## Meme editor pages
+
+Every template has a human-facing, SEO-friendly editor page rendered by `src/views/editor.ts`:
+
+| Route                        | Purpose                                                                      |
+| ---------------------------- | ---------------------------------------------------------------------------- |
+| `/`                          | Index of all templates with search (`/?q=` also works server-side)            |
+| `/memes/{id}`                | Canvas editor for one template                                                |
+| `/sitemap.xml`               | Lists the index and every editor page                                         |
+| `/robots.txt`                | Allows crawling of the pages, disallows the JSON API paths, links the sitemap |
+| `/static/*`                  | Stylesheet and scripts (`assets/static/`, cache-busted with `?v=<version>`)   |
+| `/assets/templates/{id}/{f}` | Raw template images used by the editor canvas                                 |
+| `/assets/fonts/{file}`       | Font files loaded by the editor with the `FontFace` API                       |
+| `/proxy/image?url=`          | Fetches a remote image (10 MB max, images only) so the canvas can use it      |
+
+The editor (`assets/static/editor.js`) runs entirely in the browser, imgflip-style:
+
+- Text boxes start where the template defines them; drag to move, corner handles to
+  resize, top handle to rotate (Shift snaps to 15°), arrow keys to nudge.
+- Every text box has its own font, size (automatic fit or manual), color, outline color
+  and width, alignment, vertical alignment, case, opacity and rotation.
+- Add as many text boxes as you like, add your own images as layers (upload or URL, with
+  flip and opacity), reorder and duplicate layers, and replace the background with an
+  uploaded image or a blank canvas of any size. Alternate template styles are selectable.
+- Undo/redo (Ctrl+Z / Ctrl+Y), delete key, double-click a box to edit its text.
+- Export as PNG or JPG at full resolution, copy the image to the clipboard, or copy an
+  editor link that restores the text layers (the state lives in the URL hash).
+
+Each page is server-rendered with a unique title, meta description, canonical URL, Open
+Graph and Twitter Card tags (the example meme is the social image), JSON-LD (`WebSite`
+with `SearchAction`, `WebPage`, `ImageObject`, `BreadcrumbList`), an `<h1>`, descriptive
+copy, the template's source link, keyword links, and related templates. Without JavaScript
+a `<noscript>` form posts to `POST /images` instead.
+
+The site name in titles and social cards comes from the `SITE_NAME` variable.
+
+### Meme descriptions and search
+
+Every template page explains what the meme is, where it comes from, its alternate names,
+and related tags, so people can find a template by describing it rather than knowing its
+name. The search on `/` (and `?q=`) matches names, aliases, keywords, tags, example text,
+and the description; multi-word queries require every word to match.
+
+- `data/descriptions.json` is fetched from each template's Know Your Meme entry by
+  `npm run fetch:descriptions` (short About/Origin excerpts, tags, alternate names). It
+  only refetches missing or failed entries; pass `--force` to refresh everything.
+- `data/descriptions.manual.json` holds hand-written entries for templates without a Know
+  Your Meme source; these override fetched data. Add an entry here for any new template.
+- `scripts/build-templates.ts` merges both into the manifest and warns about templates
+  that still lack a description.
+
+Know Your Meme excerpts are short, attributed, and linked; write original copy in the
+manual file when you want fully unique page text.
+
+## Getting started
+
+Requirements: Node 20+, a Cloudflare account for deployment.
+
+```bash
+npm install
+npm run dev          # http://localhost:8787 (runs the template build first)
+npm test             # vitest inside the Workers runtime
+npm run typecheck
+npm run deploy       # wrangler deploy (uploads the Worker + ~90 MB of template assets)
+```
+
+Cloudflare's free plan limits Workers to 10 ms of CPU per request, which is not enough
+to render images. Deploy on the Workers Paid plan; `wrangler.jsonc` sets a 30 s CPU limit.
+
+### Configuration
+
+Variables are defined in `wrangler.jsonc` (`vars`). Secrets go through `wrangler secret put`
+or a local `.dev.vars` file (see `.dev.vars.example`).
+
+| Variable                     | Purpose                                                                 |
+| ---------------------------- | ----------------------------------------------------------------------- |
+| `SITE_NAME`                  | Name used on the web pages and social cards (`Memegen.link`)            |
+| `DEBUG`                      | `"true"` draws text/overlay boxes, enables `/test`, disables caching     |
+| `DOMAIN`                     | Host used in absolute URLs (defaults to the request's own origin)        |
+| `DEFAULT_STATIC_EXTENSION`   | Extension used when none is requested (`png`)                           |
+| `DEFAULT_ANIMATED_EXTENSION` | Extension for animated templates (`gif`)                                |
+| `CACHE_TTL`                  | Seconds to keep rendered images in the edge cache (`0` disables)        |
+| `REMOTE_TRACKING_URL`        | Optional memecomplete backend for API keys, tokens, search, tracking     |
+| `REMOTE_TRACKING_ERRORS_LIMIT` | Errors before request tracking turns itself off (`10`)                |
+
+## How it works
+
+| Concern                     | Python (memegen)                          | This port                                                      |
+| --------------------------- | ----------------------------------------- | -------------------------------------------------------------- |
+| HTTP                        | Sanic                                     | Worker `fetch` handler + ordered regex router (`src/router.ts`) |
+| Template metadata           | `templates/*/config.yml` via datafiles    | Same YAML, compiled to `src/generated/templates.json` at build   |
+| Template images, fonts      | Local filesystem                          | Workers Static Assets (`assets/`, read via the `ASSETS` binding) |
+| Text measurement & glyphs   | Pillow + FreeType                         | opentype.js (`src/images/layout.ts`)                            |
+| Rasterizing text/overlays   | Pillow `ImageDraw`                        | SVG built in `src/images/layer.ts`, rendered by resvg (wasm)     |
+| Resize, blur, compositing   | Pillow                                    | Pure TypeScript (`src/images/raster.ts`)                        |
+| PNG / JPEG / WebP codecs    | Pillow, `webp`                            | jSquash wasm codecs                                             |
+| GIF                         | Pillow                                    | gifuct-js (decode) + gifenc (encode)                            |
+| Animated WebP               | `webp` package                            | Per-frame encode + hand-written ANMF muxer (`src/images/webp.ts`) |
+| Emoji                       | `emoji` + pilmoji (Twemoji)               | emojilib aliases + Twemoji images (`src/utils/emoji.ts`)         |
+| `style: mock` text          | spongemock (seeded `random`)              | MT19937 port with CPython seeding (`src/utils/mt19937.ts`)       |
+| Rendered image cache        | `images/` directory on disk               | Cache API (`caches.default`), keyed by request URL               |
+| Custom backgrounds/overlays | Downloaded to `templates/_custom-<sha1>/` | Downloaded on demand, cached with the Cache API                  |
+
+Request flow for `GET /images/{template}/{text}.{ext}`:
+
+1. `src/views/images.ts` normalizes the slug and handles redirects (style, watermark, tokens).
+2. `src/views/helpers.ts#renderImageResponse` resolves the template, validates every
+   parameter and picks the status code exactly like the Python view.
+3. `src/images/render.ts` decodes the background, resizes it, renders the foreground layer
+   (overlays + text) once per distinct animation state, pads/watermarks, and encodes.
+
+### Adding a template
+
+Drop a directory into `assets/templates/<id>/` with a `config.yml` and a `default.png`
+(or `.jpg`/`.gif`), exactly as in the Python project. Extra images in the directory become
+`style=` options. The manifest is rebuilt automatically by `npm run dev`, `npm test` and
+`npm run deploy` (or run `npm run build:templates`).
+
+## API
+
+The full guide lives in [docs/guide.md](docs/guide.md) and the client notes in
+[docs/clients.md](docs/clients.md). Everything from the original README applies:
+
+- Formats: `.png`, `.jpg`, `.gif`, `.webp` (GIF/WebP animate the text on static backgrounds)
+- `width` / `height` (both → padded to exact size), `layout=top`, `font=<id|alias>`
+- `color=<line1>,<line2>` (names or hex, `#` optional), `style=<name>` or `style=<url>[,<url>]`
+- `background=<url>` with `template_id=custom`, `center`, `scale`, `frames`, `start`, `stop`
+- Special characters in paths: `_`/`-` → space, `__` → `_`, `--` → `-`, `~q ~a ~p ~h ~s ~b ~l ~g ~n`, `''` → `"`
+- Emoji as characters or `:aliases:`
+
+## Differences from the Python service
+
+- Text is rasterized from vector outlines instead of FreeType bitmaps, so glyph shapes and
+  antialiasing differ very slightly; layout, wrapping and font-size selection use the same
+  algorithms and produce the same line breaks.
+- GIF output is quantized without dithering (gifenc), so gradients band a little more.
+- Hebrew text is laid out left-to-right (no bidi shaping), as Pillow does without libraqm.
+- EXIF orientation of custom JPEG backgrounds is not applied.
+- Bugsnag error reporting is not wired up; errors go to Workers logs (observability is on).
+- `DEBUG` mode does not write new template config files to disk (there is no disk).
+- `/` serves the template index page instead of redirecting to `/docs`.
+
+## Project layout
+
+```
+assets/            templates/, fonts/, static/  (served by Workers Static Assets)
+scripts/           build-templates.ts → src/generated/templates.json
+src/index.ts       routes + CORS + error handling
+src/views/         one module per Sanic blueprint
+src/models/        Template, Text, Overlay, Font
+src/images/        codecs, raster ops, text layout, SVG layer, render pipeline
+src/utils/         slug codec, urls, colors, emoji, remote tracking, sha1, mt19937
+src/docs/          OpenAPI document + Swagger UI page
+test/              vitest (runs inside workerd via @cloudflare/vitest-pool-workers)
+```
+
+## License
+
+MIT, same as memegen. Template images belong to their respective owners; see the
+original project's `LICENSE.txt` and font license files under `assets/fonts/`.

@@ -1,0 +1,3 @@
+# Template metadata is compiled into the Worker; do not publish the YAML sources
+**/config.yml
+fonts/*.txt

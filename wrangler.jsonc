@@ -1,0 +1,45 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "memegenscript",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-15",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Template images and fonts are served as static assets (too large to bundle).
+  // `run_worker_first` makes every request hit the Worker; assets are only read
+  // through the ASSETS binding.
+  "assets": {
+    "directory": "./assets",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+
+  // Image rendering is CPU heavy (animated GIF/WebP especially). The default
+  // 30 s CPU limit on the paid plan is fine for most memes; raise if needed.
+  "limits": {
+    "cpu_ms": 30000
+  },
+
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+
+  "vars": {
+    // "true" enables debug rendering aids (bounding boxes, /test page, no caching)
+    "DEBUG": "false",
+    // Name shown on the web pages and in social cards
+    "SITE_NAME": "Memegen.link",
+    // Override the origin used to build absolute URLs (defaults to the request origin)
+    "DOMAIN": "",
+    "DEFAULT_STATIC_EXTENSION": "png",
+    "DEFAULT_ANIMATED_EXTENSION": "gif",
+    // Seconds to keep rendered images in the edge cache
+    "CACHE_TTL": "86400"
+    // Set REMOTE_TRACKING_URL and BUGSNAG_API_KEY via `wrangler secret put`
+  },
+
+  "rules": [
+    { "type": "CompiledWasm", "globs": ["**/*.wasm"], "fallthrough": true }
+  ]
+}
