@@ -1,156 +1,140 @@
-# Plan: refreshing the template library
+# Plan: template library, round 2
 
-Status: **approved and shipped (September 2026).** Batches 1–3, the imgflip top-100 bonus
-set, Zoolander, Three Kittens Dancing (original night-road footage, still + GIF), Coffin
-Dance, and Homer Backs Into the Bushes (GIF) are live. Imports are reproducible from
-`data/imports/batch-2026-09.json` via `scripts/import-templates.ts`; descriptions come from
-Know Your Meme or `data/descriptions.manual.json`. The `archived: true` flag hides dated
-templates from browsing while keeping their URLs working.
+Status: **proposal for review.** Round 1 (58 templates, September 2026) shipped; see "Done".
+Nothing from Batches B–D below is added yet.
 
-## Why
+## How templates get added
 
-The library is the original memegen set: 209 templates, most from 2010–2016 (advice
-animals, rage-era image macros, "Socially Awkward Penguin" and friends). Traffic to a meme
-generator follows what people are posting *now*, and every template page is a landing page,
-so newer, still-searched formats are the cheapest SEO and usefulness win we have.
+Every batch is a spec file in `data/imports/` and one command:
 
-## How a template gets added (per template)
+```
+npx tsx scripts/import-templates.ts data/imports/<batch>.json
+npm run fetch:descriptions        # Know Your Meme summaries for new sources
+npm run build:templates && npm test
+```
 
-1. **Directory** `assets/templates/<id>/` with `default.jpg` (or `.png`; `.gif` when the
-   original is animated). Optional extra images become `style=` variants.
-2. **`config.yml`** in the same format as the existing ones: `name`, `source` (Know Your Meme
-   URL when one exists), `keywords`, `example` lines, and one `text` entry per text box
-   with `anchor_x/anchor_y` (top-left, 0–1 of the image) and `scale_x/scale_y` (box size).
-   These boxes drive both the API render and the editor's starting layout.
-3. **Description**: run `npm run fetch:descriptions` (pulls the Know Your Meme summary for
-   templates with a KYM `source`), or add an entry to `data/descriptions.manual.json`.
-4. **Verify**: `npm run build:templates`, then render the example through the API
-   (`/images/<id>/<example>.png`) and open `/memes/<id>` in the editor. `DEBUG=true` draws
-   the text boxes on renders, which makes tuning coordinates quick.
-5. **Featured**: optionally add the id to `data/featured.json`.
-6. `npm test` (the suite asserts every template has a description), then deploy.
+Per template the spec gives an imgflip template id (or search query), a Know Your Meme slug,
+keywords, an example, and optional text boxes. Templates whose KYM match is wrong or missing
+get a hand-written entry in `data/descriptions.manual.json`. Imgflip GIF-only templates have
+no still, so those need a manual image (as with Homer and the kittens).
 
-Cost per template is roughly 10–15 minutes, dominated by finding a clean source image and
-tuning text boxes. Batches of 10–15 are comfortable.
+## Done (rounds 1–2)
 
-## Image sourcing and specs
+- Round 1: Batches 1–3 of the previous plan plus 12 imgflip top-100 formats (58 total),
+  Coffin Dance, Homer bushes (GIF), Three Kittens Dancing (original footage), Zoolander.
+- Round 2 (your requests): Would (Japanese Parliament), Would (Literally Wood), Place Japan
+  (the MS Paint mountain drawing, labels blanked for your text), Two Paths, Red Pill or Blue
+  Pill, Homelander Disgusted. Two Guys on a Bus was already in the library as `bus`.
+- `archived: true` hides dated templates from browsing (8 archived).
 
-- Source the canonical, clean (caption-free) template image, usually from the Know Your
-  Meme entry gallery or the imgflip template page. Cropped screenshots of the original
-  scene are fine when no clean version exists.
-- JPEG for photos, PNG for cartoons/screenshots with flat colors, GIF only when the format
-  is inherently animated. Target 800–1200 px on the long side, under 500 KB. Strip EXIF.
-- Keep the original aspect ratio. Multi-panel formats stay as a single image with one text
-  box per panel.
-- Meme images are used the way every meme generator uses them (fair-use style). We avoid
-  templates whose rights holders actively issue takedowns (see "Excluded" below).
+## Where the next candidates come from
 
-## Text-box conventions
+1. **imgflip's popularity ranking** (pages 1–4) minus what we have: evergreen, high-search
+   formats a meme site is expected to have.
+2. **imgflip "top new"** (this month): what people are captioning *right now*, mostly 2026
+   movie and TV moments.
+3. **Know Your Meme's top 20 of 2024 and 2025**: most winners are video, audio, or phrase
+   memes with no still, so only the image-based ones qualify.
 
-| Format                        | Boxes | Layout                                                        |
-| ----------------------------- | ----- | ------------------------------------------------------------- |
-| Classic caption               | 2     | Top and bottom bands, 100% wide, 20% tall, uppercase, Impact  |
-| Labeled panels (Drake-style)  | N     | One box per panel/element, white with black outline           |
-| Object labeling (Distracted)  | N     | Boxes sit on the labeled objects, `style: default` (no upper) |
-| Speech/sign text (Change My Mind) | 1 | Box on the sign, black text, thin font, rotated if needed     |
+## Batch B: trending right now (imgflip top-new, September 2026)
 
-## Candidates (not in the library today)
+Short shelf life but high search volume today; cheap to add, cheap to archive later.
 
-Grouped by priority. Each line: proposed id, name, boxes, layout, source/year.
+| id                 | Name                                                         | Boxes | Notes |
+| ------------------ | ------------------------------------------------------------ | ----- | ----- |
+| `deceive`          | Why Would I Deceive You? (Nathan Fielder / Elizabeth Holmes) | 2     | KYM trending entry; two-panel |
+| `pattinson-hansen` | Robert Pattinson as Chris Hansen                             | 2     | |
+| `beggars`          | Somebody Get These Beggars Outta Here (The Odyssey)          | 2     | Nolan's *The Odyssey* (2026) |
+| `odysseus`         | Distraught Odysseus                                          | 2     | same film |
+| `sirens`           | Odyssey Sirens                                               | 2–3   | labeling format |
+| `doomsday-return`  | X Will Return in Avengers: Doomsday                          | 1     | text on the title card |
+| `matt-damon`       | Matt Damon Meme                                              | 2     | |
+| `la-peace`         | La Peace                                                     | 2     | |
+| `verity`           | Verity Live Reaction                                         | 2     | |
+| `lanterns`         | Lanterns Interrogation                                       | 2     | |
+| `ignore-it`        | He Tryna Ignore It                                           | 2     | |
+| `jimothy`          | Jimothy                                                      | 2     | |
 
-### Added so far
+## Batch C: evergreen formats still missing (imgflip pages 2–4)
 
-| id          | Name                      | Boxes | Notes                                                        |
-| ----------- | ------------------------- | ----- | ------------------------------------------------------------ |
-| `zoolander` | Zoolander Walk-Off Stare  | 2     | Split frame from the red-carpet scene; live                   |
-| `kittens`   | Three Kittens Dancing     | 2     | AI kittens keyed onto a dark stage; `default.gif` is animated; live |
+The first 15 rows are the most-searched; the rest are nice-to-have.
 
-### Batch 1: the big ones people still search every day
+| id                 | Name                                          | Boxes | Notes |
+| ------------------ | --------------------------------------------- | ----- | ----- |
+| `anime-hiding`     | Anime Girl Hiding from Terminator             | 2     | label each character |
+| `reaper-door`      | Grim Reaper Knocking Door                     | 3     | one per door |
+| `soldier`          | Soldier Protecting Sleeping Child             | 3     | labeling |
+| `train-bus`        | Train Hitting a School Bus                    | 2     | labeling |
+| `aj-undertaker`    | AJ Styles & Undertaker                        | 2     | labeling |
+| `no-yes`           | No / Yes (Drake-style)                        | 2     | |
+| `grandma`          | Grandma Finds the Internet                    | 2     | |
+| `nut-button`       | Blank Nut Button                              | 2     | text on the button |
+| `imagination`      | Imagination SpongeBob                         | 2     | |
+| `where-monkey`     | Where Monkey                                  | 2     | |
+| `laughing-leo`     | Laughing Leo                                  | 2     | |
+| `wolverine`        | Wolverine Remember                            | 2     | picture frame is an overlay slot |
+| `do-something`     | C'mon, Do Something                           | 2     | |
+| `yoda`             | Star Wars Yoda                                | 2     | |
+| `not-the-same`     | Gus Fring: We Are Not the Same                | 3     | three lines of text |
+| `rock-driving`     | The Rock Driving                              | 4     | two-panel dialogue |
+| `disappointed`     | Disappointed Black Guy                        | 2     | |
+| `tap-sign`         | Don't Make Me Tap the Sign                    | 1     | text on the sign |
+| `goose-chase`      | Goose Chase                                   | 2     | |
+| `grandma-bed`      | Sure Grandma, Let's Get You to Bed            | 2     | |
+| `here-it-comes`    | Here It Comes                                 | 2     | |
+| `moe-barney`       | Moe Throws Barney                             | 2     | |
+| `car-salesman`     | Car Salesman Slaps Roof of Car                | 2     | |
+| `hr`               | Hello Human Resources                         | 2     | |
+| `congrats`         | The Office: Congratulations                   | 2     | |
+| `not-playing`      | I Don't Want to Play With You Anymore         | 2     | |
+| `millionaire`      | Who Wants to Be a Millionaire?                | 5     | question + four answers |
+| `second-breakfast` | Second Breakfast                              | 2     | |
+| `oh-yeah-oh-no`    | Oh Yeah! Oh No...                             | 2     | |
+| `kids-read`        | If Those Kids Could Read They'd Be Very Upset | 2     | |
+| `live-reaction`    | Live Reaction                                 | 1     | |
+| `dinkleberg`       | Dinkleberg                                    | 1     | |
+| `dog-fate`         | Dog Accepting Fate                            | 2     | |
+| `gentlemen`        | Gentlemen, It Is With Great Pleasure...       | 1     | |
+| `mr-bean`          | Mr. Bean Waiting                              | 2     | |
+| `never-ask`        | Never Ask a Woman Her Age                     | 3     | |
+| `machine`          | My Body Is a Machine                          | 2     | |
+| `jarvis`           | Jarvis (Iron Man)                             | 2     | |
+| `power`            | What Gives People Feelings of Power           | 3     | bar chart labels |
+| `bugs-no`          | Bugs Bunny "No"                               | 2     | we have the communist variant only |
 
-| id            | Name                                        | Boxes | Layout                          | Notes |
-| ------------- | ------------------------------------------- | ----- | ------------------------------- | ----- |
-| `bernie`      | Bernie: I Am Once Again Asking              | 1     | Bottom caption                  | 2020; caption completes "I am once again asking for…" |
-| `trade`       | Trade Offer                                 | 2     | "I receive" / "You receive"     | 2021, TikTok origin |
-| `soyjaks`     | Two Soyjaks Pointing                        | 1     | Label on the pointed-at object  | 2020 |
-| `gigachad`    | Gigachad                                    | 2     | Top/bottom                      | 2021 |
-| `pikachu`     | Surprised Pikachu                           | 1–2   | Top caption (+ optional bottom) | 2018 |
-| `mathlady`    | Confused Math Lady (Nazaré)                 | 2     | Top/bottom                      | 2016, still huge |
-| `leo-point`   | Leonardo DiCaprio Pointing                  | 1     | Label on what he points at      | 2019 |
-| `leo-cheers`  | Leonardo DiCaprio Cheers                    | 2     | Top/bottom                      | Gatsby, 2013 but evergreen |
-| `uno`         | UNO Draw 25                                 | 2     | Text on the card / label on the person | 2019 |
-| `bike`        | Bike Fall                                   | 3     | One box per panel               | 2019 |
-| `squidward`   | Squidward Looking Out the Window            | 2     | Label window scene / label Squidward | 2019 |
-| `monkey`      | Monkey Puppet (Awkward Look)                | 2     | Top/bottom                      | 2019 |
-| `clown`       | Clown Applying Makeup                       | 4     | One box per panel               | 2019 |
-| `lisa`        | Lisa Simpson's Presentation                 | 1     | Text on the board               | 2019 |
-| `shaq`        | Sleeping Shaq (Sleeping vs Wide Awake)      | 2     | One label per panel             | 2019 |
-| `newspaper`   | Tom Reading the Newspaper                   | 2     | Label headline / label Tom      | 2020 |
-| `swole`       | Swole Doge vs. Cheems                       | 2     | One label per dog               | 2020 (we have single Cheems only) |
-| `yesbutno`    | Well Yes, But Actually No                   | 2     | Top setup / pirate line stays   | 2018 |
-| `evilkermit`  | Evil Kermit                                 | 2     | "Me:" / "Me to me:"             | 2016 |
-| `pablo`       | Sad Pablo Escobar (Waiting)                 | 1–3   | Top caption or per panel        | 2016 |
+## Batch D: image-based winners from KYM's 2024–2025 rankings
 
-### Batch 2: formats with strong search volume
+| id             | Name                                       | Boxes | Notes |
+| -------------- | ------------------------------------------ | ----- | ----- |
+| `frieren`      | Frieren Looking Up                         | 2     | anime still |
+| `doakes`       | James Doakes Reaction Images               | 2     | Dexter screenshots (pick the canonical one) |
+| `queen-cry`    | Queen Never Cry                            | 2     | |
+| `knee-surgery` | That Feeling When Knee Surgery Is Tomorrow | 1     | Blue Grinch |
+| `bro-visited`  | Bro Visited His Friend                     | 2     | two-panel comic |
+| `triangle`     | A Circle?? In the Triangle Factory??       | 2     | exploitable two-panel |
+| `dikec`        | Yusuf Dikeç (Turkish Pistol Shooter)       | 2     | Olympic photo |
+| `sad-hamster`  | Sad Hamster                                | 2     | still from the video |
+| `brother-ew`   | Brother, Ew! What's That?                  | 2     | |
+| `aura`         | Aura Farming                               | 2     | the boat kid still |
+| `great-reset`  | The Great Meme Reset of 2026               | 2     | nostalgia format |
 
-| id            | Name                                        | Boxes | Layout                          | Notes |
-| ------------- | ------------------------------------------- | ----- | ------------------------------- | ----- |
-| `theydontknow`| They Don't Know (Wojak at Party)            | 1     | Thought bubble text             | 2020 |
-| `homer-bush`  | Homer Backs Into the Bushes                 | 2     | Top/bottom                      | GIF + still |
-| `arthur`      | Arthur's Fist                               | 2     | Top/bottom                      | 2016 |
-| `unsettled`   | Unsettled Tom                               | 2     | Top/bottom                      | 2019 |
-| `pepe-silvia` | Charlie Conspiracy (Pepe Silvia)            | 2     | Top/bottom                      | 2018 |
-| `domino`      | Domino Effect                               | 2     | Label small domino / big domino | 2020 |
-| `trophy`      | This Is Where I'd Put My Trophy             | 2     | Top/bottom                      | 2018 |
-| `ahshit`      | Ah Shit, Here We Go Again (CJ)              | 2     | Top/bottom                      | 2019 |
-| `modern`      | Modern Problems Require Modern Solutions    | 2     | Top/bottom                      | 2019 |
-| `babyyoda`    | Baby Yoda Sipping Soup                      | 2     | Top/bottom                      | 2019 |
-| `cardboard`   | Guy Holding Cardboard Sign                  | 1     | Text on the sign, rotated       | 2019 |
-| `rock`        | The Rock Eyebrow Raise                      | 2     | Top/bottom                      | 2021, GIF |
-| `pooh-3`      | Tuxedo Winnie the Pooh (3 panels)           | 3     | One label per panel             | we have the 2-panel |
-| `girl-explain`| Girl Explaining                             | 2     | Label her / label the guy       | 2022 |
-| `hotdog`      | Hot Dog Guy (We're All Trying to Find the Guy Who Did This) | 2 | Top/bottom          | 2020, I Think You Should Leave |
-| `pedro`       | Pedro Pascal Laughing Then Crying           | 2     | One label per panel             | 2023 |
-| `homelander`  | Homelander Stare                            | 2     | Top/bottom                      | 2024 |
-| `megamind`    | Megamind Peeking ("No ___?")                | 1     | Top caption                     | 2021; caption text is user-supplied |
+## Excluded on purpose
 
-### Batch 3: the Zoolander request and other movie formats
+- Political and real-person edits: J.D. Vance face edits, Kirkification, George Bush 9/11,
+  Trump bill signing, "A second plane has just hit".
+- Private individuals whose fame is the meme itself: Saori Araki, Hawk Tuah, Lindsay Clancy.
+- Video/audio-only: Jet2 Holiday, Horse Race Tests, Italian Brainrot, Chicken Jockey,
+  Totr/SDIYBT, 67, Clanker, KSI, Verbalase.
+- Chill Guy (active takedowns).
 
-| id            | Name                                        | Boxes | Layout                          | Notes |
-| ------------- | ------------------------------------------- | ----- | ------------------------------- | ----- |
-| `zoolander`   | Zoolander Walk-Off Stare                    | 2     | Top/bottom                      | **Confirmed; added first** |
-| `bluesteel`   | Zoolander Blue Steel                        | 2     | Top/bottom                      | optional companion |
-| `files`       | Zoolander: The Files Are *In* the Computer  | 2     | Top/bottom                      | optional companion |
-| `jordan`      | Michael Jordan "And I Took That Personally" | 2     | Top/bottom                      | 2020 |
-| `shrek-do`    | Shrek "That'll Do, Donkey"                  | 2     | Top/bottom                      | |
-| `dalton`      | Rick Dalton Pointing (same as `leo-point`)  |       |                                 | merge with `leo-point` |
-| `hardpills`   | Hard to Swallow Pills                       | 2     | Text on the note / on the pills | 2017 |
-| `batman-slap` | Batman Slapping Robin                       | 2     | Speech bubble per character     | evergreen |
-| `nick-young`  | Confused Nick Young                         | 2     | Top/bottom                      | 2014, evergreen |
-| `blinking`    | Blinking White Guy (Drew Scanlon)           | 2     | Top/bottom                      | GIF |
+## Recommendation
 
-### Excluded on purpose
+Do Batch B now (12 templates, half a day, ride the wave while it lasts), then Batch C as one
+deploy (40, about a day of image review and box tuning), then Batch D (11). Refresh
+`data/featured.json` after each batch so the homepage leads with current formats.
 
-- **Chill Guy** (2024): the artist actively files takedowns against commercial use.
-- **Skibidi / brainrot video memes**: video-native, no meaningful still template.
-- **Political figures from 2024–2025 events**: short shelf life, moderation headaches.
-- Anything whose "template" is a real person's private photo without a public meme history.
+## Questions
 
-## Housekeeping while we're at it
-
-- **Featured list**: replace half of the current featured picks with Batch 1 entries once
-  they land, so the homepage leads with current formats.
-- **Outdated templates**: I suggest keeping all of them (the API is compatible with URLs
-  people already have) but adding an `archived: true` option in `config.yml` that hides a
-  template from the index, featured, related and sitemap while the API and its editor page
-  keep working. Candidates: the four "Sad politician" templates, `prop3`, `bd`, `dsm`.
-- **Search tags**: new templates get tags from Know Your Meme automatically; the manual file
-  covers the rest.
-
-## Open questions for you
-
-1. ~~Which Zoolander meme?~~ Confirmed: the walk-off stare (`zoolander`).
-2. **Batch 1 first?** It's 20 templates, about 4–5 hours of sourcing images and tuning text
-   boxes, plus descriptions. I'd ship it as one deploy.
-3. **Archiving**: OK with hiding the clearly dated ones from browsing (not from the API)?
-4. **Any memes you personally want** beyond this list? IDs are cheap to change before they
-   ship; after that they're URLs people share.
+1. OK with Batch B's short-lived movie memes, knowing several will be archived by next year?
+2. Any of Batch C you'd cut? The first 15 rows are the ones people search most.
+3. Anything else you personally want, so it ships in the next batch instead of later?

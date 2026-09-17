@@ -1,0 +1,41 @@
+name: "Red Pill or Blue Pill"
+source: "https://knowyourmeme.com/memes/red-pill"
+keywords:
+  - "The Matrix"
+  - "Morpheus"
+  - "choice"
+  - "blue pill"
+  - "red pill"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.46
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.52
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 0.46
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "stay in bed"
+  - "go to the gym"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

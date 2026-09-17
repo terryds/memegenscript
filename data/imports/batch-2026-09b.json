@@ -1,0 +1,140 @@
+{
+  "_comment": "User-requested templates (September 2026, round 2).",
+  "templates": [
+    {
+      "id": "japan",
+      "name": "Place, Japan",
+      "imgflip": 467772172,
+      "kym": "thing-japan",
+      "keywords": [
+        "Place Japan",
+        "Thing Japan",
+        "Wojak",
+        "soyjak",
+        "MS Paint",
+        "weeb"
+      ],
+      "example": [
+        "mountain",
+        "mountain, japan"
+      ],
+      "boxes": [
+        [
+          0.56,
+          0.02,
+          0.34,
+          0.11,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.56,
+          0.53,
+          0.34,
+          0.11,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "two-paths",
+      "name": "Two Paths",
+      "imgflip": 309668311,
+      "kym": "two-paths",
+      "keywords": [
+        "fork in the road",
+        "choice",
+        "crossroads"
+      ],
+      "example": [
+        "me",
+        "sleep early",
+        "one more episode"
+      ],
+      "boxes": [
+        [
+          0.3,
+          0.72,
+          0.4,
+          0.2,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.02,
+          0.05,
+          0.4,
+          0.3,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.58,
+          0.05,
+          0.4,
+          0.3,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "pills",
+      "name": "Red Pill or Blue Pill",
+      "imgflip": "red pill blue pill",
+      "kym": "red-pill",
+      "keywords": [
+        "The Matrix",
+        "Morpheus",
+        "choice",
+        "blue pill",
+        "red pill"
+      ],
+      "example": [
+        "stay in bed",
+        "go to the gym"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.0,
+          0.46,
+          0.2
+        ],
+        [
+          0.52,
+          0.0,
+          0.46,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "homelander-disgust",
+      "name": "Homelander Disgusted",
+      "imgflip": "homelander disgusted",
+      "kym": "homelander-disgusted",
+      "keywords": [
+        "The Boys",
+        "Antony Starr",
+        "disgust",
+        "grossed out"
+      ],
+      "example": [
+        "when someone says",
+        "'we don't need tests'"
+      ]
+    }
+  ]
+}

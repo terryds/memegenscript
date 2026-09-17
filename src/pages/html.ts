@@ -106,6 +106,7 @@ ${scripts}
       <input id="nav-q" type="search" name="q" placeholder="Search meme templates…" autocomplete="off">
     </form>
     <a class="nav-link" href="/docs">API</a>
+    ${settings.REPO_URL ? `<a class="nav-link nav-link-secondary" href="${escapeHtml(settings.REPO_URL)}" rel="noopener" target="_blank" aria-label="Source code on GitHub">GitHub</a>` : ""}
   </nav>
 </header>
 <main id="main" class="container">
@@ -113,7 +114,7 @@ ${body}
 </main>
 <footer class="site-footer">
   <div class="container">
-    <p><strong>${escapeHtml(site)}</strong> · a free meme generator · <a href="/docs">API docs</a> · made with questionable judgment</p>
+    <p><strong>${escapeHtml(site)}</strong> · a free, open source meme generator · <a href="/docs">API docs</a>${settings.REPO_URL ? ` · <a href="${escapeHtml(settings.REPO_URL)}" rel="noopener">source on GitHub</a>` : ""} · made with questionable judgment</p>
   </div>
 </footer>
 </body>

@@ -84,6 +84,8 @@ h2 { font-size: 1.6rem; }
 .nav-search input, .filter input { width: 100%; }
 .nav-link { font-family: var(--heavy); text-transform: uppercase; text-decoration: none; padding: 8px 14px; border: 3px solid var(--ink); border-radius: 999px; background: var(--pink); color: #fff; box-shadow: var(--shadow-sm); }
 .nav-link:hover { color: #fff; transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.nav-link-secondary { background: #fff; color: var(--ink); }
+.nav-link-secondary:hover { color: var(--ink); }
 .site-footer { margin-top: 64px; padding: 28px 0 40px; border-top: 3px solid var(--ink); color: var(--muted); font-size: 14px; background: rgba(10, 8, 20, 0.6); }
 .site-footer p { margin: 0; }
 

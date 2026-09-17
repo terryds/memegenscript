@@ -129,6 +129,11 @@ describe("misc", () => {
     expect(await response.text()).toContain("/images/iw/does_testing/in_production.png");
   });
 
+  it("links the source repository", async () => {
+    const body = await (await get("/")).text();
+    expect(body).toContain('href="https://github.com/terryds/memegenscript"');
+  });
+
   it("adds CORS headers", async () => {
     const response = await get("/templates/iw");
     expect(response.headers.get("access-control-allow-origin")).toBe("*");

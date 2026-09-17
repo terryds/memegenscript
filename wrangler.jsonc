@@ -30,6 +30,8 @@
     "DEBUG": "false",
     // Name shown on the web pages and in social cards
     "SITE_NAME": "Memegenscript",
+    // Source repository linked from the pages (set to "" to hide)
+    "REPO_URL": "https://github.com/terryds/memegenscript",
     // Override the origin used to build absolute URLs (defaults to the request origin)
     "DOMAIN": "",
     "DEFAULT_STATIC_EXTENSION": "png",

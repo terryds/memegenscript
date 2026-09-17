@@ -83,6 +83,8 @@ export interface Settings {
   REMOTE_TRACKING_ERRORS_LIMIT: number;
   BUGSNAG_API_KEY: string;
   SITE_NAME: string;
+  /** Public source repository, linked from the pages ("" hides the link) */
+  REPO_URL: string;
 }
 
 export interface EnvVars {
@@ -95,6 +97,7 @@ export interface EnvVars {
   REMOTE_TRACKING_ERRORS_LIMIT?: string;
   BUGSNAG_API_KEY?: string;
   SITE_NAME?: string;
+  REPO_URL?: string;
 }
 
 export function resolveSettings(env: EnvVars, request: Request): Settings {
@@ -130,5 +133,6 @@ export function resolveSettings(env: EnvVars, request: Request): Settings {
       Number.parseInt(env.REMOTE_TRACKING_ERRORS_LIMIT ?? "", 10) || REMOTE_TRACKING_ERRORS_LIMIT_DEFAULT,
     BUGSNAG_API_KEY: env.BUGSNAG_API_KEY ?? "",
     SITE_NAME: env.SITE_NAME || "Memegenscript",
+    REPO_URL: env.REPO_URL ?? "https://github.com/terryds/memegenscript",
   };
 }

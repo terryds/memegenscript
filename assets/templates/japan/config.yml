@@ -1,0 +1,42 @@
+name: "Place, Japan"
+source: "https://knowyourmeme.com/memes/thing-japan"
+keywords:
+  - "Place Japan"
+  - "Thing Japan"
+  - "Wojak"
+  - "soyjak"
+  - "MS Paint"
+  - "weeb"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.56
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.34
+    scale_y: 0.11
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.56
+    anchor_y: 0.53
+    angle: 0.0
+    scale_x: 0.34
+    scale_y: 0.11
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "mountain"
+  - "mountain, japan"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
