@@ -147,7 +147,9 @@ describe("PWA", () => {
     const response = await get("/manifest.webmanifest");
     expect(response.status).toBe(200);
     expect(response.headers.get("content-type")).toContain("manifest+json");
-    const manifest = (await response.json()) as { name: string; display: string; icons: Array<{ purpose: string }> };
+    const manifest = (await response.json()) as { name: string; short_name: string; display: string; icons: Array<{ purpose: string }> };
+    expect(manifest.name.startsWith("Memegenscript")).toBe(true);
+    expect(manifest.short_name).toBe("Memegenscript");
     expect(manifest.display).toBe("standalone");
     expect(manifest.icons.some((i) => i.purpose === "maskable")).toBe(true);
     for (const icon of ["icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png"]) {

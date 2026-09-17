@@ -8,8 +8,8 @@ export async function manifest(app: AppContext): Promise<Response> {
   const site = siteName(app.settings);
   const data = {
     id: "/",
-    name: site,
-    short_name: site.length > 12 ? "Memes" : site,
+    name: `${site}: Meme Generator`,
+    short_name: site,
     description: "Free meme generator: drag-and-drop editor for hundreds of templates, plus a meme API.",
     start_url: "/?source=pwa",
     scope: "/",
