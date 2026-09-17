@@ -32,6 +32,8 @@ export interface TemplateData {
   tags?: string[];
   aka?: string[];
   descriptionSource?: string;
+  /** 1-based position in the featured list, or null */
+  featured?: number | null;
 }
 
 const MANIFEST = manifest as unknown as Record<string, TemplateData>;
@@ -83,6 +85,7 @@ export class Template {
   /** Alternate names people know the meme by */
   aka: string[];
   descriptionSource: string;
+  featured: number | null;
 
   /** Does this template come from the manifest (vs. transient/custom)? */
   exists: boolean;
@@ -109,6 +112,7 @@ export class Template {
     this.tags = data.tags ?? [];
     this.aka = data.aka ?? [];
     this.descriptionSource = data.descriptionSource ?? "none";
+    this.featured = data.featured ?? null;
     this.exists = exists;
   }
 
@@ -142,6 +146,13 @@ export class Template {
 
   static filterValid(): Template[] {
     return Template.all().filter((t) => !t.id.startsWith("_custom") && t.valid);
+  }
+
+  /** Curated templates from `data/featured.json`, in order. */
+  static featured(): Template[] {
+    return Template.filterValid()
+      .filter((t) => t.featured !== null)
+      .sort((a, b) => (a.featured ?? 0) - (b.featured ?? 0));
   }
 
   // --- properties ---------------------------------------------------------
@@ -487,6 +498,7 @@ export class Template {
         tags: this.tags,
         aka: this.aka,
         descriptionSource: this.descriptionSource,
+        featured: this.featured,
       },
       this.exists,
     );

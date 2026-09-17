@@ -254,7 +254,7 @@ describe("GET /images/{template}/{text}.{ext}", () => {
     });
 
     it.each(["png", "jpg"])("removes redundant watermarks (%s)", async (extension) => {
-      const response = await get(`/images/fry/test.${extension}?watermark=memegen.link`);
+      const response = await get(`/images/fry/test.${extension}?watermark=Memegenscript`);
       expect(response.status).toBe(302);
       expect(response.headers.get("location")).toBe(`/images/fry/test.${extension}`);
     });

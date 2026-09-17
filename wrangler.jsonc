@@ -29,7 +29,7 @@
     // "true" enables debug rendering aids (bounding boxes, /test page, no caching)
     "DEBUG": "false",
     // Name shown on the web pages and in social cards
-    "SITE_NAME": "Memegen.link",
+    "SITE_NAME": "Memegenscript",
     // Override the origin used to build absolute URLs (defaults to the request origin)
     "DOMAIN": "",
     "DEFAULT_STATIC_EXTENSION": "png",

@@ -13,6 +13,7 @@ const TEMPLATES = join(ROOT, "assets", "templates");
 const OUTPUT = join(ROOT, "src", "generated", "templates.json");
 const DESCRIPTIONS = join(ROOT, "data", "descriptions.json");
 const MANUAL = join(ROOT, "data", "descriptions.manual.json");
+const FEATURED = join(ROOT, "data", "featured.json");
 
 const TEXT_DEFAULTS = {
   style: "upper",
@@ -91,6 +92,7 @@ function readJson<T>(path: string): T {
 }
 
 const fetched = readJson<Record<string, Description>>(DESCRIPTIONS);
+const featuredIds: string[] = readJson<{ featured?: string[] }>(FEATURED).featured ?? [];
 const manual = readJson<Record<string, Description>>(MANUAL);
 
 /** Hand-written entries win; otherwise use the fetched Know Your Meme summary. */
@@ -98,10 +100,14 @@ function describe(id: string, name: string) {
   const entry = manual[id] ?? (fetched[id] && !fetched[id].error ? fetched[id] : undefined);
   const source = manual[id] ? "manual" : entry ? "knowyourmeme" : "none";
   const aka = (entry?.aka ?? []).filter((alias) => alias.toLowerCase() !== name.toLowerCase());
+  // Know Your Meme tags include contributor usernames and yearly lists; keep only readable topics.
+  const tags = (entry?.tags ?? []).filter(
+    (tag) => !/[_#\d]/.test(tag) && !/^(notables?|people|entries) of\b/i.test(tag) && tag.length >= 3 && tag.length <= 40,
+  );
   return {
     about: entry?.about ?? "",
     origin: entry?.origin ?? "",
-    tags: entry?.tags ?? [],
+    tags,
     aka,
     descriptionSource: source,
   };
@@ -160,8 +166,11 @@ for (const id of readdirSync(TEMPLATES).sort()) {
     overlay,
     files,
     ...description,
+    featured: featuredIds.indexOf(id) === -1 ? null : featuredIds.indexOf(id) + 1,
   };
 }
+const unknownFeatured = featuredIds.filter((id) => !manifest[id]);
+if (unknownFeatured.length) console.warn(`Unknown featured template IDs: ${unknownFeatured.join(", ")}`);
 if (missing) console.warn(`${missing} template(s) have no description`);
 
 mkdirSync(join(ROOT, "src", "generated"), { recursive: true });

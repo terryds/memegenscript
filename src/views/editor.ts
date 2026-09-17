@@ -87,6 +87,10 @@ function relatedTemplates(template: Template, all: Template[]): Template[] {
     if (otherWords.some((w) => words.has(w))) add(other);
   }
 
+  for (const featured of Template.featured()) {
+    if (related.size >= 8) break;
+    add(featured);
+  }
   let seed = Number.parseInt(sha1Hex(template.id).slice(0, 8), 16);
   while (related.size < 8 && all.length > related.size + 1) {
     seed = (seed * 1103515245 + 12345) >>> 0;
@@ -157,12 +161,25 @@ export async function index(app: AppContext): Promise<Response> {
     });
   }
 
+  const featured = query ? [] : Template.featured();
+  const featuredSection = featured.length
+    ? `<section class="featured" aria-labelledby="featured-title">
+  <h2 id="featured-title">Featured memes</h2>
+  <p class="section-lede">Certified bangers. Pick one and start typing.</p>
+  <ul class="grid featured-grid">
+${featured.map((t, i) => templateCard(settings, t, { lazy: i > 5 })).join("\n")}
+  </ul>
+</section>
+`
+    : "";
+
   const body = `<section class="hero">
-  <h1>${query ? `Meme templates matching “${escapeHtml(query)}”` : "Make a meme in seconds"}</h1>
+  ${query ? "" : `<span class="badge">${all.length} templates · free · no signup</span>`}
+  <h1>${query ? `Memes matching “${escapeHtml(query)}”` : "Make a meme.<br>Post it. Regret nothing."}</h1>
   <p class="lede">${
     query
       ? `<a href="/">Browse all ${all.length} templates</a> or refine your search.`
-      : `Pick one of ${all.length} meme templates, type your text, and get a shareable image. Every template has its own editor page.`
+      : `Pick a template, smash in your text, drag it wherever you want, download. <strong>No signup, no watermark on downloads, no talent required.</strong>`
   }</p>
   <form class="filter" action="/" method="get" role="search">
     <label class="visually-hidden" for="q">Filter templates</label>
@@ -170,11 +187,12 @@ export async function index(app: AppContext): Promise<Response> {
     <span class="filter-count" id="count" aria-live="polite">${templates.length} templates</span>
   </form>
 </section>
-<section aria-label="Meme templates">
+${featuredSection}<section aria-labelledby="all-title">
+  <h2 id="all-title">${query ? "Results" : "All meme templates"}</h2>
   <ul class="grid" id="grid">
 ${templates.map((t, i) => templateCard(settings, t, { lazy: i > 11 })).join("\n")}
   </ul>
-  <p class="empty" id="empty" ${templates.length ? "hidden" : ""}>No templates match. <a href="/">Show all templates</a>.</p>
+  <p class="empty" id="empty" ${templates.length ? "hidden" : ""}>Nothing matches. Try describing the meme, like “dog burning room”. <a href="/">Show all templates</a>.</p>
 </section>
 <section class="about">
   <h2>About this meme generator</h2>
@@ -317,7 +335,7 @@ export async function detail(app: AppContext, id: string): Promise<Response> {
 <article class="editor">
   <header class="editor-header">
     <h1>${escapeHtml(template.name)} Meme Generator</h1>
-    <p class="lede">Add and drag text anywhere on the ${escapeHtml(template.name)} template, style each text box, drop in your own images, then download or copy your meme.${template.animatedImage ? " Animated GIFs of this template are available through the API." : ""}</p>
+    <p class="lede">Drag text anywhere on the ${escapeHtml(template.name)} template, style every box its own way, drop in your own images, then <strong>download, copy, or share it</strong>.${template.animatedImage ? " Animated GIF versions are available through the API." : ""}</p>
   </header>
 
   <div id="meme-editor" class="me" data-config="${escapeHtml(jsonForScript(config))}">

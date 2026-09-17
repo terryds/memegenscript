@@ -3,6 +3,7 @@
   "use strict";
   var input = document.getElementById("q");
   var grid = document.getElementById("grid");
+  var featured = document.querySelector(".featured");
   var count = document.getElementById("count");
   var empty = document.getElementById("empty");
   if (!input || !grid) return;
@@ -17,6 +18,7 @@
       if (match) visible += 1;
     });
     if (count) count.textContent = visible + " templates";
+    if (featured) featured.hidden = !!query;
     if (empty) empty.hidden = visible > 0;
     if (history.replaceState) {
       var url = new URL(window.location.href);

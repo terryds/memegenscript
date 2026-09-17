@@ -1,22 +1,13 @@
-# Revision History
+# Changelog
 
-## 11.3
+## 1.0.0
 
-- Added a server-rendered meme editor page for every template at `/memes/{id}`,
-  a searchable template index at `/`, `sitemap.xml`, and an SEO-oriented `robots.txt`.
-- The editor is a client-side canvas editor: draggable/resizable/rotatable text boxes
-  with per-box fonts, sizes, colors and outlines, image layers, custom backgrounds,
-  undo/redo, PNG/JPG export and shareable links.
-- Added `/assets/templates/...`, `/assets/fonts/...` and `/proxy/image` for the editor.
-- Corrected the `color` parameter documentation: values apply per text line.
-- Every template page now describes the meme (summary, origin, alternate names, tags)
-  using Know Your Meme excerpts or hand-written entries, and the site search matches
-  descriptions and aliases, not just names.
-- Static assets are cache-busted by content hash; pages are not cached in local dev.
+First public release.
 
-## 11.2
-
-- TypeScript port of memegen 11.2 for Cloudflare Workers with feature parity:
-  all routes, query parameters, response shapes, redirects, status codes,
-  Swagger docs, example galleries, fonts, styles, overlays, custom backgrounds,
-  animated GIF/WebP output, previews, watermarks, and emoji.
+- Meme API compatible with the memegen.link URL scheme (templates, fonts, styles,
+  overlays, custom backgrounds, animated GIF/WebP, previews, Swagger docs).
+- In-browser canvas editor for every template: draggable, individually styled text
+  boxes, image layers, custom backgrounds, undo/redo, PNG/JPG export, share links.
+- Server-rendered, SEO-friendly pages: descriptions, aliases and tags for all 209
+  templates, full-text search, featured memes, sitemap and robots.
+- Runs on Cloudflare Workers with static assets; no origin server.

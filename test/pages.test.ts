@@ -9,12 +9,24 @@ describe("GET /", () => {
     const body = await response.text();
     expect(body).toContain('<html lang="en">');
     expect(body).toContain("<title>Meme Generator: ");
+    expect(body).toContain("Make a meme.");
     expect(body).toContain('<link rel="canonical" href="http://localhost:5000/">');
     expect(body).toContain('<meta name="description"');
     expect(body).toContain('"@type":"WebSite"');
     expect(body).toContain('"@type":"ItemList"');
     expect(body).toContain('href="/memes/fry"');
     expect(body).toContain("Futurama Fry");
+  });
+
+  it("shows the featured memes section only on the unfiltered index", async () => {
+    const body = await (await get("/")).text();
+    expect(body).toContain("<h2 id=\"featured-title\">Featured memes</h2>");
+    const section = body.slice(body.indexOf('class="featured"'), body.indexOf('id="all-title"'));
+    expect(section).toContain('href="/memes/drake"');
+    expect(section).toContain('href="/memes/db"');
+    expect((section.match(/class="card"/g) ?? []).length).toBeGreaterThanOrEqual(12);
+    const filtered = await (await get("/?q=fry")).text();
+    expect(filtered).not.toContain("Featured memes");
   });
 
   it("finds templates by description, alias, or tag, not just name", async () => {
@@ -49,9 +61,9 @@ describe("GET /memes/{id}", () => {
     const response = await get("/memes/fry");
     expect(response.status).toBe(200);
     const body = await response.text();
-    expect(body).toContain("<title>Futurama Fry Meme Generator | Memegen.link</title>");
+    expect(body).toContain("<title>Futurama Fry Meme Generator | Memegenscript</title>");
     expect(body).toContain('<link rel="canonical" href="http://localhost:5000/memes/fry">');
-    expect(body).toContain('<meta property="og:title" content="Futurama Fry Meme Generator | Memegen.link">');
+    expect(body).toContain('<meta property="og:title" content="Futurama Fry Meme Generator | Memegenscript">');
     expect(body).toContain('<meta property="og:image" content="http://localhost:5000/images/fry/not_sure_if_trolling/or_just_stupid.png">');
     expect(body).toContain('<meta name="twitter:card" content="summary_large_image">');
     expect(body).toContain('"@type":"BreadcrumbList"');

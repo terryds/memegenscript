@@ -113,7 +113,7 @@ function columnsGallery(urls: string[]): string {
 `,
   );
   elements.push(RESIZE_SCRIPT);
-  const head = "<title>Memegen.link | examples</title>\n" + COLUMNS_STYLE;
+  const head = "<title>Memegenscript | examples</title>\n" + COLUMNS_STYLE;
   const body = `<section id="images">\n${elements.join("\n")}\n</section>`;
   return page(head, body);
 }
@@ -127,7 +127,7 @@ function columnsDebug(urls: string[], refresh: number, extra: string): string {
 `,
   );
   if (refresh) elements.push(REFRESH_SCRIPT.replace("{interval}", String(refresh * 1000)));
-  const head = "<title>Memegen.link | debug</title>\n" + COLUMNS_STYLE;
+  const head = "<title>Memegenscript | debug</title>\n" + COLUMNS_STYLE;
   const body = `<section id="images">\n${elements.join("\n")}\n</section>`;
   return page(head, body);
 }
@@ -141,6 +141,6 @@ function gridDebug(urls: string[], refresh: number, extra: string): string {
 `,
   );
   elements.push(REFRESH_SCRIPT.replace("{interval}", String(refresh * 1000)));
-  const head = "<title>Memegen.link | test</title>\n";
+  const head = "<title>Memegenscript | test</title>\n";
   return page(head, elements.join("\n"));
 }

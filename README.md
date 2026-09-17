@@ -1,18 +1,25 @@
-# memegenscript
+# Memegenscript
 
-The [memegen.link](https://memegen.link) API, rewritten in TypeScript to run on
-[Cloudflare Workers](https://workers.cloudflare.com). It is a feature-parity port of
-[jacebrowning/memegen](https://github.com/jacebrowning/memegen) (Python/Sanic/Pillow):
-same URLs, same query parameters, same JSON responses, same OpenAPI docs.
+A free meme generator that runs entirely on [Cloudflare Workers](https://workers.cloudflare.com):
+an in-browser editor for 200+ templates, plus a URL-based API where every meme is just a link.
+
+- **Editor pages**: one page per template with draggable, individually styled text boxes,
+  your own image layers, custom backgrounds, undo/redo, and PNG/JPG export. No signup, no
+  server round-trips while you edit.
+- **Meme API**: `GET /images/{template}/{top}/{bottom}.png` renders a meme on the fly, with
+  fonts, colors, styles, overlays, custom backgrounds, and animated GIF/WebP output.
+  Interactive docs live at `/docs`.
+- **Built for search**: every template page is server-rendered with a description of the
+  meme, alternate names, tags, structured data, social cards, and a sitemap.
+- **Serverless**: TypeScript Worker, WASM image codecs, static assets at the edge. No
+  origin server, no image storage, nothing to babysit.
 
 ```
-GET /images/buzz/memes/memes_everywhere.png
-GET /images/ds/small_file/high_quality.jpg?style=maga&width=800
-GET /images/oprah/you_get/animated_text.gif
+GET  /images/buzz/memes/memes_everywhere.png
+GET  /images/ds/small_file/high_quality.jpg?style=maga&width=800
+GET  /images/oprah/you_get/animated_text.gif
 POST /images  {"template_id": "fry", "text": ["not sure if", "or just"]}
 ```
-
-Browse the interactive API docs at `/docs` once it is running.
 
 ## Meme editor pages
 
@@ -90,7 +97,7 @@ or a local `.dev.vars` file (see `.dev.vars.example`).
 
 | Variable                     | Purpose                                                                 |
 | ---------------------------- | ----------------------------------------------------------------------- |
-| `SITE_NAME`                  | Name used on the web pages and social cards (`Memegen.link`)            |
+| `SITE_NAME`                  | Name used on the web pages and social cards (`Memegenscript`)           |
 | `DEBUG`                      | `"true"` draws text/overlay boxes, enables `/test`, disables caching     |
 | `DOMAIN`                     | Host used in absolute URLs (defaults to the request's own origin)        |
 | `DEFAULT_STATIC_EXTENSION`   | Extension used when none is requested (`png`)                           |
@@ -101,7 +108,11 @@ or a local `.dev.vars` file (see `.dev.vars.example`).
 
 ## How it works
 
-| Concern                     | Python (memegen)                          | This port                                                      |
+The API began as a TypeScript port of [memegen](https://github.com/jacebrowning/memegen)
+(Python), whose template library it still uses; the editor, pages, search, and design are
+original. The table shows what replaced each Python-era dependency:
+
+| Concern                     | Originally (memegen, Python)              | Memegenscript                                                  |
 | --------------------------- | ----------------------------------------- | -------------------------------------------------------------- |
 | HTTP                        | Sanic                                     | Worker `fetch` handler + ordered regex router (`src/router.ts`) |
 | Template metadata           | `templates/*/config.yml` via datafiles    | Same YAML, compiled to `src/generated/templates.json` at build   |
@@ -144,7 +155,7 @@ The full guide lives in [docs/guide.md](docs/guide.md) and the client notes in
 - Special characters in paths: `_`/`-` → space, `__` → `_`, `--` → `-`, `~q ~a ~p ~h ~s ~b ~l ~g ~n`, `''` → `"`
 - Emoji as characters or `:aliases:`
 
-## Differences from the Python service
+## Differences from the original memegen API
 
 - Text is rasterized from vector outlines instead of FreeType bitmaps, so glyph shapes and
   antialiasing differ very slightly; layout, wrapping and font-size selection use the same
@@ -170,7 +181,9 @@ src/docs/          OpenAPI document + Swagger UI page
 test/              vitest (runs inside workerd via @cloudflare/vitest-pool-workers)
 ```
 
-## License
+## License and credits
 
-MIT, same as memegen. Template images belong to their respective owners; see the
-original project's `LICENSE.txt` and font license files under `assets/fonts/`.
+MIT. Portions of the API and the template library come from
+[memegen](https://github.com/jacebrowning/memegen) by Jace Browning (MIT); see
+`LICENSE.txt`. Template images belong to their respective owners. Font licenses are in
+`assets/fonts/`. Meme descriptions quote short, attributed excerpts from Know Your Meme.

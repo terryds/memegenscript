@@ -30,7 +30,7 @@ export const MINIMUM_FRAMES = 5;
 // Watermarks
 
 export const DISABLED_WATERMARK = "none";
-export const DEFAULT_WATERMARK = "Memegen.link";
+export const DEFAULT_WATERMARK = "Memegenscript";
 export const ALLOWED_WATERMARKS = [DEFAULT_WATERMARK];
 
 export const WATERMARK_HEIGHT = 20;
@@ -129,6 +129,6 @@ export function resolveSettings(env: EnvVars, request: Request): Settings {
     REMOTE_TRACKING_ERRORS_LIMIT:
       Number.parseInt(env.REMOTE_TRACKING_ERRORS_LIMIT ?? "", 10) || REMOTE_TRACKING_ERRORS_LIMIT_DEFAULT,
     BUGSNAG_API_KEY: env.BUGSNAG_API_KEY ?? "",
-    SITE_NAME: env.SITE_NAME || "Memegen.link",
+    SITE_NAME: env.SITE_NAME || "Memegenscript",
   };
 }

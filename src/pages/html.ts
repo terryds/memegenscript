@@ -57,7 +57,7 @@ export function notFoundPage(settings: Settings, message: string, assetVersion: 
       robots: "noindex",
       assetVersion,
     },
-    `<section class="hero"><h1>Page not found</h1><p class="lede">${escapeHtml(message)}</p><p><a href="/">Browse all meme templates</a></p></section>`,
+    `<section class="hero"><h1>404: meme not found</h1><p class="lede">${escapeHtml(message)}</p><p><a href="/" class="button">Browse all meme templates</a></p></section>`,
   );
 }
 
@@ -113,7 +113,7 @@ ${body}
 </main>
 <footer class="site-footer">
   <div class="container">
-    <p>${escapeHtml(site)} · free and open source meme generator · <a href="/docs">API docs</a> · <a href="https://github.com/jacebrowning/memegen" rel="noopener">GitHub</a></p>
+    <p><strong>${escapeHtml(site)}</strong> · a free meme generator · <a href="/docs">API docs</a> · made with questionable judgment</p>
   </div>
 </footer>
 </body>

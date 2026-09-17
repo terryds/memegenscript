@@ -113,7 +113,7 @@ describe("misc", () => {
     expect(response.status).toBe(200);
     const spec = (await response.json()) as { openapi: string; paths: Record<string, unknown>; info: { version: string } };
     expect(spec.openapi).toBe("3.0.3");
-    expect(spec.info.version).toBe("11.3");
+    expect(spec.info.version).toBe("1.0");
     expect(Object.keys(spec.paths)).toContain("/images/{template_id}/{text_filepath}");
   });
 

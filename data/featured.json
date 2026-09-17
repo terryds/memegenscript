@@ -1,0 +1,8 @@
+{
+  "_comment": "Template IDs shown in the homepage 'Featured memes' section, in order. Edit freely; unknown IDs are ignored.",
+  "featured": [
+    "drake", "db", "ds", "cmm", "fine", "stonks", "spongebob", "woman-cat",
+    "gru", "right", "pigeon", "fry", "buzz", "aag", "success", "doge",
+    "grumpycat", "kombucha", "wonka", "handshake", "exit", "oprah", "mordor", "rollsafe"
+  ]
+}

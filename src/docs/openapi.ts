@@ -486,13 +486,12 @@ export function buildOpenApi(settings: Settings): Record<string, unknown> {
   return {
     openapi: "3.0.3",
     info: {
-      title: "Memegen.link",
+      title: "Memegenscript",
       version: VERSION,
       description,
-      contact: { name: "support", email: "support@maketested.com" },
-      license: { name: "View the license", url: "https://github.com/jacebrowning/memegen/blob/main/LICENSE.txt" },
+      contact: { name: "memegenscript" },
+      license: { name: "MIT" },
     },
-    externalDocs: { url: "https://memegen.link/guide/", description: "Browse API guide" },
     servers: [{ url: base }],
     security: [{ ApiKeyAuth: [] }],
     paths,

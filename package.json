@@ -1,8 +1,8 @@
 {
   "name": "memegenscript",
-  "version": "11.3.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "The free and open source API to generate memes, rewritten in TypeScript for Cloudflare Workers.",
+  "description": "Free meme generator on Cloudflare Workers: in-browser editor for 200+ templates plus a URL-based meme API.",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -37,5 +37,16 @@
     "vitest": "^4.1.11",
     "wrangler": "^4.40.0",
     "yaml": "^2.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/terryds/memegenscript"
+  },
+  "keywords": [
+    "meme",
+    "meme-generator",
+    "cloudflare-workers",
+    "api",
+    "canvas"
+  ]
 }
