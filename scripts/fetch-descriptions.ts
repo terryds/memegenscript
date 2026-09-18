@@ -52,8 +52,9 @@ const stripTags = (s: string) =>
       .trim(),
   );
 
-// Periods after these don't end a sentence ("Mr. Incredible", "Dr. Evil", "vs. People")
-const ABBREVIATION = /\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|Prof|Lt|Gen|Capt|Sgt|vs|Vol|No|Mt|Ft|etc|e\.g|i\.e)\.$/i;
+// Periods after these don't end a sentence: titles and other abbreviations ("Mr. Incredible",
+// "Dr. Evil", "vs. People") and initials ("George R. R. Martin", "D.W.", "the U.S. Army")
+const ABBREVIATION = /\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|Prof|Lt|Gen|Capt|Sgt|vs|Vol|No|Mt|Ft|etc|e\.g|i\.e|[A-Z])\.$/;
 
 /** Split text into sentences, keeping closing quotes/brackets attached. */
 function sentences(text: string): string[] {
