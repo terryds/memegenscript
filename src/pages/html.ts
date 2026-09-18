@@ -18,6 +18,25 @@ export function jsonForScript(value: unknown): string {
     .replace(/\u2029/g, "\\u2029");
 }
 
+/** Where visitors can ask for a template that isn't in the library ("" when disabled) */
+export function templateRequestLinks(settings: Settings): { form: string; issue: string } {
+  return {
+    form: settings.REQUEST_TEMPLATE_URL,
+    issue: settings.REPO_URL ? `${settings.REPO_URL.replace(/\/$/, "")}/issues/new?template=template-request.yml` : "",
+  };
+}
+
+/** "Request a template" buttons: the request form, plus a GitHub issue as an alternative */
+export function templateRequestButtons(settings: Settings): string {
+  const { form, issue } = templateRequestLinks(settings);
+  return [
+    form ? `<a class="button primary" href="${escapeHtml(form)}" rel="noopener" target="_blank">Request a template</a>` : "",
+    issue ? `<a class="button secondary" href="${escapeHtml(issue)}" rel="noopener" target="_blank">Request on GitHub</a>` : "",
+  ]
+    .filter(Boolean)
+    .join("\n    ");
+}
+
 export interface PageMeta {
   title: string;
   description: string;
@@ -63,6 +82,7 @@ export function notFoundPage(settings: Settings, message: string, assetVersion: 
 
 export function layout(settings: Settings, meta: PageMeta, body: string): string {
   const site = siteName(settings);
+  const request = templateRequestLinks(settings);
   const image = meta.image ?? `${settings.BASE_URL}/images/buzz/memes/memes_everywhere.png`;
   const structured = (meta.structuredData ?? [])
     .map((data) => `<script type="application/ld+json">${jsonForScript(data)}</script>`)
@@ -126,7 +146,7 @@ ${body}
 </aside>
 <footer class="site-footer">
   <div class="container">
-    <p><strong>${escapeHtml(site)}</strong> · a free, open source meme generator · <a href="/docs">API docs</a>${settings.REPO_URL ? ` · <a href="${escapeHtml(settings.REPO_URL)}" rel="noopener">source on GitHub</a>` : ""} · made with questionable judgment</p>
+    <p><strong>${escapeHtml(site)}</strong> · a free, open source meme generator · <a href="/docs">API docs</a>${settings.REPO_URL ? ` · <a href="${escapeHtml(settings.REPO_URL)}" rel="noopener">source on GitHub</a>` : ""}${request.form ? ` · <a href="${escapeHtml(request.form)}" rel="noopener" target="_blank">request a template</a>` : ""} · made with questionable judgment</p>
   </div>
 </footer>
 </body>

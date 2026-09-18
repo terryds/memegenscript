@@ -1,0 +1,30 @@
+name: Template request
+description: Ask for a meme template that isn't on the site yet
+title: "[Template request]: "
+body:
+  - type: markdown
+    attributes:
+      value: Missing a meme? Tell us which one and we'll add it.
+  - type: input
+    id: name
+    attributes:
+      label: Meme name
+      placeholder: Me and the Boys
+    validations:
+      required: true
+  - type: input
+    id: image
+    attributes:
+      label: Blank template image
+      description: A link to a clean, text-free version of the image, if you have one.
+      placeholder: https://imgflip.com/memetemplate/...
+  - type: input
+    id: source
+    attributes:
+      label: Know Your Meme page
+      placeholder: https://knowyourmeme.com/memes/...
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Where the text usually goes, a popular example, alternate names…

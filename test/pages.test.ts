@@ -27,6 +27,21 @@ describe("GET /", () => {
     expect(local).toContain('<link rel="canonical" href="http://127.0.0.1:8787/memes/futurama-fry">');
   });
 
+  it("offers a way to request a missing template", async () => {
+    const form = 'href="https://forms.gle/SbsPFknn9NRUjs3P6"';
+    const issue = 'href="https://github.com/terryds/memegenscript/issues/new?template=template-request.yml"';
+    const body = await (await get("/")).text();
+    const hero = body.slice(body.indexOf('class="hero"'), body.indexOf("</section>"));
+    expect(hero).toContain(`<a class="button primary" ${form}`);
+    expect(hero).toContain(`<a class="button secondary" ${issue}`);
+    // The empty search state points at the form too
+    const empty = await (await get("/?q=zzzznotamemezzzz")).text();
+    expect(empty).toMatch(/<p class="empty" id="empty" >[^<]*<a href="\/">Show all templates<\/a>\. Still missing\? <a href="https:\/\/forms\.gle\/SbsPFknn9NRUjs3P6"/);
+    // Every page's footer links the form
+    const editor = await (await get("/memes/futurama-fry")).text();
+    expect(editor.slice(editor.indexOf('class="site-footer"'))).toContain(form);
+  });
+
   it("shows the featured memes section only on the unfiltered index", async () => {
     const body = await (await get("/")).text();
     expect(body).toContain("<h2 id=\"featured-title\">Featured memes</h2>");

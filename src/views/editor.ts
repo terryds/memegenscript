@@ -6,7 +6,7 @@ import type { AppContext } from "../context";
 import { Font } from "../models/font";
 import { Template } from "../models/template";
 import { assetVersion } from "../pages/assets";
-import { escapeHtml, jsonForScript, layout, notFoundPage, siteName } from "../pages/html";
+import { escapeHtml, jsonForScript, layout, notFoundPage, siteName, templateRequestButtons, templateRequestLinks } from "../pages/html";
 import { error, html, redirect } from "../response";
 import { ALLOWED_EXTENSIONS, type Settings } from "../settings";
 import { sha1Hex } from "../utils/sha1";
@@ -132,6 +132,8 @@ export async function index(app: AppContext): Promise<Response> {
   const all = Template.browsable();
   const templates = query ? all.filter((t) => t.matchesText(query)) : all;
   const site = siteName(settings);
+  const request = templateRequestLinks(settings);
+  const requestButtons = templateRequestButtons(settings);
 
   const title = query
     ? `"${query}" meme templates | ${site}`
@@ -186,13 +188,17 @@ ${featured.map((t, i) => templateCard(settings, t, { lazy: i > 5 })).join("\n")}
     <input id="q" type="search" name="q" value="${escapeHtml(query)}" placeholder="Filter by name, keyword or example text…" autocomplete="off">
     <span class="filter-count" id="count" aria-live="polite">${templates.length} templates</span>
   </form>
+  ${requestButtons ? `<div class="request">
+    <span>Can’t find your meme?</span>
+    ${requestButtons}
+  </div>` : ""}
 </section>
 ${featuredSection}<section aria-labelledby="all-title">
   <h2 id="all-title">${query ? "Results" : "All meme templates"}</h2>
   <ul class="grid" id="grid">
 ${templates.map((t, i) => templateCard(settings, t, { lazy: i > 11 })).join("\n")}
   </ul>
-  <p class="empty" id="empty" ${templates.length ? "hidden" : ""}>Nothing matches. Try describing the meme, like “dog burning room”. <a href="/">Show all templates</a>.</p>
+  <p class="empty" id="empty" ${templates.length ? "hidden" : ""}>Nothing matches. Try describing the meme, like “dog burning room”. <a href="/">Show all templates</a>.${request.form ? ` Still missing? <a href="${escapeHtml(request.form)}" rel="noopener" target="_blank">Request it</a> and we’ll add it.` : ""}</p>
 </section>
 <section class="about">
   <h2>About this meme generator</h2>
