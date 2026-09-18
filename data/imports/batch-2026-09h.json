@@ -21,7 +21,50 @@
         "me and the boys at 3am looking for beans"
       ],
       "boxes": [
-        [0.03, 0.02, 0.94, 0.2, "default", "black", "center", "thin"]
+        [
+          0.03,
+          0.02,
+          0.94,
+          0.2,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "traumatized-mr-incredible",
+      "name": "Traumatized Mr. Incredible",
+      "imgflip": 340157305,
+      "kym": "traumatized-mr-incredible-people-who-dont-know-vs-people-who-know",
+      "keywords": [
+        "Mr. Incredible",
+        "The Incredibles",
+        "Pixar",
+        "uncanny",
+        "people who don't know",
+        "people who know",
+        "canny vs uncanny",
+        "Bob Parr"
+      ],
+      "example": [
+        "people who don't know",
+        "people who know"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.48,
+          0.2
+        ],
+        [
+          0.52,
+          0.0,
+          0.48,
+          0.2
+        ]
       ]
     }
   ]
