@@ -1,0 +1,28 @@
+{
+  "_comment": "Round 4, Batch H: requested additions.",
+  "templates": [
+    {
+      "id": "me-and-the-boys",
+      "name": "Me and the Boys",
+      "imgflip": 184801100,
+      "kym": "me-and-the-boys",
+      "keywords": [
+        "the boys",
+        "Spider-Man",
+        "Spider-Man villains",
+        "Green Goblin",
+        "Electro",
+        "Rhino",
+        "Vulture",
+        "3am",
+        "beans"
+      ],
+      "example": [
+        "me and the boys at 3am looking for beans"
+      ],
+      "boxes": [
+        [0.03, 0.02, 0.94, 0.2, "default", "black", "center", "thin"]
+      ]
+    }
+  ]
+}
