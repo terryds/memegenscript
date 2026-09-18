@@ -85,6 +85,8 @@ export interface Settings {
   SITE_NAME: string;
   /** Public source repository, linked from the pages ("" hides the link) */
   REPO_URL: string;
+  /** Form where visitors request a new template ("" hides the button) */
+  REQUEST_TEMPLATE_URL: string;
 }
 
 export interface EnvVars {
@@ -98,6 +100,7 @@ export interface EnvVars {
   BUGSNAG_API_KEY?: string;
   SITE_NAME?: string;
   REPO_URL?: string;
+  REQUEST_TEMPLATE_URL?: string;
 }
 
 export function resolveSettings(env: EnvVars, request: Request): Settings {
@@ -138,5 +141,6 @@ export function resolveSettings(env: EnvVars, request: Request): Settings {
     BUGSNAG_API_KEY: env.BUGSNAG_API_KEY ?? "",
     SITE_NAME: env.SITE_NAME || "Memegenscript",
     REPO_URL: env.REPO_URL ?? "https://github.com/terryds/memegenscript",
+    REQUEST_TEMPLATE_URL: env.REQUEST_TEMPLATE_URL ?? "https://forms.gle/SbsPFknn9NRUjs3P6",
   };
 }

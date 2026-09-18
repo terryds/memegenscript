@@ -36,6 +36,9 @@
     "SITE_NAME": "Memegenscript",
     // Source repository linked from the pages (set to "" to hide)
     "REPO_URL": "https://github.com/terryds/memegenscript",
+    // Form linked from the "Request a template" button (set to "" to hide it);
+    // a GitHub issue link is offered next to it when REPO_URL is set
+    "REQUEST_TEMPLATE_URL": "https://forms.gle/SbsPFknn9NRUjs3P6",
     // Public origin used for absolute URLs (canonical, sitemap, API examples).
     // Ignored for requests to localhost, so `wrangler dev` and tests keep their origin.
     "DOMAIN": "https://memegenscript.com",
