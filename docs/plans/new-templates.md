@@ -1,7 +1,7 @@
 # Plan: template library, round 3
 
-Status: **Batches E, F1, F2 and G done (122 templates, library at 454).** Nothing is pending; the
-round-2 record is kept further down.
+Status: **Batches E, F1, F2 and G done (122 templates, library at 454); meme scout 2026-09-18
+added 4 (library at 460).** Nothing is pending; the round-2 record is kept further down.
 
 ## Done: Batch E, Tobey Maguire pack (17 templates, 2026-09-17)
 
@@ -52,6 +52,26 @@ card, centered text), `this-is-patrick` (top box shifted off the "Order Here" si
 Dropped "SpongeBob Diapers" (seven panels, no sensible caption slots). Already in the library
 before this pack: Mocking SpongeBob, Imagination, Squidward Window, Squidward Chair, Push It
 Somewhere Else Patrick, Patrick's Wallet, Stop It Patrick, Ol' Reliable, SpongeBob Yelling.
+
+## Meme scout 2026-09-18 (4 templates)
+
+Imported via `data/imports/scout-2026-09-18.json` from imgflip top-new: `empire-state-flag`
+(text on the black banner), `potential-megumi` (Jujutsu Kaisen "Did You Say Potential?"),
+`cunningham-point` (short top box that leaves her face clear), `like-it-in-here` (top box only,
+the Backrooms subtitle is baked in; the scouted 262px upload was replaced by imgflip's 819px one,
+664148703). Three got hand-written descriptions: `empire-state-flag` (Know Your Meme's summary
+is cut off), `potential-megumi` (Know Your Meme only covers the Superman "Meet Potential Man"
+edit) and `like-it-in-here` (no Know Your Meme entry).
+
+Dropped:
+- Already in the library: Nathan Fielder Elizabeth Holmes (`deceive`), Its La Peace (an AI
+  repaint of `la-peace`), Avengers Doomsday Meme (`doomsday-return`, plus baked "Insert any
+  Character" text), Somebody Get These Beggars Out of Here (video of `beggars`).
+- Excluded on purpose: Trump Bill Signing, Lindsay Clancy (two uploads).
+- Racial: "neegy" (a gold buck-toothed caricature named after a slur).
+- Jimothy: dropped in round 2. imgflip's raccoon is still not the short-spined Jimothy.
+- It's Me Obesity: a TikTok parody song of "Hey It's Me Verity". The still means nothing
+  without the audio, and it has no Know Your Meme entry.
 
 ## Next packs (not planned in detail yet)
 
