@@ -52,6 +52,9 @@ const stripTags = (s: string) =>
       .trim(),
   );
 
+// Periods after these don't end a sentence ("Mr. Incredible", "Dr. Evil", "vs. People")
+const ABBREVIATION = /\b(?:Mr|Mrs|Ms|Dr|St|Jr|Sr|Prof|Lt|Gen|Capt|Sgt|vs|Vol|No|Mt|Ft|etc|e\.g|i\.e)\.$/i;
+
 /** Split text into sentences, keeping closing quotes/brackets attached. */
 function sentences(text: string): string[] {
   const out: string[] = [];
@@ -59,6 +62,7 @@ function sentences(text: string): string[] {
   let last = 0;
   let match: RegExpExecArray | null;
   while ((match = boundary.exec(text))) {
+    if (match.index + match[0].length < text.length && ABBREVIATION.test(text.slice(last, match.index + 1))) continue;
     out.push(text.slice(last, match.index + match[0].length).trim());
     last = match.index + match[0].length;
   }
