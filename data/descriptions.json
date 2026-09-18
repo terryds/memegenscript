@@ -852,7 +852,7 @@
       "reaction",
       "webcomic"
     ],
-    "fetchedAt": "2026-09-17T05:29:38.689Z",
+    "fetchedAt": "2026-09-18T23:03:37.206Z",
     "error": "No description found"
   },
   "db": {
@@ -2626,7 +2626,7 @@
       "high quality",
       "hd"
     ],
-    "fetchedAt": "2026-09-17T05:29:42.060Z",
+    "fetchedAt": "2026-09-18T23:03:45.006Z",
     "error": "No description found"
   },
   "puffin": {
@@ -6126,7 +6126,7 @@
       "green squares",
       "assembly line meme"
     ],
-    "fetchedAt": "2026-09-17T05:29:45.659Z",
+    "fetchedAt": "2026-09-18T23:03:49.325Z",
     "error": "No description found"
   },
   "where-monkey": {
@@ -7151,7 +7151,7 @@
       "exploitables",
       "be honest meme"
     ],
-    "fetchedAt": "2026-09-17T06:20:00.748Z",
+    "fetchedAt": "2026-09-18T23:03:34.393Z",
     "error": "No description found"
   },
   "big-book-small-book": {
@@ -8176,5 +8176,78 @@
       "shadow"
     ],
     "fetchedAt": "2026-09-18T06:20:01.436Z"
+  },
+  "cunningham-point": {
+    "source": "https://knowyourmeme.com/memes/sophie-cunningham-pointing",
+    "title": "Sophie Cunningham Pointing",
+    "aka": [
+      "Sophie Cunningham Pointing"
+    ],
+    "about": "Sophie Cunningham Pointing or the WNBA Pointing Meme is a viral video and reaction meme of WNBA player Sophie Cunningham of the Indiana Fever pointing with her finger for an extended period of time at DeWanna Bonner, a player on the opposing team, after a physical incident with Fever player Caitlin Clark. The game took place on June 22nd, 2026, and the video became the subject of memes over the following days.",
+    "origin": "On June 22nd, 2026, the Indiana Fever played against the Phoenix Mercury in a WNBA game.",
+    "tags": [
+      "wnba",
+      "wnba point",
+      "wnba pointing",
+      "wnba player pointing",
+      "sophie cunningham point meme",
+      "tiktok",
+      "twitter",
+      "sophie cunningham pointing meme",
+      "blonde girl pointing",
+      "sports",
+      "basketball",
+      "women's basketball",
+      "reaction gifs",
+      "gif captions",
+      "finger pointing meme"
+    ],
+    "fetchedAt": "2026-09-18T23:03:38.485Z"
+  },
+  "empire-state-flag": {
+    "source": "https://knowyourmeme.com/memes/events/2026-empire-state-building-climbers-angela-nikolau-and-ivan-kuznetsovs-proposal",
+    "title": "2026 Empire State Building Climbers / Angela Nikolau and Ivan Kuznetsov's Proposal",
+    "aka": [
+      "2026 Empire State Building Climbers",
+      "Angela Nikolau and Ivan Kuznetsov's Proposal"
+    ],
+    "about": "The 2026 Empire State Building Climbers and Angela Nikolau and Ivan Kuznetsov's Proposal refer to two people, artists and climbers (known as \"rooftoppers\")",
+    "tags": [
+      "empire state building proposal",
+      "angela nikolau",
+      "empire state building climb stunt",
+      "twitter",
+      "new york",
+      "empire state building meme",
+      "empire state building flag meme",
+      "empire state building climbers meme",
+      "black flag meme",
+      "empire state building banner meme",
+      "sky"
+    ],
+    "fetchedAt": "2026-09-18T23:03:39.766Z"
+  },
+  "potential-megumi": {
+    "source": "https://knowyourmeme.com/memes/meet-potential-man",
+    "title": "Meet Potential Man",
+    "aka": [
+      "Meet Potential Man"
+    ],
+    "about": "Meet Potential Man is an exploitable meme that typically shows a character from a television show or comic whom creators perceive as underachieving or overhyped by their fanbases, thus labelled as \"Potential Man.\" These characters are often edited onto an image of Superman surrounded by a list of their perceived failures.",
+    "origin": "Memes attaching the suffix -man to highlight a person or character's demerits have existed prior to the \"Potential Man\" meme, as seen in this March 16th, 2021, post on X featuring soccer players and their perceived faults.",
+    "tags": [
+      "potential man",
+      "megumi",
+      "jujutsu kaisen",
+      "if and when but never is",
+      "give me liberty",
+      "give me fire",
+      "give me middle schoolers or i retire.",
+      "he has the potential",
+      "potential man meme",
+      "meet potential man meme",
+      "exploitables"
+    ],
+    "fetchedAt": "2026-09-18T23:03:43.514Z"
   }
 }

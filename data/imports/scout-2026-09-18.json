@@ -1,0 +1,111 @@
+{
+  "_comment": "Meme scout 2026-09-18: keepers from imgflip top-new.",
+  "templates": [
+    {
+      "id": "empire-state-flag",
+      "name": "Empire State Building Climbers Flag",
+      "imgflip": 657846647,
+      "source": "https://knowyourmeme.com/memes/events/2026-empire-state-building-climbers-angela-nikolau-and-ivan-kuznetsovs-proposal",
+      "keywords": [
+        "Empire State Building",
+        "climbers",
+        "flag",
+        "banner",
+        "Angela Nikolau",
+        "Ivan Kuznetsov",
+        "proposal",
+        "PSA"
+      ],
+      "example": [
+        "when the power of reply-all beats the love of silence the office knows peace"
+      ],
+      "boxes": [
+        [
+          0.49,
+          0.37,
+          0.38,
+          0.36,
+          "default",
+          "white",
+          "center",
+          "thin"
+        ]
+      ]
+    },
+    {
+      "id": "potential-megumi",
+      "name": "Did You Say Potential?",
+      "imgflip": 663906143,
+      "kym": "meet-potential-man",
+      "keywords": [
+        "Jujutsu Kaisen",
+        "Megumi",
+        "Potential Man",
+        "potential",
+        "anime",
+        "did you say"
+      ],
+      "example": [
+        "\"this project has a lot of potential\"",
+        "did you say POTENTIAL?"
+      ]
+    },
+    {
+      "id": "cunningham-point",
+      "name": "Sophie Cunningham Pointing",
+      "imgflip": 657105401,
+      "kym": "sophie-cunningham-pointing",
+      "keywords": [
+        "Sophie Cunningham",
+        "WNBA",
+        "pointing",
+        "Indiana Fever",
+        "calling out",
+        "basketball"
+      ],
+      "example": [
+        "me watching my coworker",
+        "microwave fish in the office kitchen"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.13
+        ],
+        [
+          0,
+          0.8,
+          1,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "like-it-in-here",
+      "name": "I Like It in Here",
+      "imgflip": 664148703,
+      "source": "",
+      "keywords": [
+        "Backrooms",
+        "Chiwetel Ejiofor",
+        "A24",
+        "i like it in here",
+        "right where I'm supposed to be",
+        "comfort"
+      ],
+      "example": [
+        "me, 40 tabs deep into a Wikipedia rabbit hole at 3am"
+      ],
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          0.2
+        ]
+      ]
+    }
+  ]
+}
