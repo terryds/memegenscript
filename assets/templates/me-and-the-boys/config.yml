@@ -1,0 +1,33 @@
+name: "Me and the Boys"
+source: "https://knowyourmeme.com/memes/me-and-the-boys"
+keywords:
+  - "the boys"
+  - "Spider-Man"
+  - "Spider-Man villains"
+  - "Green Goblin"
+  - "Electro"
+  - "Rhino"
+  - "Vulture"
+  - "3am"
+  - "beans"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.03
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me and the boys at 3am looking for beans"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
