@@ -10,7 +10,7 @@ export function agentGuideMarkdown(settings: Settings, templateCount: number): s
   const site = settings.SITE_NAME;
   return `# ${site} for AI agents
 
-> ${site} is a free meme generator where every meme is a URL. There is no API key, no signup, and no watermark. If you can write a URL or send one JSON request, you can make a meme from any of ${templateCount} templates.
+> ${site} is a free meme generator where every meme is a URL. There is no API key and no signup. If you can write a URL or send one JSON request, you can make a meme from any of ${templateCount} templates.
 
 This guide is written for AI agents and the people who build them. The raw markdown lives at ${base}/llms.txt. The OpenAPI document is at ${base}/docs/openapi.json.
 

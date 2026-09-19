@@ -2,7 +2,7 @@
   "name": "memegenscript",
   "version": "1.0.0",
   "private": true,
-  "description": "Free meme generator on Cloudflare Workers: in-browser editor for 200+ templates plus a URL-based meme API.",
+  "description": "Free meme generator on Cloudflare Workers: in-browser editor for 450+ templates plus a URL-based meme API.",
   "license": "MIT",
   "type": "module",
   "scripts": {

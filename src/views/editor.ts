@@ -497,6 +497,7 @@ export async function sitemap(app: AppContext): Promise<Response> {
   const urls = [
     { loc: settings.BASE_URL + "/", priority: "1.0", changefreq: "weekly" },
     { loc: settings.BASE_URL + "/agents", priority: "0.9", changefreq: "monthly" },
+    { loc: settings.BASE_URL + "/privacy", priority: "0.3", changefreq: "yearly" },
     ...Template.browsable().map((t) => ({ loc: editorUrl(settings, t), priority: "0.8", changefreq: "monthly" })),
   ];
   const xml =

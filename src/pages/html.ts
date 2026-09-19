@@ -80,12 +80,15 @@ export function notFoundPage(settings: Settings, message: string, assetVersion: 
   );
 }
 
-/** Google Analytics 4 loader; empty when no measurement ID is configured. */
+/**
+ * Google Analytics 4 loader; empty when no measurement ID is configured. The page URL is
+ * reported without its hash: editor share links keep the meme text there (see /privacy).
+ */
 export function analyticsSnippet(settings: Settings): string {
   const id = settings.GA_MEASUREMENT_ID;
   if (!id) return "";
   return `<script async src="https://www.googletagmanager.com/gtag/js?id=${id}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","${id}");</script>`;
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","${id}",{page_location:location.origin+location.pathname+location.search});</script>`;
 }
 
 export function layout(settings: Settings, meta: PageMeta, body: string): string {
@@ -157,7 +160,7 @@ ${body}
 </aside>
 <footer class="site-footer">
   <div class="container">
-    <p><strong>${escapeHtml(site)}</strong> · a free, open source meme generator · <a href="/docs">API docs</a> · <a href="/agents">guide for AI agents</a>${settings.REPO_URL ? ` · <a href="${escapeHtml(settings.REPO_URL)}" rel="noopener">source on GitHub</a>` : ""}${request.form ? ` · <a href="${escapeHtml(request.form)}" rel="noopener" target="_blank">request a template</a>` : ""} · made with questionable judgment</p>
+    <p><strong>${escapeHtml(site)}</strong> · a free, open source meme generator · <a href="/docs">API docs</a> · <a href="/agents">guide for AI agents</a> · <a href="/privacy">privacy</a>${settings.REPO_URL ? ` · <a href="${escapeHtml(settings.REPO_URL)}" rel="noopener">source on GitHub</a>` : ""}${request.form ? ` · <a href="${escapeHtml(request.form)}" rel="noopener" target="_blank">request a template</a>` : ""} · made with questionable judgment</p>
   </div>
 </footer>
 </body>

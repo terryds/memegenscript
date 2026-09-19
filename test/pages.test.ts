@@ -302,12 +302,38 @@ describe("analytics", () => {
   it("loads Google Analytics for a valid measurement ID", () => {
     const snippet = analyticsSnippet(settingsFor("G-ABC123XYZ9", "https://memegenscript.com/"));
     expect(snippet).toContain("https://www.googletagmanager.com/gtag/js?id=G-ABC123XYZ9");
-    expect(snippet).toContain('gtag("config","G-ABC123XYZ9")');
+    expect(snippet).toContain('gtag("config","G-ABC123XYZ9",');
+    // Share links keep the meme text in the URL hash, which must not reach analytics
+    expect(snippet).toContain("page_location:location.origin+location.pathname+location.search}");
   });
 
   it("ignores malformed IDs and never counts local development", () => {
     expect(settingsFor('G-1"><script>', "https://memegenscript.com/").GA_MEASUREMENT_ID).toBe("");
     expect(settingsFor("G-ABC123XYZ9", "http://localhost:8787/").GA_MEASUREMENT_ID).toBe("");
+  });
+});
+
+describe("GET /privacy", () => {
+  it("explains what is collected and is linked from every page", async () => {
+    const response = await get("/privacy");
+    expect(response.status).toBe(200);
+    const body = await response.text();
+    expect(body).toContain("<title>Privacy | Memegenscript</title>");
+    expect(body).toContain('<link rel="canonical" href="http://localhost:5000/privacy">');
+    expect(body).toContain("stay in your browser");
+    // Tests run with caching off; production says how long images stay cached
+    expect(body).toContain("We do not keep the rendered images");
+    expect(body).not.toContain("0 hours");
+    const home = await (await get("/")).text();
+    expect(home.slice(home.indexOf('class="site-footer"'))).toContain('<a href="/privacy">privacy</a>');
+    expect(await (await get("/sitemap.xml")).text()).toContain("<loc>http://localhost:5000/privacy</loc>");
+  });
+
+  it("describes analytics only when analytics is on", async () => {
+    // Tests run on localhost, where analytics is always off
+    const body = await (await get("/privacy")).text();
+    expect(body).toContain("This site does not use analytics.");
+    expect(body).not.toContain("Google Analytics");
   });
 });
 
@@ -320,6 +346,8 @@ describe("guide for AI agents", () => {
     expect(body).toMatch(/^# Memegenscript for AI agents\n/);
     expect(body).toContain("POST http://localhost:5000/images");
     expect(body).toContain("GET http://localhost:5000/templates?q=");
+    // API images are watermarked (only editor downloads are not), so the guide must not claim otherwise
+    expect(body).not.toMatch(/no watermark/i);
     expect(await (await get("/agents.md")).text()).toBe(body);
   });
 

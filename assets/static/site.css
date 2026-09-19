@@ -169,6 +169,7 @@ button[disabled] { opacity: 0.6; cursor: wait; transform: none; }
 .guide h2 { margin: 44px 0 12px; scroll-margin-top: 80px; }
 .guide p, .guide li { max-width: 75ch; }
 .guide li { margin-bottom: 6px; }
+.guide .muted { color: var(--muted); font-size: 14px; margin-top: 32px; }
 .guide pre { white-space: pre-wrap; overflow-wrap: anywhere; }
 .table-wrap { overflow-x: auto; margin: 16px 0; border: 3px solid var(--ink); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
 .table-wrap table { width: 100%; border-collapse: collapse; font-size: 15px; }

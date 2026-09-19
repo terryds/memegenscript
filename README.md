@@ -1,7 +1,7 @@
 # Memegenscript
 
 A free meme generator that runs entirely on [Cloudflare Workers](https://workers.cloudflare.com):
-an in-browser editor for 200+ templates, plus a URL-based API where every meme is just a link.
+an in-browser editor for 450+ templates, plus a URL-based API where every meme is just a link.
 
 - **Editor pages**: one page per template with draggable, individually styled text boxes,
   your own image layers, custom backgrounds, undo/redo, and PNG/JPG export. No signup, no
@@ -29,6 +29,8 @@ Every template has a human-facing, SEO-friendly editor page rendered by `src/vie
 | ---------------------------- | ---------------------------------------------------------------------------- |
 | `/`                          | Index of all templates with search (`/?q=` also works server-side)            |
 | `/memes/{slug}`              | Canvas editor for one template (name-based; old ids and slugs redirect)       |
+| `/agents`, `/llms.txt`       | Guide for AI agents, as a page and as raw markdown (`src/docs/agents.ts`)      |
+| `/privacy`                   | What the site collects (`src/views/privacy.ts`); update it when that changes    |
 | `/sitemap.xml`               | Lists the index and every editor page                                         |
 | `/robots.txt`                | Allows crawling of the pages, disallows the JSON API paths, links the sitemap |
 | `/static/*`                  | Stylesheet and scripts (`assets/static/`, cache-busted with `?v=<version>`)   |
