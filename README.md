@@ -28,7 +28,7 @@ Every template has a human-facing, SEO-friendly editor page rendered by `src/vie
 | Route                        | Purpose                                                                      |
 | ---------------------------- | ---------------------------------------------------------------------------- |
 | `/`                          | Index of all templates with search (`/?q=` also works server-side)            |
-| `/memes/{slug}`              | Canvas editor for one template (name-based slug; `/memes/{id}` redirects)     |
+| `/memes/{slug}`              | Canvas editor for one template (name-based; old ids and slugs redirect)       |
 | `/sitemap.xml`               | Lists the index and every editor page                                         |
 | `/robots.txt`                | Allows crawling of the pages, disallows the JSON API paths, links the sitemap |
 | `/static/*`                  | Stylesheet and scripts (`assets/static/`, cache-busted with `?v=<version>`)   |

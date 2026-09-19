@@ -169,6 +169,23 @@ describe("GET /memes/{slug}", () => {
     expect(await page.text()).toContain('<link rel="canonical" href="http://localhost:5000/memes/three-kittens-dancing">');
   });
 
+  it("redirects a slug from before a rename to the current page permanently", async () => {
+    // Roll Safe was renamed to "Roll Safe Think About It"; data/slugs.json keeps the old slug
+    const response = await get("/memes/roll-safe?text=hi");
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe("/memes/roll-safe-think-about-it?text=hi");
+    expect((await get("/memes/roll-safe-think-about-it")).status).toBe(200);
+  });
+
+  it("records every current slug in data/slugs.json", async () => {
+    const { Template } = await import("../src/models/template");
+    const history = (await import("../data/slugs.json")).default as Record<string, string[]>;
+    for (const template of Template.all()) {
+      if (template.id.startsWith("_")) continue;
+      expect(history[template.id]?.at(-1), template.id).toBe(template.slug);
+    }
+  });
+
   it("gives every template a unique slug that is a valid path segment", async () => {
     const { Template } = await import("../src/models/template");
     const seen = new Set<string>();
