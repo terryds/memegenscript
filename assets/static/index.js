@@ -8,6 +8,13 @@
   var empty = document.getElementById("empty");
   if (!input || !grid) return;
   var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
+  var searchTimer = null;
+  var lastTracked = "";
+
+  // Google Analytics event; a no-op when analytics is off or blocked
+  function track(name, params) {
+    if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+  }
 
   function apply() {
     var query = input.value.trim().toLowerCase();
@@ -26,6 +33,14 @@
     if (count) count.textContent = visible + (visible === 1 ? " template" : " templates");
     if (featured) featured.hidden = !!query;
     if (empty) empty.hidden = visible > 0;
+    // One event per settled query, not one per keystroke
+    clearTimeout(searchTimer);
+    if (query.length >= 2 && query !== lastTracked) {
+      searchTimer = setTimeout(function () {
+        lastTracked = query;
+        track("search", { search_term: query, results: visible });
+      }, 1500);
+    }
     if (history.replaceState) {
       var url = new URL(window.location.href);
       if (query) url.searchParams.set("q", query);

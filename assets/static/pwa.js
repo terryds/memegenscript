@@ -7,6 +7,12 @@
     });
   }
 
+  // Google Analytics event; a no-op when analytics is off or blocked
+  function track(name, params) {
+    if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+  }
+  window.addEventListener("appinstalled", function () { track("pwa_install"); });
+
   var banner = document.getElementById("install-banner");
   if (!banner) return;
   var DISMISS_KEY = "memegenscript.install.dismissed";
@@ -45,7 +51,11 @@
   installButton.addEventListener("click", function () {
     if (!deferredPrompt) return;
     deferredPrompt.prompt();
-    deferredPrompt.userChoice.then(function () { deferredPrompt = null; hide(); });
+    deferredPrompt.userChoice.then(function (choice) {
+      track("pwa_install_prompt", { outcome: choice && choice.outcome });
+      deferredPrompt = null;
+      hide();
+    });
   });
   closeButton.addEventListener("click", function () {
     try { localStorage.setItem(DISMISS_KEY, String(Date.now())); } catch (e) {}

@@ -80,6 +80,14 @@ export function notFoundPage(settings: Settings, message: string, assetVersion: 
   );
 }
 
+/** Google Analytics 4 loader; empty when no measurement ID is configured. */
+export function analyticsSnippet(settings: Settings): string {
+  const id = settings.GA_MEASUREMENT_ID;
+  if (!id) return "";
+  return `<script async src="https://www.googletagmanager.com/gtag/js?id=${id}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","${id}");</script>`;
+}
+
 export function layout(settings: Settings, meta: PageMeta, body: string): string {
   const site = siteName(settings);
   const request = templateRequestLinks(settings);
@@ -121,6 +129,7 @@ ${meta.imageAlt ? `<meta property="og:image:alt" content="${escapeHtml(meta.imag
 ${meta.head ?? ""}
 ${structured}
 ${scripts}
+${analyticsSnippet(settings)}
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>

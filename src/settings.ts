@@ -87,6 +87,8 @@ export interface Settings {
   REPO_URL: string;
   /** Form where visitors request a new template ("" hides the button) */
   REQUEST_TEMPLATE_URL: string;
+  /** Google Analytics 4 measurement ID, "G-XXXXXXXXXX" ("" disables analytics) */
+  GA_MEASUREMENT_ID: string;
 }
 
 export interface EnvVars {
@@ -101,6 +103,7 @@ export interface EnvVars {
   SITE_NAME?: string;
   REPO_URL?: string;
   REQUEST_TEMPLATE_URL?: string;
+  GA_MEASUREMENT_ID?: string;
 }
 
 export function resolveSettings(env: EnvVars, request: Request): Settings {
@@ -142,5 +145,7 @@ export function resolveSettings(env: EnvVars, request: Request): Settings {
     SITE_NAME: env.SITE_NAME || "Memegenscript",
     REPO_URL: env.REPO_URL ?? "https://github.com/terryds/memegenscript",
     REQUEST_TEMPLATE_URL: env.REQUEST_TEMPLATE_URL ?? "https://forms.gle/SbsPFknn9NRUjs3P6",
+    // Never count local development, even when the ID is configured
+    GA_MEASUREMENT_ID: !LOCAL_HOST.test(url.host) && /^G-[A-Z0-9]+$/.test(env.GA_MEASUREMENT_ID ?? "") ? env.GA_MEASUREMENT_ID! : "",
   };
 }

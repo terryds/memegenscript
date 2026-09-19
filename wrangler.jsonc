@@ -42,6 +42,8 @@
     // Public origin used for absolute URLs (canonical, sitemap, API examples).
     // Ignored for requests to localhost, so `wrangler dev` and tests keep their origin.
     "DOMAIN": "https://memegenscript.com",
+    // Google Analytics 4 measurement ID ("G-XXXXXXXXXX"); empty disables analytics
+    "GA_MEASUREMENT_ID": "G-GD40V136YM",
     "DEFAULT_STATIC_EXTENSION": "png",
     "DEFAULT_ANIMATED_EXTENSION": "gif",
     // Seconds to keep rendered images in the edge cache

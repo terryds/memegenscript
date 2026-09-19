@@ -9,6 +9,11 @@
   var root = document.getElementById("meme-editor");
   if (!root) return;
   var config = JSON.parse(root.getAttribute("data-config"));
+
+  // Google Analytics event for a finished meme; a no-op when analytics is off or blocked
+  function trackExport(method) {
+    if (typeof window.gtag === "function") window.gtag("event", "meme_export", { template_id: config.id, method: method });
+  }
   var canvas = document.getElementById("me-canvas");
   var ctx = canvas.getContext("2d");
   var statusEl = document.getElementById("me-status");
@@ -901,11 +906,13 @@
     "download-png": function () {
       exportBlob("image/png").then(function (blob) {
         saveBlob(blob, config.id + ".png");
+        trackExport("download_png");
       });
     },
     "download-jpg": function () {
       exportBlob("image/jpeg", 0.92).then(function (blob) {
         saveBlob(blob, config.id + ".jpg");
+        trackExport("download_jpg");
       });
     },
     "copy-image": function () {
@@ -914,6 +921,7 @@
       navigator.clipboard.write([item]).then(
         function () {
           setStatus("Image copied to the clipboard.");
+          trackExport("copy_image");
         },
         function () {
           setStatus("Could not copy the image. Download instead.");
@@ -924,6 +932,7 @@
       updateHash();
       var link = window.location.href;
       var done = function () {
+        trackExport("copy_link");
         setStatus("Editor link copied. Anyone opening it sees your text (uploaded images are not included).");
       };
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(link).then(done, function () { window.prompt("Copy this link:", link); });

@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { get } from "./helpers";
+import { analyticsSnippet } from "../src/pages/html";
+import { resolveSettings } from "../src/settings";
 
 describe("GET /", () => {
   it("serves the template index with SEO metadata", async () => {
@@ -269,5 +271,25 @@ describe("crawler files", () => {
     expect(response.headers.get("cache-control")).toContain("immutable");
     expect((await get("/static/editor.js")).status).toBe(200);
     expect((await get("/static/../fonts/Impact.ttf")).status).toBe(404);
+  });
+});
+
+describe("analytics", () => {
+  const settingsFor = (id: string | undefined, url: string) => resolveSettings({ GA_MEASUREMENT_ID: id }, new Request(url));
+
+  it("stays off when no measurement ID is configured", async () => {
+    expect(analyticsSnippet(settingsFor(undefined, "https://memegenscript.com/"))).toBe("");
+    expect(await (await get("/")).text()).not.toContain("googletagmanager.com");
+  });
+
+  it("loads Google Analytics for a valid measurement ID", () => {
+    const snippet = analyticsSnippet(settingsFor("G-ABC123XYZ9", "https://memegenscript.com/"));
+    expect(snippet).toContain("https://www.googletagmanager.com/gtag/js?id=G-ABC123XYZ9");
+    expect(snippet).toContain('gtag("config","G-ABC123XYZ9")');
+  });
+
+  it("ignores malformed IDs and never counts local development", () => {
+    expect(settingsFor('G-1"><script>', "https://memegenscript.com/").GA_MEASUREMENT_ID).toBe("");
+    expect(settingsFor("G-ABC123XYZ9", "http://localhost:8787/").GA_MEASUREMENT_ID).toBe("");
   });
 });
