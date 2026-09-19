@@ -38,10 +38,13 @@ export interface TemplateData {
   archived?: boolean;
   /** Name-based path segment of the editor page (`/memes/<slug>`), unique across slugs and ids */
   slug?: string;
+  /** Slugs from before the template was renamed; they redirect to the current one */
+  formerSlugs?: string[];
 }
 
 const MANIFEST = manifest as unknown as Record<string, TemplateData>;
 const SLUG_TO_ID = new Map(Object.values(MANIFEST).map((t) => [t.slug ?? t.id, t.id]));
+const FORMER_SLUG_TO_ID = new Map(Object.values(MANIFEST).flatMap((t) => (t.formerSlugs ?? []).map((s) => [s, t.id])));
 
 export type ImageRef =
   | { kind: "asset"; path: string; filename: string; suffix: string }
@@ -146,6 +149,12 @@ export class Template {
   /** Look a template up by its editor page slug (`/memes/<slug>`). */
   static getBySlug(slug: string): Template | null {
     const id = SLUG_TO_ID.get(slug);
+    return id === undefined ? null : Template.getOrNull(id);
+  }
+
+  /** Look a template up by a slug its editor page had before it was renamed. */
+  static getByFormerSlug(slug: string): Template | null {
+    const id = FORMER_SLUG_TO_ID.get(slug);
     return id === undefined ? null : Template.getOrNull(id);
   }
 

@@ -234,13 +234,14 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
   const version = await assetVersion(app.env.ASSETS, { memoize: settings.DEPLOYED });
   let template = Template.getBySlug(slug);
   if (!template) {
-    // Old id-based URLs (/memes/kittens) live on as permanent redirects to the name-based page
-    const byId = Template.getOrNull(slug);
-    if (byId && byId.valid && byId.slug !== slug) {
+    // Old id-based URLs (/memes/kittens) and slugs from before a rename (/memes/roll-safe)
+    // live on as permanent redirects to the current name-based page
+    const moved = Template.getByFormerSlug(slug) ?? Template.getOrNull(slug);
+    if (moved && moved.valid && moved.slug !== slug) {
       const url = new URL(app.request.url);
-      return redirect(editorPath(byId) + url.search, 301);
+      return redirect(editorPath(moved) + url.search, 301);
     }
-    template = byId;
+    template = moved;
   }
   if (!template || !template.valid) {
     return page(settings, notFoundPage(settings, `There is no meme template called "${slug}".`, version), 404);

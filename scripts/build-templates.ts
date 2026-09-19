@@ -14,6 +14,7 @@ const OUTPUT = join(ROOT, "src", "generated", "templates.json");
 const DESCRIPTIONS = join(ROOT, "data", "descriptions.json");
 const MANUAL = join(ROOT, "data", "descriptions.manual.json");
 const FEATURED = join(ROOT, "data", "featured.json");
+const SLUGS = join(ROOT, "data", "slugs.json");
 
 const TEXT_DEFAULTS = {
   style: "upper",
@@ -180,14 +181,46 @@ function slugify(name: string): string {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
+//
+// data/slugs.json records every slug each template has had, oldest first (the last one is
+// current). Renaming a template changes its slug: the build appends the new one, and the older
+// ones stay on as `formerSlugs` that 301-redirect, so shared and indexed links keep working.
+// Commit data/slugs.json whenever the build changes it.
+const history = readJson<Record<string, string[]>>(SLUGS);
 const ids = Object.keys(manifest).sort();
 const taken = new Set<string>(ids);
-for (const id of ids) {
-  const entry = manifest[id] as { name: string; slug?: string };
-  let slug = id.startsWith("_") ? id : slugify(entry.name) || id;
+const wanted = (id: string) => (id.startsWith("_") ? id : slugify((manifest[id] as { name: string }).name) || id);
+// Templates that already own their slug are placed first, so a new template with the same name
+// can't take over an existing page's URL.
+const keeps = (id: string) => history[id]?.at(-1) === wanted(id);
+for (const id of [...ids.filter(keeps), ...ids.filter((id) => !keeps(id))]) {
+  let slug = wanted(id);
   if (slug !== id && taken.has(slug)) slug = `${slug}-${id}`;
   taken.add(slug);
-  entry.slug = slug;
+  (manifest[id] as { slug?: string }).slug = slug;
+}
+const recorded: string[] = [];
+const claimed = new Set<string>();
+for (const id of ids) {
+  const entry = manifest[id] as { slug: string; formerSlugs?: string[] };
+  if (id.startsWith("_")) continue;
+  const past = history[id] ?? [];
+  if (past.at(-1) !== entry.slug) {
+    history[id] = [...past.filter((s) => s !== entry.slug), entry.slug];
+    recorded.push(`${id} -> ${entry.slug}`);
+  }
+  // A former slug that is now another template's slug or id belongs to that template
+  const former = history[id].slice(0, -1).filter((s) => !taken.has(s) && !claimed.has(s));
+  former.forEach((s) => claimed.add(s));
+  if (former.length) entry.formerSlugs = former;
+}
+if (recorded.length) {
+  const lines = Object.keys(history)
+    .sort()
+    .map((id) => `  ${JSON.stringify(id)}: [${history[id].map((s) => JSON.stringify(s)).join(", ")}]`);
+  writeFileSync(SLUGS, `{\n${lines.join(",\n")}\n}\n`);
+  const shown = recorded.length > 5 ? `${recorded.slice(0, 5).join(", ")}, …` : recorded.join(", ");
+  console.log(`Recorded ${recorded.length} new slug(s) in data/slugs.json (${shown}); commit it`);
 }
 
 const unknownFeatured = featuredIds.filter((id) => !manifest[id]);
