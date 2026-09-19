@@ -129,3 +129,23 @@ describe("GET /fonts", () => {
     expect((await get("/fonts/foobar")).status).toBe(404);
   });
 });
+
+describe("GET /templates?q=", () => {
+  it("searches descriptions and aliases, and returns them", async () => {
+    const response = await get("/templates?q=guy+looking+at+girl");
+    expect(response.status).toBe(200);
+    const items = (await response.json()) as Array<{ id: string; lines: number; description: string; aliases: string[] }>;
+    const db = items.find((t) => t.id === "db");
+    expect(db?.lines).toBe(3);
+    expect(db?.description).toContain("Distracted Boyfriend");
+    expect(Array.isArray(db?.aliases)).toBe(true);
+    // The name-based `filter` finds nothing for the same words, and keeps the original shape
+    expect(await (await get("/templates?filter=guy+looking+at+girl")).json()).toEqual([]);
+    const plain = (await (await get("/templates?filter=distracted")).json()) as Array<Record<string, unknown>>;
+    expect(plain[0]).not.toHaveProperty("description");
+  });
+
+  it("returns an empty list when nothing matches", async () => {
+    expect(await (await get("/templates?q=zzzznotamemezzzz")).json()).toEqual([]);
+  });
+});

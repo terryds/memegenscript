@@ -120,6 +120,7 @@ ${meta.imageAlt ? `<meta property="og:image:alt" content="${escapeHtml(meta.imag
 <meta name="theme-color" content="#0d0b1a">
 <link rel="icon" href="/favicon.ico">
 <link rel="manifest" href="/manifest.webmanifest">
+<link rel="help" type="text/markdown" href="/llms.txt" title="Guide for AI agents">
 <link rel="apple-touch-icon" href="/static/icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -141,6 +142,7 @@ ${analyticsSnippet(settings)}
       <input id="nav-q" type="search" name="q" placeholder="Search meme templates…" autocomplete="off">
     </form>
     <a class="nav-link" href="/docs">API</a>
+    <a class="nav-link nav-link-agents" href="/agents">AI agents</a>
     ${settings.REPO_URL ? `<a class="nav-link nav-link-secondary" href="${escapeHtml(settings.REPO_URL)}" rel="noopener" target="_blank" aria-label="Source code on GitHub">GitHub</a>` : ""}
   </nav>
 </header>
@@ -155,7 +157,7 @@ ${body}
 </aside>
 <footer class="site-footer">
   <div class="container">
-    <p><strong>${escapeHtml(site)}</strong> · a free, open source meme generator · <a href="/docs">API docs</a>${settings.REPO_URL ? ` · <a href="${escapeHtml(settings.REPO_URL)}" rel="noopener">source on GitHub</a>` : ""}${request.form ? ` · <a href="${escapeHtml(request.form)}" rel="noopener" target="_blank">request a template</a>` : ""} · made with questionable judgment</p>
+    <p><strong>${escapeHtml(site)}</strong> · a free, open source meme generator · <a href="/docs">API docs</a> · <a href="/agents">guide for AI agents</a>${settings.REPO_URL ? ` · <a href="${escapeHtml(settings.REPO_URL)}" rel="noopener">source on GitHub</a>` : ""}${request.form ? ` · <a href="${escapeHtml(request.form)}" rel="noopener" target="_blank">request a template</a>` : ""} · made with questionable judgment</p>
   </div>
 </footer>
 </body>

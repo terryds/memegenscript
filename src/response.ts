@@ -3,7 +3,8 @@
 export function json(data: unknown, status = 200, headers: Record<string, string> = {}): Response {
   return new Response(JSON.stringify(data), {
     status,
-    headers: { "content-type": "application/json", ...headers },
+    // Kept out of search results here, not in robots.txt, so fetchers that honor robots.txt can read the API
+    headers: { "content-type": "application/json", "x-robots-tag": "noindex", ...headers },
   });
 }
 

@@ -373,6 +373,7 @@ export function buildOpenApi(settings: Settings): Record<string, unknown> {
         parameters: [
           { name: "animated", in: "query", schema: { type: "boolean" }, description: "Limit results to templates supporting animation" },
           { name: "filter", in: "query", schema: { type: "string" }, description: "Part of the name, keyword, or example to match" },
+          { name: "q", in: "query", schema: { type: "string" }, description: "Full-text search: every word must appear in the name, aliases, tags, example, or description. Results also include `aliases` and `description`." },
         ],
         responses: { 200: jsonResponse("Successfully returned a list of all templates", arrayOf("TemplateResponse")) },
       },

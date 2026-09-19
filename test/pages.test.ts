@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { get } from "./helpers";
+import { get, postJson } from "./helpers";
 import { analyticsSnippet } from "../src/pages/html";
 import { resolveSettings } from "../src/settings";
 
@@ -308,5 +308,52 @@ describe("analytics", () => {
   it("ignores malformed IDs and never counts local development", () => {
     expect(settingsFor('G-1"><script>', "https://memegenscript.com/").GA_MEASUREMENT_ID).toBe("");
     expect(settingsFor("G-ABC123XYZ9", "http://localhost:8787/").GA_MEASUREMENT_ID).toBe("");
+  });
+});
+
+describe("guide for AI agents", () => {
+  it("serves the markdown guide at /llms.txt and /agents.md", async () => {
+    const response = await get("/llms.txt");
+    expect(response.status).toBe(200);
+    expect(response.headers.get("content-type")).toContain("text/markdown");
+    const body = await response.text();
+    expect(body).toMatch(/^# Memegenscript for AI agents\n/);
+    expect(body).toContain("POST http://localhost:5000/images");
+    expect(body).toContain("GET http://localhost:5000/templates?q=");
+    expect(await (await get("/agents.md")).text()).toBe(body);
+  });
+
+  it("renders the same guide as a page, linked from every page", async () => {
+    const response = await get("/agents");
+    expect(response.status).toBe(200);
+    const body = await response.text();
+    expect(body).toContain("<title>Meme API for AI Agents | Memegenscript</title>");
+    expect(body).toContain('<link rel="canonical" href="http://localhost:5000/agents">');
+    expect(body).toContain('<h2 id="instructions-to-give-your-agent">');
+    expect(body).toContain("<td><code>~q</code></td>");
+    expect(body).toContain('<a href="http://localhost:5000/llms.txt">');
+    // Fenced code is escaped, never interpreted
+    expect(body).toContain("&lt;slot 1&gt;");
+    expect(body).not.toContain("```");
+    // URLs inside code spans stay code: placeholders like {id} must not become links
+    expect(body).not.toMatch(/href="[^"]*\{id\}/);
+    const home = await (await get("/")).text();
+    expect(home).toContain('<a class="nav-link nav-link-agents" href="/agents">');
+    expect(home.slice(home.indexOf('class="site-footer"'))).toContain('href="/agents"');
+    expect(await (await get("/sitemap.xml")).text()).toContain("<loc>http://localhost:5000/agents</loc>");
+  });
+
+  it("documents a request that really works", async () => {
+    const guide = await (await get("/llms.txt")).text();
+    const created = await postJson("/images", { template_id: "drake", text: ["Paying for a meme API", "Writing a URL & done"] });
+    expect(created.status).toBe(201);
+    const { url } = (await created.json()) as { url: string };
+    expect(guide).toContain(`{"url": "${url}"}`);
+  });
+
+  it("keeps the API readable for fetchers that honor robots.txt", async () => {
+    const robots = await (await get("/robots.txt")).text();
+    expect(robots).not.toContain("Disallow: /templates");
+    expect((await get("/templates/fry")).headers.get("x-robots-tag")).toBe("noindex");
   });
 });

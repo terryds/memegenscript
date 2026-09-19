@@ -181,7 +181,7 @@ ${featured.map((t, i) => templateCard(settings, t, { lazy: i > 5 })).join("\n")}
   <p class="lede">${
     query
       ? `<a href="/">Browse all ${all.length} templates</a> or refine your search.`
-      : `Pick a template, smash in your text, drag it wherever you want, download. <strong>No signup, no watermark on downloads, no talent required.</strong>`
+      : `Pick a template, smash in your text, drag it wherever you want, download. <strong>No signup, no watermark on downloads, no talent required.</strong> Not a human? Read the <a href="/agents">guide for AI agents</a>.`
   }</p>
   <form class="filter" action="/" method="get" role="search">
     <label class="visually-hidden" for="q">Filter templates</label>
@@ -496,6 +496,7 @@ export async function sitemap(app: AppContext): Promise<Response> {
   const { settings } = app;
   const urls = [
     { loc: settings.BASE_URL + "/", priority: "1.0", changefreq: "weekly" },
+    { loc: settings.BASE_URL + "/agents", priority: "0.9", changefreq: "monthly" },
     ...Template.browsable().map((t) => ({ loc: editorUrl(settings, t), priority: "0.8", changefreq: "monthly" })),
   ];
   const xml =
@@ -513,8 +514,6 @@ export async function robots(app: AppContext): Promise<Response> {
   const body = `User-agent: *
 Allow: /
 Disallow: /docs
-Disallow: /templates
-Disallow: /fonts
 Disallow: /examples
 Disallow: /images/preview.jpg
 
