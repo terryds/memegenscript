@@ -1,7 +1,7 @@
 # Plan: template library, round 3
 
 Status: **Batches E, F1, F2 and G done (122 templates, library at 454); meme scout 2026-09-18
-added 4 (library at 460).** Nothing is pending; the round-2 record is kept further down.
+added 4 (library at 460); two Jujutsu Kaisen requests added 2026-09-19 (library at 462).** Nothing is pending; the round-2 record is kept further down.
 
 ## Done: Batch E, Tobey Maguire pack (17 templates, 2026-09-17)
 
@@ -72,6 +72,16 @@ Dropped:
 - Jimothy: dropped in round 2. imgflip's raccoon is still not the short-spined Jimothy.
 - It's Me Obesity: a TikTok parody song of "Hey It's Me Verity". The still means nothing
   without the audio, and it has no Know Your Meme entry.
+
+## Jujutsu Kaisen requests 2026-09-19 (2 templates)
+
+Imported via `data/imports/jjk-2026-09-19.json`: `naoya-hair-flip` (two labels, Choso at lower
+left and Naoya at lower right; GIF + still, the GIF converted from imgflip's video-only
+638560341; not featured, by request) and `three-way-domain` (the chapter 178 manga panel, black
+thin text inside the three blank speech bubbles). The still for `naoya-hair-flip` is imgflip
+633609939; the more common upload, 640124287 "slap", carries an "animepahe" watermark.
+`three-way-domain` has no Know Your Meme entry and got a hand-written description. Skipped the
+anime version of the three-way panel (imgflip 662671570): 415px wide and no bubbles to fill.
 
 ## Next packs (not planned in detail yet)
 

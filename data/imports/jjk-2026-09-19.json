@@ -1,0 +1,55 @@
+{
+ "_comment": "Jujutsu Kaisen additions 2026-09-19: Naoya Hair Flip (GIF + still) and Three-Way Domain Expansion.",
+ "templates": [
+  {
+   "id": "naoya-hair-flip",
+   "name": "Naoya Hair Flip",
+   "imgflip": 633609939,
+   "source": "https://knowyourmeme.com/memes/naoya-hair-flip",
+   "keywords": [
+    "Jujutsu Kaisen",
+    "Naoya Zenin",
+    "Choso",
+    "hair flip",
+    "elbow",
+    "slap",
+    "effortless",
+    "anime"
+   ],
+   "example": [
+    "my weekend plans",
+    "one \"quick\" production hotfix"
+   ],
+   "boxes": [
+    [0.02, 0.6, 0.4, 0.22],
+    [0.5, 0.78, 0.48, 0.2]
+   ]
+  },
+  {
+   "id": "three-way-domain",
+   "name": "Three-Way Domain Expansion",
+   "imgflip": 495227643,
+   "source": "",
+   "keywords": [
+    "Jujutsu Kaisen",
+    "domain expansion",
+    "Yuta Okkotsu",
+    "Ryu Ishigori",
+    "Takako Uro",
+    "three way",
+    "manga panel",
+    "anime"
+   ],
+   "example": [
+    "tabs",
+    "spaces",
+    "just use prettier"
+   ],
+   "boxes": [
+    [0.235, 0.12, 0.13, 0.42, "default", "black", "center", "thin"],
+    [0.607, 0.5, 0.12, 0.3, "default", "black", "center", "thin"],
+    [0.848, 0.07, 0.125, 0.28, "default", "black", "center", "thin"]
+   ]
+  }
+ ]
+}

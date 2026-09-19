@@ -1,0 +1,56 @@
+name: "Three-Way Domain Expansion"
+source: 
+keywords:
+  - "Jujutsu Kaisen"
+  - "domain expansion"
+  - "Yuta Okkotsu"
+  - "Ryu Ishigori"
+  - "Takako Uro"
+  - "three way"
+  - "manga panel"
+  - "anime"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.235
+    anchor_y: 0.12
+    angle: 0.0
+    scale_x: 0.13
+    scale_y: 0.42
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.607
+    anchor_y: 0.5
+    angle: 0.0
+    scale_x: 0.12
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.848
+    anchor_y: 0.07
+    angle: 0.0
+    scale_x: 0.125
+    scale_y: 0.28
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "tabs"
+  - "spaces"
+  - "just use prettier"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
