@@ -20,7 +20,6 @@ export function rot13(value: string): string {
 
 export async function page(app: AppContext): Promise<Response> {
   const { settings } = app;
-  const site = escapeHtml(siteName(settings));
   const version = await assetVersion(app.env.ASSETS, { memoize: settings.DEPLOYED });
   if (!settings.CONTACT_EMAIL) {
     return html(notFoundPage(settings, "There is no contact page on this site.", version), 404);
@@ -34,7 +33,7 @@ export async function page(app: AppContext): Promise<Response> {
   const body = `<article class="guide">
   <section class="hero">
     <h1>Contact</h1>
-    <p class="lede">Questions, bug reports, takedown requests, or just want to say the site is good? Write to us.</p>
+    <p class="lede">Questions, bug reports, or just want to say the site is good? Write to us.</p>
   </section>
 
   <div class="contact-card" data-contact="${scrambled}">
@@ -57,8 +56,6 @@ export async function page(app: AppContext): Promise<Response> {
     <li><strong>Wondering what we collect?</strong> The <a href="/privacy">privacy page</a> answers most of it.</li>
   </ul>
 
-  <h2 id="takedown">Rights holders</h2>
-  <p>${site} hosts meme templates that are widely circulated online, and each template page links its source. If you hold the rights to an image and want it removed, email us with a link to the template page and we will take it down.</p>
 </article>`;
 
   const response = html(
@@ -66,7 +63,7 @@ export async function page(app: AppContext): Promise<Response> {
       settings,
       {
         title: `Contact | ${siteName(settings)}`,
-        description: `How to reach ${siteName(settings)}: email for questions, bug reports and takedown requests, or use the template request form.`,
+        description: `How to reach ${siteName(settings)}: email for questions and bug reports, or use the template request form.`,
         canonical: settings.BASE_URL + "/contact",
         scripts: ["contact.js"],
         assetVersion: version,
