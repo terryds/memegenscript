@@ -337,6 +337,39 @@ describe("GET /privacy", () => {
   });
 });
 
+describe("GET /contact", () => {
+  const EMAIL = "memegenscript@terrydjony.com";
+
+  it("gives a way to reach us and is linked from every page", async () => {
+    const response = await get("/contact");
+    expect(response.status).toBe(200);
+    const body = await response.text();
+    expect(body).toContain("<title>Contact | Memegenscript</title>");
+    expect(body).toContain('<link rel="canonical" href="http://localhost:5000/contact">');
+    expect(body).toContain('src="/static/contact.js');
+    const home = await (await get("/")).text();
+    expect(home.slice(home.indexOf('class="site-footer"'))).toContain('<a href="/contact">contact</a>');
+    expect(await (await get("/sitemap.xml")).text()).toContain("<loc>http://localhost:5000/contact</loc>");
+  });
+
+  it("never puts the address in the page as plain text", async () => {
+    const body = await (await get("/contact")).text();
+    expect(body).not.toContain(EMAIL);
+    expect(body).not.toContain("mailto:" + EMAIL);
+    expect(body).not.toContain("memegenscript@");
+    expect(body).not.toContain("terrydjony.com");
+    // ROT13 for the script to undo, plus a reversed copy for browsers without JavaScript
+    expect(body).toContain('data-contact="zrzrtrafpevcg@greelqwbal.pbz"');
+    expect(body).toContain([...EMAIL].reverse().join(""));
+  });
+
+  it("scrambles and unscrambles with the same function", async () => {
+    const { rot13 } = await import("../src/views/contact");
+    expect(rot13(EMAIL)).toBe("zrzrtrafpevcg@greelqwbal.pbz");
+    expect(rot13(rot13(EMAIL))).toBe(EMAIL);
+  });
+});
+
 describe("guide for AI agents", () => {
   it("serves the markdown guide at /llms.txt and /agents.md", async () => {
     const response = await get("/llms.txt");

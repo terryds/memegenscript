@@ -39,6 +39,9 @@
     // Form linked from the "Request a template" button (set to "" to hide it);
     // a GitHub issue link is offered next to it when REPO_URL is set
     "REQUEST_TEMPLATE_URL": "https://forms.gle/SbsPFknn9NRUjs3P6",
+    // Address shown on /contact (set to "" to drop the page). It is never written into the
+    // HTML as plain text: the page carries it ROT13-scrambled and descrambles it in the browser
+    "CONTACT_EMAIL": "memegenscript@terrydjony.com",
     // Public origin used for absolute URLs (canonical, sitemap, API examples).
     // Ignored for requests to localhost, so `wrangler dev` and tests keep their origin.
     "DOMAIN": "https://memegenscript.com",
