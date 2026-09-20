@@ -1,0 +1,45 @@
+name: "Parasite Driving"
+source: "https://knowyourmeme.com/memes/ki-taek-from-parasite-driving"
+keywords:
+  - "Ki Taek"
+  - "Kim Ki-taek"
+  - "Song Kang-ho"
+  - "Parasite"
+  - "Bong Joon-ho"
+  - "chauffeur"
+  - "driving"
+  - "class resentment"
+  - "rich people"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0.55
+    angle: 0.0
+    scale_x: 0.42
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.58
+    anchor_y: 0.06
+    angle: 0.0
+    scale_x: 0.4
+    scale_y: 0.22
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "billionaires explaining hard work"
+  - "everyone else"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -66,6 +66,41 @@
           0.2
         ]
       ]
+    },
+    {
+      "id": "parasite-driving",
+      "name": "Parasite Driving",
+      "imgflip": "",
+      "source": "https://knowyourmeme.com/memes/ki-taek-from-parasite-driving",
+      "keywords": [
+        "Ki Taek",
+        "Kim Ki-taek",
+        "Song Kang-ho",
+        "Parasite",
+        "Bong Joon-ho",
+        "chauffeur",
+        "driving",
+        "class resentment",
+        "rich people"
+      ],
+      "example": [
+        "billionaires explaining hard work",
+        "everyone else"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.55,
+          0.42,
+          0.3
+        ],
+        [
+          0.58,
+          0.06,
+          0.4,
+          0.22
+        ]
+      ]
     }
   ]
 }
