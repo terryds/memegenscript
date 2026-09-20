@@ -170,6 +170,14 @@ button[disabled] { opacity: 0.6; cursor: wait; transform: none; }
 .guide p, .guide li { max-width: 75ch; }
 .guide li { margin-bottom: 6px; }
 .guide .muted { color: var(--muted); font-size: 14px; margin-top: 32px; }
+
+/* ---- Contact page ------------------------------------------------------- */
+.contact-card { background: var(--surface); border: 3px solid var(--ink); border-radius: var(--radius); padding: 18px 22px 20px; box-shadow: var(--shadow); max-width: 560px; }
+.contact-label { font-family: var(--heavy); text-transform: uppercase; font-size: 12px; letter-spacing: 0.04em; color: var(--muted); margin: 0 0 6px; }
+.contact-email { font-family: var(--heavy); font-size: clamp(1.1rem, 3vw, 1.5rem); margin: 0 0 14px; overflow-wrap: anywhere; }
+/* No JavaScript: the address sits in the markup backwards and the browser flips it back */
+.contact-reversed { unicode-bidi: bidi-override; direction: rtl; }
+.contact-card .actions { margin: 0; }
 .guide pre { white-space: pre-wrap; overflow-wrap: anywhere; }
 .table-wrap { overflow-x: auto; margin: 16px 0; border: 3px solid var(--ink); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
 .table-wrap table { width: 100%; border-collapse: collapse; font-size: 15px; }

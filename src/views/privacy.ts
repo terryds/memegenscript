@@ -58,7 +58,7 @@ export async function page(app: AppContext): Promise<Response> {
   </ul>
 
   <h2 id="contact">Questions</h2>
-  <p>${issues ? `Open an issue on <a href="${escapeHtml(issues)}" rel="noopener">GitHub</a>. The code is open source, so you can check every statement on this page.` : "Contact the operator of this site."}</p>
+  <p>${issues ? `Open an issue on <a href="${escapeHtml(issues)}" rel="noopener">GitHub</a>. The code is open source, so you can check every statement on this page.` : "Contact the operator of this site."}${settings.CONTACT_EMAIL ? ` You can also <a href="/contact">email us</a>.` : ""}</p>
   <p class="muted">Last updated <time datetime="${UPDATED}">${UPDATED}</time>.</p>
 </article>`;
 

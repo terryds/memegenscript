@@ -160,7 +160,7 @@ ${body}
 </aside>
 <footer class="site-footer">
   <div class="container">
-    <p><strong>${escapeHtml(site)}</strong> · a free, open source meme generator · <a href="/docs">API docs</a> · <a href="/agents">guide for AI agents</a> · <a href="/privacy">privacy</a>${settings.REPO_URL ? ` · <a href="${escapeHtml(settings.REPO_URL)}" rel="noopener">source on GitHub</a>` : ""}${request.form ? ` · <a href="${escapeHtml(request.form)}" rel="noopener" target="_blank">request a template</a>` : ""} · made with questionable judgment</p>
+    <p><strong>${escapeHtml(site)}</strong> · a free, open source meme generator · <a href="/docs">API docs</a> · <a href="/agents">guide for AI agents</a> · <a href="/privacy">privacy</a>${settings.CONTACT_EMAIL ? ` · <a href="/contact">contact</a>` : ""}${settings.REPO_URL ? ` · <a href="${escapeHtml(settings.REPO_URL)}" rel="noopener">source on GitHub</a>` : ""}${request.form ? ` · <a href="${escapeHtml(request.form)}" rel="noopener" target="_blank">request a template</a>` : ""} · made with questionable judgment</p>
   </div>
 </footer>
 </body>
