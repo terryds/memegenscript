@@ -1,0 +1,32 @@
+name: "Really? Right in Front of My"
+source: "https://knowyourmeme.com/sensitive/memes/right-in-front-of-my-salad"
+keywords:
+  - "right in front of my"
+  - "really"
+  - "stick figure"
+  - "doodle"
+  - "drawing"
+  - "salad"
+  - "indignant"
+  - "how dare you"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.3
+    anchor_y: 0.1
+    angle: 0.0
+    scale_x: 0.68
+    scale_y: 0.1
+    align: left
+    start: 0.0
+    stop: 1.0
+example:
+  - "friday deploy?"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
