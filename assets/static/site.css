@@ -53,7 +53,8 @@ a { color: var(--cyan); }
 a:hover { color: var(--yellow); }
 img { max-width: 100%; height: auto; }
 code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; }
-code { background: rgba(255, 255, 255, 0.08); padding: 1px 5px; border-radius: 4px; }
+/* Long paths and URLs in inline code break instead of widening the page on phones */
+code { background: rgba(255, 255, 255, 0.08); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
 pre { overflow-x: auto; padding: 14px; background: var(--ink); color: var(--lime); border: 3px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
 pre code { background: none; padding: 0; }
 .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
@@ -78,10 +79,10 @@ h2 { font-size: 1.6rem; }
 
 /* ---- Header / footer ---------------------------------------------------- */
 .site-header { position: sticky; top: 0; z-index: 10; background: rgba(13, 11, 26, 0.85); backdrop-filter: blur(10px); border-bottom: 3px solid var(--ink); box-shadow: 0 3px 0 var(--yellow); }
-.nav { display: flex; align-items: center; gap: 16px; padding: 10px 20px; }
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 10px 20px; }
 .brand { font-size: 1.5rem; text-decoration: none; white-space: nowrap; transform: rotate(-2deg); display: inline-block; }
 .brand:hover { color: var(--yellow); transform: rotate(2deg) scale(1.04); }
-.nav-search { flex: 1; }
+.nav-search { flex: 1 1 200px; min-width: 0; }
 .nav-search input, .filter input { width: 100%; }
 .nav-link { font-family: var(--heavy); text-transform: uppercase; text-decoration: none; padding: 8px 14px; border: 3px solid var(--ink); border-radius: 999px; background: var(--pink); color: #fff; box-shadow: var(--shadow-sm); }
 .nav-link:hover { color: #fff; transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
@@ -142,6 +143,10 @@ button[disabled] { opacity: 0.6; cursor: wait; transform: none; }
 .request { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin: -12px 0 28px; }
 .request > span { font-family: var(--heavy); text-transform: uppercase; font-size: 14px; color: var(--muted); }
 .request .button { padding: 8px 14px; font-size: 13px; }
+@media (max-width: 560px) {
+  .request > span { flex: 1 0 100%; }
+  .request .button { flex: 1 1 100%; }
+}
 
 .grid { list-style: none; margin: 0; padding: 4px; display: grid; grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); gap: 18px; }
 .grid.small { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px; }
@@ -164,7 +169,12 @@ button[disabled] { opacity: 0.6; cursor: wait; transform: none; }
 /* ---- Guide for AI agents ------------------------------------------------ */
 .nav-link-agents { background: var(--lime); color: var(--ink); white-space: nowrap; }
 .nav-link-agents:hover { color: var(--ink); }
-@media (max-width: 560px) { .nav { gap: 8px; padding: 10px 12px; } .nav-link { padding: 6px 10px; font-size: 13px; } }
+@media (max-width: 560px) {
+  /* Brand takes its own row so the pills wrap under it instead of overflowing the screen */
+  .nav { gap: 8px 10px; padding: 10px 12px; }
+  .brand { flex: 1 0 100%; font-size: 1.35rem; }
+  .nav-link { padding: 6px 10px; font-size: 13px; }
+}
 .guide { max-width: 860px; }
 .guide h2 { margin: 44px 0 12px; scroll-margin-top: 80px; }
 .guide p, .guide li { max-width: 75ch; }
