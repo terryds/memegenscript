@@ -132,6 +132,40 @@
           "thin"
         ]
       ]
+    },
+    {
+      "id": "i-like-music",
+      "name": "I Like Music (500 Days of Summer)",
+      "imgflip": 549163522,
+      "kym": "500-days-of-summer",
+      "keywords": [
+        "500 Days of Summer",
+        "Tom and Summer",
+        "record store",
+        "Joseph Gordon-Levitt",
+        "Zooey Deschanel",
+        "I like music",
+        "shared interest",
+        "flirting"
+      ],
+      "example": [
+        "i like music",
+        "i like music too"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.02,
+          0.44,
+          0.16
+        ],
+        [
+          0.54,
+          0.02,
+          0.44,
+          0.16
+        ]
+      ]
     }
   ]
 }
