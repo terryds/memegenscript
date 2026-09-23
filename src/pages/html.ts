@@ -149,7 +149,6 @@ ${analyticsSnippet(settings)}
     <a class="nav-link nav-link-characters" href="/meme-characters">Characters</a>
     <a class="nav-link" href="/docs">API</a>
     <a class="nav-link nav-link-agents" href="/agents">AI agents</a>
-    ${settings.REPO_URL ? `<a class="nav-link nav-link-secondary" href="${escapeHtml(settings.REPO_URL)}" rel="noopener" target="_blank" aria-label="Source code on GitHub">GitHub</a>` : ""}
   </nav>
 </header>
 <main id="main" class="container">
