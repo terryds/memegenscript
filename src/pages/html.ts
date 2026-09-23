@@ -121,6 +121,7 @@ ${meta.imageAlt ? `<meta property="og:image:alt" content="${escapeHtml(meta.imag
 <meta name="twitter:description" content="${escapeHtml(meta.description)}">
 <meta name="twitter:image" content="${escapeHtml(image)}">
 <meta name="theme-color" content="#0d0b1a">
+<meta name="ahrefs-site-verification" content="a617d2d8650e7ebf5a83ebf53b250098c2397bd48f0e682ab99bd75fe3986023">
 <link rel="icon" href="/favicon.ico">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="help" type="text/markdown" href="/llms.txt" title="Guide for AI agents">
