@@ -127,9 +127,9 @@ ${featured.map((t, i) => templateCard(settings, t, { lazy: i > 5 })).join("\n")}
 `
     : "";
 
-  const characters = query ? [] : Character.all().slice(0, 8);
+  const characters = Character.all().slice(0, 8);
   const charactersSection = characters.length
-    ? `<section class="characters-teaser" aria-labelledby="characters-title">
+    ? `<section class="characters-teaser related" aria-labelledby="characters-title">
   <h2 id="characters-title">Meme characters</h2>
   <p class="section-lede">Doge, Wojak, Pepe and friends as transparent PNGs. <a href="${CHARACTERS_PATH}">Browse all ${Character.all().length} characters</a>.</p>
   <ul class="grid small">
@@ -157,14 +157,14 @@ ${characters.map((c) => characterCard(settings, c)).join("\n")}
     ${requestButtons}
   </div>` : ""}
 </section>
-${featuredSection}${charactersSection}<section aria-labelledby="all-title">
+${featuredSection}<section aria-labelledby="all-title">
   <h2 id="all-title">${query ? "Results" : "All meme templates"}</h2>
   <ul class="grid" id="grid">
 ${templates.map((t, i) => templateCard(settings, t, { lazy: i > 11 })).join("\n")}
   </ul>
   <p class="empty" id="empty" ${templates.length ? "hidden" : ""}>Nothing matches. Try describing the meme, like “dog burning room”. <a href="/">Show all templates</a>.${request.form ? ` Still missing? <a href="${escapeHtml(request.form)}" rel="noopener" target="_blank">Request it</a> and we’ll add it.` : ""}</p>
 </section>
-<section class="about">
+${charactersSection}<section class="about">
   <h2>About this meme generator</h2>
   <p>${escapeHtml(site)} is a free, open source meme generator. Each template page lets you add your own text, choose a font, style, and layout, and preview the result live. The same images are available programmatically through the <a href="/docs">meme API</a>: every meme is just a URL like <code>/images/buzz/memes/memes_everywhere.png</code>.</p>
 </section>`;
