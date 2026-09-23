@@ -1,0 +1,47 @@
+name: "Mr. Bean Copying"
+source: "https://knowyourmeme.com/memes/mr-bean-cheating"
+keywords:
+  - "Mr. Bean"
+  - "Rowan Atkinson"
+  - "cheating"
+  - "copying"
+  - "exam"
+  - "test"
+  - "homework"
+  - "looking over shoulder"
+  - "peeking"
+  - "The Exam"
+  - "Mr Bean cheating"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.44
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.54
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.44
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "my friend during the exam"
+  - "me"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

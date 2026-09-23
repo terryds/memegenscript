@@ -166,6 +166,43 @@
           0.16
         ]
       ]
+    },
+    {
+      "id": "mr-bean-copying",
+      "name": "Mr. Bean Copying",
+      "imgflip": 363851981,
+      "kym": "mr-bean-cheating",
+      "keywords": [
+        "Mr. Bean",
+        "Rowan Atkinson",
+        "cheating",
+        "copying",
+        "exam",
+        "test",
+        "homework",
+        "looking over shoulder",
+        "peeking",
+        "The Exam",
+        "Mr Bean cheating"
+      ],
+      "example": [
+        "my friend during the exam",
+        "me"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.02,
+          0.44,
+          0.2
+        ],
+        [
+          0.54,
+          0.02,
+          0.44,
+          0.2
+        ]
+      ]
     }
   ]
 }
