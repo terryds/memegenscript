@@ -162,9 +162,9 @@ Drop a directory into `assets/templates/<id>/` with a `config.yml` and a `defaul
 `/meme-characters` lists classic meme characters (Doge, Wojak, Pepe, Trollface, …) as
 transparent PNG cutouts that visitors can download or copy. Each character lives in
 `assets/characters/<id>/` as a `config.yml` (name, aliases, keywords, description, source, and
-the templates it appears in) plus a `default.png`. `scripts/build-characters.ts` compiles them
-into `src/generated/characters.json` and fails the build if a PNG is not a real cutout (8-bit
-RGBA with both transparent and opaque pixels). The API exposes them at `GET /characters`
+the templates it appears in) plus a `default.png`. `scripts/build-characters.ts` (run by `npm run build:templates`) compiles
+them into `src/generated/characters.json` and fails the build if a PNG is not a real cutout
+(8-bit RGBA with both transparent and opaque pixels). The API exposes them at `GET /characters`
 (`?q=` searches), `GET /characters/{id}` and `GET /characters/{id}.png?width=400`.
 
 ## API
