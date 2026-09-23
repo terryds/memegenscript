@@ -118,6 +118,7 @@ describe("GET /meme-characters", () => {
 
   it("is linked from the navigation, footer, and home page", async () => {
     const home = await (await get("/")).text();
+    expect(home).toContain('<a class="nav-link nav-link-templates" href="/">Templates</a>');
     expect(home).toContain('<a class="nav-link nav-link-characters" href="/meme-characters">Characters</a>');
     expect(home.slice(home.indexOf('class="site-footer"'))).toContain('<a href="/meme-characters">meme characters</a>');
     expect(home).toContain('<h2 id="characters-title">Meme characters</h2>');

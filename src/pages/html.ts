@@ -145,6 +145,7 @@ ${analyticsSnippet(settings)}
       <label class="visually-hidden" for="nav-q">Search meme templates</label>
       <input id="nav-q" type="search" name="q" placeholder="Search meme templates…" autocomplete="off">
     </form>
+    <a class="nav-link nav-link-templates" href="/">Templates</a>
     <a class="nav-link nav-link-characters" href="/meme-characters">Characters</a>
     <a class="nav-link" href="/docs">API</a>
     <a class="nav-link nav-link-agents" href="/agents">AI agents</a>
