@@ -239,6 +239,25 @@
           0.24
         ]
       ]
+    },
+    {
+      "id": "obama-medal",
+      "name": "Obama Awards Himself a Medal",
+      "imgflip": 89853322,
+      "kym": "obama-awards-obama-a-medal",
+      "keywords": [
+        "Obama",
+        "medal",
+        "self award",
+        "patting yourself on the back",
+        "self congratulation",
+        "proud of myself",
+        "Presidential Medal of Freedom"
+      ],
+      "example": [
+        "me when i fix the bug",
+        "that i created"
+      ]
     }
   ]
 }
