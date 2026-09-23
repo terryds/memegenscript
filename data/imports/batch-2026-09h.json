@@ -54,14 +54,14 @@
       ],
       "boxes": [
         [
-          0.0,
-          0.0,
+          0,
+          0,
           0.48,
           0.2
         ],
         [
           0.52,
-          0.0,
+          0,
           0.48,
           0.2
         ]
@@ -201,6 +201,42 @@
           0.02,
           0.44,
           0.2
+        ]
+      ]
+    },
+    {
+      "id": "mark-zuckerberg-watching",
+      "name": "Mark Zuckerberg Is Watching",
+      "imgflip": 470544257,
+      "kym": "mark-zuckerberg-staring-through-window",
+      "keywords": [
+        "Mark Zuckerberg",
+        "Zuckerberg",
+        "Zuck",
+        "Facebook",
+        "Meta",
+        "Threads",
+        "AI generated",
+        "staring through window",
+        "peeking",
+        "watching",
+        "surveillance",
+        "privacy",
+        "spying",
+        "creepy",
+        "stalker",
+        "I am always watching",
+        "Zuck is watching"
+      ],
+      "example": [
+        "when you mention deleting facebook"
+      ],
+      "boxes": [
+        [
+          0.02,
+          0.02,
+          0.96,
+          0.24
         ]
       ]
     }

@@ -1,0 +1,41 @@
+name: "Mark Zuckerberg Is Watching"
+source: "https://knowyourmeme.com/memes/mark-zuckerberg-staring-through-window"
+keywords:
+  - "Mark Zuckerberg"
+  - "Zuckerberg"
+  - "Zuck"
+  - "Facebook"
+  - "Meta"
+  - "Threads"
+  - "AI generated"
+  - "staring through window"
+  - "peeking"
+  - "watching"
+  - "surveillance"
+  - "privacy"
+  - "spying"
+  - "creepy"
+  - "stalker"
+  - "I am always watching"
+  - "Zuck is watching"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.02
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.96
+    scale_y: 0.24
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "when you mention deleting facebook"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
