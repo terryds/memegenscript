@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Meme characters: 51 classic characters (Doge, Wojak, Pepe, Trollface, Gigachad, …) as
+  transparent PNG cutouts at `/meme-characters`, downloadable from each character's page
+  and served by the API at `GET /characters`, `GET /characters/{id}` and
+  `GET /characters/{id}.png?width=`. Template pages link to the characters they contain.
 - Guide for AI agents at `/agents`, with the raw markdown at `/llms.txt`.
 - `GET /templates?q=` searches names, aliases, tags and descriptions, and returns the
   description with each match. `robots.txt` no longer blocks the API paths; JSON responses

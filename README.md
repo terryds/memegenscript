@@ -157,6 +157,16 @@ Drop a directory into `assets/templates/<id>/` with a `config.yml` and a `defaul
 `style=` options. The manifest is rebuilt automatically by `npm run dev`, `npm test` and
 `npm run deploy` (or run `npm run build:templates`).
 
+### Meme characters
+
+`/meme-characters` lists classic meme characters (Doge, Wojak, Pepe, Trollface, …) as
+transparent PNG cutouts that visitors can download or copy. Each character lives in
+`assets/characters/<id>/` as a `config.yml` (name, aliases, keywords, description, source, and
+the templates it appears in) plus a `default.png`. `scripts/build-characters.ts` compiles them
+into `src/generated/characters.json` and fails the build if a PNG is not a real cutout (8-bit
+RGBA with both transparent and opaque pixels). The API exposes them at `GET /characters`
+(`?q=` searches), `GET /characters/{id}` and `GET /characters/{id}.png?width=400`.
+
 ## API
 
 The full guide lives in [docs/guide.md](docs/guide.md) and the client notes in
@@ -184,11 +194,12 @@ The full guide lives in [docs/guide.md](docs/guide.md) and the client notes in
 ## Project layout
 
 ```
-assets/            templates/, fonts/, static/  (served by Workers Static Assets)
+assets/            templates/, characters/, fonts/, static/  (served by Workers Static Assets)
 scripts/           build-templates.ts → src/generated/templates.json
+                   build-characters.ts → src/generated/characters.json
 src/index.ts       routes + CORS + error handling
 src/views/         one module per Sanic blueprint
-src/models/        Template, Text, Overlay, Font
+src/models/        Template, Character, Text, Overlay, Font
 src/images/        codecs, raster ops, text layout, SVG layer, render pipeline
 src/utils/         slug codec, urls, colors, emoji, remote tracking, sha1, mt19937
 src/docs/          OpenAPI document + Swagger UI page

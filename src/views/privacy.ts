@@ -4,7 +4,7 @@ import { assetVersion } from "../pages/assets";
 import { escapeHtml, layout, siteName } from "../pages/html";
 import { html } from "../response";
 
-const UPDATED = "2026-09-19";
+const UPDATED = "2026-09-23";
 
 export async function page(app: AppContext): Promise<Response> {
   const { settings } = app;
@@ -23,6 +23,7 @@ export async function page(app: AppContext): Promise<Response> {
   <ul>
     <li>A search on the home page, with the search words and the number of results.</li>
     <li>An export from the editor, with the template ID and the method (download, copy, or share link). The meme itself is not sent.</li>
+    <li>A download of a meme character, with the character ID and the method (download, copy image, or copy link).</li>
     <li>The “Install” prompt: whether it was accepted, and whether the app was installed.</li>
   </ul>
   <p>We use no advertising features and we do not sell or share this data. To opt out, block analytics in your browser or install <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Google's opt-out add-on</a>. The site works the same without it. See <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a> for how Google handles the data.</p>`

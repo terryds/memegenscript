@@ -414,6 +414,54 @@ export function buildOpenApi(settings: Settings): Record<string, unknown> {
         responses: { 201: jsonResponse("Successfully created a meme from a template", ref("MemeResponse")) },
       },
     },
+    "/characters": {
+      get: {
+        operationId: "characters.index",
+        summary: "List meme characters (transparent PNG cutouts)",
+        tags: ["Characters"],
+        description: dedent(`
+        Classic meme characters (Doge, Wojak, Pepe, Trollface, …) as transparent
+        PNG cutouts. Each entry has an \`id\`, the \`image\` URL of the PNG,
+        \`aliases\` and a \`description\` to choose by, and the \`templates\` the
+        character appears in. Append \`?width=\` or \`?height=\` to \`image\` to
+        resize; the aspect ratio is kept.
+        `),
+        parameters: [
+          { name: "q", in: "query", schema: { type: "string" }, description: "Full-text search: every word must appear in the name, aliases, keywords, or description." },
+        ],
+        responses: { 200: jsonResponse("Successfully returned a list of characters", arrayOf("CharacterResponse")) },
+      },
+    },
+    "/characters/{id}": {
+      get: {
+        operationId: "characters.detail",
+        summary: "View a specific character",
+        tags: ["Characters"],
+        parameters: [{ name: "id", in: "path", required: true, schema: { type: "string" }, description: "ID of a meme character" }],
+        responses: {
+          200: jsonResponse("Successfully returned a specific character", ref("CharacterResponse")),
+          404: { description: "Character not found" },
+        },
+      },
+    },
+    "/characters/{id}.png": {
+      get: {
+        operationId: "characters.png",
+        summary: "Download a character as a transparent PNG",
+        tags: ["Characters"],
+        parameters: [
+          { name: "id", in: "path", required: true, schema: { type: "string" }, description: "ID of a meme character" },
+          { name: "width", in: "query", schema: { type: "integer" }, description: "Output width in pixels (10–2048). The height follows the aspect ratio; with both, the image fits inside the box." },
+          { name: "height", in: "query", schema: { type: "integer" }, description: "Output height in pixels (10–2048). See `width`." },
+          { name: "download", in: "query", schema: { type: "boolean" }, description: "Send the file as an attachment (`Content-Disposition`)." },
+        ],
+        responses: {
+          200: { description: "The transparent PNG", content: { "image/png": { schema: { type: "string", format: "binary" } } } },
+          404: { description: "Character not found" },
+          422: { description: "Invalid width or height" },
+        },
+      },
+    },
     "/images/{template_id}": {
       get: {
         operationId: "shortcuts.example_path",
@@ -537,6 +585,23 @@ export function buildOpenApi(settings: Settings): Record<string, unknown> {
             example: { type: "object", properties: { text: strings, url: str } },
             source: str,
             keywords: strings,
+            _self: str,
+          },
+        },
+        CharacterResponse: {
+          type: "object",
+          properties: {
+            id: str,
+            name: str,
+            aliases: strings,
+            description: str,
+            keywords: strings,
+            width: { type: "integer" },
+            height: { type: "integer" },
+            image: str,
+            templates: { type: "array", items: { type: "object", properties: { id: str, name: str, _self: str } } },
+            source: str,
+            page: str,
             _self: str,
           },
         },

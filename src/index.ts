@@ -11,6 +11,7 @@ import { Router, SLUG } from "./router";
 import { resolveSettings, type EnvVars } from "./settings";
 import { gallery } from "./utils/html";
 import * as agents from "./views/agents";
+import * as characters from "./views/characters";
 import * as clients from "./views/clients";
 import * as editor from "./views/editor";
 import * as contact from "./views/contact";
@@ -28,6 +29,8 @@ const router = new Router();
 router.get(/^\/$/, editor.index, "Pages.index");
 router.get(/^\/memes\/?$/, editor.memesIndex, "Pages.memes");
 router.get(new RegExp(`^/memes/(${SLUG})/?$`), editor.detail, "Pages.editor");
+router.get(/^\/meme-characters\/?$/, characters.listPage, "Pages.characters");
+router.get(new RegExp(`^/meme-characters/(${SLUG})/?$`), characters.detailPage, "Pages.character");
 router.get(/^\/sitemap\.xml$/, editor.sitemap, "Pages.sitemap");
 router.get(/^\/manifest\.webmanifest$/, pwa.manifest, "Pages.manifest");
 router.get(/^\/sw\.js$/, pwa.serviceWorker, "Pages.service_worker");
@@ -38,7 +41,7 @@ router.get(/^\/privacy\/?$/, privacy.page, "Pages.privacy");
 router.get(/^\/contact\/?$/, contact.page, "Pages.contact");
 router.get(/^\/(llms\.txt|agents\.md)$/, agents.markdown, "Pages.agents_markdown");
 router.get(/^\/static\/([\w./-]+)$/, editor.staticAsset, "Pages.static");
-router.get(/^\/assets\/(templates|fonts)\/([^/]+)\/?([^/]*)$/, editor.rawAsset, "Pages.asset");
+router.get(/^\/assets\/(templates|fonts|characters)\/([^/]+)\/?([^/]*)$/, editor.rawAsset, "Pages.asset");
 router.get(/^\/proxy\/image\/?$/, editor.imageProxy, "Pages.image_proxy");
 
 // --- app/main.py -------------------------------------------------------------
@@ -78,6 +81,11 @@ router.post(/^\/templates\/custom\/?$/, templates.custom, "Templates.custom");
 router.get(new RegExp(`^/templates/(${SLUG})/?$`), templates.detail, "Templates.detail");
 router.post(new RegExp(`^/templates/(${SLUG})/?$`), templates.build, "Templates.build");
 
+// --- Characters --------------------------------------------------------------
+router.get(/^\/characters\/?$/, characters.index, "Characters.index");
+router.get(new RegExp(`^/characters/(${SLUG})\\.png$`), characters.png, "Characters.png");
+router.get(new RegExp(`^/characters/(${SLUG})/?$`), characters.detail, "Characters.detail");
+
 // --- Fonts -------------------------------------------------------------------
 router.get(/^\/fonts\/?$/, fonts.index, "Fonts.index");
 router.get(new RegExp(`^/fonts/(${SLUG})/?$`), fonts.detail, "Fonts.detail");
@@ -88,9 +96,9 @@ router.get(/^\/examples\/animated\/?$/, examples.examplesAnimated, "examples.exa
 router.get(/^\/examples\/static\/?$/, examples.examplesStatic, "examples.examples_static");
 
 // --- Legacy shortcuts --------------------------------------------------------
-router.get(/^\/((?!templates)[a-z-]+)\/([^/].*\.\w+)$/, shortcuts.legacyCustomImage, "Shortcuts.legacy_custom_image");
+router.get(/^\/((?!templates|characters|meme-characters)[a-z-]+)\/([^/].*\.\w+)$/, shortcuts.legacyCustomImage, "Shortcuts.legacy_custom_image");
 router.get(/^\/([^/]+\.\w+)$/, shortcuts.legacyExampleImage, "Shortcuts.legacy_example_image");
-router.get(/^\/((?!templates)[a-z-]+)\/([^/].*)$/, shortcuts.legacyCustomPath, "Shortcuts.legacy_custom_path");
+router.get(/^\/((?!templates|characters|meme-characters)[a-z-]+)\/([^/].*)$/, shortcuts.legacyCustomPath, "Shortcuts.legacy_custom_path");
 router.get(new RegExp(`^/(${SLUG})/?$`), shortcuts.legacyExamplePath, "Shortcuts.legacy_example_path");
 
 const CORS_HEADERS: Record<string, string> = {

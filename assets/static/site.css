@@ -248,6 +248,23 @@ input[type="color"] { width: 100%; height: 40px; padding: 3px; border: 3px solid
 .tags .tag { display: inline-block; padding: 4px 12px; border: 2px solid var(--ink); border-radius: 999px; background: var(--cyan); color: var(--ink); text-decoration: none; font-size: 13px; font-family: var(--heavy); text-transform: uppercase; margin: 3px 6px 3px 0; box-shadow: 3px 3px 0 var(--ink); }
 .tags .tag:hover { background: var(--yellow); color: var(--ink); transform: translate(-1px, -1px); }
 
+/* ---- Meme characters (transparent cutouts) -------------------------------- */
+.cutout img, .character-preview img { --check: #d9d9d9; background-color: #f4f4f4; background-image: linear-gradient(45deg, var(--check) 25%, transparent 25%), linear-gradient(-45deg, var(--check) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--check) 75%), linear-gradient(-45deg, transparent 75%, var(--check) 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0; }
+.card.cutout img { object-fit: contain; padding: 10px; box-sizing: border-box; }
+.characters-teaser { margin: 6px 0 40px; }
+.characters-teaser h2 { margin: 0 0 4px; }
+.character-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; align-items: start; }
+.character-preview { margin: 0; border: 3px solid var(--ink); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; background: #fff; }
+.character-preview img { display: block; width: 100%; height: auto; max-width: 100%; max-height: 70vh; object-fit: contain; margin: 0 auto; }
+.character-preview img[width] { width: auto; max-width: 100%; }
+.character-preview figcaption { padding: 8px 12px; font-size: 13px; color: var(--muted); border-top: 3px solid var(--ink); background: var(--surface); }
+.character-actions { display: flex; flex-direction: column; gap: 10px; background: var(--surface); border: 3px solid var(--ink); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+.character-actions .button { text-align: center; }
+.character-facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 8px 0 0; font-size: 14px; }
+.character-facts dt { font-family: var(--heavy); text-transform: uppercase; font-size: 12px; color: var(--muted); }
+.character-facts dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 800px) { .character-layout { grid-template-columns: 1fr; } }
+
 @media (prefers-reduced-motion: reduce) {
   .card, .card:hover, button, .me-btn, .brand, .brand:hover { transition: none; transform: none; }
 }

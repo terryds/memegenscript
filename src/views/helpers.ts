@@ -168,14 +168,15 @@ export async function previewImage(app: AppContext, id: string, style: string, l
   return image(rendered.bytes, rendered.mimeType, 200, { "cache-control": "no-store" });
 }
 
-function cacheKeyFor(app: AppContext): Request {
+/** Cache key for a rendered image: the request URL, plus the API key (hashed) when one is sent. */
+export function cacheKeyFor(app: AppContext): Request {
   const key = new URL(app.request.url);
   const apiKey = app.request.headers.get("x-api-key");
   if (apiKey) key.searchParams.set("__k", sha1Hex(apiKey));
   return new Request(key.toString(), { method: "GET" });
 }
 
-function edgeCache(): Cache | null {
+export function edgeCache(): Cache | null {
   try {
     return (caches as unknown as { default: Cache }).default ?? null;
   } catch {

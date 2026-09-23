@@ -1,4 +1,4 @@
-/* Template index: instant client-side filtering that mirrors the ?q= server filter */
+/* Template and character index: instant client-side filtering that mirrors the ?q= server filter */
 (function () {
   "use strict";
   var input = document.getElementById("q");
@@ -8,6 +8,9 @@
   var empty = document.getElementById("empty");
   if (!input || !grid) return;
   var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
+  // "templates" on the home page, "characters" on the character index
+  var noun = (count && count.getAttribute("data-noun")) || "template";
+  var nounPlural = (count && count.getAttribute("data-noun-plural")) || "templates";
   var searchTimer = null;
   var lastTracked = "";
 
@@ -30,7 +33,7 @@
       card.hidden = !match;
       if (match) visible += 1;
     });
-    if (count) count.textContent = visible + (visible === 1 ? " template" : " templates");
+    if (count) count.textContent = visible + " " + (visible === 1 ? noun : nounPlural);
     if (featured) featured.hidden = !!query;
     if (empty) empty.hidden = visible > 0;
     // One event per settled query, not one per keystroke
@@ -42,7 +45,7 @@
       }, 1500);
     }
     if (history.replaceState) {
-      var url = new URL(window.location.href);
+      var url = new URL(input.form.getAttribute("action") || "/", window.location.href);
       if (query) url.searchParams.set("q", query);
       else url.searchParams.delete("q");
       history.replaceState(null, "", url.toString());

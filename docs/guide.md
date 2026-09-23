@@ -175,8 +175,24 @@ A handful of points that are obvious in retrospect but cost an agent several rou
 | `id=custom` with no or un-downloadable `background=` URL | Returns HTTP 422 (missing) or HTTP 415 (un-downloadable)                     |
 | Invalid `color=` value                                   | Returns HTTP 422                                                             |
 
+## Meme characters
+
+Classic meme characters (Doge, Wojak, Pepe, Trollface, Gigachad, …) are available as
+transparent PNG cutouts, separate from the captioned templates:
+
+- `GET /characters` lists them; `GET /characters?q=frog` searches names, aliases, keywords
+  and descriptions (every word must match).
+- `GET /characters/{id}` returns one, with `image` (the PNG URL), `width`, `height`,
+  `aliases`, `description`, and the `templates` the character appears in.
+- `GET /characters/{id}.png` is the cutout. `?width=400` or `?height=400` resizes it (the
+  aspect ratio is kept; with both, the image fits inside the box; 10–2048 px). `?download=1`
+  sends it as an attachment.
+
+The browsable pages are at `/meme-characters` and `/meme-characters/{id}`.
+
 ## Reference
 
+- Characters list — `GET /characters`
 - Templates list — `GET /templates/`
 - Per-template metadata — `GET /templates/{id}`
 - Fonts — `GET /fonts/`

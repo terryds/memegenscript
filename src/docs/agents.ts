@@ -122,6 +122,16 @@ Content-Type: application/json
 
 The image URL must be public. Keep the image small: a large photo is slow to download and render.
 
+## Meme characters (transparent PNGs)
+
+Besides captioned templates, the site has classic meme characters (Doge, Wojak, Pepe, Trollface, Gigachad, …) cut out as transparent PNGs, for stickers, overlays, and images you compose yourself:
+
+\`\`\`
+GET ${base}/characters?q=frog
+\`\`\`
+
+Each result has \`id\`, \`name\`, \`aliases\`, \`description\`, \`width\`, \`height\`, the \`image\` URL of the PNG, and \`templates\` (the meme templates the character appears in). The image URL is \`${base}/characters/{id}.png\`; add \`?width=400\` or \`?height=400\` to resize (the aspect ratio is kept). The background is transparent, so put the PNG on your own image or colour. \`GET ${base}/characters\` lists all of them and \`GET ${base}/characters/{id}\` returns one. People can browse them at ${base}/meme-characters.
+
 ## Post it
 
 - Platforms that show link previews, and chat apps such as Discord or Slack, render the URL as an image. Send the URL.

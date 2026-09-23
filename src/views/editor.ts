@@ -3,43 +3,19 @@
  * template (`/memes/{slug}`; `/memes/{id}` redirects there), `sitemap.xml`, and `robots.txt`.
  */
 import type { AppContext } from "../context";
+import { Character, CHARACTERS_PATH } from "../models/character";
 import { Font } from "../models/font";
 import { Template } from "../models/template";
 import { assetVersion } from "../pages/assets";
+import { characterCard, editorPath, editorUrl, page, pageCacheControl, templateCard, websiteJsonLd } from "../pages/cards";
 import { escapeHtml, jsonForScript, layout, notFoundPage, siteName, templateRequestButtons, templateRequestLinks } from "../pages/html";
-import { error, html, redirect } from "../response";
+import { error, redirect } from "../response";
 import { ALLOWED_EXTENSIONS, type Settings } from "../settings";
 import { sha1Hex } from "../utils/sha1";
 import { encode } from "../utils/text";
 import { clean } from "../utils/urls";
 import { download } from "../utils/http";
 import { MIME_TYPES, sniffFormat } from "../images/format";
-
-const PAGE_CACHE = "public, max-age=600, s-maxage=3600";
-
-/** Pages are cacheable in production; locally always serve the current code. */
-function pageCacheControl(settings: Settings): string {
-  return settings.DEPLOYED ? PAGE_CACHE : "no-cache";
-}
-
-function page(settings: Settings, content: string, status = 200): Response {
-  const response = html(content, status);
-  response.headers.set("cache-control", pageCacheControl(settings));
-  return response;
-}
-
-function editorPath(template: Template): string {
-  return `/memes/${template.slug}`;
-}
-
-function editorUrl(settings: Settings, template: Template): string {
-  return settings.BASE_URL + editorPath(template);
-}
-
-/** Static thumbnail (PNG, 300px) of the template's example meme. */
-function thumbnailUrl(settings: Settings, template: Template, width = 300): string {
-  return clean(`${settings.BASE_URL}/images/${template.id}/${encode(template.example)}.png?width=${width}`);
-}
 
 function exampleText(template: Template): string {
   return template.example.filter(Boolean).join(" / ");
@@ -99,30 +75,6 @@ function relatedTemplates(template: Template, all: Template[]): Template[] {
   return [...related.values()];
 }
 
-function templateCard(settings: Settings, template: Template, { lazy = true } = {}): string {
-  const keywords = template.searchText.slice(0, 600);
-  return `<li class="card" data-id="${escapeHtml(template.id)}" data-search="${escapeHtml(keywords)}">
-  <a href="${editorPath(template)}">
-    <img src="${escapeHtml(thumbnailUrl(settings, template))}" alt="${escapeHtml(template.name)} meme template" width="300" height="300"${lazy ? ' loading="lazy" decoding="async"' : ""}>
-    <span class="card-title">${escapeHtml(template.name)}</span>
-  </a>
-</li>`;
-}
-
-function websiteJsonLd(settings: Settings) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: siteName(settings),
-    url: settings.BASE_URL + "/",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: { "@type": "EntryPoint", urlTemplate: `${settings.BASE_URL}/?q={search_term_string}` },
-      "query-input": "required name=search_term_string",
-    },
-  };
-}
-
 // --- GET / --------------------------------------------------------------------
 
 export async function index(app: AppContext): Promise<Response> {
@@ -175,6 +127,18 @@ ${featured.map((t, i) => templateCard(settings, t, { lazy: i > 5 })).join("\n")}
 `
     : "";
 
+  const characters = query ? [] : Character.all().slice(0, 8);
+  const charactersSection = characters.length
+    ? `<section class="characters-teaser" aria-labelledby="characters-title">
+  <h2 id="characters-title">Meme characters</h2>
+  <p class="section-lede">Doge, Wojak, Pepe and friends as transparent PNGs. <a href="${CHARACTERS_PATH}">Browse all ${Character.all().length} characters</a>.</p>
+  <ul class="grid small">
+${characters.map((c) => characterCard(settings, c)).join("\n")}
+  </ul>
+</section>
+`
+    : "";
+
   const body = `<section class="hero">
   ${query ? "" : `<span class="badge">${all.length} templates · free · no signup</span>`}
   <h1>${query ? `Memes matching “${escapeHtml(query)}”` : "Make a meme.<br>Post it. Regret nothing."}</h1>
@@ -193,7 +157,7 @@ ${featured.map((t, i) => templateCard(settings, t, { lazy: i > 5 })).join("\n")}
     ${requestButtons}
   </div>` : ""}
 </section>
-${featuredSection}<section aria-labelledby="all-title">
+${featuredSection}${charactersSection}<section aria-labelledby="all-title">
   <h2 id="all-title">${query ? "Results" : "All meme templates"}</h2>
   <ul class="grid" id="grid">
 ${templates.map((t, i) => templateCard(settings, t, { lazy: i > 11 })).join("\n")}
@@ -259,6 +223,7 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
   const fonts = Font.all();
   const defaultExtension = template.defaultExtension(settings);
   const related = relatedTemplates(template, all);
+  const characters = Character.forTemplate(template.id);
   const source = template.source && /^https?:\/\//.test(template.source) ? template.source : "";
 
   const structuredData = [
@@ -459,7 +424,18 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
     <p><a href="/docs">Read the API documentation</a> · <a href="/templates/${escapeHtml(template.id)}">Template metadata (JSON)</a></p>
   </section>
 
-  <section class="related">
+${
+    characters.length
+      ? `  <section class="related characters" aria-labelledby="characters-title">
+    <h2 id="characters-title">Characters in this meme</h2>
+    <p class="section-lede">Download ${characters.length === 1 ? "the character" : "these characters"} as ${characters.length === 1 ? "a transparent PNG" : "transparent PNGs"} to use anywhere.</p>
+    <ul class="grid small">
+${characters.map((c) => characterCard(settings, c)).join("\n")}
+    </ul>
+  </section>
+`
+      : ""
+  }  <section class="related">
     <h2>More meme templates</h2>
     <ul class="grid small">
 ${related.map((t) => templateCard(settings, t)).join("\n")}
@@ -500,6 +476,8 @@ export async function sitemap(app: AppContext): Promise<Response> {
     { loc: settings.BASE_URL + "/privacy", priority: "0.3", changefreq: "yearly" },
     ...(settings.CONTACT_EMAIL ? [{ loc: settings.BASE_URL + "/contact", priority: "0.3", changefreq: "yearly" }] : []),
     ...Template.browsable().map((t) => ({ loc: editorUrl(settings, t), priority: "0.8", changefreq: "monthly" })),
+    { loc: settings.BASE_URL + CHARACTERS_PATH, priority: "0.9", changefreq: "weekly" },
+    ...Character.all().map((c) => ({ loc: c.buildPageUrl(settings), priority: "0.7", changefreq: "monthly" })),
   ];
   const xml =
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
@@ -535,9 +513,9 @@ export async function staticAsset(app: AppContext, path: string): Promise<Respon
   return new Response(response.body, { status: 200, headers });
 }
 
-// --- /assets/{templates|fonts}/... ----------------------------------------------
+// --- /assets/{templates|fonts|characters}/... ----------------------------------
 
-/** Raw template images and font files for the in-browser editor. */
+/** Raw template images, character cutouts, and font files for the in-browser editor. */
 export async function rawAsset(app: AppContext, kind: string, first: string, second: string): Promise<Response> {
   const path = second ? `/${kind}/${first}/${second}` : `/${kind}/${first}`;
   if (path.includes("..") || /\.(yml|yaml|txt)$/i.test(path)) return error(404, "Not found");

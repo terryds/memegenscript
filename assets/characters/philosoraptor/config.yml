@@ -1,0 +1,15 @@
+name: "Philosoraptor"
+source: "https://knowyourmeme.com/memes/philosoraptor"
+aka:
+  - "Philosophy Raptor"
+  - "Thinking Raptor"
+keywords:
+  - "dinosaur"
+  - "raptor"
+  - "thinking"
+  - "philosophy"
+  - "green"
+  - "question"
+templates:
+  - "philosoraptor"
+about: "A velociraptor with a claw to its chin, pondering the deep questions. If a meme is posted and nobody upvotes it, was it ever really posted?"
