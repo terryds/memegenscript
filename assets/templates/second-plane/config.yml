@@ -1,0 +1,43 @@
+name: "A Second Plane Has Just Hit"
+source: "https://knowyourmeme.com/memes/a-second-plane-has-hit-the-x"
+keywords:
+  - "George W. Bush"
+  - "Andrew Card"
+  - "9/11"
+  - "whisper"
+  - "bad news"
+  - "second plane"
+  - "America is under attack"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "mr. president, a second meeting"
+  - "has hit the calendar"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

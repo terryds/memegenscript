@@ -1,7 +1,8 @@
 # Plan: template library, round 3
 
 Status: **Batches E, F1, F2 and G done (122 templates, library at 454); meme scout 2026-09-18
-added 4 (library at 460); two Jujutsu Kaisen requests added 2026-09-19 (library at 462).** Nothing is pending; the round-2 record is kept further down.
+added 4 (library at 460); two Jujutsu Kaisen requests added 2026-09-19 (library at 462); meme scout 2026-09-27
+added 11 (library at 480).** Nothing is pending; the round-2 record is kept further down.
 
 ## Done: Batch E, Tobey Maguire pack (17 templates, 2026-09-17)
 
@@ -82,6 +83,33 @@ thin text inside the three blank speech bubbles). The still for `naoya-hair-flip
 633609939; the more common upload, 640124287 "slap", carries an "animepahe" watermark.
 `three-way-domain` has no Know Your Meme entry and got a hand-written description. Skipped the
 anime version of the three-way panel (imgflip 662671570): 415px wide and no bubbles to fill.
+
+## Meme scout 2026-09-27 (11 templates)
+
+Imported via `data/imports/scout-2026-09-27.json` from imgflip top-new and the all-time template
+directory: `caleb-injury`, `lindsay-clancy` (the courtroom smirk, 663951181), `bill-signing`
+(text on the signed page), `patrick-todo` (black text on the list), `second-plane`, `got-hands`
+(labels for the standing and the seated boxer), `community-pizza` (a caption per panel),
+`long-day-factory` (top caption plus the white label), `future-world`, `disappearing-kid` and
+`talking-to-wall` (wall label plus a bottom-right label; both video-only on imgflip, converted
+to GIF + still). Trump Bill Signing, A Second Plane Has Just Hit and Lindsay Clancy were
+earlier excluded only for being political or tasteless; that rule is gone, so they are in now.
+Four got hand-written descriptions: `caleb-injury`, `long-day-factory` and `disappearing-kid`
+(no Know Your Meme entry) and `lindsay-clancy` (the search matched an unrelated TikTok trend).
+
+Dropped:
+- Already in the library: Drake Hotline Bling and Drake No/Yes (`drake`), Bernie (`bernie`),
+  UNO Draw 25 (`uno`), Y'all Got Any More (`yallgot`), Woman Yelling at Cat (`woman-cat`), One
+  Does Not Simply (`mordor`), Buff Doge vs. Cheems (`swole`), Oprah (`oprah`), Expanding Brain
+  (`gb`), Third World Skeptical Kid (`sk`), I'm the Captain Now and Look At Me (`captain`, same
+  still), Yo Dawg (`yodawg`), Bugs Bunny Communist (`cbb`), undertaker (`aj-undertaker`), Jarvis
+  (`jarvis`), SpongeBob Rainbow (`imagination`), i receive you receive (`trade`), conspiracy
+  theory (`pepe-silvia`), Mr. McMahon Reaction (`vince`), Woody and Buzz Widescreen (`buzz`),
+  Skinner Out of Touch (`touch`), Teacher's Copy (`traumatized-mr-incredible`).
+- Near-duplicates: two more Lindsay Clancy uploads (664845778, 664262290) of the same trial.
+- Dropped in round 2: Oh Yeah! Oh No.
+- Not usable: Blank White Template (an empty white rectangle), Borat 2 Tonight Queen (the whole
+  joke is baked-in text messages, nowhere to caption).
 
 ## Next packs (not planned in detail yet)
 

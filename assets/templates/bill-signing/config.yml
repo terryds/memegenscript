@@ -1,0 +1,30 @@
+name: "Trump Bill Signing"
+source: "https://knowyourmeme.com/memes/trumps-first-order-of-business"
+keywords:
+  - "Donald Trump"
+  - "executive order"
+  - "bill signing"
+  - "signed document"
+  - "Oval Office"
+  - "presenting"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.68
+    anchor_y: 0.38
+    angle: 0.0
+    scale_x: 0.25
+    scale_y: 0.34
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "effective immediately: mondays are cancelled"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
