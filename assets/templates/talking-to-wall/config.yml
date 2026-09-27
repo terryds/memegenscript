@@ -1,0 +1,42 @@
+name: "Talking to a Brick Wall"
+source: "https://knowyourmeme.com/memes/talking-to-brick-wall"
+keywords:
+  - "talking to wall"
+  - "brick wall"
+  - "explaining"
+  - "ignored"
+  - "no response"
+  - "gif"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.03
+    anchor_y: 0.35
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.25
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.5
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "management"
+  - "me explaining why we need tests"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

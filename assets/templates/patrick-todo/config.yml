@@ -1,0 +1,30 @@
+name: "Patrick's To-Do List"
+source: "https://knowyourmeme.com/memes/patricks-to-do-list"
+keywords:
+  - "SpongeBob"
+  - "Patrick Star"
+  - "to-do list"
+  - "list"
+  - "plans"
+  - "writing"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.24
+    anchor_y: 0.35
+    angle: 0.0
+    scale_x: 0.45
+    scale_y: 0.48
+    align: left
+    start: 0.0
+    stop: 1.0
+example:
+  - "wake up\nregret it\nnap"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

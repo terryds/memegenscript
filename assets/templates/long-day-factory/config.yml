@@ -1,0 +1,44 @@
+name: "Long Day at the Factory"
+source: 
+keywords:
+  - "cat"
+  - "tie"
+  - "factory"
+  - "long day"
+  - "work"
+  - "tired"
+  - "coming home"
+  - "shift"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.01
+    anchor_y: 0.405
+    angle: 0.0
+    scale_x: 0.35
+    scale_y: 0.085
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me after 8 hours of moving one jira ticket"
+  - "jira ticket factory"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -1,0 +1,44 @@
+name: "Troy Returns With Pizza"
+source: "https://knowyourmeme.com/memes/the-darkest-timeline"
+keywords:
+  - "Community"
+  - "Troy Barnes"
+  - "Donald Glover"
+  - "pizza"
+  - "fire"
+  - "chaos"
+  - "coming back"
+  - "Remedial Chaos Theory"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.52
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me coming back from a 5 minute break"
+  - "the group chat"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

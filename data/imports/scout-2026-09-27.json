@@ -1,0 +1,111 @@
+{
+ "_comment": "Meme scout 2026-09-27: keepers from imgflip top-new and the all-time template directory (pages 1-4). disappearing-kid and talking-to-wall are video-only on imgflip, converted to GIF + still.",
+ "templates": [
+  {
+   "id": "caleb-injury",
+   "name": "Caleb Williams Injury",
+   "imgflip": 667975614,
+   "kym": "caleb-williams",
+   "keywords": ["Caleb Williams", "Chicago Bears", "NFL", "injury", "quarterback", "thumbs up", "football"],
+   "example": ["me after spraining my ankle", "still telling everyone i'm fine"]
+  },
+  {
+   "id": "lindsay-clancy",
+   "name": "Lindsay Clancy",
+   "imgflip": 663951181,
+   "source": "",
+   "keywords": ["Lindsay Clancy", "smirk", "courtroom", "trial", "true crime", "smiling"],
+   "example": ["when the judge says", "\"any last words\""]
+  },
+  {
+   "id": "bill-signing",
+   "name": "Trump Bill Signing",
+   "imgflip": 91545132,
+   "kym": "trumps-first-order-of-business",
+   "keywords": ["Donald Trump", "executive order", "bill signing", "signed document", "Oval Office", "presenting"],
+   "example": ["effective immediately: mondays are cancelled"],
+   "boxes": [[0.68, 0.38, 0.25, 0.34, "default", "black", "center", "thin"]]
+  },
+  {
+   "id": "patrick-todo",
+   "name": "Patrick's To-Do List",
+   "imgflip": 247756783,
+   "kym": "patricks-to-do-list",
+   "keywords": ["SpongeBob", "Patrick Star", "to-do list", "list", "plans", "writing"],
+   "example": ["wake up\nregret it\nnap"],
+   "boxes": [[0.24, 0.35, 0.45, 0.48, "default", "black", "left", "thin"]]
+  },
+  {
+   "id": "second-plane",
+   "name": "A Second Plane Has Just Hit",
+   "imgflip": 441974336,
+   "kym": "a-second-plane-has-hit-the-second-tower",
+   "keywords": ["George W. Bush", "Andrew Card", "9/11", "whisper", "bad news", "second plane", "America is under attack"],
+   "example": ["mr. president, a second meeting", "has hit the calendar"]
+  },
+  {
+   "id": "got-hands",
+   "name": "Damn Got Hands",
+   "imgflip": 293131641,
+   "kym": "ok-ima-fight-damn-got-hands",
+   "keywords": ["ok ima fight", "damn got hands", "boxing", "boxer", "fight", "tired", "respect"],
+   "example": ["the final boss", "me with 1 hp"],
+   "boxes": [
+    [0.0, 0.82, 0.32, 0.16, "default", "black", "center", "thin"],
+    [0.24, 0.25, 0.36, 0.14, "default", "black", "center", "thin"]
+   ]
+  },
+  {
+   "id": "community-pizza",
+   "name": "Troy Returns With Pizza",
+   "imgflip": 235571786,
+   "kym": "troy-returning-with-pizza",
+   "keywords": ["Community", "Troy Barnes", "Donald Glover", "pizza", "fire", "chaos", "coming back", "Remedial Chaos Theory"],
+   "example": ["me coming back from a 5 minute break", "the group chat"],
+   "boxes": [
+    [0, 0, 1, 0.14],
+    [0, 0.52, 1, 0.14]
+   ]
+  },
+  {
+   "id": "long-day-factory",
+   "name": "Long Day at the Factory",
+   "imgflip": 626639141,
+   "source": "",
+   "keywords": ["cat", "tie", "factory", "long day", "work", "tired", "coming home", "shift"],
+   "example": ["me after 8 hours of moving one jira ticket", "jira ticket factory"],
+   "boxes": [
+    [0, 0, 1, 0.2],
+    [0.01, 0.405, 0.35, 0.085, "default", "black", "center", "thin"]
+   ]
+  },
+  {
+   "id": "future-world",
+   "name": "The Future World If",
+   "imgflip": 179137533,
+   "kym": "the-future-world-if",
+   "keywords": ["future", "utopia", "futuristic city", "what if", "progress", "flying cars"],
+   "example": ["the future world if", "people read the meeting agenda"]
+  },
+  {
+   "id": "disappearing-kid",
+   "name": "Disappearing Kid",
+   "imgflip": 222516354,
+   "source": "",
+   "keywords": ["disappearing", "vanish", "fade away", "kid", "gone", "leaving", "gif"],
+   "example": ["me when someone asks", "who wants to take notes"]
+  },
+  {
+   "id": "talking-to-wall",
+   "name": "Talking to a Brick Wall",
+   "imgflip": 304768047,
+   "kym": "talking-to-a-brick-wall",
+   "keywords": ["talking to wall", "brick wall", "explaining", "ignored", "no response", "gif"],
+   "example": ["management", "me explaining why we need tests"],
+   "boxes": [
+    [0.03, 0.35, 0.5, 0.25],
+    [0.5, 0.8, 0.5, 0.2]
+   ]
+  }
+ ]
+}
