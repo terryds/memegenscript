@@ -1,0 +1,55 @@
+name: "Big Thumb Guy"
+source: "https://knowyourmeme.com/memes/giant-thumb-guy"
+keywords:
+  - "Giant Thumb Guy"
+  - "I Do Not Like That Thing"
+  - "thumbs up group"
+  - "thumbs up"
+  - "stick figure"
+  - "unpopular opinion"
+  - "group"
+  - "comic"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0
+    anchor_y: 0.01
+    angle: 0.0
+    scale_x: 0.33
+    scale_y: 0.09
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.45
+    anchor_y: 0.01
+    angle: 0.0
+    scale_x: 0.55
+    scale_y: 0.09
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.3
+    anchor_y: 0.305
+    angle: 0.0
+    scale_x: 0.68
+    scale_y: 0.065
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "i don't like marvel movies"
+  - "marvel fans"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

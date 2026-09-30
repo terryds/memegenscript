@@ -290,6 +290,58 @@
         ]
       ],
       "source": ""
+    },
+    {
+      "id": "big-thumb-guy",
+      "name": "Big Thumb Guy",
+      "imgflip": 373007204,
+      "kym": "big-thumb-guy",
+      "keywords": [
+        "Giant Thumb Guy",
+        "I Do Not Like That Thing",
+        "thumbs up group",
+        "thumbs up",
+        "stick figure",
+        "unpopular opinion",
+        "group",
+        "comic"
+      ],
+      "example": [
+        "i don't like marvel movies",
+        "marvel fans"
+      ],
+      "boxes": [
+        [
+          0.0,
+          0.01,
+          0.33,
+          0.09,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.45,
+          0.01,
+          0.55,
+          0.09,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.3,
+          0.305,
+          0.68,
+          0.065,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
     }
   ]
 }
