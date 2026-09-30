@@ -1,0 +1,33 @@
+name: "AI Reading the Script"
+source: 
+keywords:
+  - "AI"
+  - "SpongeBob"
+  - "reading the script"
+  - "script"
+  - "AI generated"
+  - "uncanny"
+  - "AI slop"
+  - "long scroll"
+  - "Squidward house"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.03
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.19
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "AI reading the script"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
