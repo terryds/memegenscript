@@ -258,6 +258,38 @@
         "me when i fix the bug",
         "that i created"
       ]
+    },
+    {
+      "id": "ai-reading-the-script",
+      "name": "AI Reading the Script",
+      "imgflip": "",
+      "keywords": [
+        "AI",
+        "SpongeBob",
+        "reading the script",
+        "script",
+        "AI generated",
+        "uncanny",
+        "AI slop",
+        "long scroll",
+        "Squidward house"
+      ],
+      "example": [
+        "AI reading the script"
+      ],
+      "boxes": [
+        [
+          0.03,
+          0.02,
+          0.94,
+          0.19,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ],
+      "source": ""
     }
   ]
 }
