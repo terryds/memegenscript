@@ -423,6 +423,7 @@ describe("editor page titles", () => {
   it("leads with the meaning for the info-intent CTR experiment templates", async () => {
     const body = await (await get("/memes/absolute-cinema")).text();
     expect(body).toContain("<title>Absolute Cinema Meme: Meaning, Template &amp; Generator | ");
+    expect(body).toContain('catchphrase &quot;Absolute Cinema.&quot; Make your own');
     expect(body).toMatch(/<meta name="description" content="Absolute Cinema is [^"]*Make your own &quot;Absolute Cinema&quot; meme with the free template\."/);
   });
 

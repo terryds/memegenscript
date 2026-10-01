@@ -23,7 +23,8 @@ function exampleText(template: Template): string {
 
 /** First sentence of a text (used for meta descriptions). */
 function firstSentence(text: string, max = 160): string {
-  const match = /^[^.!?]+[.!?]+/.exec(text.trim());
+  // Keep a closing quote/bracket that follows the stop: `catchphrase "Absolute Cinema."`
+  const match = /^[^.!?]+[.!?]+["'”’)]*/.exec(text.trim());
   const sentence = (match ? match[0] : text).trim();
   return sentence.length > max ? sentence.slice(0, max - 1).replace(/\s+\S*$/, "") + "…" : sentence;
 }
@@ -47,7 +48,7 @@ function pageTitle(template: Template, site: string): string {
 
 function describe(template: Template): string {
   if (infoIntent(template)) {
-    return `${firstSentence(template.about, 200)} Make your own "${template.name}" meme with the free template.`.slice(0, 300);
+    return `${firstSentence(template.about, 160)} Make your own "${template.name}" meme with the free template.`.slice(0, 300);
   }
   const parts = [`Make your own "${template.name}" meme online for free.`];
   if (template.about) {
