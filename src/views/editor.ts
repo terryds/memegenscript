@@ -28,7 +28,27 @@ function firstSentence(text: string, max = 160): string {
   return sentence.length > max ? sentence.slice(0, max - 1).replace(/\s+\S*$/, "") + "…" : sentence;
 }
 
+/**
+ * CTR experiment (2026-10): templates whose search impressions are mostly
+ * "what is this meme" lookups rather than "generator"/"template" searches.
+ * They get a title and description that lead with the meaning, so we can
+ * compare their CTR in Search Console against the generator-first default.
+ * Roll out to every template with an `about` (or drop) once the data is in.
+ */
+const INFO_INTENT_IDS = new Set(["hotdog", "wake-up-babe", "makima", "cinema", "greedy-pipe", "behind-tree"]);
+
+const infoIntent = (template: Template) => INFO_INTENT_IDS.has(template.id) && Boolean(template.about);
+
+function pageTitle(template: Template, site: string): string {
+  return infoIntent(template)
+    ? `${template.name} Meme: Meaning, Template & Generator | ${site}`
+    : `${template.name} Meme Generator | ${site}`;
+}
+
 function describe(template: Template): string {
+  if (infoIntent(template)) {
+    return `${firstSentence(template.about, 200)} Make your own "${template.name}" meme with the free template.`.slice(0, 300);
+  }
   const parts = [`Make your own "${template.name}" meme online for free.`];
   if (template.about) {
     parts.push(firstSentence(template.about, 200));
@@ -216,7 +236,7 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
   const canonical = editorUrl(settings, template);
   const exampleUrl = template.buildExampleUrl(settings);
   const exampleStill = clean(`${settings.BASE_URL}/images/${template.id}/${encode(template.example)}.png`);
-  const title = `${template.name} Meme Generator | ${site}`;
+  const title = pageTitle(template, site);
   const description = describe(template);
   const lines = template.text.length;
   const styles = template.styles.length ? template.styles : ["default"];
