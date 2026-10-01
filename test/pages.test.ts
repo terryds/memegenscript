@@ -418,3 +418,18 @@ describe("guide for AI agents", () => {
     expect((await get("/templates/fry")).headers.get("x-robots-tag")).toBe("noindex");
   });
 });
+
+describe("editor page titles", () => {
+  it("uses the template-first title and meaning-first description for the CTR experiment templates", async () => {
+    const body = await (await get("/memes/absolute-cinema")).text();
+    expect(body).toContain("<title>Absolute Cinema Meme Template &amp; Generator | ");
+    expect(body).toContain('catchphrase &quot;Absolute Cinema.&quot; Make your own');
+    expect(body).toMatch(/<meta name="description" content="Absolute Cinema is [^"]*Make your own &quot;Absolute Cinema&quot; meme with the free template\."/);
+  });
+
+  it("keeps the generator-first title everywhere else", async () => {
+    const body = await (await get("/memes/futurama-fry")).text();
+    expect(body).toMatch(/<title>[^<]* Meme Generator \| /);
+    expect(body).toContain('content="Make your own &quot;');
+  });
+});
