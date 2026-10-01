@@ -32,8 +32,9 @@ function firstSentence(text: string, max = 160): string {
 /**
  * CTR experiment (2026-10): templates whose search impressions are mostly
  * "what is this meme" lookups rather than "generator"/"template" searches.
- * They get a title and description that lead with the meaning, so we can
- * compare their CTR in Search Console against the generator-first default.
+ * They get a "Meme Template & Generator" title (the page is an editor, so the
+ * title shouldn't promise an explainer) and a description that opens with what
+ * the meme is, so we can compare their CTR in Search Console against the generator-first default.
  * Roll out to every template with an `about` (or drop) once the data is in.
  */
 const INFO_INTENT_IDS = new Set(["hotdog", "wake-up-babe", "makima", "cinema", "greedy-pipe", "behind-tree"]);
@@ -42,7 +43,7 @@ const infoIntent = (template: Template) => INFO_INTENT_IDS.has(template.id) && B
 
 function pageTitle(template: Template, site: string): string {
   return infoIntent(template)
-    ? `${template.name} Meme: Meaning, Template & Generator | ${site}`
+    ? `${template.name} Meme Template & Generator | ${site}`
     : `${template.name} Meme Generator | ${site}`;
 }
 

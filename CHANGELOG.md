@@ -3,7 +3,7 @@
 ## Unreleased
 
 - CTR experiment: six template pages that mostly show up for "what is this meme" searches
-  get a meaning-first title and description (`… Meme: Meaning, Template & Generator`).
+  get a `… Meme Template & Generator` title and a description that opens with what the meme is.
 - Meme characters: 51 classic characters (Doge, Wojak, Pepe, Trollface, Gigachad, …) as
   transparent PNG cutouts at `/meme-characters`, downloadable from each character's page
   and served by the API at `GET /characters`, `GET /characters/{id}` and
