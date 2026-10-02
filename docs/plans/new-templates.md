@@ -118,7 +118,8 @@ Imported via `data/imports/scout-2026-10-02.json` from the imgflip all-time temp
 and Simba captions; the middle "shadowy place" line is baked in), `grrr`, `iceberg` (three
 levels: sky, upper and lower water), `office-handshake`, `grandpa-bed` (the grandpa photo, a
 separate still from `grandma-bed`), `mercy-meme` (a caption per panel), `hold-fart` and
-`happy-shock` (black text in the white left column, one per row). Finding Neverland, Table Flip
+`happy-shock` ("Happy Then Shocked"; imgflip calls it "Happy / Shock", but a "/" in the name makes the
+template invalid; black text in the white left column, one per row). Finding Neverland, Table Flip
 Guy and Simba Shadowy Place have no id in the listing; their template pages give 6235864,
 1380694 and 371382. Four got hand-written descriptions: `grrr` (Know Your Meme matched the
 unrelated "Dame Un Grrr" song), `office-handshake` (no entry), `mercy-meme` (only the Overwatch
