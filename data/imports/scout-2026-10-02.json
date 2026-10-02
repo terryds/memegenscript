@@ -1,0 +1,300 @@
+{
+ "_comment": "Meme scout 2026-10-02: keepers from the imgflip all-time template directory (pages 5-6). Finding Neverland, Table Flip Guy and Simba Shadowy Place had no id in the listing; ids come from their template pages.",
+ "templates": [
+  {
+   "id": "finding-neverland",
+   "name": "Finding Neverland",
+   "imgflip": 6235864,
+   "keywords": [
+    "Finding Neverland",
+    "Johnny Depp",
+    "Freddie Highmore",
+    "crying boy",
+    "bench hug",
+    "three panels",
+    "comforting"
+   ],
+   "example": [
+    "will my game save if i turn it off now?",
+    "no, son",
+    "it won't"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.2,
+     1,
+     0.12
+    ],
+    [
+     0.0,
+     0.53,
+     1,
+     0.12
+    ],
+    [
+     0.0,
+     0.86,
+     1,
+     0.12
+    ]
+   ],
+   "source": "https://knowyourmeme.com/memes/finding-neverland"
+  },
+  {
+   "id": "table-flip",
+   "name": "Table Flip Guy",
+   "imgflip": 1380694,
+   "keywords": [
+    "table flip",
+    "flipping tables",
+    "rage comic",
+    "rage",
+    "angry",
+    "fuuu",
+    "stick figure"
+   ],
+   "example": [
+    "the wifi drops",
+    "during the final boss"
+   ],
+   "source": "https://knowyourmeme.com/memes/flipping-tables"
+  },
+  {
+   "id": "shadowy-place",
+   "name": "Simba Shadowy Place",
+   "imgflip": 371382,
+   "keywords": [
+    "The Lion King",
+    "Simba",
+    "Mufasa",
+    "shadowy place",
+    "everything the light touches",
+    "Pride Rock",
+    "Disney"
+   ],
+   "example": [
+    "everything the light touches is the fridge",
+    "that's the vegetable drawer. we never go there"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     1,
+     0.13
+    ],
+    [
+     0.0,
+     0.86,
+     1,
+     0.13
+    ]
+   ],
+   "source": "https://knowyourmeme.com/memes/everything-the-light-touches-is",
+   "kym": "everything-the-light-touches-is"
+  },
+  {
+   "id": "grrr",
+   "name": "Grrr",
+   "imgflip": 577475738,
+   "keywords": [
+    "grrr",
+    "angry emoji",
+    "red emoji",
+    "mad",
+    "seething",
+    "furious",
+    "smiley"
+   ],
+   "example": [
+    "when someone says",
+    "\"calm down\""
+   ],
+   "source": ""
+  },
+  {
+   "id": "iceberg",
+   "name": "Iceberg",
+   "imgflip": 68277995,
+   "kym": "iceberg-charts",
+   "keywords": [
+    "iceberg",
+    "iceberg chart",
+    "tip of the iceberg",
+    "deep lore",
+    "conspiracy",
+    "levels",
+    "obscure"
+   ],
+   "example": [
+    "what my parents know",
+    "what my friends know",
+    "what my browser history knows"
+   ],
+   "boxes": [
+    [
+     0.05,
+     0.03,
+     0.9,
+     0.1,
+     "default",
+     "white",
+     "center",
+     "thick"
+    ],
+    [
+     0.05,
+     0.4,
+     0.9,
+     0.14,
+     "default",
+     "white",
+     "center",
+     "thick"
+    ],
+    [
+     0.05,
+     0.75,
+     0.9,
+     0.14,
+     "default",
+     "white",
+     "center",
+     "thick"
+    ]
+   ]
+  },
+  {
+   "id": "office-handshake",
+   "name": "The Office Handshake",
+   "imgflip": 206622427,
+   "keywords": [
+    "The Office",
+    "Michael Scott",
+    "Ed Truck",
+    "Steve Carell",
+    "handshake",
+    "new hire",
+    "flashback"
+   ],
+   "example": [
+    "me shaking hands with my new boss",
+    "already planning to replace him"
+   ],
+   "source": ""
+  },
+  {
+   "id": "grandpa-bed",
+   "name": "Okay Grandpa, Let's Get You to Bed",
+   "imgflip": 411364406,
+   "kym": "sure-grandma-lets-get-you-to-bed",
+   "keywords": [
+    "grandpa",
+    "let's get you to bed",
+    "old man",
+    "walker",
+    "boomer",
+    "outdated",
+    "nursing home"
+   ],
+   "example": [
+    "back in my day memes had impact font",
+    "okay grandpa, let's get you to bed"
+   ]
+  },
+  {
+   "id": "mercy-meme",
+   "name": "Overwatch Mercy Meme",
+   "imgflip": 223642538,
+   "keywords": [
+    "Overwatch",
+    "Mercy",
+    "Valkyrie",
+    "heroes never die",
+    "rescue",
+    "angel",
+    "gaming"
+   ],
+   "example": [
+    "me stuck on a hard homework problem",
+    "the one smart kid in the group chat"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     1,
+     0.13
+    ],
+    [
+     0.0,
+     0.85,
+     1,
+     0.13
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "hold-fart",
+   "name": "Hold Fart",
+   "imgflip": 41022477,
+   "kym": "holding-in-fart",
+   "keywords": [
+    "hold fart",
+    "holding it in",
+    "classroom",
+    "straining",
+    "awkward",
+    "silent",
+    "school"
+   ],
+   "example": [
+    "when the whole class goes quiet",
+    "and you've been holding it for an hour"
+   ]
+  },
+  {
+   "id": "happy-shock",
+   "name": "Happy Then Shocked",
+   "imgflip": 248097807,
+   "keywords": [
+    "happy then shocked",
+    "smiling",
+    "shocked",
+    "reaction",
+    "two panel",
+    "realization",
+    "face drop"
+   ],
+   "example": [
+    "finally got paid",
+    "rent is due tomorrow"
+   ],
+   "boxes": [
+    [
+     0.02,
+     0.05,
+     0.42,
+     0.4,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ],
+    [
+     0.02,
+     0.55,
+     0.42,
+     0.4,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ],
+   "source": ""
+  }
+ ]
+}

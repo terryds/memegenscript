@@ -1,0 +1,55 @@
+name: "Iceberg"
+source: "https://knowyourmeme.com/memes/iceberg-charts"
+keywords:
+  - "iceberg"
+  - "iceberg chart"
+  - "tip of the iceberg"
+  - "deep lore"
+  - "conspiracy"
+  - "levels"
+  - "obscure"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.05
+    anchor_y: 0.03
+    angle: 0.0
+    scale_x: 0.9
+    scale_y: 0.1
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.05
+    anchor_y: 0.4
+    angle: 0.0
+    scale_x: 0.9
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.05
+    anchor_y: 0.75
+    angle: 0.0
+    scale_x: 0.9
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "what my parents know"
+  - "what my friends know"
+  - "what my browser history knows"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

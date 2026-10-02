@@ -1,0 +1,43 @@
+name: "Hold Fart"
+source: "https://knowyourmeme.com/sensitive/memes/trying-to-hold-a-fart-next-to-a-cute-girl-in-class"
+keywords:
+  - "hold fart"
+  - "holding it in"
+  - "classroom"
+  - "straining"
+  - "awkward"
+  - "silent"
+  - "school"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "when the whole class goes quiet"
+  - "and you've been holding it for an hour"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

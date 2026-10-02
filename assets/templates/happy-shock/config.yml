@@ -1,0 +1,43 @@
+name: "Happy Then Shocked"
+source: 
+keywords:
+  - "happy then shocked"
+  - "smiling"
+  - "shocked"
+  - "reaction"
+  - "two panel"
+  - "realization"
+  - "face drop"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.02
+    anchor_y: 0.05
+    angle: 0.0
+    scale_x: 0.42
+    scale_y: 0.4
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.02
+    anchor_y: 0.55
+    angle: 0.0
+    scale_x: 0.42
+    scale_y: 0.4
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "finally got paid"
+  - "rent is due tomorrow"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
