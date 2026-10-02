@@ -135,12 +135,17 @@ describe("GET /memes/{slug}", () => {
   });
 
   it("has a description for every template", async () => {
+    const { Template } = await import("../src/models/template");
     const response = await get("/templates");
     const templates = (await response.json()) as Array<{ id: string }>;
-    for (const template of templates) {
-      // The API exposes ids; the id URL redirects to the slug page
-      const body = await (await get(`/memes/${template.id}`, { redirect: "follow" })).text();
-      expect(body, template.id).toContain(`What is the `);
+    // The "What is the … meme?" section renders exactly when a template has `about` text, so
+    // check the data for all of them; rendering every page took ~2 minutes and hit the timeout
+    for (const { id } of templates) expect(Template.getOrNull(id)?.about?.trim(), id).toBeTruthy();
+    // ...and render a spread of pages end to end. The API exposes ids; they redirect to the slug page
+    const step = Math.max(1, Math.floor(templates.length / 12));
+    for (let i = 0; i < templates.length; i += step) {
+      const body = await (await get(`/memes/${templates[i].id}`, { redirect: "follow" })).text();
+      expect(body, templates[i].id).toContain(`What is the `);
     }
   });
 
