@@ -1,0 +1,43 @@
+name: "Overwatch Mercy Meme"
+source: 
+keywords:
+  - "Overwatch"
+  - "Mercy"
+  - "Valkyrie"
+  - "heroes never die"
+  - "rescue"
+  - "angel"
+  - "gaming"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.13
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.85
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.13
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me stuck on a hard homework problem"
+  - "the one smart kid in the group chat"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

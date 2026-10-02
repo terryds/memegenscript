@@ -2,7 +2,7 @@
 
 Status: **Batches E, F1, F2 and G done (122 templates, library at 454); meme scout 2026-09-18
 added 4 (library at 460); two Jujutsu Kaisen requests added 2026-09-19 (library at 462); meme scout 2026-09-27
-added 11 (library at 480).** Nothing is pending; the round-2 record is kept further down.
+added 11 (library at 480); meme scout 2026-10-02 added 10 (library at 493).** Nothing is pending; the round-2 record is kept further down.
 
 ## Done: Batch E, Tobey Maguire pack (17 templates, 2026-09-17)
 
@@ -110,6 +110,37 @@ Dropped:
 - Dropped in round 2: Oh Yeah! Oh No.
 - Not usable: Blank White Template (an empty white rectangle), Borat 2 Tonight Queen (the whole
   joke is baked-in text messages, nowhere to caption).
+
+## Meme scout 2026-10-02 (10 templates)
+
+Imported via `data/imports/scout-2026-10-02.json` from the imgflip all-time template directory
+(pages 5–6): `finding-neverland` (a caption per panel), `table-flip`, `shadowy-place` (Mufasa
+and Simba captions; the middle "shadowy place" line is baked in), `grrr`, `iceberg` (three
+levels: sky, upper and lower water), `office-handshake`, `grandpa-bed` (the grandpa photo, a
+separate still from `grandma-bed`), `mercy-meme` (a caption per panel), `hold-fart` and
+`happy-shock` (black text in the white left column, one per row). Finding Neverland, Table Flip
+Guy and Simba Shadowy Place have no id in the listing; their template pages give 6235864,
+1380694 and 371382. Four got hand-written descriptions: `grrr` (Know Your Meme matched the
+unrelated "Dame Un Grrr" song), `office-handshake` (no entry), `mercy-meme` (only the Overwatch
+subculture page) and `happy-shock` (the search matched an unrelated entry).
+
+Dropped:
+- Already in the library: My Body Is Machine (`machine`), elmo cocaine (`elmo`), death knocking
+  at the door (`reaper-door`), Math Lady (`mathlady`), Steve Buscemi Fellow Kids
+  (`fellow-kids`), William Dafoe Looking Up (`dafoe-up`), Black Guy Hiding Behind Tree
+  (`behind-tree`), Doof If I Had a Nickel (`nickel`), family guy louis pills (`lois-pills`),
+  For the Better Right Blank (`right`), Empty Stonks (`stonks`, already the blank version),
+  Man Holding Cardboard Sign (`cardboard`), You Know I'm Something of a _ Myself
+  (`scientist`), Too Damn High (`toohigh`), Friendship Ended (`friendship`), Illusion of Free
+  Choice (`free-choice`), I Am Once Again Asking (`bernie`), Put It Somewhere Else Patrick
+  (`patrick`), Homer Disappears Into Bush (`homer-bush`), Red Pill Blue Pill (`pills`), High
+  Five Drown (`drowning`), Squid Game Season 1 vs Season 2 (`squid-game` plus a divider line),
+  Guy in Corner of Party (`theydontknow`), Bush Learning About 9/11 (`second-plane`).
+- Racial or sexual: 5 Black Guys and Blonde, Riley Reid meme.
+- Not usable: US–Israel–Iran War (World War 3 DLC) (an AI poster covered in baked-in text and
+  quotes, no caption room), Fairs verity (a one-off AI collage of meme characters with no text
+  layout), Messi shaking head (video-only, 164×124 px, too small for a usable template),
+  kj2KhL9KAU6f5RjEbbzzuw.jpg (a private upload; the imgflip page is access-denied).
 
 ## Next packs (not planned in detail yet)
 

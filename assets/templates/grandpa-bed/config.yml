@@ -1,0 +1,43 @@
+name: "Okay Grandpa, Let's Get You to Bed"
+source: "https://knowyourmeme.com/memes/sure-grandma-lets-get-you-to-bed"
+keywords:
+  - "grandpa"
+  - "let's get you to bed"
+  - "old man"
+  - "walker"
+  - "boomer"
+  - "outdated"
+  - "nursing home"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "back in my day memes had impact font"
+  - "okay grandpa, let's get you to bed"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

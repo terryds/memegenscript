@@ -1902,5 +1902,75 @@
       "uncanny",
       "reaction image"
     ]
+  },
+  "grrr": {
+    "aka": [
+      "Grrr",
+      "Angry Red Emoji",
+      "Grrr Emoji"
+    ],
+    "about": "Grrr is a reaction image of a glossy red cartoon smiley with narrowed eyes, gritted teeth and a white-gloved fist raised to its cheek, looking like it is about to lose its temper. It captions petty annoyances and the kind of quiet seething that comes before someone snaps.",
+    "origin": "The image is an old 3D-rendered angry emoticon of the kind that filled forum signatures and chat apps in the 2000s. It was uploaded to imgflip as a blank template titled \"grrr\" and climbed into the site's all-time template directory as a go-to image for being mad about something small.",
+    "tags": [
+      "grrr",
+      "angry",
+      "emoji",
+      "red emoji",
+      "mad",
+      "seething",
+      "reaction image"
+    ]
+  },
+  "office-handshake": {
+    "aka": [
+      "The Office Handshake",
+      "Michael Scott Handshake",
+      "Michael Scott and Ed Truck"
+    ],
+    "about": "The Office Handshake is a still from The Office of a young Michael Scott, in a mullet, fanny pack and short-sleeved shirt, shaking hands with his first boss Ed Truck. It is captioned as two people or things meeting for the first time, usually with a joke about how the relationship turned out later.",
+    "origin": "The photo is a prop from The Office: an old picture of Michael Scott on his first day at Dunder Mifflin, shaking hands with his then-boss Ed Truck. The still was uploaded to imgflip as \"the office handshake\" and became a staple of the site's all-time template directory.",
+    "tags": [
+      "the office",
+      "michael scott",
+      "ed truck",
+      "steve carell",
+      "handshake",
+      "first meeting",
+      "reaction image"
+    ]
+  },
+  "mercy-meme": {
+    "aka": [
+      "Overwatch Mercy Meme",
+      "Mercy Rescue",
+      "Heroes Never Die"
+    ],
+    "about": "Overwatch Mercy Meme is a two-panel image from Blizzard's Overwatch animated short: a frightened girl trapped in rubble looks up in the top panel, and the healer Mercy descends in a burst of golden light in the bottom one. The top panel is labeled with someone in trouble and the bottom with whoever, or whatever, swoops in to save them.",
+    "origin": "Both frames come from Blizzard's animated Overwatch material showing Mercy arriving to rescue a trapped child. Fans paired the two shots and uploaded them to imgflip as \"Overwatch Mercy Meme\", where the rescue format spread well beyond Overwatch players.",
+    "tags": [
+      "overwatch",
+      "mercy",
+      "rescue",
+      "hero",
+      "gaming",
+      "two panel"
+    ]
+  },
+  "happy-shock": {
+    "aka": [
+      "Happy / Shock",
+      "Happy Then Shocked",
+      "Smiling Then Shocked Guy"
+    ],
+    "about": "Happy / Shock is a two-row reaction format: a man grinning in the top frame and the same man with his smile gone and mouth open in shock in the bottom frame, with blank space on the left for a caption per row. The first caption sets up something good and the second reveals the catch that ruins it.",
+    "origin": "The two frames are consecutive stills from a reaction video, placed next to an empty white column so they read like the Drake format. The template was uploaded to imgflip as \"Happy / Shock\" and became one of the site's popular two-step reaction templates.",
+    "tags": [
+      "happy",
+      "shocked",
+      "reaction",
+      "realization",
+      "two panel",
+      "before and after"
+    ]
   }
 }
