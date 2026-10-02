@@ -1,0 +1,45 @@
+name: "Can't Argue With That"
+source: "https://knowyourmeme.com/memes/cant-argue-with-that-technically-not-wrong"
+keywords:
+  - "technically not wrong"
+  - "technically correct"
+  - "nevermind"
+  - "never mind"
+  - "raised finger"
+  - "objection"
+  - "stick figure"
+  - "look of disapproval"
+  - "well actually"
+  - "comic"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.03
+    anchor_y: 0.01
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.105
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.05
+    anchor_y: 0.73
+    angle: 0.0
+    scale_x: 0.9
+    scale_y: 0.12
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "if you never go to the gym you can never skip leg day"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
