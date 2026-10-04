@@ -44,6 +44,14 @@ describe("GET /", () => {
     expect(editor.slice(editor.indexOf('class="site-footer"'))).toContain(form);
   });
 
+  it("shows the Uneed badge on the home page, and the privacy page discloses it", async () => {
+    const body = await (await get("/")).text();
+    const about = body.slice(body.indexOf('<section class="about">'));
+    expect(about).toContain('<a href="https://www.uneed.best/tool/memegenscript-meme-generator" target="_blank" rel="noopener">');
+    expect(about).toContain('<img src="https://www.uneed.best/EMBED1.png" alt="Featured on Uneed" width="250" height="82"');
+    expect(await (await get("/privacy")).text()).toContain("uneed.best");
+  });
+
   it("shows the featured memes section only on the unfiltered index", async () => {
     const body = await (await get("/")).text();
     expect(body).toContain("<h2 id=\"featured-title\">Featured memes</h2>");
