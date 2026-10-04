@@ -385,6 +385,53 @@
           "thin"
         ]
       ]
+    },
+    {
+      "id": "squidward-scaring-fish",
+      "name": "Squidward Scaring the Fish Family",
+      "imgflip": "",
+      "source": "",
+      "keywords": [
+        "Squidward",
+        "SpongeBob",
+        "excited Squidward",
+        "creepy Squidward",
+        "scared fish",
+        "mom covering kids",
+        "protecting kids",
+        "approaching",
+        "running toward",
+        "reaction image"
+      ],
+      "example": [
+        "me walking into the family group chat",
+        "me",
+        "my relatives"
+      ],
+      "boxes": [
+        [
+          0.03,
+          0.01,
+          0.94,
+          0.19,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ],
+        [
+          0.6,
+          0.24,
+          0.38,
+          0.11
+        ],
+        [
+          0.0,
+          0.53,
+          0.38,
+          0.11
+        ]
+      ]
     }
   ]
 }

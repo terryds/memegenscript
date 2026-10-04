@@ -1,0 +1,58 @@
+name: "Squidward Scaring the Fish Family"
+source: 
+keywords:
+  - "Squidward"
+  - "SpongeBob"
+  - "excited Squidward"
+  - "creepy Squidward"
+  - "scared fish"
+  - "mom covering kids"
+  - "protecting kids"
+  - "approaching"
+  - "running toward"
+  - "reaction image"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.03
+    anchor_y: 0.01
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.19
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.6
+    anchor_y: 0.24
+    angle: 0.0
+    scale_x: 0.38
+    scale_y: 0.11
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.53
+    angle: 0.0
+    scale_x: 0.38
+    scale_y: 0.11
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me walking into the family group chat"
+  - "me"
+  - "my relatives"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
