@@ -188,7 +188,7 @@ ${templates.map((t, i) => templateCard(settings, t, { lazy: i > 11 })).join("\n"
 </section>
 ${charactersSection}<section class="about">
   <h2>About this meme generator</h2>
-  <p>${escapeHtml(site)} is a free, open source meme generator. Each template page lets you add your own text, choose a font, style, and layout, and preview the result live. The same images are available programmatically through the <a href="/docs">meme API</a>: every meme is just a URL like <code>/images/buzz/memes/memes_everywhere.png</code>.</p>
+  <p>${escapeHtml(site)} is a free meme generator. Each template page lets you add your own text, choose a font, style, and layout, and preview the result live. The same images are available programmatically through the <a href="/docs">meme API</a>: every meme is just a URL like <code>/images/buzz/memes/memes_everywhere.png</code>.</p>
 </section>`;
 
   return page(

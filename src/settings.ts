@@ -146,7 +146,7 @@ export function resolveSettings(env: EnvVars, request: Request): Settings {
       Number.parseInt(env.REMOTE_TRACKING_ERRORS_LIMIT ?? "", 10) || REMOTE_TRACKING_ERRORS_LIMIT_DEFAULT,
     BUGSNAG_API_KEY: env.BUGSNAG_API_KEY ?? "",
     SITE_NAME: env.SITE_NAME || "Memegenscript",
-    REPO_URL: env.REPO_URL ?? "https://github.com/terryds/memegenscript",
+    REPO_URL: env.REPO_URL ?? "",
     REQUEST_TEMPLATE_URL: env.REQUEST_TEMPLATE_URL ?? "https://forms.gle/SbsPFknn9NRUjs3P6",
     CONTACT_EMAIL: (env.CONTACT_EMAIL ?? "").trim(),
     // Never count local development, even when the ID is configured
