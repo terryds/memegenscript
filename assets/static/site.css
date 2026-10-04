@@ -163,7 +163,7 @@ button[disabled] { opacity: 0.6; cursor: wait; transform: none; }
 .featured-grid .card-title { font-size: 15px; }
 .about { margin-top: 48px; background: var(--surface); border: 3px solid var(--ink); border-radius: var(--radius); padding: 20px 24px; box-shadow: var(--shadow); }
 .about p { max-width: 75ch; }
-/* Directory badge (Uneed's light badge, made for dark sites) */
+/* Uneed "Daily winner" badge: the light version, which stands out on the dark background */
 .featured-on { margin: 18px 0 2px; }
 .featured-on img { display: block; width: 250px; max-width: 100%; height: auto; }
 

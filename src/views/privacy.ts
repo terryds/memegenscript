@@ -53,7 +53,7 @@ export async function page(app: AppContext): Promise<Response> {
   <p>The site runs on Cloudflare Workers. Cloudflare processes every request, which includes your IP address, and we keep short-lived request logs (URL, status, and errors) to find bugs and stop abuse. We do not use these logs to identify people. See <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare's privacy policy</a>.</p>
 
   <h2 id="badges">Other services</h2>
-  <p>The home page shows a “Featured on Uneed” badge. The badge image loads from uneed.best, so opening the home page sends Uneed the standard request data your browser includes with any image: your IP address, browser, and the page it came from.</p>
+  <p>The home page shows a Uneed “Daily winner” badge. The badge image loads from uneed.best, so opening the home page sends Uneed the standard request data your browser includes with any image: your IP address, browser, and the page it came from.</p>
 
   <h2 id="storage">Stored in your browser</h2>
   <ul>

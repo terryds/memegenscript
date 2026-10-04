@@ -48,7 +48,7 @@ describe("GET /", () => {
     const body = await (await get("/")).text();
     const about = body.slice(body.indexOf('<section class="about">'));
     expect(about).toContain('<a href="https://www.uneed.best/tool/memegenscript-meme-generator" target="_blank" rel="noopener">');
-    expect(about).toContain('<img src="https://www.uneed.best/EMBED1.png" alt="Featured on Uneed" width="250" height="82"');
+    expect(about).toContain('<img src="https://www.uneed.best/POTD1.png" alt="Uneed Daily Winner, 1st place" width="250" height="67"');
     expect(await (await get("/privacy")).text()).toContain("uneed.best");
   });
 
