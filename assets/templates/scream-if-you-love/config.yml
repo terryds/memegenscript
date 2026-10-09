@@ -1,0 +1,31 @@
+name: "Scream If You Love"
+source: "https://knowyourmeme.com/memes/brock-lesnars-scream-if-you-love"
+keywords:
+  - "scream if you love"
+  - "Brock Lesnar"
+  - "WWE"
+  - "WrestleMania"
+  - "screaming"
+  - "yelling"
+  - "gif"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.03
+    anchor_y: 0.03
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.32
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "scream if you love friday deploys"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

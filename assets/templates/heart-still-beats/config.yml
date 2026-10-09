@@ -1,0 +1,31 @@
+name: "Killing Chainsaw Man Is the Reason This Heart Still Beats"
+source: 
+keywords:
+  - "Chainsaw Man"
+  - "Katana Man"
+  - "this heart still beats"
+  - "is the reason"
+  - "manga"
+  - "revenge"
+  - "motivation"
+text:
+  - style: upper
+    color: black
+    font: thick
+    anchor_x: 0.62
+    anchor_y: 0.06
+    angle: 0.0
+    scale_x: 0.36
+    scale_y: 0.4
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "proving my ex wrong"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

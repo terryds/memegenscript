@@ -2,7 +2,7 @@
 
 Status: **Batches E, F1, F2 and G done (122 templates, library at 454); meme scout 2026-09-18
 added 4 (library at 460); two Jujutsu Kaisen requests added 2026-09-19 (library at 462); meme scout 2026-09-27
-added 11 (library at 480); meme scout 2026-10-02 added 10 (library at 493).** Nothing is pending; the round-2 record is kept further down.
+added 11 (library at 480); meme scout 2026-10-02 added 10 (library at 493); meme scout 2026-10-09 added 12 (library at 506).** Nothing is pending; the round-2 record is kept further down.
 
 ## Done: Batch E, Tobey Maguire pack (17 templates, 2026-09-17)
 
@@ -142,6 +142,38 @@ Dropped:
   quotes, no caption room), Fairs verity (a one-off AI collage of meme characters with no text
   layout), Messi shaking head (video-only, 164×124 px, too small for a usable template),
   kj2KhL9KAU6f5RjEbbzzuw.jpg (a private upload; the imgflip page is access-denied).
+
+## Meme scout 2026-10-09 (12 templates)
+
+Imported via `data/imports/scout-2026-10-09.json` from imgflip top-new and the all-time template
+directory (pages 7–9): `fanum-broccoli` (Fanum Throwing Broccoli) and `scream-if-you-love`
+(Brock Lesnar; black text in the white band) are video-only on imgflip, converted to GIF + still.
+Also `fernanfloo-dresses-up` (a label per photo), `keep-calm` (Keep Calm and Carry On, text
+below the crown), `heart-still-beats` (Chainsaw Man; black text in the blank top right, above
+"is the reason"), `mimic-power` (labels for the jets and for Omni-Man), `milking-cow` (Good Morning
+Sunshine; labels for the cow and the farmer), `buddy-christ`, `truman-christof`,
+`thousand-yard-stare` (imgflip's 1000px upload 60666140 instead of the scouted 198px 484495066),
+`say-it-again-dexter` (a caption per panel) and `pakistani-fan` ("Disappointed Man" on imgflip).
+Keep Calm, Buddy Christ and Say it Again Dexter had no id in the listing; their template pages give
+1202623, 17699 and 71428573. One got a hand-written description: `heart-still-beats` (no Know
+Your Meme entry).
+
+Dropped:
+- Already in the library: Robert Pattinson As Chris Hanson (`pattinson-hansen`), Futurama Zero
+  Days Since Last Blank (`zero-days`), Aaaaand Its Gone (`gone`), Y U No (`yuno`), Sad guy Happy
+  guy bus (`bus`), Jason Momoa Henry Cavill (`momoa-cavill`), Confused John Travolta Pulp Fiction
+  (`confused-travolta`), Good Fellas Hilarious (`goodfellas`), i sleep real shit (`shaq`), What's My
+  Purpose Butter Robot (`butter-robot`), Spiderman Glasses (`glasses`), thanos what did it cost
+  (`what-did-it-cost`), Captain Phillips I'm The Captain Now (`captain`), Victoria David Beckham Be
+  Honest (`be-honest`), drowning kid in the pool (`pool`), Creepy Condescending Wonka (`wonka`),
+  Spider Man Double (`spiderman`), DW Sign Won't Stop Me (`dw-sign`), fat man drinking from pipe
+  (`greedy-pipe`, and only 160px), astronaut always has been (`astronaut`), Oliver Twist Please Sir
+  (`oliver-twist`), Aragorn Black Gate for Frodo (`black-gate`).
+- Near-duplicate: Pepe the Frog (the same sad Pepe face as `sadfrog`).
+- Dropped before: They Hated Jesus (baked comic), What Do We Want (unclear textbox layout), Big
+  Dog Small Dog (same as `swole`).
+- Racial: Peter Griffin skin color chart.
+- Not usable: Blank Transparent Square (an empty square, no meme).
 
 ## Next packs (not planned in detail yet)
 

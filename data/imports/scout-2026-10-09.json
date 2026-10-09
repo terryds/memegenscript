@@ -1,0 +1,320 @@
+{
+ "_comment": "Meme scout 2026-10-09: keepers from imgflip top-new and the all-time template directory (pages 7-9). fanum-broccoli and scream-if-you-love are video-only on imgflip, converted to GIF + still. Keep Calm, Buddy Christ and Say it Again Dexter had no id in the listing; ids come from their template pages. thousand-yard-stare uses imgflip's 1000px upload (60666140) instead of the scouted 198px one (484495066).",
+ "templates": [
+  {
+   "id": "fanum-broccoli",
+   "name": "Fanum Throwing Broccoli",
+   "imgflip": 666646391,
+   "keywords": [
+    "Fanum",
+    "Kai Cenat",
+    "AMP",
+    "streamer",
+    "broccoli",
+    "throwing",
+    "explosion",
+    "procrastinating",
+    "gif"
+   ],
+   "example": [
+    "my responsibilities",
+    "me at the first sign of a nap"
+   ],
+   "source": "https://knowyourmeme.com/memes/fanum-throwing-broccoli"
+  },
+  {
+   "id": "scream-if-you-love",
+   "name": "Scream If You Love",
+   "imgflip": 565419535,
+   "keywords": [
+    "scream if you love",
+    "Brock Lesnar",
+    "WWE",
+    "WrestleMania",
+    "screaming",
+    "yelling",
+    "gif"
+   ],
+   "example": [
+    "scream if you love friday deploys"
+   ],
+   "boxes": [
+    [
+     0.03,
+     0.03,
+     0.94,
+     0.32,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ],
+   "kym": "scream-if-you-love"
+  },
+  {
+   "id": "fernanfloo-dresses-up",
+   "name": "Fernanfloo Dresses Up",
+   "imgflip": 306195515,
+   "keywords": [
+    "Fernanfloo",
+    "dresses up",
+    "glow up",
+    "pajamas",
+    "suit",
+    "before and after",
+    "two panels"
+   ],
+   "example": [
+    "me on a regular zoom call",
+    "me when the camera is on"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.02,
+     0.5,
+     0.2
+    ],
+    [
+     0.5,
+     0.02,
+     0.5,
+     0.2
+    ]
+   ],
+   "kym": "fernanfloo-dresses-up"
+  },
+  {
+   "id": "keep-calm",
+   "name": "Keep Calm and Carry On",
+   "imgflip": 1202623,
+   "keywords": [
+    "keep calm",
+    "carry on",
+    "poster",
+    "crown",
+    "British",
+    "red poster",
+    "propaganda"
+   ],
+   "example": [
+    "keep calm and push to production"
+   ],
+   "boxes": [
+    [
+     0.08,
+     0.2,
+     0.84,
+     0.74
+    ]
+   ],
+   "kym": "keep-calm-and-carry-on"
+  },
+  {
+   "id": "heart-still-beats",
+   "name": "Killing Chainsaw Man Is the Reason This Heart Still Beats",
+   "imgflip": 627772281,
+   "keywords": [
+    "Chainsaw Man",
+    "Katana Man",
+    "this heart still beats",
+    "is the reason",
+    "manga",
+    "revenge",
+    "motivation"
+   ],
+   "example": [
+    "proving my ex wrong"
+   ],
+   "boxes": [
+    [
+     0.62,
+     0.06,
+     0.36,
+     0.4,
+     "upper",
+     "black",
+     "center",
+     "thick"
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "mimic-power",
+   "name": "Look What They Need to Mimic a Fraction of Our Power",
+   "imgflip": 324268649,
+   "keywords": [
+    "Invincible",
+    "Omni-Man",
+    "mimic a fraction of our power",
+    "planes",
+    "superiority",
+    "smug"
+   ],
+   "example": [
+    "a dishwasher",
+    "my mom with one sponge"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.04,
+     0.6,
+     0.16
+    ],
+    [
+     0.0,
+     0.55,
+     0.55,
+     0.16
+    ]
+   ],
+   "kym": "look-what-they-need-to-mimic-a-fraction-of-our-power"
+  },
+  {
+   "id": "milking-cow",
+   "name": "Milking the Cow",
+   "imgflip": 159223754,
+   "keywords": [
+    "milking the cow",
+    "skinny cow",
+    "buckets",
+    "good morning sunshine",
+    "exploited",
+    "taxes",
+    "political cartoon",
+    "Steve Sack"
+   ],
+   "example": [
+    "my wallet",
+    "streaming services"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.02,
+     0.66,
+     0.18
+    ],
+    [
+     0.55,
+     0.84,
+     0.45,
+     0.15
+    ]
+   ],
+   "source": "https://knowyourmeme.com/memes/good-morning-sunshine"
+  },
+  {
+   "id": "buddy-christ",
+   "name": "Buddy Christ",
+   "imgflip": 17699,
+   "keywords": [
+    "Buddy Christ",
+    "Jesus",
+    "Dogma",
+    "Kevin Smith",
+    "thumbs up",
+    "wink",
+    "pointing"
+   ],
+   "example": [
+    "you skipped church?",
+    "i skipped the cross"
+   ],
+   "kym": "buddy-christ"
+  },
+  {
+   "id": "truman-christof",
+   "name": "Truman Show Christof",
+   "imgflip": 619369963,
+   "keywords": [
+    "The Truman Show",
+    "Christof",
+    "Ed Harris",
+    "director",
+    "control room",
+    "pondering",
+    "watching"
+   ],
+   "example": [
+    "the algorithm watching me",
+    "think about buying one sock"
+   ],
+   "source": "https://knowyourmeme.com/memes/director-christof-truman-show"
+  },
+  {
+   "id": "thousand-yard-stare",
+   "name": "Thousand Yard Stare",
+   "imgflip": 60666140,
+   "keywords": [
+    "thousand yard stare",
+    "1000 yard stare",
+    "Tom Lea",
+    "Marines",
+    "shell shock",
+    "war painting",
+    "traumatized"
+   ],
+   "example": [
+    "me after the 4 hour all-hands",
+    "that could have been an email"
+   ],
+   "kym": "thousand-yard-stare"
+  },
+  {
+   "id": "say-it-again-dexter",
+   "name": "Say It Again, Dexter",
+   "imgflip": 71428573,
+   "keywords": [
+    "Dexter's Laboratory",
+    "Dexter",
+    "Dee Dee",
+    "kiss",
+    "say it again",
+    "Cartoon Network",
+    "two panels"
+   ],
+   "example": [
+    "omelette du fromage",
+    "omelette du fromage"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.02,
+     1,
+     0.16
+    ],
+    [
+     0.0,
+     0.82,
+     1,
+     0.15
+    ]
+   ],
+   "kym": "say-it-again-dexter"
+  },
+  {
+   "id": "pakistani-fan",
+   "name": "Disappointed Pakistani Fan",
+   "imgflip": 219315380,
+   "keywords": [
+    "disappointed man",
+    "angry Pakistani fan",
+    "cricket",
+    "World Cup",
+    "hands on hips",
+    "disappointed",
+    "reaction"
+   ],
+   "example": [
+    "when you open the fridge",
+    "and it's still the same food"
+   ],
+   "kym": "disappointed-muhammad-sarim-akhtar"
+  }
+ ]
+}

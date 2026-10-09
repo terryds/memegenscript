@@ -1,0 +1,43 @@
+name: "Thousand Yard Stare"
+source: "https://knowyourmeme.com/memes/thousand-yard-stare"
+keywords:
+  - "thousand yard stare"
+  - "1000 yard stare"
+  - "Tom Lea"
+  - "Marines"
+  - "shell shock"
+  - "war painting"
+  - "traumatized"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me after the 4 hour all-hands"
+  - "that could have been an email"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

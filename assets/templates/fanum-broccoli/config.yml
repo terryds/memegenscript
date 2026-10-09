@@ -1,0 +1,45 @@
+name: "Fanum Throwing Broccoli"
+source: "https://knowyourmeme.com/memes/fanum-throwing-broccoli"
+keywords:
+  - "Fanum"
+  - "Kai Cenat"
+  - "AMP"
+  - "streamer"
+  - "broccoli"
+  - "throwing"
+  - "explosion"
+  - "procrastinating"
+  - "gif"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "my responsibilities"
+  - "me at the first sign of a nap"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
