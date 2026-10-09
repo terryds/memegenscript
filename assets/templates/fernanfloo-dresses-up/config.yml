@@ -1,0 +1,43 @@
+name: "Fernanfloo Dresses Up"
+source: "https://knowyourmeme.com/memes/fernanfloo-dresses-up-my-wifes-funeral"
+keywords:
+  - "Fernanfloo"
+  - "dresses up"
+  - "glow up"
+  - "pajamas"
+  - "suit"
+  - "before and after"
+  - "two panels"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.5
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me on a regular zoom call"
+  - "me when the camera is on"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

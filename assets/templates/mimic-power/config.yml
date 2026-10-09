@@ -1,0 +1,42 @@
+name: "Look What They Need to Mimic a Fraction of Our Power"
+source: "https://knowyourmeme.com/memes/look-what-they-need-to-mimic-a-fraction-of-our-power"
+keywords:
+  - "Invincible"
+  - "Omni-Man"
+  - "mimic a fraction of our power"
+  - "planes"
+  - "superiority"
+  - "smug"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.04
+    angle: 0.0
+    scale_x: 0.6
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.55
+    angle: 0.0
+    scale_x: 0.55
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "a dishwasher"
+  - "my mom with one sponge"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
