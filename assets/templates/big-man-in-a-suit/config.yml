@@ -26,12 +26,12 @@ text:
     stop: 1.0
   - style: default
     color: white
-    font: segoe
-    anchor_x: 0.12
-    anchor_y: 0.384
+    font: thin
+    anchor_x: 0.04
+    anchor_y: 0.373
     angle: 0.0
-    scale_x: 0.76
-    scale_y: 0.048
+    scale_x: 0.92
+    scale_y: 0.064
     align: center
     start: 0.0
     stop: 1.0

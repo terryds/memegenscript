@@ -323,3 +323,23 @@ describe("GET /images/preview.jpg", () => {
     expect(response.status).toBe(200);
   });
 });
+
+describe("default text", () => {
+  async function render(text: string[]): Promise<string> {
+    const { url } = (await (await postJson("/images", { template_id: "big-man-in-a-suit", text })).json()) as { url: string };
+    const response = await get(new URL(url).pathname);
+    expect(response.status, url).toBe(200);
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    let hash = 0;
+    for (const b of bytes) hash = (hash * 31 + b) >>> 0;
+    return `${bytes.length}:${hash}`;
+  }
+
+  it("fills a blank line with the box's default text, and a given line replaces it", async () => {
+    const blank = await render(["big man"]);
+    const spelledOut = await render(["big man", "Big man in a suit of armor."]);
+    const rewritten = await render(["big man", "small man in a hoodie"]);
+    expect(blank).toBe(spelledOut);
+    expect(rewritten).not.toBe(blank);
+  }, 60000);
+});
