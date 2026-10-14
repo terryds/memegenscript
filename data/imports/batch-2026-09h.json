@@ -432,6 +432,40 @@
           0.11
         ]
       ]
+    },
+    {
+      "id": "big-man-in-a-suit",
+      "name": "Big Man in a Suit of Armor",
+      "imgflip": 102086246,
+      "source": "",
+      "keywords": [
+        "Captain America",
+        "Steve Rogers",
+        "Tony Stark",
+        "Iron Man",
+        "The Avengers",
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "take that off and what are you",
+        "genius billionaire playboy philanthropist",
+        "Marvel",
+        "comeback"
+      ],
+      "example": [
+        "genius, billionaire, playboy, philanthropist"
+      ],
+      "boxes": [
+        [
+          0.03,
+          0.845,
+          0.94,
+          0.14,
+          "default",
+          "black",
+          "center",
+          "thin"
+        ]
+      ]
     }
   ]
 }
