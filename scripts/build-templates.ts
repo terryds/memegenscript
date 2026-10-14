@@ -64,6 +64,8 @@ function buildText(raw: Raw | undefined) {
     align: str(r.align, TEXT_DEFAULTS.align),
     start: num(r.start, TEXT_DEFAULTS.start),
     stop: num(r.stop, TEXT_DEFAULTS.stop),
+    // Text shown when the line is left blank; only set on boxes that have one
+    ...(r.default ? { default: String(r.default) } : {}),
   };
 }
 

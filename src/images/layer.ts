@@ -145,7 +145,7 @@ export async function getImageElements(options: ElementOptions): Promise<TextEle
     } else {
       visible = (text.start <= percentRendered && percentRendered < text.stop) || !text.stop;
     }
-    elements.push(await getImageElement(visible ? lines : [], index, text, fontName, imageSize, watermark, assets));
+    elements.push(await getImageElement(visible ? lines : [], index, text, fontName, imageSize, watermark, assets, visible));
   }
   if (isPreview) {
     const element = await getImageElement([PREVIEW_TEXT], 0, Text.getPreview(), "", imageSize, watermark, assets);
@@ -164,6 +164,7 @@ async function getImageElement(
   imageSize: Dimensions,
   watermark: string,
   assets: Fetcher,
+  useDefault = false,
 ): Promise<TextElement> {
   const point = text.getAnchor(imageSize, watermark);
   const maxTextSize = text.getSize(imageSize);
@@ -171,11 +172,14 @@ async function getImageElement(
 
   const loaded = await loadFont(fontName || text.font, assets);
 
+  // A blank line falls back to the box's default text, if it has one (only while visible)
+  const given = index < lines.length ? lines[index] : "";
+  const value = !given.trim() && useDefault && text.default ? text.default : given;
   let line: string;
-  if (index >= lines.length) {
+  if (index >= lines.length && value === given) {
     line = "";
   } else {
-    line = text.stylize(wrap(loaded, lines[index], maxTextSize, maxFontSize), { lines });
+    line = text.stylize(wrap(loaded, value, maxTextSize, maxFontSize), { lines });
   }
 
   const font = getFont(loaded, line, maxTextSize, maxFontSize);

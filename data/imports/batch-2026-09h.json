@@ -464,6 +464,17 @@
           "black",
           "center",
           "thin"
+        ],
+        [
+          0.12,
+          0.384,
+          0.76,
+          0.048,
+          "default",
+          "white",
+          "center",
+          "segoe",
+          "Big man in a suit of armor."
         ]
       ]
     }
