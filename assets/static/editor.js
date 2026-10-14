@@ -173,8 +173,11 @@
       font: box.font || "titilliumweb",
       size: 0, // 0 = automatic
       color: box.color || "#ffffff",
-      strokeColor: "#000000",
-      strokeWidth: -1, // -1 = automatic
+      // Black captions (usually on a white strip) get no outline, like the server renders
+      // them; a black outline on black text just smears the letters together. If someone
+      // turns the outline on, it starts white so it shows.
+      strokeColor: box.color === "black" ? "#ffffff" : "#000000",
+      strokeWidth: box.color === "black" ? 0 : -1, // -1 = automatic
       align: box.align || "center",
       valign: "middle",
       uppercase: box.uppercase !== false,
