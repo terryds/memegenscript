@@ -16,7 +16,8 @@ const FORCE = process.argv.includes("--force");
 const ONLY = process.argv.find((a) => a.startsWith("--only="))?.slice(7).split(",");
 const REKYM = process.argv.includes("--rekym");
 
-type Box = [number, number, number, number, string?, string?, string?, string?];
+/** [x, y, w, h, style, color, align, font, default text] */
+type Box = [number, number, number, number, string?, string?, string?, string?, string?];
 interface Spec {
   id: string;
   name: string;
@@ -105,7 +106,7 @@ function configFor(t: Spec, source: string): string {
     [0, 0.8, 1, 0.2],
   ];
   const text = boxes
-    .map(([x, y, w, h, style = "upper", color = "white", align = "center", font = "thick"]) =>
+    .map(([x, y, w, h, style = "upper", color = "white", align = "center", font = "thick", text = ""]) =>
       [
         `  - style: ${style}`,
         `    color: ${color}`,
@@ -118,6 +119,7 @@ function configFor(t: Spec, source: string): string {
         `    align: ${align}`,
         `    start: 0.0`,
         `    stop: 1.0`,
+        ...(text ? [`    default: ${yamlString(text)}`] : []),
       ].join("\n"),
     )
     .join("\n");

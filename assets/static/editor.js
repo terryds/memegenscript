@@ -162,7 +162,7 @@
       id: uid(),
       type: "text",
       name: "Text " + (index + 1),
-      text: "",
+      text: box.value || "", // some boxes start with default text (e.g. a quote baked into the meme)
       placeholder: box.placeholder || "Your text",
       x: box.x * W,
       y: box.y * H,

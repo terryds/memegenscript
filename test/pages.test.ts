@@ -201,6 +201,17 @@ describe("GET /memes/{slug}", () => {
     }
   });
 
+  it("starts a box with its default text in the editor and the no-JS form", async () => {
+    const body = await (await get("/memes/big-man-in-a-suit-of-armor")).text();
+    expect(body).toContain("&quot;value&quot;:&quot;Big man in a suit of armor.&quot;"); // editor config (HTML-escaped attribute)
+    expect(body).toContain('placeholder="" value="Big man in a suit of armor."');
+    // Boxes without a default carry no default at all
+    const { Template } = await import("../src/models/template");
+    const fry = Template.getOrNull("fry")!;
+    expect(Object.keys(fry.text[0].toJSON())).not.toContain("default");
+    expect(String(fry.text[0])).not.toContain("default=");
+  });
+
   it("gives every template a unique slug that is a valid path segment", async () => {
     const { Template } = await import("../src/models/template");
     const seen = new Set<string>();

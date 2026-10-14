@@ -1,0 +1,47 @@
+name: "Big Man in a Suit of Armor"
+source: 
+keywords:
+  - "Captain America"
+  - "Steve Rogers"
+  - "Tony Stark"
+  - "Iron Man"
+  - "The Avengers"
+  - "Chris Evans"
+  - "Robert Downey Jr."
+  - "take that off and what are you"
+  - "genius billionaire playboy philanthropist"
+  - "Marvel"
+  - "comeback"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.03
+    anchor_y: 0.845
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: white
+    font: thin
+    anchor_x: 0.04
+    anchor_y: 0.373
+    angle: 0.0
+    scale_x: 0.92
+    scale_y: 0.064
+    align: center
+    start: 0.0
+    stop: 1.0
+    default: "Big man in a suit of armor."
+example:
+  - "genius, billionaire, playboy, philanthropist"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

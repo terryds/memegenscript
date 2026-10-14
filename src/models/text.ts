@@ -24,6 +24,8 @@ export interface TextData {
   align: string;
   start: number;
   stop: number;
+  /** Shown when the meme leaves this line blank (e.g. a quote the user may rewrite); "" for none */
+  default?: string;
 }
 
 export class Text implements TextData {
@@ -38,6 +40,7 @@ export class Text implements TextData {
   align = "center";
   start = 0.0;
   stop = 1.0;
+  default = "";
 
   constructor(data: Partial<TextData> = {}) {
     Object.assign(this, data);
@@ -49,13 +52,18 @@ export class Text implements TextData {
 
   toJSON(): TextData {
     const { style, color, font, anchor_x, anchor_y, angle, scale_x, scale_y, align, start, stop } = this;
-    return { style, color, font, anchor_x, anchor_y, angle, scale_x, scale_y, align, start, stop };
+    const data: TextData = { style, color, font, anchor_x, anchor_y, angle, scale_x, scale_y, align, start, stop };
+    // Only boxes that have default text carry the key, so every other template's JSON and
+    // cache fingerprints stay exactly as they were
+    if (this.default) data.default = this.default;
+    return data;
   }
 
   /** Python `str(Text(...))` — used inside cache fingerprints. */
   toString(): string {
     const d = this.toJSON();
-    return `Text(style='${d.style}', color='${d.color}', font='${d.font}', anchor_x=${d.anchor_x}, anchor_y=${d.anchor_y}, angle=${d.angle}, scale_x=${d.scale_x}, scale_y=${d.scale_y}, align='${d.align}', start=${d.start}, stop=${d.stop})`;
+    const extra = d.default ? `, default='${d.default}'` : "";
+    return `Text(style='${d.style}', color='${d.color}', font='${d.font}', anchor_x=${d.anchor_x}, anchor_y=${d.anchor_y}, angle=${d.angle}, scale_x=${d.scale_x}, scale_y=${d.scale_y}, align='${d.align}', start=${d.start}, stop=${d.stop}${extra})`;
   }
 
   static getPreview(): Text {

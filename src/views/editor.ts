@@ -306,13 +306,15 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
       angle: text.angle,
       uppercase: text.style === "upper",
       placeholder: template.example[index] ?? `Text ${index + 1}`,
+      value: text.default,
     })),
     fonts: fonts.map((f) => ({ id: f.id, label: f.alias ? `${f.id} (${f.alias})` : f.id, url: `/assets/fonts/${encodeURIComponent(f.filename)}` })),
   };
 
   const textInputs = Array.from({ length: lines }, (_, i) => {
     const placeholder = template.example[i] ?? "";
-    return `<label class="field"><span>Line ${i + 1}</span><input type="text" name="text[]" placeholder="${escapeHtml(placeholder)}" maxlength="200"></label>`;
+    const value = template.text[i]?.default ?? "";
+    return `<label class="field"><span>Line ${i + 1}</span><input type="text" name="text[]" placeholder="${escapeHtml(placeholder)}" value="${escapeHtml(value)}" maxlength="200"></label>`;
   }).join("\n");
 
   const tagList = [...template.keywords, ...template.tags].filter((k, i, arr) => arr.findIndex((o) => o.toLowerCase() === k.toLowerCase()) === i).slice(0, 14);
