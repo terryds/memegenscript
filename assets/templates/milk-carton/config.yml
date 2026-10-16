@@ -1,0 +1,30 @@
+name: "Missing Milk Carton"
+source: 
+keywords:
+  - "milk carton"
+  - "missing"
+  - "have you seen me"
+  - "missing person"
+  - "lost"
+  - "where did it go"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.31
+    anchor_y: 0.37
+    angle: 0.0
+    scale_x: 0.45
+    scale_y: 0.43
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "my motivation, last seen monday morning"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

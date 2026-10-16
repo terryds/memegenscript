@@ -1,0 +1,30 @@
+name: "Be Like Bill"
+source: "https://knowyourmeme.com/memes/be-like-bill"
+keywords:
+  - "be like bill"
+  - "bill"
+  - "stick figure"
+  - "this is bill"
+  - "bill is smart"
+  - "facebook"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.06
+    anchor_y: 0.05
+    angle: 0.0
+    scale_x: 0.56
+    scale_y: 0.88
+    align: left
+    start: 0.0
+    stop: 1.0
+example:
+  - "This is Bill.\nBill reads the whole thread before replying.\nBill is smart.\nBe like Bill."
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

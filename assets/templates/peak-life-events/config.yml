@@ -1,0 +1,31 @@
+name: "Peak Life Events"
+source: 
+keywords:
+  - "life events"
+  - "graph"
+  - "peak"
+  - "chart"
+  - "best day of my life"
+  - "wedding day"
+  - "top new"
+text:
+  - style: upper
+    color: black
+    font: thick
+    anchor_x: 0.1
+    anchor_y: 0.21
+    angle: 0.0
+    scale_x: 0.42
+    scale_y: 0.15
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "finding a $20 bill in old jeans"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

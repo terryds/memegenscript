@@ -1,0 +1,43 @@
+name: "Mel Gibson and Jesus Christ"
+source: "https://knowyourmeme.com/memes/mel-gibson-talking-to-bloody-jesus"
+keywords:
+  - "Mel Gibson"
+  - "Jesus"
+  - "The Passion of the Christ"
+  - "Jim Caviezel"
+  - "explaining"
+  - "behind the scenes"
+  - "chat"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "so after the crucifixion you just come back?"
+  - "yeah it's a three day thing"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

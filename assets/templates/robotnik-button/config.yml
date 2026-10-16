@@ -1,0 +1,56 @@
+name: "Robotnik Pressing Red Button"
+source: "https://knowyourmeme.com/memes/robotnik-pressing-red-button"
+keywords:
+  - "Robotnik"
+  - "Eggman"
+  - "Sonic"
+  - "Jim Carrey"
+  - "button"
+  - "press"
+  - "choice"
+  - "two panels"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.06
+    anchor_y: 0.36
+    angle: 0.0
+    scale_x: 0.36
+    scale_y: 0.1
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.55
+    anchor_y: 0.015
+    angle: 0.0
+    scale_x: 0.3
+    scale_y: 0.075
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.86
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "sleep"
+  - "one more video"
+  - "me at 2 am"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

@@ -2,7 +2,7 @@
 
 Status: **Batches E, F1, F2 and G done (122 templates, library at 454); meme scout 2026-09-18
 added 4 (library at 460); two Jujutsu Kaisen requests added 2026-09-19 (library at 462); meme scout 2026-09-27
-added 11 (library at 480); meme scout 2026-10-02 added 10 (library at 493); meme scout 2026-10-09 added 12 (library at 506).** Nothing is pending; the round-2 record is kept further down.
+added 11 (library at 480); meme scout 2026-10-02 added 10 (library at 493); meme scout 2026-10-09 added 12 (library at 506); meme scout 2026-10-16 added 23 (library at 530).** Nothing is pending; the round-2 record is kept further down.
 
 ## Done: Batch E, Tobey Maguire pack (17 templates, 2026-09-17)
 
@@ -174,6 +174,35 @@ Dropped:
   Dog Small Dog (same as `swole`).
 - Racial: Peter Griffin skin color chart.
 - Not usable: Blank Transparent Square (an empty square, no meme).
+
+## Meme scout 2026-10-16 (23 templates)
+
+Imported via `data/imports/scout-2026-10-16.json` from imgflip top-new and the all-time template
+directory (pages 10–11): `peak-life-events` (label over the blank peak), `be-like-bill` (black
+left-aligned text beside Bill), `just-like-that`, `smiling-cat`, `milk-carton` (text in the blank
+missing-person square), `twenty-minute-adventure`, `peter-running`, `robotnik-button` (labels for
+both buttons plus Robotnik), `hope-you-die` (the small guy's reply), `nobody-got-me` (the two blank
+patches), `daring-today` (the two orders), `gibson-jesus`, `superior-royalty`, `toughest-battles`
+(label under Jesus), `hulk-taco`, `daly-tiger` (a label per golfer), `two-castles` (both castles
+plus the boy) and `manhattan-1985` (the three caption boxes). Video-only on imgflip, converted to
+GIF + still: `tony-new-element` (text in the white band), `kurt-angle-stare`, `money-smell`,
+`xbox-achievement` (text under "Achievement unlocked") and `walter-cooking` (cropped off the
+imgflip watermark). Be Like Bill, And Just Like That and Smiling Cat had no id in the listing;
+their template pages give 56225174, 54401824 and 17862622. Seven got hand-written descriptions:
+`peak-life-events`, `smiling-cat`, `milk-carton`, `xbox-achievement`, `tony-new-element`,
+`superior-royalty` (no Know Your Meme entry, or the search matched an unrelated one) and
+`daring-today` (the search matched the different "What Sin Do You Relish the Most" format).
+
+Dropped:
+- Already in the library: patrick not my wallet (`wallet`), Spongebob looking out window
+  (`squidward`), screaming seagull (`seagull`), corporate wants you to find the difference
+  (`same`), Cat newspaper (`boat`), Giga Chad (`gigachad`), Sparta Leonidas (`sparta`), Jim
+  Halpert Explains (`jim`), Peace sign tombstone (`grave`), Wait, its all (`astronaut`), our
+  (`cbb`), That's my secret (`hulk-secret`), George Bush Whisper (`second-plane`).
+- Near-duplicate: Blackjack and Hookers (a different Bender still of the same quote as `bender`).
+- Sexual: "Youre going to make me" (a Riley Reid still).
+- Not usable: Bro Please Bro (295×171 px) and Poke with stick (215×250 px), too small for a
+  usable template.
 
 ## Next packs (not planned in detail yet)
 
