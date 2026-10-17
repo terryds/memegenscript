@@ -1,0 +1,42 @@
+name: "If Nobody Got Me"
+source: "https://knowyourmeme.com/memes/if-nobody-got-me-i-know-god-got-me"
+keywords:
+  - "if nobody got me"
+  - "i know god got me"
+  - "can i get an amen"
+  - "pointing up"
+  - "faith"
+  - "support"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.48
+    anchor_y: 0.13
+    angle: 0.0
+    scale_x: 0.48
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.42
+    anchor_y: 0.6
+    angle: 0.0
+    scale_x: 0.22
+    scale_y: 0.12
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "my teammates"
+  - "ctrl+z"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

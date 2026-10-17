@@ -1,0 +1,649 @@
+{
+ "_comment": "Meme scout 2026-10-16: keepers from imgflip top-new and the all-time template directory (pages 10-11). tony-new-element, kurt-angle-stare, money-smell, xbox-achievement and walter-cooking are video-only on imgflip, converted to GIF + still. Be Like Bill, And Just Like That, Smiling Cat had no id in the listing; ids come from their template pages.",
+ "templates": [
+  {
+   "id": "peak-life-events",
+   "name": "Peak Life Events",
+   "imgflip": 662640318,
+   "keywords": [
+    "life events",
+    "graph",
+    "peak",
+    "chart",
+    "best day of my life",
+    "wedding day",
+    "top new"
+   ],
+   "example": [
+    "finding a $20 bill in old jeans"
+   ],
+   "boxes": [
+    [
+     0.1,
+     0.21,
+     0.42,
+     0.15,
+     "upper",
+     "black",
+     "center",
+     "thick"
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "be-like-bill",
+   "name": "Be Like Bill",
+   "imgflip": 56225174,
+   "kym": "be-like-bill",
+   "keywords": [
+    "be like bill",
+    "bill",
+    "stick figure",
+    "this is bill",
+    "bill is smart",
+    "facebook"
+   ],
+   "example": [
+    "This is Bill.\nBill reads the whole thread before replying.\nBill is smart.\nBe like Bill."
+   ],
+   "boxes": [
+    [
+     0.06,
+     0.05,
+     0.56,
+     0.88,
+     "default",
+     "black",
+     "left",
+     "thin"
+    ]
+   ]
+  },
+  {
+   "id": "tony-new-element",
+   "name": "Tony Discovers a New Element",
+   "imgflip": 347580183,
+   "keywords": [
+    "Tony Stark",
+    "Iron Man",
+    "new element",
+    "Iron Man 2",
+    "Robert Downey Jr.",
+    "discovery",
+    "Marvel",
+    "gif"
+   ],
+   "example": [
+    "me after combining three error messages into one stack overflow search"
+   ],
+   "boxes": [
+    [
+     0.03,
+     0.01,
+     0.94,
+     0.25,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "just-like-that",
+   "name": "And Just Like That",
+   "imgflip": 54401824,
+   "kym": "and-just-like-that",
+   "keywords": [
+    "and just like that",
+    "Forrest Gump",
+    "Tom Hanks",
+    "sudden",
+    "just like that",
+    "quit"
+   ],
+   "example": [
+    "and just like that",
+    "i forgot why i walked into the kitchen"
+   ]
+  },
+  {
+   "id": "smiling-cat",
+   "name": "Smiling Cat",
+   "imgflip": 17862622,
+   "keywords": [
+    "smiling cat",
+    "happy cat",
+    "cat",
+    "grin",
+    "excited",
+    "creepy smile"
+   ],
+   "example": [
+    "when the teacher says",
+    "the test is cancelled"
+   ],
+   "source": ""
+  },
+  {
+   "id": "milk-carton",
+   "name": "Missing Milk Carton",
+   "imgflip": 79023506,
+   "keywords": [
+    "milk carton",
+    "missing",
+    "have you seen me",
+    "missing person",
+    "lost",
+    "where did it go"
+   ],
+   "example": [
+    "my motivation, last seen monday morning"
+   ],
+   "boxes": [
+    [
+     0.31,
+     0.37,
+     0.45,
+     0.43,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "twenty-minute-adventure",
+   "name": "20 Minute Adventure",
+   "imgflip": 205214210,
+   "kym": "20-minute-adventure",
+   "keywords": [
+    "Rick and Morty",
+    "20 minute adventure",
+    "in and out",
+    "Rick",
+    "Morty",
+    "portal",
+    "quick errand",
+    "two panels"
+   ],
+   "example": [
+    "just one more episode",
+    "4 am"
+   ]
+  },
+  {
+   "id": "peter-running",
+   "name": "Peter Griffin Running Away",
+   "imgflip": 135505881,
+   "kym": "peter-griffin-running-away",
+   "keywords": [
+    "Peter Griffin",
+    "Family Guy",
+    "running away",
+    "plane",
+    "chase",
+    "escape",
+    "North by Northwest"
+   ],
+   "example": [
+    "me leaving the group chat",
+    "my responsibilities"
+   ]
+  },
+  {
+   "id": "robotnik-button",
+   "name": "Robotnik Pressing Red Button",
+   "imgflip": 243879998,
+   "kym": "robotnik-pressing-red-button",
+   "keywords": [
+    "Robotnik",
+    "Eggman",
+    "Sonic",
+    "Jim Carrey",
+    "button",
+    "press",
+    "choice",
+    "two panels"
+   ],
+   "example": [
+    "sleep",
+    "one more video",
+    "me at 2 am"
+   ],
+   "boxes": [
+    [
+     0.06,
+     0.36,
+     0.36,
+     0.1,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ],
+    [
+     0.55,
+     0.015,
+     0.3,
+     0.075,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ],
+    [
+     0,
+     0.86,
+     1,
+     0.14
+    ]
+   ]
+  },
+  {
+   "id": "hope-you-die",
+   "name": "I Hate You and Hope You Die",
+   "imgflip": 562985409,
+   "kym": "i-hate-you-and-hope-you-die",
+   "keywords": [
+    "i hate you and hope you die",
+    "rage comic",
+    "angry",
+    "happy",
+    "oblivious",
+    "wholesome",
+    "reply"
+   ],
+   "example": [
+    "thanks, you too!"
+   ],
+   "boxes": [
+    [
+     0.7,
+     0.34,
+     0.29,
+     0.28,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ]
+  },
+  {
+   "id": "nobody-got-me",
+   "name": "If Nobody Got Me",
+   "imgflip": 302338182,
+   "kym": "if-nobody-got-me-i-know-god-got-me",
+   "keywords": [
+    "if nobody got me",
+    "i know god got me",
+    "can i get an amen",
+    "pointing up",
+    "faith",
+    "support"
+   ],
+   "example": [
+    "my teammates",
+    "ctrl+z"
+   ],
+   "boxes": [
+    [
+     0.48,
+     0.13,
+     0.48,
+     0.2,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ],
+    [
+     0.42,
+     0.6,
+     0.22,
+     0.12,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ]
+  },
+  {
+   "id": "daring-today",
+   "name": "Daring Today, Aren't We Squidward",
+   "imgflip": 190895576,
+   "keywords": [
+    "Squidward",
+    "SpongeBob",
+    "daring today",
+    "how original",
+    "order",
+    "Krusty Krab",
+    "basic"
+   ],
+   "example": [
+    "a Krabby Patty",
+    "a Krabby Patty with extra pickles"
+   ],
+   "boxes": [
+    [
+     0,
+     0.53,
+     0.5,
+     0.12
+    ],
+    [
+     0,
+     0.86,
+     0.5,
+     0.13
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "gibson-jesus",
+   "name": "Mel Gibson and Jesus Christ",
+   "imgflip": 116570292,
+   "kym": "mel-gibson-and-jesus-christ",
+   "keywords": [
+    "Mel Gibson",
+    "Jesus",
+    "The Passion of the Christ",
+    "Jim Caviezel",
+    "explaining",
+    "behind the scenes",
+    "chat"
+   ],
+   "example": [
+    "so after the crucifixion you just come back?",
+    "yeah it's a three day thing"
+   ]
+  },
+  {
+   "id": "superior-royalty",
+   "name": "Superior Royalty",
+   "imgflip": 275380114,
+   "keywords": [
+    "Volturi",
+    "Twilight",
+    "Aro",
+    "superior",
+    "royalty",
+    "smug",
+    "New Moon"
+   ],
+   "example": [
+    "people who put the milk in after the cereal"
+   ],
+   "source": ""
+  },
+  {
+   "id": "toughest-battles",
+   "name": "Stop Giving Me Your Toughest Battles",
+   "imgflip": 335348854,
+   "kym": "god-gives-his-toughest-battles-to-his-strongest-soldiers",
+   "keywords": [
+    "toughest battles",
+    "strongest soldiers",
+    "God",
+    "Jesus",
+    "wojak",
+    "tired",
+    "struggle"
+   ],
+   "example": [
+    "a printer that only works when IT is watching"
+   ],
+   "boxes": [
+    [
+     0.52,
+     0.66,
+     0.45,
+     0.3,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ]
+  },
+  {
+   "id": "kurt-angle-stare",
+   "name": "Kurt Angle Stare",
+   "imgflip": 499084427,
+   "kym": "kurt-angle-stare",
+   "keywords": [
+    "Kurt Angle",
+    "WWE",
+    "stare",
+    "wide eyes",
+    "shocked",
+    "creepy",
+    "gif"
+   ],
+   "example": [
+    "when someone says they don't like pizza"
+   ]
+  },
+  {
+   "id": "hulk-taco",
+   "name": "Hulk Taco",
+   "imgflip": 184507495,
+   "kym": "hulk-taco",
+   "keywords": [
+    "Hulk",
+    "taco",
+    "Avengers",
+    "Marvel",
+    "Mark Ruffalo",
+    "food",
+    "smug"
+   ],
+   "example": [
+    "me at a family reunion",
+    "after one bite"
+   ]
+  },
+  {
+   "id": "daly-tiger",
+   "name": "John Daly and Tiger Woods",
+   "imgflip": 401650351,
+   "kym": "john-daly-and-tiger-woods",
+   "keywords": [
+    "John Daly",
+    "Tiger Woods",
+    "golf",
+    "the Open",
+    "pants",
+    "comparison",
+    "athletes"
+   ],
+   "example": [
+    "athletes in the gym",
+    "athletes in my fantasy league"
+   ],
+   "boxes": [
+    [
+     0,
+     0.02,
+     0.5,
+     0.2
+    ],
+    [
+     0.5,
+     0.02,
+     0.5,
+     0.2
+    ]
+   ]
+  },
+  {
+   "id": "money-smell",
+   "name": "Vince McMahon Smelling Money",
+   "imgflip": 302239323,
+   "kym": "vince-mcmahon-smelling-money",
+   "keywords": [
+    "Vince McMahon",
+    "WWE",
+    "money",
+    "smell",
+    "sniffing",
+    "rich",
+    "cash",
+    "gif"
+   ],
+   "example": [
+    "landlords when you mention",
+    "fixing the heater"
+   ]
+  },
+  {
+   "id": "two-castles",
+   "name": "Two Castles",
+   "imgflip": 329250424,
+   "kym": "two-castles",
+   "keywords": [
+    "two castles",
+    "two paths",
+    "choice",
+    "good and evil",
+    "crossroads",
+    "sunny",
+    "stormy"
+   ],
+   "example": [
+    "going to bed early",
+    "one more episode",
+    "me"
+   ],
+   "boxes": [
+    [
+     0,
+     0.02,
+     0.5,
+     0.2
+    ],
+    [
+     0.5,
+     0.02,
+     0.5,
+     0.2
+    ],
+    [
+     0.2,
+     0.82,
+     0.6,
+     0.17
+    ]
+   ]
+  },
+  {
+   "id": "xbox-achievement",
+   "name": "Xbox Achievement Unlocked",
+   "imgflip": 489932982,
+   "keywords": [
+    "Xbox",
+    "achievement unlocked",
+    "gaming",
+    "trophy",
+    "notification",
+    "gamerscore",
+    "gif"
+   ],
+   "example": [
+    "Replied to an email on the same day"
+   ],
+   "boxes": [
+    [
+     0.29,
+     0.5,
+     0.66,
+     0.3,
+     "default",
+     "white",
+     "left",
+     "thin"
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "walter-cooking",
+   "name": "Walter White Cooking",
+   "imgflip": 360053085,
+   "kym": "walter-white-cooking",
+   "keywords": [
+    "Walter White",
+    "Breaking Bad",
+    "cooking",
+    "chemistry",
+    "lab",
+    "Heisenberg",
+    "gif"
+   ],
+   "example": [
+    "me making instant noodles",
+    "for the first time in a week"
+   ]
+  },
+  {
+   "id": "manhattan-1985",
+   "name": "Doctor Manhattan: It Is 1985",
+   "imgflip": 392020536,
+   "kym": "doctor-manhattan",
+   "keywords": [
+    "Doctor Manhattan",
+    "Watchmen",
+    "Mars",
+    "it is 1985",
+    "I am tired of Earth",
+    "comic",
+    "three panels"
+   ],
+   "example": [
+    "It is 2026.",
+    "I open my inbox.",
+    "I am tired of Earth."
+   ],
+   "boxes": [
+    [
+     0.06,
+     0.05,
+     0.38,
+     0.065,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ],
+    [
+     0.56,
+     0.05,
+     0.37,
+     0.065,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ],
+    [
+     0.07,
+     0.625,
+     0.33,
+     0.065,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ]
+  }
+ ]
+}

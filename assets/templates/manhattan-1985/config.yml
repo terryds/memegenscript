@@ -1,0 +1,55 @@
+name: "Doctor Manhattan: It Is 1985"
+source: "https://knowyourmeme.com/memes/i-am-tired-of-earth-these-people"
+keywords:
+  - "Doctor Manhattan"
+  - "Watchmen"
+  - "Mars"
+  - "it is 1985"
+  - "I am tired of Earth"
+  - "comic"
+  - "three panels"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.06
+    anchor_y: 0.05
+    angle: 0.0
+    scale_x: 0.38
+    scale_y: 0.065
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.56
+    anchor_y: 0.05
+    angle: 0.0
+    scale_x: 0.37
+    scale_y: 0.065
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.07
+    anchor_y: 0.625
+    angle: 0.0
+    scale_x: 0.33
+    scale_y: 0.065
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "It is 2026."
+  - "I open my inbox."
+  - "I am tired of Earth."
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

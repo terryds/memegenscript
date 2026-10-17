@@ -1,0 +1,43 @@
+name: "Walter White Cooking"
+source: "https://knowyourmeme.com/memes/walter-white-cooking"
+keywords:
+  - "Walter White"
+  - "Breaking Bad"
+  - "cooking"
+  - "chemistry"
+  - "lab"
+  - "Heisenberg"
+  - "gif"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me making instant noodles"
+  - "for the first time in a week"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

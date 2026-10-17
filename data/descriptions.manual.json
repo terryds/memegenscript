@@ -2029,5 +2029,137 @@
       "comeback",
       "quote"
     ]
+  },
+  "peak-life-events": {
+    "aka": [
+      "Peak Life Events",
+      "Life Events Graph",
+      "Best Day of My Life Graph"
+    ],
+    "about": "Peak Life Events is a hand-drawn line graph titled \"Life Events\" in which milestones like \"Losing Virginity\" and \"Wedding Day\" sit near the bottom while one unlabeled spike towers over everything else. The blank peak is captioned with some small, oddly specific moment that apparently beat every supposedly big day of the poster's life.",
+    "origin": "The graph spread as a 2025 image macro and was uploaded to imgflip as \"Peak Life Events\", where it reached the top-new templates in autumn 2026.",
+    "tags": [
+      "life events",
+      "graph",
+      "chart",
+      "peak",
+      "best day",
+      "wedding day",
+      "priorities",
+      "exploitable"
+    ]
+  },
+  "smiling-cat": {
+    "aka": [
+      "Smiling Cat",
+      "Happy Smiling Cat",
+      "Grinning Cat"
+    ],
+    "about": "Smiling Cat is a close-up photo of a tabby-and-white kitten with huge round eyes and an unnervingly wide, human-looking grin. It is used as a reaction image for excitement, smugness or barely contained glee, usually with a top and bottom caption.",
+    "origin": "The photo circulated on social media as a reaction image and has long been one of the templates in imgflip's all-time directory under the name \"Smiling Cat\".",
+    "tags": [
+      "cat",
+      "kitten",
+      "smiling",
+      "grin",
+      "happy",
+      "excited",
+      "reaction",
+      "animals"
+    ]
+  },
+  "milk-carton": {
+    "aka": [
+      "Missing Milk Carton",
+      "Have You Seen Me?",
+      "Milk Carton Missing Poster"
+    ],
+    "about": "Missing Milk Carton is a photo of a milk carton printed with a \"MISSING\" header, a blank white square and \"HAVE YOU SEEN ME?\" underneath, parodying the missing-children notices once printed on American milk cartons. The blank square is filled with whatever has gone missing: someone's motivation, a lost sock, a cancelled TV show or a friend who stopped replying.",
+    "origin": "US dairies printed photos of missing children on milk cartons in the 1980s. The blank carton became a parody template and is in imgflip's all-time directory as \"Milk carton\".",
+    "tags": [
+      "milk carton",
+      "missing",
+      "have you seen me",
+      "lost",
+      "disappeared",
+      "parody",
+      "exploitable"
+    ]
+  },
+  "xbox-achievement": {
+    "aka": [
+      "Xbox Achievement Unlocked",
+      "Achievement Unlocked",
+      "Xbox Achievement Notification"
+    ],
+    "about": "Xbox Achievement Unlocked is the animated Xbox notification in which the Xbox logo pops up and slides open into a green \"Achievement unlocked\" banner with a trophy. The blank line under the banner is captioned with some mundane or embarrassing real-life accomplishment, as if it earned gamerscore.",
+    "origin": "Achievements were introduced with the Xbox 360 in 2005, and \"Achievement Unlocked\" became a common joke for celebrating trivial successes. The animation was uploaded to imgflip as a video template named \"Xbox Achievement\".",
+    "tags": [
+      "xbox",
+      "achievement unlocked",
+      "gaming",
+      "trophy",
+      "notification",
+      "gamerscore",
+      "video games",
+      "gif"
+    ]
+  },
+  "tony-new-element": {
+    "aka": [
+      "Tony Discovers a New Element",
+      "Tony Stark New Element",
+      "Iron Man Discovers a New Element"
+    ],
+    "about": "Tony Discovers a New Element is a short clip from Iron Man 2 in which Tony Stark sweeps holographic models around his workshop while synthesizing a new element to replace his palladium arc reactor core. It is captioned with someone combining things in a way that feels like a groundbreaking discovery, usually something ridiculous.",
+    "origin": "The scene is from Iron Man 2 (2010), played by Robert Downey Jr. The clip was uploaded to imgflip as a video template named \"Tony discovers a new element\".",
+    "tags": [
+      "tony stark",
+      "iron man",
+      "iron man 2",
+      "marvel",
+      "new element",
+      "discovery",
+      "hologram",
+      "gif"
+    ]
+  },
+  "superior-royalty": {
+    "aka": [
+      "Superior Royalty",
+      "The Volturi",
+      "Volturi Smug"
+    ],
+    "about": "Superior Royalty is a still of the Volturi, Aro flanked by Caius and Marcus, standing on their balcony in Volterra in The Twilight Saga: New Moon, looking down on everyone with smug, pale aristocratic disdain. It is captioned with any group that considers itself above everyone else.",
+    "origin": "The scene is from The Twilight Saga: New Moon (2009), with Michael Sheen as Aro. The still was uploaded to imgflip as \"Superior Royalty\" and sits in its all-time template directory.",
+    "tags": [
+      "twilight",
+      "new moon",
+      "volturi",
+      "aro",
+      "michael sheen",
+      "smug",
+      "royalty",
+      "superior"
+    ]
+  },
+  "daring-today": {
+    "aka": [
+      "Daring Today, Aren't We Squidward",
+      "How Original",
+      "Daring Today Aren't We"
+    ],
+    "about": "Daring Today, Aren't We is a six-panel SpongeBob SquarePants format in which a fish customer orders at the Krusty Krab. Squidward answers his first order with a flat \"How original\" and his second, barely different order with a sarcastic \"Daring today, aren't we?\". The two blank order panels are filled with a basic choice and a slightly less basic one.",
+    "origin": "The panels are Krusty Krab ordering scenes from SpongeBob SquarePants with Squidward's lines added as subtitles. The layout was uploaded to imgflip as \"Daring today, aren't we squidward\" and is in its all-time template directory.",
+    "tags": [
+      "spongebob",
+      "squidward",
+      "krusty krab",
+      "how original",
+      "daring today",
+      "order",
+      "basic",
+      "sarcasm"
+    ]
   }
 }

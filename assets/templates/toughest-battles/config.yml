@@ -1,0 +1,31 @@
+name: "Stop Giving Me Your Toughest Battles"
+source: "https://knowyourmeme.com/memes/god-gives-his-hardest-battles-to-his-strongest-soldiers"
+keywords:
+  - "toughest battles"
+  - "strongest soldiers"
+  - "God"
+  - "Jesus"
+  - "wojak"
+  - "tired"
+  - "struggle"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.52
+    anchor_y: 0.66
+    angle: 0.0
+    scale_x: 0.45
+    scale_y: 0.3
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "a printer that only works when IT is watching"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
