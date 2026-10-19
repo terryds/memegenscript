@@ -22,7 +22,7 @@ function exampleText(template: Template): string {
 }
 
 /** First sentence of a text (used for meta descriptions). */
-function firstSentence(text: string, max = 160): string {
+export function firstSentence(text: string, max = 160): string {
   // Keep a closing quote/bracket that follows the stop: `catchphrase "Absolute Cinema."`
   const match = /^[^.!?]+[.!?]+["'”’)]*/.exec(text.trim());
   const sentence = (match ? match[0] : text).trim();
