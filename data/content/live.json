@@ -1,0 +1,15 @@
+{
+  "about": "Do It Live! is a grainy video frame of Bill O'Reilly, years before his Fox News fame, behind the anchor desk of Inside Edition with the show's logo on the wall behind him. He is in a dark suit and blue tie, mid-scream, mouth wide open, visibly done with his teleprompter and his crew. The image stands for impatient, reckless confidence: forget rehearsing, forget the plan, just go. As a meme it captions any decision to skip preparation or safety checks and push straight to the real thing, whether that means deploying code on a Friday or walking into an exam without studying.",
+  "origin": "The frame comes from leaked outtake footage of O'Reilly hosting Inside Edition, where a teleprompter problem sends him into a profanity-filled rant ending with \"we'll do it live!\". The clip hit YouTube in 2008 and quickly became a widely remixed viral video.",
+  "usage": "The top box holds the situation where caution would be sensible: a question, a warning or a plan that needs prep, like \"should we test this first?\" or \"no rehearsal before the wedding speech?\". The bottom box is almost always the catchphrase \"do it live!\", in caps for full effect.\n\nThe joke works best when the stakes are obvious and the shouting is the only plan anyone has. Tech, presentations, cooking without a recipe and any kind of improvising are natural fits.",
+  "ideas": [
+    ["should we test this before deploying?", "do it live!"],
+    ["no slides for the presentation?", "we'll do it live!"],
+    ["you're not going to read the recipe?", "do it live!"],
+    ["skipping the tutorial?", "fine, we'll do it live!"],
+    ["no warm-up before the match?", "do it live!"],
+    ["didn't study for the exam", "we'll do it live!"]
+  ],
+  "aka": ["Bill O'Reilly Rant", "We'll Do It Live", "Fuck It, We'll Do It Live", "Bill O'Reilly Freakout"],
+  "tags": ["bill o'reilly", "do it live", "rant", "freakout", "inside edition", "viral video", "outtake", "tv"]
+}
