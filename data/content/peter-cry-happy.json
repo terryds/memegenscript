@@ -1,0 +1,46 @@
+{
+  "about": "This two-panel template stacks two close-ups of Tobey Maguire as Peter Parker in a grey hoodie. In the top panel he is crying hard, face crumpled, lips trembling and tears on his cheeks. In the bottom panel his eyes are still wet but he breaks into a huge, toothy grin. The sudden swing from despair to relief makes it a natural fit for any situation where bad news is followed by a reprieve, or where something agonizing turns out fine at the last second.",
+  "origin": "The stills come from Sam Raimi's Spider-Man films starring Tobey Maguire, which began in 2002. Maguire's crying face had long been a popular reaction image, and the crying-then-smiling pair turned it into a before-and-after format.",
+  "usage": "The top box describes the moment of panic or despair, the bottom box the twist that fixes it. Keep the two lines parallel so the change is obvious: \"ci is red\" over the crying face, \"ci is green\" over the smile.\n\nIt fits roller-coaster moments: a failing build that passes on rerun, a grade that turns out higher than feared, a team equalizing in stoppage time, a lost file found in the recycle bin. Because Peter is still teary in the bottom panel, the relief reads as exhausted rather than triumphant.",
+  "ideas": [
+    [
+      "ci is red",
+      "ci is green"
+    ],
+    [
+      "thought i lost my essay",
+      "it was in the recycle bin"
+    ],
+    [
+      "down 2-1 in the 90th minute",
+      "two goals in stoppage time"
+    ],
+    [
+      "the professor says \"we need to talk\"",
+      "\"you got the highest score\""
+    ],
+    [
+      "my save file is corrupted",
+      "the cloud backup worked"
+    ],
+    [
+      "the restaurant ran out of fries",
+      "they found one more bag"
+    ]
+  ],
+  "aka": [
+    "Peter Parker Crying",
+    "Peter Parker Crying Then Smiling",
+    "Tobey Maguire Crying",
+    "Sad Happy Peter Parker"
+  ],
+  "tags": [
+    "spider-man",
+    "tobey maguire",
+    "peter parker",
+    "crying",
+    "happy tears",
+    "relief",
+    "two panel"
+  ]
+}

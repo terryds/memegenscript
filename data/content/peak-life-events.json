@@ -1,0 +1,39 @@
+{
+  "about": "Peak Life Events is a hand-drawn line graph labeled \"LIFE EVENTS\" along the bottom. On the right, the supposedly major milestones, \"Losing Virginity\" and \"Wedding Day\", barely register as small bumps. On the left, one enormous unlabeled spike shoots far above everything else. The blank space above that peak is filled with some tiny, oddly specific moment that apparently outranks every big day, which is the whole joke: confessing that your true high point was finding cash in old jeans or a perfect parking spot.",
+  "usage": "There is one text box, above the tall spike on the left. Write the small pleasure that beat every serious milestone. Specific details are funnier than general ones: \"finding a $20 bill in old jeans\" beats \"finding money\".\n\nGood sources are tiny victories everyone recognizes: a perfect game, the last slice of pizza, a clean code compile on the first try, an unexpected day off, a meeting cancelled minutes before it starts. Keep it to one or two lines so the spike stays clear.",
+  "ideas": [
+    [
+      "finding a $20 bill in old jeans"
+    ],
+    [
+      "the meeting got cancelled 2 minutes before"
+    ],
+    [
+      "my code compiled on the first try"
+    ],
+    [
+      "winning a ranked game with a 1 hp clutch"
+    ],
+    [
+      "the teacher said \"open book exam\""
+    ],
+    [
+      "getting the parking spot right by the door"
+    ]
+  ],
+  "aka": [
+    "Peak Life Events",
+    "Life Events Graph",
+    "Best Day of My Life Graph"
+  ],
+  "tags": [
+    "life events",
+    "graph",
+    "chart",
+    "peak",
+    "best day",
+    "wedding day",
+    "priorities",
+    "exploitable"
+  ]
+}
