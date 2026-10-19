@@ -1,0 +1,40 @@
+{
+  "about": "Zero Days Since Last Accident shows a weathered white roadside sign from Futurama, propped on two wooden posts against a green sky and crumbling buildings. Red letters read \"DAYS SINCE LAST\", with a little counter at the top showing a glowing 0. The rest of the sign is blank, waiting for whatever disaster just happened again. It parodies the safety boards in factories and warehouses that count accident-free days, and the punchline is always that the count has been reset to zero, meaning the same failure keeps happening so often that nobody gets past day one.",
+  "origin": "The image is a still from the animated series Futurama. The format plays on workplace \"days since last accident\" signs, and the same layout has been reused online for years to joke about recurring disasters.",
+  "usage": "There is one text box, on the empty lower part of the sign, which completes the phrase \"0 days since last ___\". Write only the incident, not a full sentence, so the sign reads naturally.\n\nPick something that happens embarrassingly often: a broken build, a reply-all email, a friend starting a new diet, your team throwing a lead, a streamer getting banned, someone asking a question already answered in the FAQ. Group chats and team channels love it as a reply right after the thing happens again.",
+  "ideas": [
+    [
+      "broken build"
+    ],
+    [
+      "reply all incident"
+    ],
+    [
+      "new diet announcement"
+    ],
+    [
+      "blown fourth-quarter lead"
+    ],
+    [
+      "'does anyone have the notes'"
+    ],
+    [
+      "printer jam"
+    ]
+  ],
+  "aka": [
+    "Days Since Last X",
+    "Zero Days Since Last Accident",
+    "0 Days Since",
+    "Futurama Days Since Last Sign"
+  ],
+  "tags": [
+    "days since last",
+    "0 days since",
+    "futurama",
+    "sign",
+    "accident",
+    "exploitables",
+    "recurring problem"
+  ]
+}

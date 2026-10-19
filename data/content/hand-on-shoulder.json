@@ -1,0 +1,44 @@
+{
+  "about": "Hand on Shoulder Guy is a frame from an old cel-animated anime. A broad-faced man with a heavy brow and a sly, lopsided grin rests his big hand on the shoulder of someone seen from behind, while a third young man in the background watches the exchange with a calm, slightly suspicious smirk. The grin is the key: it looks like comfort but also like someone about to talk you into something. The image captions reassurance that is not quite trustworthy, from a friend saying it is fine to a coworker promising the bug will fix itself.",
+  "usage": "The top box usually holds the reassuring line, such as \"it's okay\" or \"don't worry\". The bottom box finishes it, either with genuine comfort or with a twist that shows the comforter is part of the problem.\n\nIt works for consolation after a small disaster: breaking prod, failing a quiz, losing a match, missing a deadline. The funniest versions make the advice terrible, like suggesting you try again in production or just never check your bank account.",
+  "ideas": [
+    [
+      "it's okay",
+      "we all break prod once"
+    ],
+    [
+      "don't worry about the exam",
+      "the curve will save us both"
+    ],
+    [
+      "it's fine that you lost the match",
+      "I was throwing too"
+    ],
+    [
+      "relax",
+      "the deadline is just a suggestion"
+    ],
+    [
+      "you don't need to check your bank account",
+      "trust me"
+    ],
+    [
+      "it's okay",
+      "my code doesn't work either"
+    ]
+  ],
+  "aka": [
+    "Anime Hand on Shoulder",
+    "Reassuring Hand on Shoulder",
+    "Hand on Shoulder Guy"
+  ],
+  "tags": [
+    "hand on shoulder",
+    "comfort",
+    "reassurance",
+    "anime",
+    "retro anime",
+    "friend",
+    "bad advice"
+  ]
+}
