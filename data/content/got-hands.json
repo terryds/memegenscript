@@ -1,0 +1,15 @@
+{
+  "about": "Damn Got Hands is a crude 3D render of a boxer in red gloves and blue trunks. At the top he bounces in a fighting stance next to the words \"ok ima fight\". At the bottom the same boxer slumps on a stool, sipping water between rounds, beside a big \"damn\" and a small \"got hands\". It is a two-beat story of confidence followed by humbling defeat: you step up to fight something, expecting an easy win, and it turns out to hit back much harder than you thought. The cheap video-game look makes the beating feel even more pathetic.",
+  "origin": "The format spread on Twitter in 2020, first as a joke about trying to fight intrusive thoughts and realizing \"damn this hard\", before the \"got hands\" wording took over.",
+  "usage": "The template has two text boxes. The first sits at the bottom left, next to the exhausted boxer on the stool, and labels who took the beating (often \"me\" plus a detail). The second sits right under \"ok ima fight\" and names the opponent.\n\nPick an opponent that sounds harmless but isn't: a math test, the first step of the stairs, a cold, sleep schedule, a level-1 enemy, a spicy noodle challenge. The bottom-left label can stay short, since the slump already tells the story.",
+  "ideas": [
+    ["me with 1 hp", "the final boss"],
+    ["me, 20 minutes in", "the spicy noodle challenge"],
+    ["me at 2 a.m.", "my sleep schedule"],
+    ["my legs", "the stairs to my apartment"],
+    ["me after one page", "the reading assignment"],
+    ["the team after one sprint", "legacy code"]
+  ],
+  "aka": ["Ok Ima Fight These Thoughts", "Damn This Hard", "Boxer Got Hands", "Brain Got Hands"],
+  "tags": ["boxer", "boxing", "got hands", "fight", "defeat", "humbled", "3d render"]
+}
