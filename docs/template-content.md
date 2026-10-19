@@ -44,3 +44,5 @@ than the Know Your Meme entry for someone who wants to *make* this meme.
 - Plain text everywhere: no Markdown, no HTML, straight or curly quotes are both fine.
 
 `data/content/potential-megumi.json` is the reference example.
+
+The build updates `data/lastmod.json` (the sitemap's per-page dates) whenever content changes: commit it together with your content files.
