@@ -1,0 +1,16 @@
+{
+  "about": "Marked Safe From is a fake Facebook Safety Check notice: the little blue flag icon, the words \"Marked Safe From\" with a blank after them, and \"Today\" underneath in Facebook's grey timestamp font. The real feature tells your friends you survived an earthquake or an attack. The meme borrows that solemn crisis format and fills the blank with something trivial you narrowly avoided or never risked at all, like productive work, a social life, or a family argument. The humor comes from treating a lazy or awkward personal habit as if it were a natural disaster you heroically escaped.",
+  "origin": "Facebook launched Safety Check in 2014 so people in a disaster area could tell friends they were okay. Once the notice became familiar, people started posting edited versions where the emergency was replaced with an everyday nuisance.",
+  "usage": "There is only one text box, sitting right after \"Marked Safe From\", so your whole joke is the thing you escaped. Name a threat, not a sentence: \"productive work\", \"the group project\", \"the 8am lecture\". Shorter is better because it has to read like the name of an event.\n\nThe joke works best when the \"danger\" is something you were supposed to do, so the post doubles as a confession. Ironic catastrophes also work: \"the gym\", \"responsibility\", \"leaving the house\". The \"Today\" line is printed on the image, so the meme always reads as a fresh daily update.",
+  "ideas": [
+    ["productive work"],
+    ["the 8am lecture"],
+    ["the gym this week"],
+    ["the family group chat"],
+    ["the meeting that could have been an email"],
+    ["getting picked for the group project"],
+    ["leaving the house"]
+  ],
+  "aka": ["Marked Safe From X", "Facebook Safety Check Meme", "Marked Safe Today"],
+  "tags": ["marked safe from", "facebook", "safety check", "phrasal template", "exploitable", "procrastination"]
+}
