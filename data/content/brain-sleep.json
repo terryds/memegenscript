@@ -1,0 +1,14 @@
+{
+  "about": "Brain Before Sleep is a four-panel comic about the brain refusing to let you rest. In the first panel a pink cartoon brain with big round eyes says something; in the second a girl lies in bed, eyes closed, trying to drift off; in the third the brain pipes up again; and in the last panel she is lying in the dark with her eyes wide open, completely awake. The comic nails the experience of an intrusive thought arriving at the worst possible time: an embarrassing moment from years ago, a random question, or a worry you cannot do anything about at 3 a.m.",
+  "usage": "This template has three caption boxes. Box one is the brain's opening line (often an innocent question, or “you awake?”). Box two is your reply as the sleeper (“yes, I'm trying to sleep”). Box three is the brain's follow-up, which should be the intrusive thought that ruins the night. The last panel, with the wide-eyed stare, is the punchline and stays uncaptioned.\n\nThe best captions keep the first lines short and make the third oddly specific: a cringe moment from school, a bug you never fixed, a philosophical question nobody needs answered at 3 a.m.",
+  "ideas": [
+    ["hey, you awake?", "time to sleep", "remember that bug from 2019?"],
+    ["you asleep?", "trying to be", "remember when you said “you too” to the waiter?"],
+    ["psst", "what now", "what if the elevator button is a placebo?"],
+    ["quick question", "it's 3 a.m.", "did you lock the front door?"],
+    ["are you sleeping?", "yes", "the exam is in five hours"],
+    ["hey", "no", "you missed that open goal in 2014"]
+  ],
+  "aka": ["Brain Before Sleep", "Brain at 3 a.m.", "Brain Won't Let Me Sleep", "Are You Awake Brain"],
+  "tags": ["brain", "sleep", "insomnia", "intrusive thoughts", "3 a.m.", "comic", "four panel"]
+}

@@ -1,0 +1,15 @@
+{
+  "about": "This Men in Black template is two stacked shots of Will Smith as Agent J, in the black suit and tie, standing in front of a vintage Coney Island billboard. In the top panel he is mid-lecture, mouth wide open, calling out an unfair assumption. In the bottom panel his face scrunches into an awkward half-admission. The structure is the joke: he defends himself against a stereotype, then admits he did the thing anyway, just for a different reason. Online it is used for any two-step argument where someone rejects a judgment on principle and then quietly confirms it on a technicality.",
+  "origin": "The frames come from Men in Black 3 (2012). Agent J has traveled back to 1969, and the line plays off assumptions about a Black man driving a nice car, which he follows by conceding that this particular car is in fact stolen.",
+  "usage": "Use the top box for the righteous objection, phrased as “just because X doesn't mean Y.” Use the bottom box for the backpedal: “...okay, Y, but not because of X.” The humor depends on the second line conceding the exact accusation while still insisting the reasoning was wrong.\n\nIt suits developer excuses, sports fandom, gamers defending their main, and anyone accused of a stereotype they happen to fit. Keep the top line a little long and confident, and the bottom one short and sheepish.",
+  "ideas": [
+    ["just because I use dark mode doesn't mean I'm a hacker", "...I am, but not because of dark mode"],
+    ["just because I'm a Mac user doesn't mean I own AirPods", "...I own them, but not because I'm a Mac user"],
+    ["just because I'm late doesn't mean I overslept", "...I did, but not because I'm lazy"],
+    ["just because I main a support doesn't mean I'm bad", "...I'm bad, but not because of support"],
+    ["just because I'm a CS student doesn't mean I fix printers", "...I fixed yours, but not because of CS"],
+    ["just because I'm from Texas doesn't mean I own a cowboy hat", "...I own three, but not because I'm from Texas"]
+  ],
+  "aka": ["Men in Black Car Scene", "Will Smith Men in Black", "Not Because I'm Black", "Agent J Stole That One"],
+  "tags": ["men in black", "will smith", "agent j", "movie quote", "twist", "two panel"]
+}
