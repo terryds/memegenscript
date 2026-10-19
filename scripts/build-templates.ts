@@ -13,6 +13,8 @@ const TEMPLATES = join(ROOT, "assets", "templates");
 const OUTPUT = join(ROOT, "src", "generated", "templates.json");
 const DESCRIPTIONS = join(ROOT, "data", "descriptions.json");
 const MANUAL = join(ROOT, "data", "descriptions.manual.json");
+/** One original-content file per template (`<id>.json`), so batches of rewrites never conflict. */
+const CONTENT = join(ROOT, "data", "content");
 const FEATURED = join(ROOT, "data", "featured.json");
 const SLUGS = join(ROOT, "data", "slugs.json");
 
@@ -88,6 +90,10 @@ interface Description {
   aka?: string[];
   title?: string;
   error?: string;
+  /** Original content only (data/content/<id>.json): how people use the meme */
+  usage?: string;
+  /** Original content only: caption ideas, one string per text box */
+  ideas?: string[][];
 }
 
 function readJson<T>(path: string): T {
@@ -97,11 +103,18 @@ function readJson<T>(path: string): T {
 const fetched = readJson<Record<string, Description>>(DESCRIPTIONS);
 const featuredIds: string[] = readJson<{ featured?: string[] }>(FEATURED).featured ?? [];
 const manual = readJson<Record<string, Description>>(MANUAL);
+const original: Record<string, Description> = existsSync(CONTENT)
+  ? Object.fromEntries(
+      readdirSync(CONTENT)
+        .filter((file) => file.endsWith(".json"))
+        .map((file) => [file.slice(0, -5), JSON.parse(readFileSync(join(CONTENT, file), "utf8")) as Description]),
+    )
+  : {};
 
-/** Hand-written entries win; otherwise use the fetched Know Your Meme summary. */
+/** Original content wins, then hand-written entries, then the fetched Know Your Meme summary. */
 function describe(id: string, name: string) {
-  const entry = manual[id] ?? (fetched[id] && !fetched[id].error ? fetched[id] : undefined);
-  const source = manual[id] ? "manual" : entry ? "knowyourmeme" : "none";
+  const entry = original[id] ?? manual[id] ?? (fetched[id] && !fetched[id].error ? fetched[id] : undefined);
+  const source = original[id] ? "original" : manual[id] ? "manual" : entry ? "knowyourmeme" : "none";
   const aka = (entry?.aka ?? []).filter((alias) => alias.toLowerCase() !== name.toLowerCase());
   // Know Your Meme tags include contributor usernames and yearly lists; keep only readable topics.
   const tags = (entry?.tags ?? []).filter(
@@ -110,6 +123,8 @@ function describe(id: string, name: string) {
   return {
     about: entry?.about ?? "",
     origin: entry?.origin ?? "",
+    usage: original[id]?.usage ?? "",
+    ideas: original[id]?.ideas ?? [],
     tags,
     aka,
     descriptionSource: source,

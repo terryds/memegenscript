@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { get, postJson } from "./helpers";
 import { analyticsSnippet } from "../src/pages/html";
+import { firstSentence } from "../src/views/editor";
 import { resolveSettings } from "../src/settings";
 
 describe("GET /", () => {
@@ -447,13 +448,31 @@ describe("editor page titles", () => {
   it("uses the template-first title and meaning-first description for the CTR experiment templates", async () => {
     const body = await (await get("/memes/absolute-cinema")).text();
     expect(body).toContain("<title>Absolute Cinema Meme Template &amp; Generator | ");
-    expect(body).toContain('catchphrase &quot;Absolute Cinema.&quot; Make your own');
-    expect(body).toMatch(/<meta name="description" content="Absolute Cinema is [^"]*Make your own &quot;Absolute Cinema&quot; meme with the free template\."/);
+    // Opens with the template's own description (which gets rewritten), ends with the call to action
+    expect(body).toMatch(/<meta name="description" content="Absolute Cinema [^"]+ Make your own &quot;Absolute Cinema&quot; meme with the free template\."/);
   });
 
   it("keeps the generator-first title everywhere else", async () => {
     const body = await (await get("/memes/futurama-fry")).text();
     expect(body).toMatch(/<title>[^<]* Meme Generator \| /);
     expect(body).toContain('content="Make your own &quot;');
+  });
+});
+
+describe("original template content", () => {
+  it("renders the usage guide and caption ideas, without the Know Your Meme credit", async () => {
+    const body = await (await get("/memes/did-you-say-potential")).text();
+    expect(body).toContain("<h2>How to use the Did You Say Potential? meme</h2>");
+    expect(body).toContain("<h2>Did You Say Potential? meme ideas</h2>");
+    expect(body).toMatch(/<li><a href="\/images\/potential-megumi\/[^"]+\.png" rel="nofollow">/);
+    expect(body).not.toContain("summary via");
+  });
+});
+
+describe("firstSentence", () => {
+  it("keeps a closing quote that follows the full stop", () => {
+    expect(firstSentence('Captioned with the catchphrase "Absolute Cinema." Online, it spread.')).toBe(
+      'Captioned with the catchphrase "Absolute Cinema."',
+    );
   });
 });
