@@ -1,0 +1,46 @@
+{
+  "about": "A Circle in the Triangle Factory is a crude MS Paint comic of a stick-figure worker in a hard hat at a conveyor belt of red triangles. In the first panel the worker holds up a blue circle and, in mock Victorian outrage, declares it queer to find a circle in the triangle factory and vows to inquire with a supervisor post-haste. In the second panel the circle is back on the belt among the triangles and the worker shrugs it off with \"i guess we doin circles now.\" It parodies how quickly shock turns into acceptance when an exception appears and nobody stops it.",
+  "origin": "The two-panel comic was posted on X in August 2024 and spread quickly as an exploitable, with people redrawing the factory, the shapes and the workers' lines.",
+  "usage": "The top box sits over the first panel for the alarmed discovery, and the second box sits over the bottom panel for the resigned acceptance. Use the pattern \"a ___?? in my ___??\" then \"I guess we doin ___ now.\"\n\nIt is great for workplaces, codebases, sports leagues and online communities where one weird exception quietly becomes the new normal: a Python file in the Java repo, pineapple on the team pizza order, a goalkeeper taking free kicks.",
+  "ideas": [
+    [
+      "a bug?? in my code??",
+      "i guess we doin bugs now"
+    ],
+    [
+      "a python file?? in the java repo??",
+      "i guess we doin python now"
+    ],
+    [
+      "a monday?? on a public holiday??",
+      "i guess we doin mondays now"
+    ],
+    [
+      "the goalkeeper?? taking a free kick??",
+      "i guess we doin that now"
+    ],
+    [
+      "a salad?? at the bbq??",
+      "i guess we doin vegetables now"
+    ],
+    [
+      "a reply-all?? in the company newsletter??",
+      "i guess we doin reply-all now"
+    ]
+  ],
+  "aka": [
+    "A Circle?? In the Triangle Factory??",
+    "I Guess We Doin Circles Now",
+    "Triangle Factory"
+  ],
+  "tags": [
+    "triangle factory",
+    "circle",
+    "i guess we doin circles now",
+    "ms paint",
+    "webcomic",
+    "two panel",
+    "exception",
+    "2024"
+  ]
+}

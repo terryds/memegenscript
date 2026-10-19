@@ -1,0 +1,46 @@
+{
+  "about": "Ol' Reliable is a two-panel SpongeBob SquarePants image. In the top panel SpongeBob, standing on the grass, presents a slate-blue case with \"OL' RELIABLE\" glowing on the lid. In the bottom panel the case is open, light rays and sparkles burst out, and the inside is left blank for whatever you put in it. In the show the case holds his trusty jellyfishing net. As a meme it holds the one thing someone always falls back on when nothing else works: a go-to move, a comfort food, a debugging trick or a favourite excuse.",
+  "origin": "It comes from \"Nature Pants\", a 1999 SpongeBob episode, where SpongeBob brings out his beloved jellyfishing net in a special case.",
+  "usage": "The top box sets up the situation, typically \"when\" plus a problem or a moment of desperation. The bottom box sits on the open case and names the dependable fallback: turning it off and on again, pasta for dinner, a long ball to the striker, console.log.\n\nIt works best when the fallback is a bit cheap or unsophisticated but always does the job. The heavenly glow makes a humble trick look like a sacred relic, which is the joke.",
+  "ideas": [
+    [
+      "when the smart fix fails",
+      "console.log"
+    ],
+    [
+      "when the tv stops working",
+      "unplug it and plug it back in"
+    ],
+    [
+      "nothing to cook",
+      "instant noodles"
+    ],
+    [
+      "down 1-0 in the 89th minute",
+      "long ball to the big striker"
+    ],
+    [
+      "late to class again",
+      "\"traffic was crazy\""
+    ],
+    [
+      "boss fight going badly",
+      "spam the healing items"
+    ]
+  ],
+  "aka": [
+    "Ol' Reliable",
+    "Old Reliable",
+    "La Vieja Confiable",
+    "SpongeBob Ol' Reliable"
+  ],
+  "tags": [
+    "spongebob",
+    "ol reliable",
+    "jellyfishing net",
+    "go-to",
+    "fallback",
+    "cartoon",
+    "object labeling"
+  ]
+}
