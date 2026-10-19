@@ -1,0 +1,64 @@
+{
+  "about": "Who Wants to Be a Millionaire? shows a contestant on the quiz show set with eyes bulging and mouth slightly open behind a thick mustache, staring down at the glowing blue question bar and four answer slots marked A, B, C and D. His panicked face suggests he has no idea which option is right, or knows the answer and hates it. Captions turn the screen into a multiple choice quiz about everyday life, usually with four answers that are all bad, or three silly options and one painfully honest one.",
+  "origin": "The layout copies the question-and-answer graphics of Who Wants to Be a Millionaire?, the quiz show that started on British TV in 1998 and spread to dozens of countries. It has been a fill-in template for years.",
+  "usage": "There are five boxes. The first goes in the long bar at the top and holds the question. The next four go in A, B, C and D in reading order.\n\nThe funniest versions make the question sound easy and the answers reveal a joke: all four options are the same, every option is a disaster, or D is the brutally honest one. Keep each answer to one to three words so they fit the slots. Debugging, homework, budgets, relationship texts and gaming strategy all work.",
+  "ideas": [
+    [
+      "what fixes the bug?",
+      "restart",
+      "reinstall",
+      "cry",
+      "restart again"
+    ],
+    [
+      "how much did you study?",
+      "a lot",
+      "enough",
+      "some",
+      "I opened the book"
+    ],
+    [
+      "best time to start the project?",
+      "last month",
+      "last week",
+      "yesterday",
+      "the night before"
+    ],
+    [
+      "what do I want for dinner?",
+      "pizza",
+      "pizza",
+      "pizza",
+      "salad (lie)"
+    ],
+    [
+      "how's your fantasy team doing?",
+      "great",
+      "fine",
+      "rebuilding",
+      "don't ask"
+    ],
+    [
+      "what's in the group chat?",
+      "plans",
+      "memes",
+      "drama",
+      "47 unread voice notes"
+    ]
+  ],
+  "aka": [
+    "Who Wants to Be a Millionaire?",
+    "Millionaire Answers",
+    "Four Answers Meme",
+    "Millionaire Quiz Template"
+  ],
+  "tags": [
+    "millionaire",
+    "quiz",
+    "game show",
+    "multiple choice",
+    "four answers",
+    "tv",
+    "question"
+  ]
+}
