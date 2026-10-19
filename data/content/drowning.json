@@ -1,0 +1,51 @@
+{
+  "about": "Drowning High Five is a four-panel comic about help that is not help. A single hand sticks up out of choppy blue water, clearly someone going under. A second hand appears from above, and instead of pulling the person out, it gives them a cheerful high five against a pink burst background. In the last panel the drowning hand sinks with a few bubbles. The labelled version names the drowning hand, the would-be rescuer and the useless thing it offered, so the image becomes a picture of support that only makes things worse: a forum reply that says \"same problem here\", a coworker who sends a thumbs-up, a government statement full of thoughts and prayers.",
+  "origin": "The comic was drawn by the Russian artist Gudim and posted on Instagram in 2017. People then started labelling the hands, which turned it into an object-labelling template.",
+  "usage": "The first box labels the drowning hand: the person or thing asking for help (\"me asking for help\"). The second box labels the hand reaching down: who shows up (\"online commenter\", \"my manager\"). The third box is the useless response that replaces the rescue (\"I'm having that problem too.\").\n\nThe funnier the gap between the cry for help and the cheerful non-answer, the better. It fits tech support forums, group chats, customer service bots, weak official statements and well-meaning friends who answer a crisis with an emoji.",
+  "ideas": [
+    [
+      "me asking for help",
+      "online commenter",
+      "i'm having that problem too."
+    ],
+    [
+      "me drowning in deadlines",
+      "my boss",
+      "great job staying busy!"
+    ],
+    [
+      "me stuck on a bug",
+      "stack overflow",
+      "marked as duplicate"
+    ],
+    [
+      "student failing the class",
+      "teacher",
+      "extra homework"
+    ],
+    [
+      "me at 2% battery",
+      "my friend",
+      "same lol"
+    ],
+    [
+      "customer with a real problem",
+      "support chatbot",
+      "have you tried our faq?"
+    ]
+  ],
+  "aka": [
+    "Drowning High Five",
+    "High Five Drowning Man",
+    "Drowning Hand High Five"
+  ],
+  "tags": [
+    "drowning",
+    "high five",
+    "comic",
+    "gudim",
+    "useless help",
+    "object labeling",
+    "support"
+  ]
+}

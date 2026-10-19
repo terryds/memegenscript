@@ -1,0 +1,53 @@
+{
+  "about": "Left Exit 12 Off Ramp has two parts. On top is a green highway sign under a yellow \"LEFT / EXIT 12\" tab, with one arrow pointing straight ahead and another curving off to the right. Below, an old blue sedan drifts hard across the lanes, tires smoking, swinging sideways toward the off-ramp at the last possible second. The straight arrow is the expected, sensible path, the exit arrow is the tempting alternative, and the car is whoever chooses the exit with total commitment. It is the go-to image for dramatically picking the worse, riskier or more fun option.",
+  "origin": "The car comes from a 2013 YouTube video by Fredrik Sørlie of a car drifting onto an off-ramp. Combined with a highway sign, the frames became one of the most popular object-labelling formats of 2017 and after.",
+  "usage": "The first box goes on the straight-ahead arrow: the responsible or expected option. The second box goes on the curved exit arrow: the option actually taken. The third box labels the drifting car: the person or thing making the swerve.\n\nThe classic version is about bad choices made enthusiastically, like studying versus a new game, or the pins versus the gutter for a bowling ball. It also works for products changing direction, players ignoring a plan or plot twists. Keep each label to a few words so it fits the sign.",
+  "ideas": [
+    [
+      "The Pins",
+      "The Gutter",
+      "Bowling Ball"
+    ],
+    [
+      "studying for finals",
+      "one more game",
+      "me"
+    ],
+    [
+      "writing tests",
+      "pushing straight to main",
+      "developers on friday"
+    ],
+    [
+      "the game plan",
+      "dribbling past everyone alone",
+      "my striker"
+    ],
+    [
+      "saving money",
+      "a mechanical keyboard",
+      "my paycheck"
+    ],
+    [
+      "going to bed",
+      "a 3-hour video essay",
+      "me at midnight"
+    ]
+  ],
+  "aka": [
+    "Left Exit 12 Off Ramp",
+    "Highway Exit Drift",
+    "Car Swerving Off Ramp",
+    "Exit 12 Meme"
+  ],
+  "tags": [
+    "car",
+    "off ramp",
+    "highway",
+    "drift",
+    "swerve",
+    "bad choice",
+    "object labeling",
+    "exploitable"
+  ]
+}
