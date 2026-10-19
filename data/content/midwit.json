@@ -1,0 +1,47 @@
+{
+  "about": "An IQ bell curve stretches across the image with percentages marked under each section. On the far left sits a simple, smiling wojak with a low score; on the far right a calm figure in a brown hood represents the genius end. At the top, over the average majority, a bespectacled wojak with messy hair weeps and grits his teeth. The joke is that the simple person and the genius arrive at the same plain answer, while the average person tortures themselves with overcomplicated reasoning. It mocks overthinking and smugly endorses a simple take.",
+  "origin": "The template places wojak drawings on a standard IQ distribution chart. Its name comes from \"midwit\", online slang for someone of middling intelligence who overthinks and believes they are smarter than they are.",
+  "usage": "There are three boxes. The first is on the left, by the low-IQ figure: state the simple answer. The second is at the top, over the crying middle figure: write the long, anxious overthinking. The third is on the right, by the hooded figure: repeat the same simple answer as the first box, word for word.\n\nThe repetition is the punchline, so keep the left and right lines identical and short. Make the middle one deliberately longer and more frantic. It fits debates about diets, investing, coding, fitness, study methods and game strategies.",
+  "ideas": [
+    [
+      "just go to sleep",
+      "NO you need a sleep tracker, magnesium, mouth tape and a 14-step routine",
+      "just go to sleep"
+    ],
+    [
+      "print debugging",
+      "you HAVE to use a proper debugger, breakpoints and profilers",
+      "print debugging"
+    ],
+    [
+      "buy the index fund",
+      "NOOO you need to time the market and read 40 analyst reports",
+      "buy the index fund"
+    ],
+    [
+      "pass to the open player",
+      "we need a 12-step set piece we practiced once",
+      "pass to the open player"
+    ],
+    [
+      "eat less, move more",
+      "you need a macro spreadsheet and three supplements",
+      "eat less, move more"
+    ]
+  ],
+  "aka": [
+    "Midwit",
+    "IQ Bell Curve",
+    "Bell Curve Meme",
+    "Midwit Meme"
+  ],
+  "tags": [
+    "midwit",
+    "iq",
+    "bell curve",
+    "wojak",
+    "overthinking",
+    "intelligence",
+    "distribution curve"
+  ]
+}
