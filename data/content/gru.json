@@ -1,0 +1,15 @@
+{
+  "about": "Gru's Plan is a four-panel sequence of Gru from Despicable Me presenting a scheme on a flip chart. In the first two panels he confidently points at steps one and two. The third panel reveals a step that ruins the plan, and in the fourth he turns back to the same board with a stunned double take, because he only now noticed what it says. The joke is self-sabotage hiding in plain sight: a plan that seems airtight until the person presenting it actually reads their own third point. It is the go-to format for strategies with an obvious flaw.",
+  "origin": "Gru is the villain-turned-dad from Illumination's Despicable Me (2010). The four panels were stitched from the film into an editable plan comic that took off on Reddit and other meme sites around 2018.",
+  "usage": "The four boxes map to the four flip chart pages. Box one and box two are the confident steps of the plan. Box three is the step that sinks it. Box four repeats box three word for word, since Gru is now reading it again in horror.\n\nThe flaw in step three should follow logically from the first two, not come out of nowhere. Work, school, budgets, diets and video game strategies are perfect, since everybody has made a plan that unravels the same way.",
+  "ideas": [
+    ["learn how to make memes", "make a meme", "no one likes it", "no one likes it"],
+    ["get a new job", "earn more money", "spend it all on rent", "spend it all on rent"],
+    ["start studying early", "take a short break", "the break lasts 3 weeks", "the break lasts 3 weeks"],
+    ["write the code", "skip the tests", "production breaks at 2 a.m.", "production breaks at 2 a.m."],
+    ["save gold all game", "buy the best item", "the game ends before you can use it", "the game ends before you can use it"],
+    ["buy a gym membership", "feel motivated", "never go", "never go"]
+  ],
+  "aka": ["Gru's Plan", "Gru Plan Meme", "Despicable Me Plan", "Gru Presentation"],
+  "tags": ["despicable me", "gru", "minions", "presentation", "plan", "four panel", "exploitable"]
+}
