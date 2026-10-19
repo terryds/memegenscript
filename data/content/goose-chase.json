@@ -1,0 +1,43 @@
+{
+  "about": "Goose Chase is a simple two-panel line drawing. In the top panel a goose's long white neck and orange beak fill the frame as it stares at something off to the side, calm and silent. In the bottom panel a person in a puffy jacket is sprinting away while the goose charges after them, neck stretched flat and beak open in a hiss. The joke is the instant switch from quiet stare to full pursuit that anyone who has met a real goose will recognize. Labeled, the goose becomes anything that will not leave you alone, and the runner becomes you trying to escape it.",
+  "usage": "There are two labels across the top of the image. The left box names the person running away, usually \"me\" or a group like \"students\". The right box, over the goose, names whatever is chasing them: a deadline, a responsibility, a bug, an ex, a recurring meeting.\n\nThe best picks are things that seem harmless until they suddenly come for you. Short labels read best, since the drawing already shows the whole story. For a twist, make the runner something unexpected, like your savings running from a new game release.",
+  "ideas": [
+    [
+      "me",
+      "my deadlines"
+    ],
+    [
+      "my paycheck",
+      "rent"
+    ],
+    [
+      "the student who skipped the reading",
+      "cold calls in class"
+    ],
+    [
+      "me after one mistake in ranked",
+      "my whole team"
+    ],
+    [
+      "me leaving early",
+      "my manager with \"one quick thing\""
+    ],
+    [
+      "my sleep schedule",
+      "one more episode"
+    ]
+  ],
+  "aka": [
+    "Goose Chase",
+    "Goose Chasing Guy",
+    "Angry Goose"
+  ],
+  "tags": [
+    "goose",
+    "chase",
+    "running",
+    "two panel",
+    "object labeling",
+    "animal"
+  ]
+}

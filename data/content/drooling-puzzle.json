@@ -1,0 +1,46 @@
+{
+  "about": "Stupid Dumb Drooling Puzzle is a scribbly drawing of a lumpy, slack-jawed brainlet character with blue drool pouring from its open mouth as it jams a square block into the round hole of a toddler's shape-sorter toy. The triangle and square holes sit right next to it, unused. It is shorthand for doing something in the most obviously wrong way while being completely absorbed in the effort. Because the toy is meant for babies, the image carries a double insult: not only is the approach wrong, the problem was supposed to be easy.",
+  "origin": "The drawing belongs to the family of brainlet and Wojak-style MS Paint characters that came out of image boards and spread to Reddit and Twitter as shorthand for stupidity.",
+  "usage": "The top box usually starts with \"me trying to\" or names who is doing it. The bottom box names the simple task they are failing at, or the wrong method they insist on. Read together, the caption should describe a basic problem being forced with the wrong tool.\n\nIt fits programming (centering a div, regex), DIY projects, assembling flat-pack furniture, school math, and gamers using the wrong strategy for twenty attempts in a row. Self-deprecating captions tend to do better than ones mocking someone else.",
+  "ideas": [
+    [
+      "me trying to",
+      "center a div"
+    ],
+    [
+      "me trying to fix the wifi",
+      "by restarting the microwave"
+    ],
+    [
+      "me assembling ikea furniture",
+      "without the instructions"
+    ],
+    [
+      "me plugging in a usb",
+      "the first, second and third time"
+    ],
+    [
+      "my team trying to win",
+      "with the same failed play"
+    ],
+    [
+      "me solving for x",
+      "by guessing 7 every time"
+    ]
+  ],
+  "aka": [
+    "Stupid Dumb Drooling Puzzle",
+    "Brainlet Puzzle",
+    "Drooling Wojak Puzzle",
+    "Square Peg Round Hole Meme"
+  ],
+  "tags": [
+    "brainlet",
+    "wojak",
+    "puzzle",
+    "shape sorter",
+    "drooling",
+    "dumb",
+    "wrong way"
+  ]
+}
