@@ -44,6 +44,8 @@ export interface TemplateData {
   slug?: string;
   /** Slugs from before the template was renamed; they redirect to the current one */
   formerSlugs?: string[];
+  /** YYYY-MM-DD the page content last changed (from git at build time), for sitemap lastmod */
+  updated?: string;
 }
 
 const MANIFEST = manifest as unknown as Record<string, TemplateData>;
@@ -103,6 +105,7 @@ export class Template {
   archived: boolean;
   /** Editor page path segment; falls back to the id for transient templates */
   slug: string;
+  updated: string;
 
   /** Does this template come from the manifest (vs. transient/custom)? */
   exists: boolean;
@@ -134,6 +137,7 @@ export class Template {
     this.featured = data.featured ?? null;
     this.archived = data.archived ?? false;
     this.slug = data.slug || data.id;
+    this.updated = data.updated ?? "";
     this.exists = exists;
   }
 
