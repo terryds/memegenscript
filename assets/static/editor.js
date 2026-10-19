@@ -1,7 +1,7 @@
 /*
  * Meme editor: an in-browser canvas editor with draggable, individually styled
  * text boxes and image layers. Everything renders client-side; export produces
- * a PNG/JPG straight from the canvas.
+ * a PNG/JPG straight from the canvas, with the same watermark as API images.
  */
 (function () {
   "use strict";
@@ -1003,10 +1003,34 @@
         octx.fillRect(0, 0, out.width, out.height);
       }
       render(octx, true);
+      drawWatermark(octx, out.width, out.height);
       return new Promise(function (resolve) {
         out.toBlob(resolve, type, quality);
       });
     });
+  }
+
+  // The API's bottom-left watermark (see renderWatermarkStrip), measured by the server at
+  // the API's default size and scaled up with larger exports. Never drawn on the live canvas.
+  function drawWatermark(context, width, height) {
+    var mark = config.watermark;
+    if (!mark || Math.min(width, height) <= mark.minSide) return;
+    var scale = Math.max(1, Math.min(width, height) / mark.reference);
+    context.save();
+    context.font = mark.size * scale + "px \"" + mark.font + "\", sans-serif";
+    context.textAlign = "left";
+    context.textBaseline = "alphabetic";
+    context.lineJoin = "round";
+    var x = mark.x * scale;
+    var y = height - mark.bottom * scale;
+    if (mark.stroke > 0) {
+      context.lineWidth = mark.stroke * 2 * scale;
+      context.strokeStyle = mark.outline;
+      context.strokeText(mark.text, x, y);
+    }
+    context.fillStyle = mark.fill;
+    context.fillText(mark.text, x, y);
+    context.restore();
   }
 
   function saveBlob(blob, filename) {

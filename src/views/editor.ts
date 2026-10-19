@@ -16,6 +16,7 @@ import { encode } from "../utils/text";
 import { clean } from "../utils/urls";
 import { download } from "../utils/http";
 import { MIME_TYPES, sniffFormat } from "../images/format";
+import { editorWatermark } from "../images/layer";
 
 function exampleText(template: Template): string {
   return template.example.filter(Boolean).join(" / ");
@@ -167,7 +168,7 @@ ${characters.map((c) => characterCard(settings, c)).join("\n")}
   <p class="lede">${
     query
       ? `<a href="/">Browse all ${all.length} templates</a> or refine your search.`
-      : `Pick a template, smash in your text, drag it wherever you want, download. <strong>No signup, no watermark on downloads, no talent required.</strong> Not a human? Read the <a href="/agents">guide for AI agents</a>.`
+      : `Pick a template, smash in your text, drag it wherever you want, download. <strong>No signup, no talent required.</strong> Not a human? Read the <a href="/agents">guide for AI agents</a>.`
   }</p>
   <form class="filter" action="/" method="get" role="search">
     <label class="visually-hidden" for="q">Filter templates</label>
@@ -309,6 +310,7 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
       value: text.default,
     })),
     fonts: fonts.map((f) => ({ id: f.id, label: f.alias ? `${f.id} (${f.alias})` : f.id, url: `/assets/fonts/${encodeURIComponent(f.filename)}` })),
+    watermark: await editorWatermark(app.env.ASSETS),
   };
 
   const textInputs = Array.from({ length: lines }, (_, i) => {
