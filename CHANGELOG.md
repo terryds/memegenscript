@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Editor exports (PNG and JPG downloads, copy image) carry the same "Memegenscript"
+  watermark as API images. The live editing canvas stays clean.
 - CTR experiment: six template pages that mostly show up for "what is this meme" searches
   get a `… Meme Template & Generator` title and a description that opens with what the meme is.
 - Meme characters: 51 classic characters (Doge, Wojak, Pepe, Trollface, Gigachad, …) as

@@ -19,6 +19,8 @@ describe("GET /", () => {
     expect(body).toContain('"@type":"ItemList"');
     expect(body).toContain('href="/memes/futurama-fry"');
     expect(body).toContain("Futurama Fry");
+    // Editor downloads carry the API's watermark
+    expect(body).not.toMatch(/no watermark/i);
   });
 
   it("pins absolute URLs to DOMAIN for public hosts but keeps a local origin", async () => {
@@ -125,6 +127,11 @@ describe("GET /memes/{slug}", () => {
     expect(config.boxes[0]).toMatchObject({ font: "titilliumweb", color: "white", uppercase: true, align: "center" });
     expect(config.images[0]).toEqual({ style: "default", url: "/assets/templates/fry/default.png" });
     expect(config.fonts.some((f: { id: string; url: string }) => f.id === "impact" && f.url === "/assets/fonts/Impact.ttf")).toBe(true);
+    // Exports get the API's watermark, measured at its default 600px size
+    expect(config.watermark).toMatchObject({ text: "Memegenscript", font: "segoe", x: 3, stroke: 1, reference: 600, minSide: 300 });
+    expect(config.watermark.fill).toBe("rgba(255, 255, 255, 0.647)");
+    expect(config.watermark.outline).toBe("rgba(0, 0, 0, 0.647)");
+    expect(config.fonts.some((f: { id: string }) => f.id === config.watermark.font)).toBe(true);
     expect(body).toContain("<noscript>");
     expect(body).toContain('name="template_id" value="fry"');
     expect((body.match(/name="text\[\]"/g) ?? []).length).toBe(2);
@@ -417,7 +424,7 @@ describe("guide for AI agents", () => {
     expect(body).toMatch(/^# Memegenscript for AI agents\n/);
     expect(body).toContain("POST http://localhost:5000/images");
     expect(body).toContain("GET http://localhost:5000/templates?q=");
-    // API images are watermarked (only editor downloads are not), so the guide must not claim otherwise
+    // API images and editor downloads are watermarked, so the guide must not claim otherwise
     expect(body).not.toMatch(/no watermark/i);
     expect(await (await get("/agents.md")).text()).toBe(body);
   });

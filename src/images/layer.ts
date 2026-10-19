@@ -6,7 +6,7 @@
 import type { Foreground, Template } from "../models/template";
 import { Text, type Align, type Point } from "../models/text";
 import type { Dimensions } from "../models/overlay";
-import { PREVIEW_TEXT, WATERMARK_HEIGHT } from "../settings";
+import { DEFAULT_SIZE, DEFAULT_WATERMARK, PREVIEW_SIZE, PREVIEW_TEXT, WATERMARK_HEIGHT } from "../settings";
 import { parseColor, toSvgFill } from "../utils/colors";
 import { segment, twemojiUrl } from "../utils/emoji";
 import { download } from "../utils/http";
@@ -360,13 +360,21 @@ export interface WatermarkStrip {
   y: number;
 }
 
-/** Port of `add_watermark`, rendered once as a strip along the bottom edge. */
-export async function renderWatermarkStrip(
-  imageSize: Dimensions,
-  label: string,
-  isPreview: boolean,
-  assets: Fetcher,
-): Promise<WatermarkStrip> {
+interface WatermarkLayout {
+  loaded: LoadedFont;
+  font: SizedFont;
+  text: Text;
+  strokeWidth: number;
+  strokeFill: string;
+  /** Top of the strip, in image coordinates */
+  y: number;
+  stripHeight: number;
+  /** Text baseline, in strip coordinates */
+  baseline: number;
+}
+
+/** Where `add_watermark` puts the label; shared by the API renderer and the editor's export. */
+async function layoutWatermark(imageSize: Dimensions, label: string, isPreview: boolean, assets: Fetcher): Promise<WatermarkLayout> {
   const [imageWidth, imageHeight] = imageSize;
   let text: Text;
   let thick: boolean;
@@ -390,12 +398,68 @@ export async function renderWatermarkStrip(
   const y = imageHeight - stripHeight;
   const textTop = imageHeight - size[1] - offset[1] - y;
   const baseline = textTop + font.ascent;
+  return { loaded, font, text, strokeWidth, strokeFill, y, stripHeight, baseline };
+}
 
-  const path = loaded.font.getPath(label, 3, baseline, font.size);
+/** Port of `add_watermark`, rendered once as a strip along the bottom edge. */
+export async function renderWatermarkStrip(
+  imageSize: Dimensions,
+  label: string,
+  isPreview: boolean,
+  assets: Fetcher,
+): Promise<WatermarkStrip> {
+  const imageWidth = imageSize[0];
+  const { loaded, font, text, strokeWidth, strokeFill, y, stripHeight, baseline } = await layoutWatermark(imageSize, label, isPreview, assets);
+  const path = loaded.font.getPath(label, WATERMARK_X, baseline, font.size);
   const d = path.toPathData(2);
   const svg =
     `<svg xmlns="http://www.w3.org/2000/svg" width="${imageWidth}" height="${stripHeight}" viewBox="0 0 ${imageWidth} ${stripHeight}">` +
     (d ? `<path d="${d}" ${fillAttrs(text.color)}${strokeAttrs(strokeFill, strokeWidth)}/>` : "") +
     `</svg>`;
   return { raster: await renderSvg(svg), y };
+}
+
+/** Left edge of the watermark label, in pixels */
+const WATERMARK_X = 3;
+
+/**
+ * The API's watermark at its default output size, for the browser editor to draw
+ * on exports. Lengths are in pixels at `reference` (the shorter side of a default
+ * API render); the editor scales them up for larger exports.
+ */
+export interface EditorWatermark {
+  text: string;
+  font: string;
+  size: number;
+  x: number;
+  /** Distance from the bottom edge to the text baseline */
+  bottom: number;
+  /** Outline width drawn outside the glyphs */
+  stroke: number;
+  fill: string;
+  outline: string;
+  reference: number;
+  /** Like the API, images with a side at or below this are left unwatermarked */
+  minSide: number;
+}
+
+export async function editorWatermark(assets: Fetcher): Promise<EditorWatermark> {
+  const [width, height] = DEFAULT_SIZE;
+  const { loaded, font, text, strokeWidth, strokeFill, y, baseline } = await layoutWatermark([width, height], DEFAULT_WATERMARK, false, assets);
+  const css = (color: string) => {
+    const { r, g, b, a } = parseColor(color) ?? { r: 0, g: 0, b: 0, a: 255 };
+    return `rgba(${r}, ${g}, ${b}, ${Number((a / 255).toFixed(3))})`;
+  };
+  return {
+    text: DEFAULT_WATERMARK,
+    font: loaded.id,
+    size: font.size,
+    x: WATERMARK_X,
+    bottom: height - (y + baseline),
+    stroke: strokeWidth,
+    fill: css(text.color),
+    outline: css(strokeFill),
+    reference: Math.min(width, height),
+    minSide: Math.min(...PREVIEW_SIZE),
+  };
 }
