@@ -1,0 +1,44 @@
+{
+  "about": "Moe Throws Barney is a three-panel strip from The Simpsons. In the first panel a scowling Moe grabs Barney by the back of his orange shirt and shoves him out of the tavern door. In the second panel Moe stands alone behind the bar, rubbing his hands with grim satisfaction, problem solved. In the third panel Barney is already back inside, slouched right next to Moe, who glares in silent defeat. It is a tiny story about getting rid of something that refuses to stay gone, which is why it suits habits, bad ideas and pests that return the moment you relax.",
+  "usage": "Both text boxes are in the first panel. The left label goes on Moe and names who is doing the throwing out; the right label goes on Barney and names what is getting thrown. The two unlabeled panels finish the story: a moment of relief, then the thing is right back.\n\nPick something that keeps coming back no matter how firmly you reject it: intrusive thoughts, a bug you swore you fixed, a song stuck in your head, snacking during a diet. A self-aware label for Moe (\"me\", \"my brain at 3am\") makes it more relatable.",
+  "ideas": [
+    [
+      "me",
+      "my bad ideas"
+    ],
+    [
+      "the QA team",
+      "the bug I marked as fixed"
+    ],
+    [
+      "my new year's resolution",
+      "takeout every night"
+    ],
+    [
+      "me after one listen",
+      "that song stuck in my head"
+    ],
+    [
+      "the coach",
+      "the guy who keeps skipping practice"
+    ],
+    [
+      "the spam filter",
+      "the same newsletter I unsubscribed from"
+    ]
+  ],
+  "aka": [
+    "Moe Throws Barney",
+    "Moe Throws Barney Out of the Bar",
+    "Get Out of My Bar"
+  ],
+  "tags": [
+    "the simpsons",
+    "moe szyslak",
+    "barney gumble",
+    "thrown out",
+    "three panel",
+    "object labeling",
+    "cartoon"
+  ]
+}
