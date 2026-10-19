@@ -1,0 +1,50 @@
+{
+  "about": "Big Book, Small Book is a plain stock photo of two hardcover books with dark red spines on a white background: a massive, thick volume on the left and a thin, slim one on the right. Captions turn the books into a size comparison. The left label is something that takes a huge amount of material, and the right label is the same thing with one element removed, or what people actually bother to learn about it. The joke is how much of a topic turns out to be filler, drama or one specific annoyance once you strip it out.",
+  "origin": "The side-by-side book photo spread on Reddit as a comparison template, with the early versions joking about how much shorter a subject would be without its most notorious parts.",
+  "usage": "The left box labels the big book and the right box labels the small book. The classic structure is \"X\" on the left and \"X without Y\" on the right, where Y is the part that makes up most of it.\n\nAnother common version contrasts what exists with what gets used: the full manual versus the page people read, the rules versus the ones anyone follows. Keep labels short so they sit cleanly above each book, and choose a Y that everyone already knows is the bulk of the story.",
+  "ideas": [
+    [
+      "the docs",
+      "what i actually read"
+    ],
+    [
+      "my excuses",
+      "my reasons"
+    ],
+    [
+      "the game's lore",
+      "the lore without time travel"
+    ],
+    [
+      "terms and conditions",
+      "what anyone has read"
+    ],
+    [
+      "the group project",
+      "the part I did"
+    ],
+    [
+      "football rules",
+      "football rules without offside"
+    ],
+    [
+      "my watch later list",
+      "what I've watched"
+    ]
+  ],
+  "aka": [
+    "Thick Book vs Thin Book",
+    "Big Book Small Book",
+    "Thick Book Thin Book"
+  ],
+  "tags": [
+    "big book",
+    "small book",
+    "thick book",
+    "thin book",
+    "comparison",
+    "books",
+    "filler",
+    "documentation"
+  ]
+}

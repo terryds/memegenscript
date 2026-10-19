@@ -1,0 +1,59 @@
+{
+  "about": "Galaxy Brain, also called Expanding Brain, is a four-row chart with captions on the left and glowing brain scans on the right. The first brain is small and dim, the next lights up, the third blazes with white light, and the last radiates beams across the cosmos. Each row pretends to show a smarter idea than the one before, but the escalation usually goes sideways: the \"most enlightened\" option is the silliest, laziest or most overcomplicated. The joke is the gap between how cosmic the brain looks and how foolish the idea actually is.",
+  "origin": "The format grew out of the 2017 \"whomst\" joke, which paired who, whom, whomst and whomst'd with brighter and brighter brains. The layout was quickly adapted for every kind of escalating idea.",
+  "usage": "Fill the four boxes from top to bottom in order of supposed intelligence. Box 1 is the normal, sensible approach. Boxes 2 and 3 get progressively more clever or extreme. Box 4 is the absurd, ironic or overthought final form that the glowing brain pretends is genius.\n\nIt works for word escalations, study methods, budgeting, gaming strategy or developer habits. Keep each caption short, and make sure each row clearly builds on the last so the final panel lands as the punchline.",
+  "ideas": [
+    [
+      "studying for the exam",
+      "studying with flashcards",
+      "making flashcards about flashcards",
+      "dropping out to become the exam"
+    ],
+    [
+      "saving money",
+      "making a budget",
+      "making a budget spreadsheet",
+      "buying a course on spreadsheets"
+    ],
+    [
+      "fixing the bug",
+      "writing a test for the bug",
+      "rewriting the whole app",
+      "calling it a feature"
+    ],
+    [
+      "dodging the attack",
+      "blocking the attack",
+      "parrying the attack",
+      "unplugging the router"
+    ],
+    [
+      "sleep at 10pm",
+      "sleep at midnight",
+      "sleep at 3am",
+      "sleep is a social construct"
+    ],
+    [
+      "texting back",
+      "texting back later",
+      "leaving them on read",
+      "moving to a new city"
+    ]
+  ],
+  "aka": [
+    "Expanding Brain",
+    "Big Brain Meme",
+    "Whomst Brain",
+    "Brain Size Meme"
+  ],
+  "tags": [
+    "galaxy brain",
+    "expanding brain",
+    "big brain",
+    "escalation",
+    "whomst",
+    "intelligence",
+    "four panel",
+    "irony"
+  ]
+}
