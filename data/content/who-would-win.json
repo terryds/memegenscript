@@ -1,0 +1,51 @@
+{
+  "about": "Who Would Win? is a blank versus layout: a question across the top, a line underneath and a vertical divider splitting two columns. The left side holds the mighty contender, usually something huge, expensive or elite, and the right side holds a ridiculously small rival. The punchline is that the tiny thing obviously wins in real life: a missing semicolon defeats a team of senior engineers, one wet sock defeats a winter morning. In image versions people paste pictures under each label, but the template works just as well with text. It is a format for underdogs, ironic matchups and things that are humiliatingly fragile.",
+  "origin": "The question started as a 4chan thread format around 2010 asking which fictional character would beat another, before it turned into a general versus template with an absurd underdog.",
+  "usage": "Box 1 is the heading, normally \"who would win?\". Box 2 on the left describes the powerful side in a grand, specific way, often with a number (\"a $40 million stadium\", \"10 years of martial arts\"). Box 3 on the right names the tiny opponent, frequently with the word \"one\" and a cute adjective (\"one smol boi\", \"one stray Lego\").\n\nThe more formal and impressive the left side sounds, the funnier the right side gets. You can also leave the heading as is and let the reader settle the answer, since everyone knows which side always wins.",
+  "ideas": [
+    [
+      "who would win?",
+      "a team of 10 engineers",
+      "one missing semicolon"
+    ],
+    [
+      "who would win?",
+      "8 hours of sleep",
+      "one notification at 3am"
+    ],
+    [
+      "who would win?",
+      "a $200 gaming mouse",
+      "my sweaty hand"
+    ],
+    [
+      "who would win?",
+      "a full semester of studying",
+      "one trick question"
+    ],
+    [
+      "who would win?",
+      "the best defense in the league",
+      "one deflected cross"
+    ],
+    [
+      "who would win?",
+      "a fresh white shirt",
+      "one drop of pasta sauce"
+    ]
+  ],
+  "aka": [
+    "Who Would Win",
+    "Who Would Win Meme",
+    "Versus Meme",
+    "One Smol Boi"
+  ],
+  "tags": [
+    "versus",
+    "underdog",
+    "comparison",
+    "exploitable",
+    "who would win",
+    "blank template"
+  ]
+}

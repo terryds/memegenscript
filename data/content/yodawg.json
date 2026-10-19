@@ -1,0 +1,46 @@
+{
+  "about": "Yo Dawg features rapper Xzibit grinning widely, the host of MTV's Pimp My Ride, a show where his crew piled outrageous extras into run-down cars. The meme boils that philosophy down to one pattern: \"Yo dawg, I heard you like X, so I put an X in your X so you can Y while you Y.\" It is the internet's favorite joke about recursion and nesting, from a car inside a car to a meme inside a meme, and programmers have kept it alive for years because so much software really works that way.",
+  "origin": "Xzibit hosted Pimp My Ride on MTV in the mid-2000s. The snowclone image macro appeared on 4chan around 2007 and spread widely on Reddit and Tumblr afterward.",
+  "usage": "The top box opens with \"yo dawg, I heard you like X\". The bottom box finishes with \"so I put an X in your X so you can Y while you Y\". Whatever X is should be something that can logically or illogically contain itself.\n\nIt is a natural fit for tech (VMs in VMs, Docker in Docker, spreadsheets inside spreadsheets), but it also works for snacks, playlists, nested folders and anything with layers. Keep the repetition intact: the doubled word is the punchline.",
+  "ideas": [
+    [
+      "yo dawg i heard you like containers",
+      "so i put docker in your docker"
+    ],
+    [
+      "yo dawg i heard you like meetings",
+      "so we scheduled a meeting about meetings"
+    ],
+    [
+      "yo dawg i heard you like snacks",
+      "so i put a snack in your snack"
+    ],
+    [
+      "yo dawg i heard you like folders",
+      "so i put a folder in your folder"
+    ],
+    [
+      "yo dawg i heard you like tabs",
+      "so i opened a browser in your browser"
+    ],
+    [
+      "yo dawg i heard you like sequels",
+      "so we made a sequel to the sequel"
+    ]
+  ],
+  "aka": [
+    "Yo Dawg",
+    "Xzibit Yo Dawg",
+    "Yo Dawg I Heard You Like",
+    "Xzibit Meme"
+  ],
+  "tags": [
+    "xzibit",
+    "pimp my ride",
+    "recursion",
+    "yo dawg",
+    "snowclone",
+    "classic meme",
+    "programming"
+  ]
+}
