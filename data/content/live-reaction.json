@@ -1,0 +1,38 @@
+{
+  "about": "Live Reaction is a mock news graphic: a bold red banner with \"LIVE\" on the left and \"REACTION\" on the right, an empty red gap between them where a name would sit, above a large black screen. It parodies the picture-in-picture shots news channels use to show a host or pundit reacting in real time. Here the black screen is the canvas, so you describe the reaction instead of showing it, which makes it a flexible way to report anyone's live response to an event.",
+  "origin": "The format comes from \"Live Tucker Reaction\", a Fox News on-screen reaction camera of Tucker Carlson during a March 2021 speech by Joe Biden. Meme makers later swapped Carlson's face and name for whatever they wanted to show reacting.",
+  "usage": "There is one large box covering the black screen. Describe the person or thing reacting and the event, written like a caption on a broadcast: \"me watching the demo break\", \"my cat hearing the can opener\".\n\nThe news-banner styling makes trivial events feel like breaking coverage, so the funniest captions are tiny personal moments treated as live television: a team losing, a laptop fan spinning up, a parent seeing a phone bill. Keep it to one line so it reads like a chyron.",
+  "ideas": [
+    [
+      "me watching the demo break"
+    ],
+    [
+      "my cat hearing the can opener"
+    ],
+    [
+      "dad seeing the electricity bill"
+    ],
+    [
+      "fans watching the penalty miss"
+    ],
+    [
+      "me reading the group chat after waking up"
+    ],
+    [
+      "teacher seeing everyone's identical essays"
+    ]
+  ],
+  "aka": [
+    "Live Tucker Reaction",
+    "Live X Reaction",
+    "Live Reaction Meme"
+  ],
+  "tags": [
+    "live reaction",
+    "reaction image",
+    "news",
+    "broadcast",
+    "fox news",
+    "live cam"
+  ]
+}

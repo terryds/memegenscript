@@ -1,0 +1,46 @@
+{
+  "about": "Laughing Men in Suits is a White House photograph of a group of older men in dark suits roaring with laughter, several holding glasses of champagne. Ronald Reagan laughs on the far left, George H. W. Bush grins in the back, and one man in the center is bent almost double. Out of context, it looks like a room full of powerful people laughing at the rest of us, which is exactly how it is used: the caption is a hopeful idea, demand or excuse, and the men are the decision makers finding it hilarious.",
+  "origin": "The photo shows President Ronald Reagan with members of his administration at the White House in the 1980s. It has been a stock reaction image for the rich and powerful laughing at ordinary people for well over a decade.",
+  "usage": "Put the proposal or excuse in the top box, usually in quotation marks, and their laughter or a follow-up line in the bottom box. The top line is something reasonable that an ordinary person might ask for, and the bottom shows the executives' reaction.\n\nIt is perfect for workplaces (\"what if we fixed tech debt this sprint?\"), economics (affordable housing), studios (a game shipped finished) and sports owners (cheaper tickets). The humor depends on the request sounding modest, so the laughter feels cruel and familiar.",
+  "ideas": [
+    [
+      "\"we'll fix it after launch\"",
+      "hahahaha"
+    ],
+    [
+      "\"what if we gave raises instead of pizza?\"",
+      "hahahaha"
+    ],
+    [
+      "\"a game that works on day one\"",
+      "good one"
+    ],
+    [
+      "\"cheaper tickets for fans\"",
+      "and then what, free parking?"
+    ],
+    [
+      "\"what about a 4-day week?\"",
+      "stop, my ribs"
+    ],
+    [
+      "\"can we refactor this sprint?\"",
+      "the board laughing"
+    ]
+  ],
+  "aka": [
+    "Laughing Men in Suits",
+    "Rich Men Laughing",
+    "Reagan Laughing",
+    "And Then I Said"
+  ],
+  "tags": [
+    "laughing",
+    "businessmen",
+    "suits",
+    "rich",
+    "executives",
+    "ronald reagan",
+    "corporate"
+  ]
+}

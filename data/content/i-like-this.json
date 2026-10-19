@@ -1,0 +1,44 @@
+{
+  "about": "Jeremy Clarkson's famous car comparison from Top Gear is the source of this two-panel template. Clarkson stands between two small hatchbacks on a gravel drive in front of a grand white palace. In the top panel, subtitled \"This is brilliant,\" he gestures toward a white Volkswagen up!; in the bottom panel, subtitled \"But I like this,\" he gestures toward a red Ford Fiesta, while James May leans on its bonnet. The joke is choosing the option you love over the option you objectively admit is better.",
+  "origin": "The scene is from the 2014 run of Top Gear (season 21), in which Clarkson compares small cars and declares one brilliant before admitting he prefers the other. The captioned stills have circulated as a comparison meme ever since.",
+  "usage": "The first box goes on the top panel and labels the sensible, praised option. The second box goes on the bottom panel and labels what you actually prefer. The subtitles already say \"This is brilliant\" and \"But I like this\", so your labels just name the two things.\n\nIt is best for confessions of irrational taste: a simple tool over a complex framework, an old game over the remaster, takeout over a home-cooked meal. The funnier choice is usually the cheaper, older or more chaotic one.",
+  "ideas": [
+    [
+      "kubernetes",
+      "a single vps"
+    ],
+    [
+      "the remastered edition",
+      "the original with bad graphics"
+    ],
+    [
+      "a balanced diet",
+      "cereal for dinner"
+    ],
+    [
+      "organized notes",
+      "47 browser tabs"
+    ],
+    [
+      "the official soundtrack",
+      "the 10-hour fan remix"
+    ],
+    [
+      "a new tactical formation",
+      "just passing to the fast guy"
+    ]
+  ],
+  "aka": [
+    "This Is Brilliant But I Like This",
+    "Top Gear Brilliant",
+    "Jeremy Clarkson I Like This"
+  ],
+  "tags": [
+    "top gear",
+    "jeremy clarkson",
+    "comparison",
+    "preference",
+    "cars",
+    "object labeling"
+  ]
+}
