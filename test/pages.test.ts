@@ -457,3 +457,13 @@ describe("editor page titles", () => {
     expect(body).toContain('content="Make your own &quot;');
   });
 });
+
+describe("original template content", () => {
+  it("renders the usage guide and caption ideas, without the Know Your Meme credit", async () => {
+    const body = await (await get("/memes/did-you-say-potential")).text();
+    expect(body).toContain("<h2>How to use the Did You Say Potential? meme</h2>");
+    expect(body).toContain("<h2>Did You Say Potential? meme ideas</h2>");
+    expect(body).toMatch(/<li><a href="\/images\/potential-megumi\/[^"]+\.png" rel="nofollow">/);
+    expect(body).not.toContain("summary via");
+  });
+});

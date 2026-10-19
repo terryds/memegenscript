@@ -13,11 +13,12 @@
     "dev": "wrangler dev",
     "predeploy": "npm run build:templates",
     "deploy": "wrangler deploy",
-    "pretest": "npm run build:templates",
+    "pretest": "npm run build:templates && npm run check:content",
     "test": "vitest run",
     "pretypecheck": "npm run build:templates",
     "typecheck": "tsc --noEmit",
-    "types": "wrangler types"
+    "types": "wrangler types",
+    "check:content": "tsx scripts/check-content.ts"
   },
   "dependencies": {
     "@jsquash/jpeg": "^1.6.0",

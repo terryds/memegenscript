@@ -331,6 +331,26 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
     ${template.origin ? `<p><strong>Origin:</strong> ${escapeHtml(template.origin)}</p>` : ""}
     ${template.aka.length ? `<p><strong>Also known as:</strong> ${template.aka.map(escapeHtml).join(", ")}.</p>` : ""}`
     : "";
+  const paragraphs = (text: string) =>
+    text
+      .split(/\n\s*\n/)
+      .map((p) => `<p>${escapeHtml(p.trim())}</p>`)
+      .join("\n    ");
+  const usageSection = template.usage
+    ? `<h2>How to use the ${escapeHtml(template.name)} meme</h2>
+    ${paragraphs(template.usage)}`
+    : "";
+  const ideasSection = template.ideas.length
+    ? `<h2>${escapeHtml(template.name)} meme ideas</h2>
+    <ul class="meme-ideas">
+      ${template.ideas
+        .map((lines) => {
+          const url = clean(`/images/${template.id}/${encode(lines)}.png`);
+          return `<li><a href="${escapeHtml(url)}" rel="nofollow">${lines.map((line) => escapeHtml(line || "(blank)")).join(" / ")}</a></li>`;
+        })
+        .join("\n      ")}
+    </ul>`
+    : "";
 
   const body = `<nav class="breadcrumb" aria-label="Breadcrumb">
   <ol>
@@ -440,6 +460,8 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
 
   <section class="about">
     ${aboutSection}
+    ${usageSection}
+    ${ideasSection}
     <h2>About the ${escapeHtml(template.name)} meme template</h2>
     <p>The <strong>${escapeHtml(template.name)}</strong> template (<code>${escapeHtml(template.id)}</code>) supports ${lines} line${lines === 1 ? "" : "s"} of text${styles.length > 1 ? ` and ${styles.length} styles (${styles.map(escapeHtml).join(", ")})` : ""}.${template.example.some(Boolean) ? ` A classic example reads “${escapeHtml(exampleText(template))}”.` : ""}${source ? ` Read about its origin on <a href="${escapeHtml(source)}" rel="nofollow noopener" target="_blank">${escapeHtml(new URL(source).hostname.replace(/^www\./, ""))}</a>.` : ""}</p>
     ${keywordLinks ? `<p class="tags">Related searches: ${keywordLinks}</p>` : ""}

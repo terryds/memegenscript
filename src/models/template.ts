@@ -29,6 +29,10 @@ export interface TemplateData {
   files: string[];
   about?: string;
   origin?: string;
+  /** How people use the meme (original content only) */
+  usage?: string;
+  /** Caption ideas, one string per text box (original content only) */
+  ideas?: string[][];
   tags?: string[];
   aka?: string[];
   descriptionSource?: string;
@@ -89,6 +93,8 @@ export class Template {
   /** Short description of the meme (Know Your Meme excerpt or hand-written) */
   about: string;
   origin: string;
+  usage: string;
+  ideas: string[][];
   tags: string[];
   /** Alternate names people know the meme by */
   aka: string[];
@@ -120,6 +126,8 @@ export class Template {
     this.files = data.files ?? [];
     this.about = data.about ?? "";
     this.origin = data.origin ?? "";
+    this.usage = data.usage ?? "";
+    this.ideas = data.ideas ?? [];
     this.tags = data.tags ?? [];
     this.aka = data.aka ?? [];
     this.descriptionSource = data.descriptionSource ?? "none";
@@ -525,6 +533,8 @@ export class Template {
         files: this.files,
         about: this.about,
         origin: this.origin,
+        usage: this.usage,
+        ideas: this.ideas,
         tags: this.tags,
         aka: this.aka,
         descriptionSource: this.descriptionSource,
