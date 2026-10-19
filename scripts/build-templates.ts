@@ -134,25 +134,45 @@ function describe(id: string, name: string) {
 
 /**
  * Date (YYYY-MM-DD) each template's page content last changed: its image/config or its
- * original content file, from git history. Feeds `<lastmod>` in sitemap.xml so search
- * engines can tell which pages changed. Empty in a shallow clone or without git: every
- * page would get the same checkout date, and a lastmod that's always "today" gets ignored.
+ * original content file. Feeds `<lastmod>` in sitemap.xml so search engines can tell which
+ * pages changed.
+ *
+ * The dates come from git history, but the production build (Cloudflare Workers Builds)
+ * runs in a shallow clone with no history. So a full clone writes them to the committed
+ * `data/lastmod.json`, and a shallow clone (or no git at all) reads that file instead.
+ * Files with uncommitted changes get today's date, so the file is right before you commit.
  */
+const LASTMOD = join(ROOT, "data", "lastmod.json");
 function contentDates(): Map<string, string> {
-  const dates = new Map<string, string>();
+  const committed = new Map(Object.entries(readJson<Record<string, string>>(LASTMOD)));
+  let git: (...args: string[]) => string;
   try {
-    const git = (...args: string[]) => execFileSync("git", ["-C", ROOT, ...args], { encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
-    if (git("rev-parse", "--is-shallow-repository").trim() === "true") return dates;
-    let date = "";
-    for (const line of git("log", "--format=@%cs", "--name-only", "--", "assets/templates", "data/content").split("\n")) {
-      if (line.startsWith("@")) date = line.slice(1);
-      else {
-        const id = /^assets\/templates\/([^/]+)\//.exec(line)?.[1] ?? /^data\/content\/(.+)\.json$/.exec(line)?.[1];
-        if (id && date && !dates.has(id)) dates.set(id, date); // log is newest first
-      }
-    }
+    git = (...args) => execFileSync("git", ["-C", ROOT, ...args], { encoding: "utf8", maxBuffer: 64 * 1024 * 1024, stdio: ["ignore", "pipe", "ignore"] });
+    if (git("rev-parse", "--is-shallow-repository").trim() === "true") return committed;
   } catch {
-    // No git (e.g. a source tarball): leave lastmod out
+    return committed; // not a git checkout (e.g. a source tarball)
+  }
+  const idOf = (path: string) =>
+    /^assets\/templates\/([^/]+)\//.exec(path)?.[1] ?? /^data\/content\/(.+)\.json$/.exec(path)?.[1];
+  const dates = new Map<string, string>();
+  const today = new Date().toISOString().slice(0, 10);
+  for (const line of git("status", "--porcelain", "--untracked-files=all", "--", "assets/templates", "data/content").split("\n")) {
+    const id = idOf(line.slice(3).trim());
+    if (id) dates.set(id, today);
+  }
+  let date = "";
+  for (const line of git("log", "--format=@%cs", "--name-only", "--", "assets/templates", "data/content").split("\n")) {
+    if (line.startsWith("@")) date = line.slice(1);
+    else {
+      const id = idOf(line);
+      if (id && date && !dates.has(id)) dates.set(id, date); // log is newest first
+    }
+  }
+  const sorted = Object.fromEntries([...dates].sort(([a], [b]) => a.localeCompare(b)));
+  const json = JSON.stringify(sorted, null, 2) + "\n";
+  if (!existsSync(LASTMOD) || readFileSync(LASTMOD, "utf8") !== json) {
+    writeFileSync(LASTMOD, json);
+    console.log("Updated data/lastmod.json (commit it with your change)");
   }
   return dates;
 }
