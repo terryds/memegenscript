@@ -1,0 +1,15 @@
+{
+  "about": "Success Kid is a photo of a toddler on a beach in a green and white shirt, clutching a fistful of sand and pressing his lips together in a determined, satisfied scowl. The pose reads like a tiny victory pump, as if he has just pulled off something huge. It became the internet's standard image for small, everyday wins: finding money in an old jacket, the bus arriving the moment you reach the stop, guessing right on a test. The humor is the oversized pride he takes in modest achievements.",
+  "origin": "The photo was taken in 2007 by Laney Griner of her son Sammy at the beach. It first circulated with captions about hating sandcastles before settling into its long-running role as Success Kid.",
+  "usage": "The top box is the setup, usually a situation that could have gone badly. The bottom box is the lucky or clever outcome. Example: \"don't know a question on the test\" / \"answer is in another question\".\n\nThe wins should be small and specific. Getting the last slice, a meeting being cancelled, your code working on the first try, or a referee's call going your way all work. Keep the tone proud, never bragging about serious things; the toddler's clenched fist does the celebrating for you.",
+  "ideas": [
+    ["don't know a question on the test", "answer is in another question"],
+    ["code compiles", "on the first try"],
+    ["meeting cancelled", "kept the hour blocked"],
+    ["find 20 dollars", "in last winter's jacket"],
+    ["random pick in the draft", "turns out to be mvp"],
+    ["phone at 1%", "plugs in just in time"]
+  ],
+  "aka": ["Success Kid", "I Hate Sandcastles", "Victory Baby", "Sammy Griner"],
+  "tags": ["success kid", "success", "baby", "victory", "advice animal", "win", "beach"]
+}

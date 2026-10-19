@@ -1,0 +1,14 @@
+{
+  "about": "I'll Just Wait Here is a two-panel image of the same scene in near darkness: a man in a suit sits in front of an old beige computer monitor, lit from below, with a patient, slightly weary look. In the second panel he is still in exactly the same spot, but he has become a decaying skeleton with long white hair and a gaping grin. The joke is waiting so long for something that you literally die at your desk, which makes it the go-to reaction for replies that never come, loading bars that never finish and promises that are always \"coming soon\".",
+  "usage": "The top box goes over the living man and usually says some form of \"I'll just wait here\". The bottom box sits over the skeleton and names what you are waiting for: the reply, the refund, the sequel, the code review. Reading top to bottom, the punchline lands when the eye reaches the corpse.\n\nIt is strongest when the thing should have been quick. A \"5 minute\" install, a friend who said \"brb\", a game studio that promised a release date years ago, or a teacher who said grades would be posted \"tomorrow\" are all ideal. You can also leave the top line as a timestamp, like \"day 1\" and \"day 900\".",
+  "ideas": [
+    ["i'll just wait here", "for the code review"],
+    ["i'll just wait here", "for my friend who said \"5 more minutes\""],
+    ["still waiting", "for the half-life 3 announcement"],
+    ["me after asking a question on the forum", "\"any update on this?\""],
+    ["waiting for the teacher", "to post the grades \"tomorrow\""],
+    ["me on hold with customer service", "your call is important to us"]
+  ],
+  "aka": ["I'll Just Wait Here", "Skeleton Waiting", "Skeleton Still Waiting", "Waiting Skeleton at Computer"],
+  "tags": ["skeleton", "waiting", "still waiting", "forever", "computer", "patience", "two panel"]
+}
