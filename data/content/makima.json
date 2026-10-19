@@ -1,0 +1,15 @@
+{
+  "about": "Makima Is Listening is a black-and-white manga panel of Kishibe from Chainsaw Man, a scruffy, tired-eyed veteran devil hunter in a suit and tie, silently holding up a small notepad toward the reader. In the original panel the pad warns that Makima is listening, a quiet signal that their conversation is being overheard by someone dangerous. In the template the name is blanked, leaving only \"is listening\" on the page, so you fill in who or what is secretly eavesdropping. The joke is a deadpan warning: be careful what you say, because something you forgot about can hear you.",
+  "origin": "The panel comes from Tatsuki Fujimoto's manga Chainsaw Man, from the arc where Kishibe meets Quanxi and passes her a written warning instead of speaking aloud. It was published in Weekly Shonen Jump in 2020.",
+  "usage": "There is a single text box on the notepad, right above \"is listening\". Put the eavesdropper there: a person, a device, an app or an abstract force. Keep it to two or three words so it fits the small page.\n\nIt lands when the listener is something that would actually punish you for what you just said: your phone's ad tracker, the smart speaker, your mom in the next room, the rubber duck you debug with, the game's RNG right after you brag about your luck. The unspoken setup is the thing you were about to say.",
+  "ideas": [
+    ["the smart speaker"],
+    ["your phone's ad algorithm"],
+    ["the RNG"],
+    ["your manager"],
+    ["the landlord"],
+    ["the rubber duck"]
+  ],
+  "aka": ["Kishibe Notepad", "Kishibe Is Listening", "Makima Is Listening Notepad"],
+  "tags": ["chainsaw man", "makima", "kishibe", "manga", "anime", "notepad", "exploitable"]
+}
