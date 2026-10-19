@@ -1,0 +1,43 @@
+name: "Drop the X, It's Cleaner"
+source: "https://knowyourmeme.com/memes/drop-the-x-its-cleaner"
+keywords:
+  - "Sean Parker"
+  - "Justin Timberlake"
+  - "The Social Network"
+  - "drop the the"
+  - "it's cleaner"
+  - "Facebook"
+  - "rebrand"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.03
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.03
+    anchor_y: 0.78
+    angle: 0.0
+    scale_x: 0.94
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "drop the \"the\""
+  - "just \"facebook\". it's cleaner"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

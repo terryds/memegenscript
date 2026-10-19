@@ -1,0 +1,45 @@
+{
+  "about": "Did You Mean? recreates a Google search results page with two blank spaces: the search bar and the red \"Did you mean:\" suggestion below the result count. The joke is that the search engine \"corrects\" your query to what it really is, a sharper, more honest or more insulting version. It is a quick way to roast something by pretending even Google knows the truth about it, from programming languages to bands to your own life choices.",
+  "origin": "Google's spelling suggestions have been a target of jokes for years, and blank screenshots of its results page became a common edit template. The specific \"Did you mean\" format is a long-running meme rather than a single viral post.",
+  "usage": "The first box goes in the search bar: the thing being searched. The second box follows \"Did you mean:\" and holds the correction, which should be a blunt rephrasing of the first. Short is better; it should look like a plausible suggestion.\n\nIt suits tech jokes (a framework called another framework with extra steps), sports rivalries, product names, and self-deprecation (\"healthy breakfast\" corrected to \"three coffees\"). The best corrections sound like something an all-knowing search engine would actually say.",
+  "ideas": [
+    [
+      "typescript",
+      "javascript with extra steps"
+    ],
+    [
+      "how to be productive",
+      "close twitter"
+    ],
+    [
+      "quick meeting",
+      "45 minute meeting"
+    ],
+    [
+      "healthy breakfast",
+      "three coffees"
+    ],
+    [
+      "minor update",
+      "everything is in a different place now"
+    ],
+    [
+      "easy chess opening",
+      "how to lose in 8 moves"
+    ]
+  ],
+  "aka": [
+    "Did You Mean",
+    "Google Did You Mean",
+    "Google Search Meme",
+    "Did You Mean Google"
+  ],
+  "tags": [
+    "google",
+    "search",
+    "did you mean",
+    "search engine",
+    "roast",
+    "correction"
+  ]
+}

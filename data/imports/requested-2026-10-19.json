@@ -1,0 +1,17 @@
+{
+  "_comment": "Requested addition: Sean Parker's \"Drop the X. It's cleaner.\" (The Social Network).",
+  "templates": [
+    {
+      "id": "drop-the-x",
+      "name": "Drop the X, It's Cleaner",
+      "imgflip": 160569431,
+      "kym": "drop-the-x-its-cleaner",
+      "keywords": ["Sean Parker", "Justin Timberlake", "The Social Network", "drop the the", "it's cleaner", "Facebook", "rebrand"],
+      "example": ["drop the \"the\"", "just \"facebook\". it's cleaner"],
+      "boxes": [
+        [0.03, 0.02, 0.94, 0.2, "upper", "white", "center", "thick"],
+        [0.03, 0.78, 0.94, 0.2, "upper", "white", "center", "thick"]
+      ]
+    }
+  ]
+}
