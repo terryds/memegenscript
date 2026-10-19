@@ -1,0 +1,15 @@
+{
+  "about": "Simba Shadowy Place is a three-panel strip from The Lion King. In the first panel Mufasa and little Simba sit on Pride Rock looking out over a glowing sunrise; in the second Simba points off-screen and asks \"but what's that shadowy place over there?\"; in the last a stern Mufasa looks down while Simba gazes up. The joke flips Mufasa's speech about his kingdom: the lit land is something you proudly own or love, and the shadowy place is the thing you avoid, fear or pretend does not exist. It suits anything with a dark corner everyone knows to stay out of.",
+  "origin": "The panels come from Disney's The Lion King (1994), in the scene where Mufasa tells Simba that everything the light touches is their kingdom and warns him never to go to the shadowy place beyond the border. The phrase became a popular image macro in the early 2010s.",
+  "usage": "The middle panel's question is already printed on this template. The top box is Mufasa's line, usually \"everything the light touches is\" plus the good part. The bottom box is Mufasa's warning about the shadowy place, naming the thing that is off-limits.\n\nIt lands best when the shadowy place is something everyone secretly dreads: the junk drawer, the comment section, a legacy codebase, page two of search results. Keep both captions in Mufasa's grand, solemn voice.",
+  "ideas": [
+    ["everything the light touches is the fridge", "that's the vegetable drawer. we never go there"],
+    ["everything the light touches is our codebase", "that's the legacy module. we never touch it"],
+    ["everything the light touches is the internet", "that's the comment section. never go there"],
+    ["everything the light touches is my room", "that's the closet. it stays closed"],
+    ["everything the light touches is my inbox", "that's the spam folder. we don't speak of it"],
+    ["everything the light touches is the library", "that's the math section, Simba"]
+  ],
+  "aka": ["Everything the Light Touches", "Shadowy Place", "Mufasa and Simba", "What's That Shadowy Place"],
+  "tags": ["the lion king", "simba", "mufasa", "shadowy place", "everything the light touches", "disney", "pride rock"]
+}

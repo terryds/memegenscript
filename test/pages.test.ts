@@ -71,7 +71,7 @@ describe("GET /", () => {
   });
 
   it("finds templates by description, alias, or tag, not just name", async () => {
-    // "squinting" only appears in the Know Your Meme description of Futurama Fry
+    // "squinting" is in Futurama Fry's description, not its name, aliases or tags
     const body = await (await get("/?q=squinting")).text();
     expect(body).toContain('href="/memes/futurama-fry"');
     const dog = await (await get("/?q=dog+burning+room")).text();
@@ -132,15 +132,28 @@ describe("GET /memes/{slug}", () => {
   });
 
   it("describes the meme on every editor page", async () => {
-    const body = await (await get("/memes/futurama-fry")).text();
-    expect(body).toContain("<h2>What is the Futurama Fry meme?</h2>");
-    expect(body).toContain("image macro");
-    expect(body).toContain("Know Your Meme");
-    expect(body).toContain("Also known as:");
-    expect(body).toContain('"alternateName"');
-    const manual = await (await get("/memes/this-is-fine")).text();
-    expect(manual).toContain("What is the This is Fine meme?");
-    expect(manual).toContain("Gunshow");
+    // Read the expectations from the manifest: descriptions get rewritten, the page structure doesn't
+    const { Template } = await import("../src/models/template");
+    const { escapeHtml } = await import("../src/pages/html");
+    for (const slug of ["futurama-fry", "this-is-fine"]) {
+      const template = Template.browsable().find((t) => t.slug === slug)!;
+      const body = await (await get(`/memes/${slug}`)).text();
+      expect(body).toContain(`<h2>What is the ${escapeHtml(template.name)} meme?</h2>`);
+      expect(body).toContain(escapeHtml(template.about.slice(0, 60)));
+      if (template.aka.length) {
+        expect(body).toContain("Also known as:");
+        expect(body).toContain('"alternateName"');
+      }
+    }
+  });
+
+  it("credits Know Your Meme only on pages that still use its summary", async () => {
+    const { Template } = await import("../src/models/template");
+    const all = Template.browsable();
+    const fetched = all.find((t) => t.descriptionSource === "knowyourmeme" && t.source);
+    if (fetched) expect(await (await get(`/memes/${fetched.slug}`)).text()).toContain("summary via");
+    const original = all.find((t) => t.descriptionSource === "original")!;
+    expect(await (await get(`/memes/${original.slug}`)).text()).not.toContain("summary via");
   });
 
   it("has a description for every template", async () => {
