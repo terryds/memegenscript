@@ -6,6 +6,7 @@
  */
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, resolve } from "node:path";
+import { execFileSync } from "node:child_process";
 import { parse } from "yaml";
 
 const ROOT = resolve(new URL("..", import.meta.url).pathname);
@@ -131,6 +132,32 @@ function describe(id: string, name: string) {
   };
 }
 
+/**
+ * Date (YYYY-MM-DD) each template's page content last changed: its image/config or its
+ * original content file, from git history. Feeds `<lastmod>` in sitemap.xml so search
+ * engines can tell which pages changed. Empty in a shallow clone or without git: every
+ * page would get the same checkout date, and a lastmod that's always "today" gets ignored.
+ */
+function contentDates(): Map<string, string> {
+  const dates = new Map<string, string>();
+  try {
+    const git = (...args: string[]) => execFileSync("git", ["-C", ROOT, ...args], { encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
+    if (git("rev-parse", "--is-shallow-repository").trim() === "true") return dates;
+    let date = "";
+    for (const line of git("log", "--format=@%cs", "--name-only", "--", "assets/templates", "data/content").split("\n")) {
+      if (line.startsWith("@")) date = line.slice(1);
+      else {
+        const id = /^assets\/templates\/([^/]+)\//.exec(line)?.[1] ?? /^data\/content\/(.+)\.json$/.exec(line)?.[1];
+        if (id && date && !dates.has(id)) dates.set(id, date); // log is newest first
+      }
+    }
+  } catch {
+    // No git (e.g. a source tarball): leave lastmod out
+  }
+  return dates;
+}
+const updated = contentDates();
+
 let missing = 0;
 const manifest: Record<string, unknown> = {};
 
@@ -186,6 +213,7 @@ for (const id of readdirSync(TEMPLATES).sort()) {
     ...description,
     featured: featuredIds.indexOf(id) === -1 ? null : featuredIds.indexOf(id) + 1,
     archived: raw.archived === true,
+    ...(updated.has(id) ? { updated: updated.get(id) } : {}),
   };
 }
 // Editor page slugs: derived from the name ("Three Kittens Dancing" -> "three-kittens-dancing")

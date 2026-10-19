@@ -496,3 +496,14 @@ describe("firstSentence", () => {
     );
   });
 });
+
+describe("sitemap lastmod", () => {
+  it("dates each template page by when its content last changed", async () => {
+    const { Template } = await import("../src/models/template");
+    const body = await (await get("/sitemap.xml")).text();
+    const template = Template.browsable().find((t) => t.updated)!;
+    expect(template.updated).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    expect(body).toContain(`/memes/${template.slug}</loc><lastmod>${template.updated}</lastmod>`);
+    expect(body).toMatch(/<loc>[^<]+\/<\/loc><lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/); // the index
+  });
+});

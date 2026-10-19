@@ -519,19 +519,25 @@ ${related.map((t) => templateCard(settings, t)).join("\n")}
 
 export async function sitemap(app: AppContext): Promise<Response> {
   const { settings } = app;
-  const urls = [
-    { loc: settings.BASE_URL + "/", priority: "1.0", changefreq: "weekly" },
+  const templates = Template.browsable();
+  // The index lists every template, so it changed whenever one of them did
+  const newest = templates.reduce((max, t) => (t.updated > max ? t.updated : max), "");
+  const urls: Array<{ loc: string; priority: string; changefreq: string; lastmod?: string }> = [
+    { loc: settings.BASE_URL + "/", priority: "1.0", changefreq: "weekly", lastmod: newest },
     { loc: settings.BASE_URL + "/agents", priority: "0.9", changefreq: "monthly" },
     { loc: settings.BASE_URL + "/privacy", priority: "0.3", changefreq: "yearly" },
     ...(settings.CONTACT_EMAIL ? [{ loc: settings.BASE_URL + "/contact", priority: "0.3", changefreq: "yearly" }] : []),
-    ...Template.browsable().map((t) => ({ loc: editorUrl(settings, t), priority: "0.8", changefreq: "monthly" })),
+    ...templates.map((t) => ({ loc: editorUrl(settings, t), priority: "0.8", changefreq: "monthly", lastmod: t.updated })),
     { loc: settings.BASE_URL + CHARACTERS_PATH, priority: "0.9", changefreq: "weekly" },
     ...Character.all().map((c) => ({ loc: c.buildPageUrl(settings), priority: "0.7", changefreq: "monthly" })),
   ];
   const xml =
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
     urls
-      .map((u) => `  <url><loc>${escapeHtml(u.loc)}</loc><changefreq>${u.changefreq}</changefreq><priority>${u.priority}</priority></url>`)
+      .map(
+        (u) =>
+          `  <url><loc>${escapeHtml(u.loc)}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}<changefreq>${u.changefreq}</changefreq><priority>${u.priority}</priority></url>`,
+      )
       .join("\n") +
     `\n</urlset>\n`;
   return new Response(xml, {
