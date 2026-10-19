@@ -1,0 +1,52 @@
+{
+  "about": "The Iceberg template is a photo of a glacier-white iceberg floating under a clear blue sky, with the water line cutting the image so you can see the enormous pale-blue mass hidden beneath the surface. The visible tip is tiny compared with what is underwater. People use it to rank knowledge by depth: the obvious stuff everyone knows sits on top, and the stranger, more obscure or more embarrassing layers sink lower down, with the darkest water at the bottom reserved for the deepest lore.",
+  "origin": "\"The tip of the iceberg\" is an old figure of speech for a small visible part of a much larger problem. Captioned iceberg charts became popular on forums and imageboards in the 2010s, later growing into a YouTube genre explaining internet mysteries tier by tier.",
+  "usage": "This version has three boxes. The top one sits above the water and should be what casual observers know. The middle box is the first submerged layer: things only regulars or close friends know. The bottom box, in the deep dark water, is the reveal, the most obscure or incriminating level.\n\nThe joke is escalation, so each step should be a bit more specific and a bit more unhinged than the last. It works for fandom lore, your personal habits, a company's codebase, a sports team's history or a game's speedrun tricks. Short labels read better than full sentences against the busy ice.",
+  "ideas": [
+    [
+      "what my parents know",
+      "what my friends know",
+      "what my search history knows"
+    ],
+    [
+      "the app works",
+      "it's held together by one cron job",
+      "nobody knows who wrote the cron job"
+    ],
+    [
+      "\"I'm a casual fan\"",
+      "knows every player's stats",
+      "has a spreadsheet of referee bias"
+    ],
+    [
+      "the final boss",
+      "the secret boss",
+      "the boss that only exists in the beta files"
+    ],
+    [
+      "my resume",
+      "my LinkedIn",
+      "my group chat"
+    ],
+    [
+      "I studied for the exam",
+      "I watched a summary video",
+      "I read the title of the chapter"
+    ]
+  ],
+  "aka": [
+    "Iceberg Chart",
+    "Iceberg Tier List",
+    "Tip of the Iceberg",
+    "Iceberg Meme"
+  ],
+  "tags": [
+    "iceberg",
+    "iceberg chart",
+    "deep lore",
+    "tiers",
+    "obscure",
+    "conspiracy",
+    "levels"
+  ]
+}

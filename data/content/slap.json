@@ -1,0 +1,46 @@
+{
+  "about": "Will Smith Slapping Chris Rock captures the moment at the 2022 Academy Awards when Will Smith, in a black tuxedo, swung an open hand into Chris Rock's face on stage. Rock, in a navy velvet jacket and bow tie, recoils mid-sentence. Because it was broadcast live and shocked everyone watching, the frame became an object-labeling template: label Smith as the thing that hits hard and Rock as whatever gets blindsided by it.",
+  "origin": "During the 94th Academy Awards on March 27, 2022, Chris Rock made a joke about Jada Pinkett Smith while presenting an award, and Will Smith walked on stage and slapped him. Smith won Best Actor later that night and was later barred from Academy events for ten years.",
+  "usage": "Use the first box to label Chris Rock, the one getting hit, and the second to label Will Smith, the thing doing the hitting. The default example labels Rock as \"me trying to enjoy the weekend\" and Smith as \"Monday\".\n\nIt works whenever something sudden and unwelcome interrupts a good time: an alarm clock, a surprise bill, a final exam question, a jump scare, a patch nerfing your favorite character. Keep it about the situation rather than the people involved, and short labels read best over the two figures.",
+  "ideas": [
+    [
+      "me trying to enjoy the weekend",
+      "monday"
+    ],
+    [
+      "my bank account",
+      "the annual subscription renewal"
+    ],
+    [
+      "me finally falling asleep",
+      "the 6 am alarm"
+    ],
+    [
+      "my favorite character",
+      "the balance patch"
+    ],
+    [
+      "my confidence after studying",
+      "question 1"
+    ],
+    [
+      "my diet",
+      "the office birthday cake"
+    ]
+  ],
+  "aka": [
+    "Will Smith Slap",
+    "Chris Rock Slap",
+    "Oscars Slap",
+    "Will Smith Slapping Chris Rock"
+  ],
+  "tags": [
+    "will smith",
+    "chris rock",
+    "oscars",
+    "slap",
+    "2022",
+    "object labeling",
+    "exploitable"
+  ]
+}
