@@ -1,0 +1,14 @@
+{
+  "about": "Where Monkey shows three orangutans sitting on the red couch and behind the round desk of a morning-TV news studio, with a city skyline painted on the window behind them. They sit upright like presenters waiting to go on air, each staring off in a different direction with blank, slightly puzzled faces, as if someone has asked a question nobody in the room can answer. That makes the image a perfect stand-in for a group searching for something that clearly is not there: the documentation, the remote, the person responsible.",
+  "usage": "The format reads as a question. Use the top box to start it, usually \"where is\" or \"who has\", and the bottom box for the missing thing. Splitting it as \"where is\" / \"the documentation\" gives the bottom line the weight of the punchline.\n\nIt suits any situation where a group collectively has no idea: a team looking for whoever broke production, a family hunting for the TV remote, classmates trying to find who actually read the assignment, or a squad asking where the healer went. The three blank orangutan stares sell the shared confusion.",
+  "ideas": [
+    ["where is", "the documentation"],
+    ["who broke", "the build"],
+    ["where is", "the tv remote"],
+    ["which one of us", "actually read the chapter"],
+    ["where did", "our healer go"],
+    ["who ate", "the last slice"]
+  ],
+  "aka": ["Where Monkey", "Orangutans on the News", "Monkeys at News Desk"],
+  "tags": ["monkey", "orangutan", "where", "looking", "confused", "news studio", "reaction image"]
+}

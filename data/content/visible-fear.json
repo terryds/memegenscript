@@ -1,0 +1,16 @@
+{
+  "about": "Visible Fear is a close-up of Peter Parker (Tobey Maguire) in the red homemade mask he wears for the cage wrestling match in Spider-Man (2002). He is looking up from the mat with huge, darting eyes, the only part of his face the mask leaves exposed, and a yellow subtitle at the bottom reads \"Visible fear\", written like a closed-caption sound description. The joke is that the caption is completely unnecessary: his eyes already say everything. People use it as their own face at the exact moment they realise something is about to go wrong, whether it is a deploy, a pop quiz or a group project.",
+  "origin": "The frame comes from the wrestling sequence in Sam Raimi's Spider-Man (2002), when the newly powered Peter enters an underground cage match against Bonesaw McGraw. The \"Visible fear\" subtitle was added in a screenshot that spread as a stand-alone reaction image.",
+  "usage": "Your text goes in the lone box across the top. Write the trigger, usually starting with \"when\": the message, sound or announcement that causes the panic. The built-in \"Visible fear\" subtitle already delivers the punchline, so your line only has to set up the threat.\n\nIt works best for small, specific warnings that mean big trouble: a calendar invite titled \"quick chat\", a teacher saying \"clear your desks\", a mechanic going quiet. The calmer and more ordinary the wording of the setup, the funnier the terrified eyes look.",
+  "ideas": [
+    ["when the intern says \"i optimized the database\""],
+    ["when the teacher says \"clear your desks\""],
+    ["when your boss books a 15 min call called \"quick chat\""],
+    ["when the opposing team brings in a 6'8\" sub"],
+    ["when your mom says \"we need to talk\" and uses your full name"],
+    ["when the game says \"checkpoint reached\" right before a boss door"],
+    ["when the dentist says \"hmm\""]
+  ],
+  "aka": ["Spider-Man Visible Fear", "Tobey Maguire Scared", "Visible Fear Spider-Man Mask"],
+  "tags": ["spider-man", "tobey maguire", "peter parker", "visible fear", "scared", "wrestling", "bonesaw", "reaction image"]
+}
