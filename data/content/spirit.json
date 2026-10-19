@@ -1,0 +1,15 @@
+{
+  "about": "Fake Spirit Halloween Costume mimics the cheap plastic costume bags sold at Spirit Halloween, the seasonal store chain: an orange packet with the grim-reaper Spirit logo, a big white panel where the product photo would be, and \"Adult Size Costume, One Size Fits Most\" in the corner. People drop a picture of an oddly specific person, moment or character into the white space and write a deadpan product title and an \"Includes:\" list. The joke is that anything, no matter how obscure or mundane, looks like it could be a real costume once it is sold in this packaging with a list of sad accessories.",
+  "origin": "Spirit Halloween is a US chain of pop-up Halloween stores whose costume bags have a recognizable orange design. Edited packages with invented, oddly niche costumes became a recurring joke every autumn.",
+  "usage": "The template has five text boxes on the orange side. The first, larger box is the costume name: make it painfully specific, like \"Guy Who Says 'Let's Circle Back'\". The next four are the contents list; the second box usually reads \"Includes:\" and the last three are the items, each starting with a dash.\n\nThe items are where the jokes stack up: one real prop, one intangible thing (\"- unearned confidence\") and one letdown (\"- nothing\"). Paste or imagine a photo of the character in the white panel. Niche references to a specific job, fandom or family member land harder than famous characters, because the absurdity is that a store would sell it.",
+  "ideas": [
+    ["My Dad", "Includes:", "- Nothing", "- Nothing", "- Nothing"],
+    ["Guy Who Says Let's Circle Back", "Includes:", "- lanyard", "- empty calendar", "- unearned confidence"],
+    ["Teacher On The Last Day Before Break", "Includes:", "- movie DVD", "- 1 coffee", "- no plans to teach"],
+    ["Ranked Teammate Who Went AFK", "Includes:", "- headset", "- excuse", "- 0 kills"],
+    ["Parent At The Kids' Soccer Game", "Includes:", "- folding chair", "- opinions", "- whistle (unofficial)"],
+    ["Intern On Day One", "Includes:", "- laptop", "- 47 passwords", "- fear"]
+  ],
+  "aka": ["Spirit Halloween Meme", "Fake Spirit Halloween Costumes", "Spirit Halloween Costume Template"],
+  "tags": ["spirit halloween", "halloween", "costume", "packaging", "exploitable", "oddly specific"]
+}

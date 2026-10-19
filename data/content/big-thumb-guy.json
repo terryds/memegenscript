@@ -1,0 +1,15 @@
+{
+  "about": "Big Thumb Guy is a crude three-panel MS Paint comic. A lone stick figure stands on the left, and on the right a tight huddle of people talk eagerly among themselves. In the middle panel one of them turns around with a blank face and shoves an enormous thumbs-up at the outsider, then in the last panel he is back in the huddle as if nothing happened. The joke is the total indifference: someone announces they dislike the thing a group loves, and the group's response is a huge, sarcastic \"okay, cool\" before carrying on exactly as before.",
+  "origin": "The comic is credited to Brazilian artist Caio Slikta, known online as Furfles, who drew it around 2010. It later became an exploitable format on English-speaking meme sites.",
+  "usage": "The first box sits above the lone stick figure: his unpopular opinion, written as a quote (\"i don't like marvel movies\"). The second box sits above the huddle and names the group that loves the thing (\"marvel fans\"). The third box, over the middle panel, is optional: leave it empty or add the thumb guy's two-word reply such as \"ok\" or \"cool\".\n\nIt fits any fandom, hobby or community that is too busy enjoying itself to argue: anime fans, pineapple pizza eaters, Linux users, people who like Mondays. The humor is the anticlimax, so the opinion should sound like a provocation the group shrugs off.",
+  "ideas": [
+    ["i don't like marvel movies", "marvel fans", ""],
+    ["vim is too hard", "vim users", "ok"],
+    ["pineapple on pizza is gross", "hawaiian pizza fans", "cool"],
+    ["anime is just cartoons", "anime watchers", ""],
+    ["running is boring", "marathon group chat", "ok"],
+    ["dark souls is too difficult", "souls players", "noted"]
+  ],
+  "aka": ["Giant Thumb Guy", "I Do Not Like That Thing", "Thumbs Up Group Meme", "Thumbs Up Guy"],
+  "tags": ["thumbs up", "big thumb", "stick figures", "exploitable", "fandom", "furfles"]
+}

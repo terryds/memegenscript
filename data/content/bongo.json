@@ -1,0 +1,15 @@
+{
+  "about": "This Bongo Cat template is an animated two-panel comparison built from the simple white cartoon cat with a blank \":3\" face. In the top panel the cat has huge, muscular arms and is pounding the table so hard it cracks; in the bottom panel the ordinary little cat taps its paws gently with tiny red motion marks. The text sits on the white space to the left of each panel. It is a strength comparison: the top line is something that hits way too hard, the bottom line is something that barely registers, usually when the opposite should be true.",
+  "origin": "Bongo Cat began in 2018 when an animated GIF of the cartoon cat slapping a table was edited to play bongos along to music. Remixes followed with other instruments and a buff, table-smashing version, which this template pairs with the original.",
+  "usage": "Write the overpowered thing in the top box next to the buff cat and the feeble thing in the bottom box next to the small cat. Phrase them as parallel labels so the comparison is immediate.\n\nIt is funniest when the strength is backwards: a tiny noise that ruins your sleep versus an alarm you sleep through, one mean comment versus a hundred compliments, a minor patch that breaks everything versus a major update that changes nothing. Because it is a GIF, keep the lines short so they read before the loop repeats.",
+  "ideas": [
+    ["Any sound when you're trying to sleep", "Max volume alarm when you have to wake up"],
+    ["One small typo in the config", "Three weeks of careful testing"],
+    ["One bad comment", "Fifty nice ones"],
+    ["My little brother's elbow in a fight", "My punch back"],
+    ["The ad before the video", "The video's actual volume"],
+    ["Low tier enemy in the tutorial", "Final boss after the nerf"]
+  ],
+  "aka": ["Bongo Cat", "Buff Bongo Cat", "Muscle Bongo Cat"],
+  "tags": ["bongo cat", "cat", "gif", "comparison", "strong vs weak", "animated"]
+}

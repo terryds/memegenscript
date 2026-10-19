@@ -1,0 +1,15 @@
+{
+  "about": "Are You Two Friends? stacks two Star Trek: Voyager screenshots. On top, a smiling woman with long curly hair in an orange top asks \"Are you two friends?\". Below, two officers in gold-shouldered Starfleet uniforms answer at once: the stern Vulcan Tuvok says \"No.\" while Ensign Harry Kim, grinning, says \"Yes.\". The joke is a lopsided relationship, where one side clearly thinks they are close and the other does not. Labeling the asker and the two officers turns it into a commentary on rivalries, one-sided fandoms and awkward alliances.",
+  "origin": "The scene is from \"Alter Ego\", a 1997 third-season episode of Star Trek: Voyager. The woman is Marayna, a holodeck character, asking Tuvok and Kim about their relationship.",
+  "usage": "The first box labels the woman asking the question, the second labels Tuvok who answers \"No.\", and the third labels Harry Kim who happily answers \"Yes.\". Pick a pair where one side is far more attached than the other.\n\nIt works for one-sided relationships of every kind: a cat and its owner, a dev and the compiler, a fan and a celebrity, a younger and older sibling, two rival clubs and a pundit. The friendly, eager party always goes in the third box.",
+  "ideas": [
+    ["Bank", "My savings account", "Online shopping"],
+    ["Vet", "My cat", "Me"],
+    ["Teacher", "Group project partner who did nothing", "Me, who did everything"],
+    ["Tech recruiter", "Senior dev", "The linter"],
+    ["Mom", "My older brother", "Me at age 7"],
+    ["Commentator", "The defender", "The striker he's been marking"]
+  ],
+  "aka": ["Are You Two Friends", "Tuvok and Harry Kim Meme", "Star Trek Are You Two Friends"],
+  "tags": ["star trek", "star trek voyager", "tuvok", "harry kim", "object labeling", "one sided friendship"]
+}
