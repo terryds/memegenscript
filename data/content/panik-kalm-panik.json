@@ -1,0 +1,52 @@
+{
+  "about": "Panik Kalm Panik is a three-row comic starring Meme Man, the smooth, bald 3D head from surreal memes. Each row pairs an empty left panel with his reaction on the right: first clutching his head in alarm (\"Panik\"), then serene and relieved (\"Kalm\"), then clutching his head again in blurry, frantic panic (\"Panik\"). The left panels tell a tiny story where a scary situation looks resolved before a final twist makes it worse. The misspelled labels add to the dopey, cartoonish dread, and the format works for any whiplash of relief followed by doom.",
+  "origin": "The format spread on Reddit in early 2020, building on the Meme Man character from surreal memes, whose deadpan face suited the misspelled emotion labels.",
+  "usage": "There are three boxes on the left. The first is the alarming event, the second is the reassuring update, and the third is the twist that undoes the reassurance. The pacing is everything: the middle line should sound genuinely comforting, and the last line should reveal why it isn't.\n\nGreat topics are deadlines, exams, bugs, money, pets, and anything with a hidden catch. Keep each line short enough to fit in its panel, and make the final twist a logical consequence of the second line rather than a random new problem.",
+  "ideas": [
+    [
+      "You hear a sound downstairs",
+      "It's just a cat",
+      "You don't have a cat"
+    ],
+    [
+      "The site is down",
+      "It's back up after a restart",
+      "Nobody knows why it went down"
+    ],
+    [
+      "You forgot about the essay",
+      "The deadline got extended",
+      "It's now a group presentation"
+    ],
+    [
+      "Your phone is at 2%",
+      "You found a charger",
+      "It's the wrong cable"
+    ],
+    [
+      "The exam is tomorrow",
+      "It's open book",
+      "The professor knows it's open book"
+    ],
+    [
+      "Your flight is delayed",
+      "Only by an hour",
+      "You miss your connection"
+    ]
+  ],
+  "aka": [
+    "Panik Kalm",
+    "Panic Calm Panic",
+    "Meme Man Panik",
+    "Panik Kalm Panik Meme"
+  ],
+  "tags": [
+    "meme man",
+    "panik",
+    "kalm",
+    "panic",
+    "surreal memes",
+    "plot twist",
+    "three panel"
+  ]
+}
