@@ -1,0 +1,46 @@
+{
+  "about": "Buzz Lightyear Clones is a two-panel still from Toy Story 2. On top, a single boxed Buzz Lightyear grins in his clear plastic packaging. Below, the camera pulls back to reveal an endless store aisle stacked floor to ceiling with identical Buzz boxes. The meme labels the lone Buzz with something that feels special or new and the aisle with how common it really is, so it mocks trends, copycat products and anything that pretends to be unique while thousands of near-identical versions exist, from JavaScript frameworks to streaming services and true crime podcasts.",
+  "origin": "The scene is the Buzz Lightyear aisle at Al's Toy Barn in Pixar's Toy Story 2 (1999), where Buzz finds rows of brand-new copies of himself, including one that will soon be mistaken for him.",
+  "usage": "The top box sits over the single Buzz and names the thing (\"a new JavaScript framework\", \"a new superhero movie\"). The bottom box is over the endless aisle and states how many of them there are, often just a time frame like \"every week\" or a count like \"the other 400\".\n\nThe joke lands when the audience already feels overwhelmed by sameness: startup pitches, phone launches, battle royale games, influencer apologies. Keep the top label brief and the bottom line deadpan, letting the sheer wall of boxes deliver the exaggeration.",
+  "ideas": [
+    [
+      "javascript frameworks",
+      "every week"
+    ],
+    [
+      "a new streaming service",
+      "this year alone"
+    ],
+    [
+      "\"AI-powered\" apps",
+      "everywhere you look"
+    ],
+    [
+      "guys named matt in my class",
+      "all of them"
+    ],
+    [
+      "battle royale games",
+      "since 2017"
+    ],
+    [
+      "my unused USB cables",
+      "in one drawer"
+    ]
+  ],
+  "aka": [
+    "Buzz Lightyear Aisle",
+    "Buzz Lightyear Clones",
+    "Toy Story Buzz Aisle",
+    "Buzz Everywhere"
+  ],
+  "tags": [
+    "toy story",
+    "toy story 2",
+    "buzz lightyear",
+    "pixar",
+    "clones",
+    "copycat",
+    "object labeling"
+  ]
+}
