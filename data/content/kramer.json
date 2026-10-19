@@ -1,0 +1,45 @@
+{
+  "about": "Kramer, What's Going On In There? is a two-panel Seinfeld template. On top, Jerry squints and grimaces in a doorway, bathed in harsh red light. On the bottom, Kramer stands in his apartment, which is flooded with that same red glow, answering with a wide-eyed, matter-of-fact look. Between them is a white gap where the dialogue goes. In the episode, a chicken restaurant's glaring sign shines straight into Kramer's window. The meme uses the setup to reveal a ridiculous situation someone is living in, explained as if it were perfectly normal.",
+  "origin": "The scene is from the 1996 Seinfeld episode \"The Chicken Roaster,\" in which a Kenny Rogers Roasters restaurant opens across from Kramer's building and its red sign floods his apartment.",
+  "usage": "The first box is Jerry's question, usually \"[Name], what's going on in there?\" or \"Kramer, what's going on in there?\". The second box is the deadpan explanation, describing some chaotic, glowing or bizarre setup in the most casual tone possible.\n\nThe red lighting makes it a natural fit for anything literally red (RGB gaming rooms, error dashboards, sunburns), but it also works for any space where something odd is happening: a codebase, a fridge, a group chat, a browser with hundreds of tabs.",
+  "ideas": [
+    [
+      "Kramer, what's going on in there?",
+      "Every alert on the dashboard went red at once."
+    ],
+    [
+      "Kramer, what's going on in there?",
+      "I bought RGB lights and now I can't turn them off."
+    ],
+    [
+      "Kramer, what's going on in there?",
+      "My browser has 312 tabs and I need all of them."
+    ],
+    [
+      "Kramer, what's going on in there?",
+      "I fell asleep at the beach without sunscreen."
+    ],
+    [
+      "Kramer, what's going on in your fridge?",
+      "Science, Jerry. It's science now."
+    ],
+    [
+      "Kramer, what's going on in the group chat?",
+      "Someone mentioned the 2019 vacation again."
+    ]
+  ],
+  "aka": [
+    "Kramer What's Going On In There",
+    "Kramer Red Room",
+    "Seinfeld Red Light"
+  ],
+  "tags": [
+    "seinfeld",
+    "kramer",
+    "jerry seinfeld",
+    "michael richards",
+    "red room",
+    "sitcom",
+    "exploitable"
+  ]
+}

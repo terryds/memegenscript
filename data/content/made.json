@@ -1,0 +1,63 @@
+{
+  "about": "I Made This is a three-panel black-and-white stick-figure comic. In the first panel a figure in a cap hands a spiky round object to a plain round-headed figure, saying \"I made this.\" The second figure asks \"You made this?\", then in the second panel stands alone holding it with a blank look, and in the third panel turns away and announces \"I made this.\" to nobody in particular. It is the shortest possible story about stealing credit: the thief hears the creator's claim, repeats it word for word, and walks off with the object. People use it for plagiarism, reposts, coworkers presenting your work and companies copying a smaller rival.",
+  "origin": "The comic spread on Tumblr in the early 2010s and became an exploitable, with people pasting characters, logos and brands over the two stick figures.",
+  "usage": "This template has five boxes. Boxes 1 and 2 are labels next to the two figures in the first panel: the real creator (left, in the cap) and the person who takes the credit (right). Box 3 is the creator's speech bubble, box 4 is the taker's question, and box 5 is the bubble in the last panel, where the taker claims it.\n\nMost versions keep the original dialogue (\"I made this.\" / \"You made this?\" / \"I made this.\") and get their joke entirely from the labels, so put the effort into who gives and who takes. You can also edit the dialogue to name the thing being stolen, as long as the last bubble mirrors the first.",
+  "ideas": [
+    [
+      "OP",
+      "repost account",
+      "I made this.",
+      "You made this?",
+      "I made this."
+    ],
+    [
+      "me",
+      "my group project partner",
+      "I wrote the report.",
+      "You wrote the report?",
+      "I wrote the report."
+    ],
+    [
+      "small indie game",
+      "big publisher",
+      "I made this mechanic.",
+      "You made this?",
+      "I made this mechanic."
+    ],
+    [
+      "junior dev",
+      "manager in the demo",
+      "I fixed the bug.",
+      "You fixed the bug?",
+      "I fixed the bug."
+    ],
+    [
+      "Stack Overflow",
+      "me",
+      "Here's the answer.",
+      "You wrote this?",
+      "I wrote this."
+    ],
+    [
+      "meme creator",
+      "brand twitter account",
+      "I made this.",
+      "You made this?",
+      "I made this."
+    ]
+  ],
+  "aka": [
+    "You Made This? I Made This",
+    "I Made This Comic",
+    "Stolen Credit Comic"
+  ],
+  "tags": [
+    "plagiarism",
+    "stealing credit",
+    "reposts",
+    "stick figure",
+    "comic",
+    "tumblr",
+    "exploitable"
+  ]
+}
