@@ -1,0 +1,47 @@
+{
+  "about": "Cat Looks Inside is a fisheye close-up of a gray and white cat peering straight down into the camera, wide eyes and pink nose filling the frame as if the lens were at the bottom of a box. Above the photo is a pale strip with three green \">\" arrows, the greentext style used on 4chan. The format is a tiny story of disappointment: \"> buy wireless headphones\", \"> look inside\", \"> wires\". The cat's blank, curious stare is the moment of discovering that something is not what it claimed to be, whether that is a product, a promise, a pull request or a job listing.",
+  "origin": "In 2022 an anonymous 4chan poster used the cat photo to illustrate a short greentext complaint about wireless devices having wires inside. Others kept the picture and swapped in their own \"looks inside\" discoveries.",
+  "usage": "Write it as greentext. The first box is the setup, usually something promising (\"> looks inside \\\"quick fix\\\" pr\"). The second box is what was actually inside (\"> 3000-line diff\"). Starting each line with \"> \" keeps it in the 4chan style.\n\nIt works best when the label and the contents contradict each other: \"healthy\" snacks that are mostly sugar, \"low maintenance\" pets, \"entry level\" jobs that need five years of experience, games advertised as complete. Keep both lines short; the cat's stare does the rest.",
+  "ideas": [
+    [
+      "> looks inside \"quick fix\" pr",
+      "> 3000-line diff"
+    ],
+    [
+      "> looks inside \"entry level\" job post",
+      "> 5 years experience required"
+    ],
+    [
+      "> looks inside \"healthy\" granola bar",
+      "> 14g sugar"
+    ],
+    [
+      "> looks inside \"complete edition\" game",
+      "> season pass sold separately"
+    ],
+    [
+      "> looks inside \"short\" meeting invite",
+      "> 90 minutes"
+    ],
+    [
+      "> looks inside the family chip bag",
+      "> mostly air"
+    ]
+  ],
+  "aka": [
+    "Cat Looks Inside",
+    "Looks Inside Cat",
+    "Cat Looking Down",
+    "Cat Staring Into Camera"
+  ],
+  "tags": [
+    "cat",
+    "looks inside",
+    "greentext",
+    "4chan",
+    "disappointment",
+    "staring",
+    "cats",
+    "fisheye"
+  ]
+}

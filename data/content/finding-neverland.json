@@ -1,0 +1,52 @@
+{
+  "about": "Finding Neverland is a three-panel image from the 2004 film of the same name. In the first frame a young boy played by Freddie Highmore looks up with wet eyes and asks a question; in the second, Johnny Depp's J. M. Barrie gazes back at him with a pained, gentle expression; in the third the two sit on a park bench while Barrie holds the crying boy against his chest. As a meme the boy asks something hopeful, the man quietly gives the bad news, and the hug turns a trivial disappointment into a moment of shared grief. The over-the-top tenderness for small problems is the whole joke.",
+  "origin": "The frames come from the closing park-bench scene of Finding Neverland (2004), the Marc Forster film about Peter Pan author J. M. Barrie, in which Barrie comforts the boy Peter after a death in the family.",
+  "usage": "The first box is the boy's hopeful question, written as if a kid is asking an adult who knows better: \"will my code work on the first run?\" The second box is the short, sad answer, usually \"no, son\" or just \"no\". The third box lands over the hug and twists the knife with the full truth (\"it won't even compile\").\n\nKeep the question innocent and the answers brief, since the gentle reveal is what makes it funny. It works for gaming disappointments, school, sports fans hoping for a trophy, and any software promise that everyone knows will not be kept.",
+  "ideas": [
+    [
+      "will my game save if i turn it off now?",
+      "no, son",
+      "it won't"
+    ],
+    [
+      "is the group project going to split the work evenly?",
+      "no",
+      "you'll do all of it"
+    ],
+    [
+      "will my team win the cup this year?",
+      "no, son",
+      "not this year either"
+    ],
+    [
+      "does the free trial cancel automatically?",
+      "no",
+      "they charged you yesterday"
+    ],
+    [
+      "will the update fix the lag?",
+      "no",
+      "it adds more"
+    ],
+    [
+      "can i just restart my computer to fix it?",
+      "no, son",
+      "it's a hardware problem"
+    ]
+  ],
+  "aka": [
+    "Finding Neverland Meme",
+    "Johnny Depp Comforting Boy",
+    "Crying Boy on Bench"
+  ],
+  "tags": [
+    "finding neverland",
+    "johnny depp",
+    "freddie highmore",
+    "crying",
+    "comforting",
+    "bad news",
+    "three panels",
+    "movie"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "about": "Daring Today, Aren't We is a six-panel SpongeBob SquarePants scene at the Krusty Krab counter. A light blue fish customer starts with \"I'll have a...\" while Squidward waits with his notepad; the fish points cheerfully with an order, and Squidward, slumped at the register, answers \"How original\". The fish then places a second order, and Squidward, now with a half-lidded sneer, replies \"Daring today, aren't we\". The two orders are almost identical, so his sarcasm mocks someone who thinks a tiny variation counts as being adventurous.",
+  "origin": "The panels are Krusty Krab counter scenes from SpongeBob SquarePants with Squidward's lines added as subtitles. The six-panel layout was shared on imgflip under the title \"Daring today, aren't we squidward\".",
+  "usage": "The first box is the fish's first order: the safe, default, everyone-picks-it choice (\"a Krabby Patty\"). The second box is the second order: the same thing with one tiny change that the person thinks is bold (\"a Krabby Patty with extra pickles\"). Squidward's replies are already on the image.\n\nIt works for any choice where people pretend a small tweak is a big risk: an iced latte instead of a hot latte, a dark mode theme, the same game build with one item swapped, a tech company releasing the same phone in a new color.",
+  "ideas": [
+    [
+      "a Krabby Patty",
+      "a Krabby Patty with extra pickles"
+    ],
+    [
+      "a latte",
+      "an oat milk latte"
+    ],
+    [
+      "the same build as last season",
+      "the same build with a different hat"
+    ],
+    [
+      "black jeans",
+      "slightly darker black jeans"
+    ],
+    [
+      "hello world in python",
+      "hello world in python but with an f-string"
+    ],
+    [
+      "the new phone",
+      "the new phone in blue"
+    ]
+  ],
+  "aka": [
+    "Daring Today, Aren't We Squidward",
+    "How Original",
+    "Daring Today Aren't We"
+  ],
+  "tags": [
+    "spongebob",
+    "squidward",
+    "krusty krab",
+    "how original",
+    "daring today",
+    "order",
+    "sarcasm",
+    "basic"
+  ]
+}
