@@ -237,14 +237,20 @@ Every batch is a spec file in `data/imports/` and one command:
 
 ```
 npx tsx scripts/import-templates.ts data/imports/<batch>.json
-npm run fetch:descriptions        # Know Your Meme summaries for new sources
+npm run fetch:descriptions        # Know Your Meme facts for new sources (reference only)
+# write data/content/<id>.json for every new template (docs/template-content.md)
 npm run build:templates && npm test
 ```
 
 Per template the spec gives an imgflip template id (or search query), a Know Your Meme slug,
-keywords, an example, and optional text boxes. Templates whose KYM match is wrong or missing
-get a hand-written entry in `data/descriptions.manual.json`. Imgflip GIF-only templates have
-no still, so those need a manual image (as with Homer and the kittens).
+keywords, an example, and optional text boxes. Imgflip GIF-only templates have no still, so
+those need a manual image (as with Homer and the kittens).
+
+Every live template needs **original page content** in `data/content/<id>.json`, written to
+`docs/template-content.md`: never the Know Your Meme wording, which `data/descriptions.json`
+keeps only as a fact reference. `npm run check:content` (part of `npm test`) fails for a
+template without it, or with text copied from Know Your Meme. Commit `data/lastmod.json`
+too: the build updates it with the date each page changed, for the sitemap.
 
 ## Done (rounds 1–2)
 
