@@ -2,7 +2,8 @@
  * Validate the original template content in `data/content/<id>.json`:
  * shape and lengths, one caption-idea line per text box, and that nothing is
  * lifted from the fetched Know Your Meme text (`data/descriptions.json`) or
- * repeated as boilerplate across templates. Exits non-zero on any problem.
+ * repeated as boilerplate across templates. A full run also requires every live
+ * (non-archived) template to have one. Exits non-zero on any problem.
  *
  *   tsx scripts/check-content.ts            # every content file
  *   tsx scripts/check-content.ts cinema ... # just these templates (boilerplate check still uses all)
@@ -96,6 +97,16 @@ for (const id of ids) {
     const theirs = shingles(source, SHINGLE);
     const copied = [...shingles(`${about} ${origin} ${usage}`, SHINGLE)].filter((s) => theirs.has(s));
     if (copied.length) fail(id, `copies Know Your Meme wording: "${copied[0]}…"`);
+  }
+}
+
+// Every live template needs original content (new templates included); see docs/template-content.md
+if (!only.length) {
+  for (const id of readdirSync(TEMPLATES).sort()) {
+    if (id.startsWith("_") || id.startsWith(".") || !existsSync(join(TEMPLATES, id, "config.yml"))) continue;
+    const config = parse(readFileSync(join(TEMPLATES, id, "config.yml"), "utf8")) as { archived?: boolean } | null;
+    if (config?.archived === true) continue;
+    if (!entries.has(id)) fail(id, "new template without original content: write data/content/" + id + ".json (docs/template-content.md)");
   }
 }
 
