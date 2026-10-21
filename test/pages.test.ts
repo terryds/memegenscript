@@ -16,6 +16,7 @@ describe("GET /", () => {
     expect(body).toContain('<link rel="canonical" href="http://localhost:5000/">');
     expect(body).toContain('<meta name="description"');
     expect(body).toContain('"@type":"WebSite"');
+    expect(body).toContain('"@type":"Organization"');
     expect(body).toContain('"@type":"ItemList"');
     expect(body).toContain('href="/memes/futurama-fry"');
     expect(body).toContain("Futurama Fry");
@@ -494,6 +495,36 @@ describe("firstSentence", () => {
     expect(firstSentence('Captioned with the catchphrase "Absolute Cinema." Online, it spread.')).toBe(
       'Captioned with the catchphrase "Absolute Cinema."',
     );
+  });
+
+  it("doesn't stop at a title or an initial", () => {
+    expect(firstSentence("Dr. Evil makes air quotes. Later, more.")).toBe("Dr. Evil makes air quotes.");
+    expect(firstSentence("D.W. Read eyes a sign. Then she reads it.")).toBe("D.W. Read eyes a sign.");
+    expect(firstSentence("A still of Mr. Krabs, e.g. blurred. Next.")).toBe("A still of Mr. Krabs, e.g. blurred.");
+  });
+
+  it("shortens at a word boundary", () => {
+    expect(firstSentence("One two three four five six.", 15)).toBe("One two three…");
+  });
+});
+
+describe("template meta descriptions", () => {
+  it("fit in a search snippet", async () => {
+    for (const slug of ["futurama-fry", "dr-evil-air-quotes", "mr-krabs-blur", "sweet-brown"]) {
+      const body = await (await get(`/memes/${slug}`)).text();
+      const description = /<meta name="description" content="([^"]*)"/.exec(body)?.[1] ?? "";
+      const text = description.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, "&");
+      expect(text.length, slug).toBeGreaterThan(70);
+      expect(text.length, slug).toBeLessThanOrEqual(160);
+      expect(text, slug).not.toMatch(/ (Dr|Mr)\. Also known/);
+    }
+  });
+
+  it("link meme ideas straight to the image, not through a redirect", async () => {
+    const body = await (await get("/memes/dr-evil-air-quotes")).text();
+    const ideas = body.slice(body.indexOf('class="meme-ideas"'));
+    expect(ideas).toContain("/images/dr-evil-laser/we_are/&#39;&#39;agile&#39;&#39;.png");
+    expect(ideas).not.toContain("&quot;agile&quot;.png");
   });
 });
 

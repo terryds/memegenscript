@@ -54,12 +54,27 @@ export function characterCard(settings: Settings, character: Character, { lazy =
 </li>`;
 }
 
+/** The site's publisher. Rendered on the homepage; other pages reference it by `@id`. */
+export function organizationJsonLd(settings: Settings) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${settings.BASE_URL}/#organization`,
+    name: siteName(settings),
+    url: settings.BASE_URL + "/",
+    logo: { "@type": "ImageObject", url: `${settings.BASE_URL}/static/icons/icon-512.png`, width: 512, height: 512 },
+    ...(settings.CONTACT_EMAIL ? { email: settings.CONTACT_EMAIL } : {}),
+    ...(settings.REPO_URL ? { sameAs: [settings.REPO_URL] } : {}),
+  };
+}
+
 export function websiteJsonLd(settings: Settings) {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: siteName(settings),
     url: settings.BASE_URL + "/",
+    publisher: { "@id": `${settings.BASE_URL}/#organization` },
     potentialAction: {
       "@type": "SearchAction",
       target: { "@type": "EntryPoint", urlTemplate: `${settings.BASE_URL}/?q={search_term_string}` },

@@ -7,7 +7,7 @@ import { Character, CHARACTERS_PATH } from "../models/character";
 import { Font } from "../models/font";
 import { Template } from "../models/template";
 import { assetVersion } from "../pages/assets";
-import { characterCard, editorPath, editorUrl, page, pageCacheControl, templateCard, websiteJsonLd } from "../pages/cards";
+import { characterCard, editorPath, editorUrl, organizationJsonLd, page, pageCacheControl, templateCard, websiteJsonLd } from "../pages/cards";
 import { escapeHtml, jsonForScript, layout, notFoundPage, siteName, templateRequestButtons, templateRequestLinks } from "../pages/html";
 import { error, redirect } from "../response";
 import { ALLOWED_EXTENSIONS, type Settings } from "../settings";
@@ -22,13 +22,33 @@ function exampleText(template: Template): string {
   return template.example.filter(Boolean).join(" / ");
 }
 
+/** Words whose trailing period doesn't end a sentence ("Dr. Evil", "Mr. Bean"). */
+const ABBREVIATIONS = new Set(["dr", "mr", "mrs", "ms", "st", "jr", "sr", "vs", "lt", "sgt", "prof", "gen", "capt", "no", "e.g", "i.e", "etc"]);
+
 /** First sentence of a text (used for meta descriptions). */
 export function firstSentence(text: string, max = 160): string {
-  // Keep a closing quote/bracket that follows the stop: `catchphrase "Absolute Cinema."`
-  const match = /^[^.!?]+[.!?]+["'”’)]*/.exec(text.trim());
-  const sentence = (match ? match[0] : text).trim();
-  return sentence.length > max ? sentence.slice(0, max - 1).replace(/\s+\S*$/, "") + "…" : sentence;
+  text = text.trim();
+  let sentence = text;
+  // A stop ends the sentence when whitespace (or the end) follows it, keeping
+  // a closing quote/bracket: `catchphrase "Absolute Cinema."`. Skip the stop
+  // after an abbreviation or an initial ("Mr. Krabs", "D.W. Read").
+  for (const match of text.matchAll(/[.!?]+["'”’)]*(?=\s|$)/g)) {
+    const before = /([\p{L}.]+)$/u.exec(text.slice(0, match.index))?.[1] ?? "";
+    const word = before.replace(/^\.+/, "").toLowerCase();
+    if (match[0].startsWith(".") && (ABBREVIATIONS.has(word) || /^(\p{L}\.)*\p{L}$/u.test(word))) continue;
+    sentence = text.slice(0, match.index + match[0].length);
+    break;
+  }
+  return truncate(sentence, max);
 }
+
+/** Cut at a word boundary with an ellipsis so the result is at most `max` characters. */
+function truncate(text: string, max: number): string {
+  return text.length > max ? text.slice(0, max - 1).replace(/[\s,;:]+\S*$/, "") + "…" : text;
+}
+
+/** Search engines show roughly this many characters of a meta description. */
+const DESCRIPTION_MAX = 160;
 
 /**
  * CTR experiment (2026-10): templates whose search impressions are mostly
@@ -52,15 +72,25 @@ function describe(template: Template): string {
   if (infoIntent(template)) {
     return `${firstSentence(template.about, 160)} Make your own "${template.name}" meme with the free template.`.slice(0, 300);
   }
-  const parts = [`Make your own "${template.name}" meme online for free.`];
+  let description = `Make your own "${template.name}" meme online for free.`;
+  // Each part is added only while it fits: Google cuts descriptions off at
+  // ~160 characters, so a long "about" sentence is shortened, never the lead.
+  const add = (part: string): boolean => {
+    if (description.length + 1 + part.length > DESCRIPTION_MAX) return false;
+    description += ` ${part}`;
+    return true;
+  };
   if (template.about) {
-    parts.push(firstSentence(template.about, 200));
+    const room = DESCRIPTION_MAX - description.length - 1;
+    if (room >= 40) description += ` ${firstSentence(template.about, room)}`;
   } else {
     const example = exampleText(template);
-    if (example) parts.push(`Example: "${example}".`);
+    if (example) add(truncate(`Example: "${example}".`, DESCRIPTION_MAX - description.length - 1));
   }
-  if (template.aka.length) parts.push(`Also known as ${template.aka.slice(0, 2).join(", ")}.`);
-  return parts.join(" ").slice(0, 300);
+  if (template.aka.length) {
+    add(`Also known as ${template.aka.slice(0, 2).join(", ")}.`) || add(`Also known as ${template.aka[0]}.`);
+  }
+  return description;
 }
 
 /** Deterministic set of related templates: alphabetical neighbours plus a stable sample. */
@@ -119,6 +149,7 @@ export async function index(app: AppContext): Promise<Response> {
 
   const structuredData: unknown[] = [websiteJsonLd(settings)];
   if (!query) {
+    structuredData.push(organizationJsonLd(settings));
     structuredData.push({
       "@context": "https://schema.org",
       "@type": "CollectionPage",
