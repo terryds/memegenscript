@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { get, postJson } from "./helpers";
 import { analyticsSnippet } from "../src/pages/html";
-import { firstSentence } from "../src/views/editor";
+import { firstSentence } from "../src/utils/description";
 import { resolveSettings } from "../src/settings";
 
 describe("GET /", () => {
