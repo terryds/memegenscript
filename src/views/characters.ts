@@ -130,7 +130,7 @@ export async function listPage(app: AppContext): Promise<Response> {
     : `Meme Characters: ${all.length} Transparent PNG Cutouts to Download | ${site}`;
   const description = query
     ? `${characters.length} meme characters matching "${query}". Free transparent PNGs.`
-    : `Download ${all.length} classic meme characters (Doge, Wojak, Pepe, Trollface, Gigachad and more) as free transparent PNG cutouts. No signup, no watermark. Also available through the API.`;
+    : `Download ${all.length} classic meme characters (Doge, Wojak, Pepe, Trollface, Gigachad and more) as free transparent PNG cutouts. No signup, no watermark.`;
 
   const structuredData: unknown[] = [websiteJsonLd(settings)];
   if (!query) {
