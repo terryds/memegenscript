@@ -35,11 +35,13 @@ describe("utils.text", () => {
   });
 
   it("encodes smart quotes", () => {
-    expect(encode(["it’ll be great “they” said"])).toBe('it\'ll_be_great_"they"_said');
+    // Curly double quotes get the same `''` escape as straight ones; a raw `"`
+    // in the slug only resolves through a 301.
+    expect(encode(["it’ll be great “they” said"])).toBe("it'll_be_great_''they''_said");
   });
 
   it("encodes en dashes", () => {
-    expect(encode(["1–2 in. of snow"])).toBe("1-2_in._of_snow");
+    expect(encode(["1–2 in. of snow"])).toBe("1--2_in._of_snow");
   });
 });
 

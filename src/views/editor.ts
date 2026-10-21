@@ -7,11 +7,12 @@ import { Character, CHARACTERS_PATH } from "../models/character";
 import { Font } from "../models/font";
 import { Template } from "../models/template";
 import { assetVersion } from "../pages/assets";
-import { characterCard, editorPath, editorUrl, page, pageCacheControl, templateCard, websiteJsonLd } from "../pages/cards";
+import { characterCard, editorPath, editorUrl, organizationJsonLd, page, pageCacheControl, templateCard, websiteJsonLd } from "../pages/cards";
 import { escapeHtml, jsonForScript, layout, notFoundPage, siteName, templateRequestButtons, templateRequestLinks } from "../pages/html";
 import { error, redirect } from "../response";
 import { ALLOWED_EXTENSIONS, type Settings } from "../settings";
 import { sha1Hex } from "../utils/sha1";
+import { composeDescription, firstSentence } from "../utils/description";
 import { encode } from "../utils/text";
 import { clean } from "../utils/urls";
 import { download } from "../utils/http";
@@ -20,14 +21,6 @@ import { editorWatermark } from "../images/layer";
 
 function exampleText(template: Template): string {
   return template.example.filter(Boolean).join(" / ");
-}
-
-/** First sentence of a text (used for meta descriptions). */
-export function firstSentence(text: string, max = 160): string {
-  // Keep a closing quote/bracket that follows the stop: `catchphrase "Absolute Cinema."`
-  const match = /^[^.!?]+[.!?]+["'”’)]*/.exec(text.trim());
-  const sentence = (match ? match[0] : text).trim();
-  return sentence.length > max ? sentence.slice(0, max - 1).replace(/\s+\S*$/, "") + "…" : sentence;
 }
 
 /**
@@ -52,15 +45,12 @@ function describe(template: Template): string {
   if (infoIntent(template)) {
     return `${firstSentence(template.about, 160)} Make your own "${template.name}" meme with the free template.`.slice(0, 300);
   }
-  const parts = [`Make your own "${template.name}" meme online for free.`];
-  if (template.about) {
-    parts.push(firstSentence(template.about, 200));
-  } else {
-    const example = exampleText(template);
-    if (example) parts.push(`Example: "${example}".`);
-  }
-  if (template.aka.length) parts.push(`Also known as ${template.aka.slice(0, 2).join(", ")}.`);
-  return parts.join(" ").slice(0, 300);
+  const example = exampleText(template);
+  return composeDescription(`Make your own "${template.name}" meme online for free.`, {
+    about: template.about,
+    fallback: example && `Example: "${example}".`,
+    aka: template.aka,
+  });
 }
 
 /** Deterministic set of related templates: alphabetical neighbours plus a stable sample. */
@@ -119,6 +109,7 @@ export async function index(app: AppContext): Promise<Response> {
 
   const structuredData: unknown[] = [websiteJsonLd(settings)];
   if (!query) {
+    structuredData.push(organizationJsonLd(settings));
     structuredData.push({
       "@context": "https://schema.org",
       "@type": "CollectionPage",

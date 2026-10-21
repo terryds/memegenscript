@@ -33,6 +33,13 @@ function encodeLine(line: string): string {
   let encoded = unquote(line);
 
   for (const [before, after] of [
+    // Normalise typographic characters first so a curly quote becomes `''`
+    // below rather than a raw `"`, which the image route 301s to `''`.
+    ["‘", "'"],
+    ["’", "'"],
+    ["“", '"'],
+    ["”", '"'],
+    ["–", "-"],
     ["_", "__"],
     ["-", "--"],
     [" ", "_"],
@@ -46,11 +53,6 @@ function encodeLine(line: string): string {
     ["&", "~a"],
     ["<", "~l"],
     [">", "~g"],
-    ["‘", "'"],
-    ["’", "'"],
-    ["“", '"'],
-    ["”", '"'],
-    ["–", "-"],
   ] as const) {
     encoded = encoded.split(before).join(after);
   }

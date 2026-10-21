@@ -155,7 +155,7 @@ ${analyticsSnippet(settings)}
 ${body}
 </main>
 <aside id="install-banner" class="install-banner" hidden role="complementary" aria-label="Install app">
-  <img src="/static/icons/icon-192.png" alt="" width="44" height="44">
+  <img src="/static/icons/icon-192.png" alt="${escapeHtml(site)} app icon" width="44" height="44">
   <div class="install-text"><strong>Install ${escapeHtml(site)}</strong><span data-hint>Add the meme editor to your home screen. Works offline.</span></div>
   <button type="button" class="primary" data-install>Install</button>
   <button type="button" class="install-close" data-close aria-label="Dismiss">×</button>

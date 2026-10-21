@@ -11,6 +11,7 @@ import { assetVersion } from "../pages/assets";
 import { characterCard, editorPath, page, templateCard, websiteJsonLd } from "../pages/cards";
 import { escapeHtml, layout, notFoundPage, siteName } from "../pages/html";
 import { error, image, json } from "../response";
+import { composeDescription } from "../utils/description";
 import { cacheKeyFor, edgeCache } from "./helpers";
 
 // --- JSON API ------------------------------------------------------------------
@@ -109,10 +110,10 @@ export async function png(app: AppContext, id: string): Promise<Response> {
 // --- GET /meme-characters --------------------------------------------------------
 
 function describeCharacter(character: Character): string {
-  const parts = [`Download the ${character.name} meme character as a transparent PNG, free.`];
-  if (character.about) parts.push(character.about);
-  if (character.aka.length) parts.push(`Also known as ${character.aka.slice(0, 2).join(", ")}.`);
-  return parts.join(" ").slice(0, 300);
+  return composeDescription(`Download the ${character.name} meme character as a transparent PNG, free.`, {
+    about: character.about,
+    aka: character.aka,
+  });
 }
 
 export async function listPage(app: AppContext): Promise<Response> {
@@ -129,7 +130,7 @@ export async function listPage(app: AppContext): Promise<Response> {
     : `Meme Characters: ${all.length} Transparent PNG Cutouts to Download | ${site}`;
   const description = query
     ? `${characters.length} meme characters matching "${query}". Free transparent PNGs.`
-    : `Download ${all.length} classic meme characters (Doge, Wojak, Pepe, Trollface, Gigachad and more) as free transparent PNG cutouts. No signup, no watermark. Also available through the API.`;
+    : `Download ${all.length} classic meme characters (Doge, Wojak, Pepe, Trollface, Gigachad and more) as free transparent PNG cutouts. No signup, no watermark.`;
 
   const structuredData: unknown[] = [websiteJsonLd(settings)];
   if (!query) {
