@@ -117,6 +117,17 @@ function withCors(response: Response): Response {
 export default {
   async fetch(request, env, ctx): Promise<Response> {
     const url = new URL(request.url);
+    // The Worker is also reachable at <name>.<account>.workers.dev, a full copy of the site.
+    // Send it to the public domain so search engines (and people) only see one site.
+    // 308 for non-GET requests so API POSTs keep their method and body.
+    const domain = (env as unknown as EnvVars).DOMAIN;
+    if (domain && url.hostname.endsWith(".workers.dev")) {
+      const host = domain.replace(/^https?:\/\//, "").replace(/\/$/, "");
+      const origin = `${/^(localhost|127\.0\.0\.1)(:\d+)?$/.test(host) ? "http" : "https"}://${host}`;
+      const target = origin + url.pathname + url.search;
+      const status = request.method === "GET" || request.method === "HEAD" ? 301 : 308;
+      return new Response(null, { status, headers: { location: target, ...CORS_HEADERS } });
+    }
     const settings = resolveSettings(env as unknown as EnvVars, request);
     const app: AppContext = { request, url, path: url.pathname, params: url.searchParams, env, settings, ctx };
 

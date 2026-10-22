@@ -27,7 +27,7 @@ describe("GET /", () => {
   it("pins absolute URLs to DOMAIN for public hosts but keeps a local origin", async () => {
     const { SELF } = await import("cloudflare:test");
     // Tests bind DOMAIN to localhost:5000; a request via another host must still canonicalize to it
-    const alias = await (await SELF.fetch("https://memegenscript.example.workers.dev/memes/futurama-fry")).text();
+    const alias = await (await SELF.fetch("https://alias.memegenscript.example/memes/futurama-fry")).text();
     expect(alias).toContain('<link rel="canonical" href="http://localhost:5000/memes/futurama-fry">');
     const local = await (await SELF.fetch("http://127.0.0.1:8787/memes/futurama-fry")).text();
     expect(local).toContain('<link rel="canonical" href="http://127.0.0.1:8787/memes/futurama-fry">');
@@ -536,5 +536,20 @@ describe("sitemap lastmod", () => {
     expect(template.updated).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     expect(body).toContain(`/memes/${template.slug}</loc><lastmod>${template.updated}</lastmod>`);
     expect(body).toMatch(/<loc>[^<]+\/<\/loc><lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/); // the index
+  });
+});
+
+describe("workers.dev alias", () => {
+  it("redirects every request to the public domain", async () => {
+    const { SELF } = await import("cloudflare:test");
+    const page = await SELF.fetch("https://memegenscript.someone.workers.dev/memes/futurama-fry?x=1", { redirect: "manual" });
+    expect(page.status).toBe(301);
+    expect(page.headers.get("location")).toBe("http://localhost:5000/memes/futurama-fry?x=1");
+    const post = await SELF.fetch("https://memegenscript.someone.workers.dev/images", { method: "POST", redirect: "manual", body: "{}" });
+    expect(post.status).toBe(308);
+  });
+
+  it("serves the public domain normally", async () => {
+    expect((await get("/memes/futurama-fry")).status).toBe(200);
   });
 });
