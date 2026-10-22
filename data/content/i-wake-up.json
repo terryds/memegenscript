@@ -1,0 +1,16 @@
+{
+  "about": "I Wake Up, There Is X shows a short, stocky tabby cat standing in the middle of a white page, staring straight at the viewer with a flat, resigned expression. Two curved arrows loop around it like a cycle diagram: \"I wake up\" sits at the top and the second caption at the bottom names whatever fresh problem greets the cat every single morning, before the arrows send it right back to waking up again. The joke is the endless loop. Whatever goes in the bottom box is presented as a daily, unavoidable event, and the cat's deadpan stare says it has long stopped being surprised by it.",
+  "origin": "The cat is a rescue cat named Ethel, whose photo first circulated in a Facebook cat group in 2019. In June 2022 an Instagram meme page put her inside the circle diagram with the caption \"I wake up, there is something wrong with me,\" and other pages quickly swapped in their own endings. Elon Musk reposted an \"another psyop\" version in November 2022, which pushed the format much further.",
+  "usage": "Leave the top box as \"I wake up\" in almost every version; it is the fixed half of the loop and readers recognize the format by it. The bottom box is where the joke lives: name the recurring annoyance that is waiting for you every morning, phrased as \"there is a new...\" or \"there is another...\".\n\nIt works best for things that genuinely repeat on a schedule or feel like they do: security patches, outages, group chat drama, new frameworks, sports injuries, game balance changes. Keep the bottom line to one or two short lines so it fits under the cat, and let the arrows imply the rest.",
+  "ideas": [
+    ["I wake up", "there is a new security vulnerability"],
+    ["I wake up", "there is a new JavaScript framework"],
+    ["I wake up", "there are 47 unread messages in the group chat"],
+    ["I wake up", "my team lost again"],
+    ["I wake up", "there is a mandatory update"],
+    ["I wake up", "the assignment is due today"],
+    ["I wake up", "there is another reboot of a movie I liked"]
+  ],
+  "aka": ["I Wake Up There Is Something Wrong", "Cat Circle of Life", "I Wake Up Cat", "Ethel the Cat"],
+  "tags": ["cat", "ethel", "cycle", "every day", "mornings", "reaction image", "exploitable"]
+}
