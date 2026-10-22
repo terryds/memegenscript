@@ -1,0 +1,43 @@
+name: "I Wake Up, There Is X"
+source: "https://knowyourmeme.com/memes/i-wake-up-there-is-x"
+keywords:
+  - "I wake up"
+  - "there is"
+  - "cat circle of life"
+  - "Ethel the cat"
+  - "cycle"
+  - "every day"
+  - "cat"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.25
+    anchor_y: 0.1
+    angle: 0.0
+    scale_x: 0.5
+    scale_y: 0.12
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.24
+    anchor_y: 0.71
+    angle: 0.0
+    scale_x: 0.52
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "I wake up"
+  - "there is a new security vulnerability"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
