@@ -1,0 +1,41 @@
+name: "Won't Somebody Please Think of the Children"
+source: "https://knowyourmeme.com/memes/wont-somebody-please-think-of-the-children"
+keywords:
+  - "helen lovejoy"
+  - "simpsons"
+  - "think of the children"
+  - "moral panic"
+  - "outrage"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "they removed the headphone jack"
+  - "won't somebody please think of the children"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

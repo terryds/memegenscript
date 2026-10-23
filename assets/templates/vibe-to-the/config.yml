@@ -1,0 +1,52 @@
+name: "I Bring a Sort of X Vibe to the Y"
+source: "https://knowyourmeme.com/memes/i-bring-a-sort-of-x-vibe-to-the-y"
+keywords:
+  - "vibe"
+  - "i bring a sort of"
+  - "tiktok"
+  - "fill in the blank"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.17
+    anchor_y: 0.065
+    angle: 0.0
+    scale_x: 0.67
+    scale_y: 0.065
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.37
+    anchor_y: 0.18
+    angle: 0.0
+    scale_x: 0.55
+    scale_y: 0.07
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.27
+    anchor_y: 0.265
+    angle: 0.0
+    scale_x: 0.4
+    scale_y: 0.06
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "CHAOTIC GOBLIN"
+  - "THE GROUP PROJECT"
+  - "TEACHERS"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

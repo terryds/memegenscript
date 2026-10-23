@@ -1,0 +1,15 @@
+{
+  "about": "The Powder That Makes You Say Yes is a vintage comic panel of Plastic Man, the stretchy DC hero in red with dark goggles, his mouth stretched open in a goofy grin while a huge pale cloud of powder pours toward him. Above him floats an empty speech bubble. The format is about getting what you want by cheating the conversation: pour the magic powder and whoever you ask has no choice but to agree.",
+  "origin": "The panel comes from an old Plastic Man comic in which he gulps a box labeled \"Salt\". Online it was relabeled \"Powder that makes you say yes\" and became a template alongside similar edits like \"bone hurting juice\".",
+  "usage": "The first box is the speech bubble at the top: the question nobody would normally agree to. The second box sits on the cloud of powder: label it with the trick you're using, usually \"the powder that makes you say yes\".\n\nIt fits small schemes and shameless requests: asking to copy homework, asking your parents for money, pitching a terrible idea in a meeting. The question should be one that obviously deserves a no.",
+  "ideas": [
+    ["can I copy your homework?", "the powder that makes you say yes"],
+    ["can we push the deadline again?", "the powder that makes you say yes"],
+    ["mom, can I get a dog?", "puppy eyes powder"],
+    ["will you approve my pull request?", "the powder that makes you say LGTM"],
+    ["can I have the last slice?", "the powder that makes you say yes"],
+    ["would you like to hear about my podcast?", "the powder that makes you say yes"]
+  ],
+  "aka": ["Powder That Makes You Say Yes", "Plastic Man Powder", "Say Yes Powder"],
+  "tags": ["plastic man", "comic", "dc comics", "powder", "persuasion", "vintage comic", "exploitable"]
+}

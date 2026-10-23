@@ -1,0 +1,862 @@
+{
+ "_comment": "Meme scout 2026-10-23: keepers from imgflip top-new and the all-time template directory (page 12). Images were prepared by hand (resized to max 1000px, JPEGs at quality 85) because the importer's sips step is macOS-only; crab-rave, dancin-bois, insane-peter, fast-guy-explaining, bateman-walking, praying-guy and guy-in-suit are video-only on imgflip, converted to GIF + still. sister-rose and cooler-daniel have their baked captions painted out; even-harder has its subtitles blurred.",
+ "templates": [
+  {
+   "id": "flying-tesla",
+   "name": "Flying Tesla Roadster",
+   "imgflip": 671174643,
+   "keywords": [
+    "tesla",
+    "roadster",
+    "flying car",
+    "rocket",
+    "elon musk",
+    "spacex",
+    "top new"
+   ],
+   "example": [
+    "when the delivery date finally arrives",
+    "me leaving the group chat"
+   ]
+  },
+  {
+   "id": "things-to-say",
+   "name": "Things to Say",
+   "imgflip": 669226760,
+   "keywords": [
+    "house",
+    "hugh laurie",
+    "things to say",
+    "list",
+    "house md",
+    "top new"
+   ],
+   "example": [
+    "- it's not lupus\n- you're all idiots\n- everybody lies"
+   ],
+   "boxes": [
+    [
+     0.03,
+     0.3,
+     0.62,
+     0.66,
+     "default",
+     "white",
+     "left",
+     "thick"
+    ]
+   ]
+  },
+  {
+   "id": "rumplestiltskin",
+   "name": "Rumplestiltskin",
+   "imgflip": 670252540,
+   "keywords": [
+    "rumplestiltskin",
+    "fairy tale",
+    "deal",
+    "dance",
+    "top new"
+   ],
+   "example": [
+    "me when someone guesses my wifi password",
+    "what's my name again?"
+   ]
+  },
+  {
+   "id": "patrick-jane",
+   "name": "Patrick Jane",
+   "imgflip": 668388316,
+   "kym": "the-mentalist",
+   "keywords": [
+    "patrick jane",
+    "the mentalist",
+    "simon baker",
+    "stare",
+    "top new"
+   ],
+   "example": [
+    "when you already know who ate your leftovers",
+    "but you let them explain anyway"
+   ],
+   "source": ""
+  },
+  {
+   "id": "sentry-mog",
+   "name": "Sentry Mog",
+   "imgflip": 667557922,
+   "keywords": [
+    "sentry",
+    "marvel",
+    "mog",
+    "mogging",
+    "looksmaxxing",
+    "top new"
+   ],
+   "example": [
+    "the sequel",
+    "the original"
+   ]
+  },
+  {
+   "id": "hypergamy",
+   "name": "Hypergamy Chart",
+   "imgflip": 667147140,
+   "keywords": [
+    "hypergamy",
+    "chart",
+    "arrows",
+    "everyone picks the same",
+    "diagram",
+    "top new"
+   ],
+   "example": [
+    "every dev team",
+    "the one guy who understands the legacy code"
+   ],
+   "boxes": [
+    [
+     0.42,
+     0.62,
+     0.45,
+     0.16,
+     "upper",
+     "black",
+     "center",
+     "thick"
+    ],
+    [
+     0.36,
+     0.12,
+     0.6,
+     0.16,
+     "upper",
+     "black",
+     "center",
+     "thick"
+    ]
+   ]
+  },
+  {
+   "id": "already-dead",
+   "name": "Stop, He's Already Dead",
+   "imgflip": 298218630,
+   "kym": "stop-hes-already-dead",
+   "keywords": [
+    "simpsons",
+    "stop hes already dead",
+    "beating",
+    "pile on",
+    "nelson"
+   ],
+   "example": [
+    "the internet",
+    "a guy who said pineapple goes on pizza"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.51,
+     1.0,
+     0.12
+    ],
+    [
+     0.0,
+     0.86,
+     1.0,
+     0.13
+    ]
+   ]
+  },
+  {
+   "id": "army-clown",
+   "name": "Army Clown",
+   "imgflip": 253835854,
+   "keywords": [
+    "clown",
+    "army",
+    "soldiers",
+    "military",
+    "squad",
+    "raid"
+   ],
+   "example": [
+    "the rest of the team",
+    "me, who joined yesterday"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     1.0,
+     0.17
+    ],
+    [
+     0.0,
+     0.83,
+     1.0,
+     0.17
+    ]
+   ]
+  },
+  {
+   "id": "oops-all-berries",
+   "name": "Oops! All Berries",
+   "imgflip": 152344231,
+   "kym": "oops-all-berries",
+   "keywords": [
+    "cereal",
+    "capn crunch",
+    "oops all berries",
+    "oops all",
+    "box"
+   ],
+   "example": [
+    "",
+    "BUGS"
+   ],
+   "boxes": [
+    [
+     0.2,
+     0.08,
+     0.42,
+     0.2,
+     "upper",
+     "black",
+     "center",
+     "thick"
+    ],
+    [
+     0.1,
+     0.42,
+     0.8,
+     0.13,
+     "upper",
+     "white",
+     "center",
+     "thick"
+    ]
+   ]
+  },
+  {
+   "id": "let-me-in",
+   "name": "Let Me In",
+   "imgflip": 170261505,
+   "kym": "let-me-in",
+   "keywords": [
+    "eric andre",
+    "let me in",
+    "gate",
+    "locked out",
+    "fence"
+   ],
+   "example": [
+    "me at 8:59",
+    "the store that opens at 9"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.01,
+     1.0,
+     0.14
+    ],
+    [
+     0.0,
+     0.51,
+     0.62,
+     0.14
+    ]
+   ]
+  },
+  {
+   "id": "cooler-daniel",
+   "name": "The Cooler Daniel",
+   "imgflip": 113387478,
+   "kym": "the-cooler-daniel",
+   "keywords": [
+    "the cooler daniel",
+    "yearbook",
+    "sunglasses",
+    "cooler",
+    "daniel"
+   ],
+   "example": [
+    "Daniel",
+    "The cooler Daniel"
+   ],
+   "boxes": [
+    [
+     0.06,
+     0.83,
+     0.42,
+     0.15,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ],
+    [
+     0.47,
+     0.83,
+     0.42,
+     0.15,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ]
+  },
+  {
+   "id": "powder-yes",
+   "name": "The Powder That Makes You Say Yes",
+   "imgflip": 142097891,
+   "kym": "the-powder-that-makes-you-say-yes",
+   "keywords": [
+    "powder",
+    "say yes",
+    "comic",
+    "throwing powder",
+    "vintage comic"
+   ],
+   "example": [
+    "can I copy your homework?",
+    "the powder that makes you say yes"
+   ],
+   "boxes": [
+    [
+     0.44,
+     0.02,
+     0.36,
+     0.16,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ],
+    [
+     0.6,
+     0.4,
+     0.38,
+     0.16,
+     "upper",
+     "white",
+     "center",
+     "thick"
+    ]
+   ]
+  },
+  {
+   "id": "vibe-to-the",
+   "name": "I Bring a Sort of X Vibe to the Y",
+   "imgflip": 430625331,
+   "kym": "i-bring-a-sort-of-x-vibe-to-the-y",
+   "keywords": [
+    "vibe",
+    "i bring a sort of",
+    "tiktok",
+    "fill in the blank"
+   ],
+   "example": [
+    "CHAOTIC GOBLIN",
+    "THE GROUP PROJECT",
+    "TEACHERS"
+   ],
+   "boxes": [
+    [
+     0.17,
+     0.065,
+     0.67,
+     0.065
+    ],
+    [
+     0.37,
+     0.18,
+     0.55,
+     0.07
+    ],
+    [
+     0.27,
+     0.265,
+     0.4,
+     0.06
+    ]
+   ]
+  },
+  {
+   "id": "think-of-the-children",
+   "name": "Won't Somebody Please Think of the Children",
+   "imgflip": 134844307,
+   "kym": "wont-somebody-please-think-of-the-children",
+   "keywords": [
+    "helen lovejoy",
+    "simpsons",
+    "think of the children",
+    "moral panic",
+    "outrage"
+   ],
+   "example": [
+    "they removed the headphone jack",
+    "won't somebody please think of the children"
+   ]
+  },
+  {
+   "id": "dancin-bois",
+   "name": "Dancin' Bois",
+   "imgflip": 205604035,
+   "keywords": [
+    "dancing",
+    "dance",
+    "compilation",
+    "bois",
+    "celebration",
+    "gif"
+   ],
+   "example": [
+    "me and the boys when the pizza arrives",
+    ""
+   ]
+  },
+  {
+   "id": "even-harder",
+   "name": "I'm Gonna Do It Even Harder",
+   "imgflip": 342245744,
+   "keywords": [
+    "the office",
+    "michael scott",
+    "jan",
+    "stop",
+    "even harder",
+    "pettiness"
+   ],
+   "example": [
+    "STOP BUYING VIDEO GAMES",
+    "I'M GONNA BUY THEM EVEN HARDER"
+   ],
+   "boxes": [
+    [
+     0.05,
+     0.37,
+     0.9,
+     0.11
+    ],
+    [
+     0.05,
+     0.875,
+     0.9,
+     0.115
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "sister-rose",
+   "name": "Why Is My Sister's Name Rose?",
+   "imgflip": 152073600,
+   "kym": "why-is-my-sisters-name-rose",
+   "keywords": [
+    "why is my sisters name rose",
+    "dad",
+    "car",
+    "driving",
+    "anti joke",
+    "dad joke"
+   ],
+   "example": [
+    "\"Dad, why is my sister's name Rose?\"",
+    "\"Because your mother loves roses.\"",
+    "\"Thanks, Dad.\"",
+    "\"No problem, Daffodil.\""
+   ],
+   "boxes": [
+    [
+     0.04,
+     0.01,
+     0.92,
+     0.085,
+     "default",
+     "black",
+     "left",
+     "thin"
+    ],
+    [
+     0.04,
+     0.095,
+     0.92,
+     0.085,
+     "default",
+     "black",
+     "left",
+     "thin"
+    ],
+    [
+     0.04,
+     0.18000000000000002,
+     0.92,
+     0.085,
+     "default",
+     "black",
+     "left",
+     "thin"
+    ],
+    [
+     0.04,
+     0.265,
+     0.92,
+     0.085,
+     "default",
+     "black",
+     "left",
+     "thin"
+    ]
+   ]
+  },
+  {
+   "id": "miss-my-wife",
+   "name": "I Think I Might Miss My Wife",
+   "imgflip": 552930213,
+   "keywords": [
+    "watchmen",
+    "comedian",
+    "miss my wife",
+    "comic",
+    "regret"
+   ],
+   "example": [
+    "I think I might miss my old phone"
+   ],
+   "boxes": [
+    [
+     0.05,
+     0.48,
+     0.22,
+     0.27,
+     "default",
+     "black",
+     "center",
+     "thin"
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "confused-screaming",
+   "name": "Confused Screaming",
+   "imgflip": 109869808,
+   "kym": "confused-screaming",
+   "keywords": [
+    "confused screaming",
+    "filthy frank",
+    "pan",
+    "screaming",
+    "yelling"
+   ],
+   "example": [
+    "when the teacher says the test is open book but the book is in another language"
+   ],
+   "boxes": [
+    [
+     0,
+     0,
+     1,
+     0.2
+    ]
+   ]
+  },
+  {
+   "id": "mask-wojak",
+   "name": "Wojak Hiding Crying Behind a Mask",
+   "imgflip": 99924861,
+   "kym": "wojak-mask",
+   "keywords": [
+    "wojak",
+    "mask",
+    "pretending to be happy",
+    "crying",
+    "hiding pain",
+    "smile"
+   ],
+   "example": [
+    "me at work",
+    "after my third meeting about meetings"
+   ],
+   "source": ""
+  },
+  {
+   "id": "crab-rave",
+   "name": "Crab Rave",
+   "imgflip": 182088735,
+   "kym": "crab-rave",
+   "keywords": [
+    "crab rave",
+    "crab",
+    "dance",
+    "is gone",
+    "celebration",
+    "noisestorm"
+   ],
+   "example": [
+    "THE BUG IS GONE",
+    "(until production)"
+   ]
+  },
+  {
+   "id": "now-thats-what-i-call",
+   "name": "Now That's What I Call",
+   "imgflip": 133459494,
+   "kym": "now-thats-what-i-call",
+   "keywords": [
+    "now thats what i call",
+    "album",
+    "compilation",
+    "cd",
+    "music"
+   ],
+   "example": [
+    "MONDAY MEETINGS VOL. 47"
+   ],
+   "boxes": [
+    [
+     0.17,
+     0.6,
+     0.68,
+     0.33,
+     "upper",
+     "black",
+     "center",
+     "thick"
+    ]
+   ],
+   "source": ""
+  },
+  {
+   "id": "groundhog-day",
+   "name": "Bill Murray Groundhog Day",
+   "imgflip": 49396946,
+   "kym": "groundhog-day",
+   "keywords": [
+    "bill murray",
+    "groundhog day",
+    "phil connors",
+    "same day again",
+    "repeat"
+   ],
+   "example": [
+    "me opening the fridge again",
+    "in case new food appeared"
+   ],
+   "source": ""
+  },
+  {
+   "id": "praying-guy",
+   "name": "Yung Joc Praying",
+   "imgflip": 549792503,
+   "keywords": [
+    "praying",
+    "prayer",
+    "please",
+    "hoping",
+    "begging",
+    "gif",
+    "yung joc",
+    "black guy praying",
+    "praying on your downfall"
+   ],
+   "example": [
+    "me watching the loading bar at 99%",
+    ""
+   ],
+   "kym": "yung-joc-crying-praying-on-your-downfall"
+  },
+  {
+   "id": "wild-pokemon",
+   "name": "A Wild X Appeared",
+   "imgflip": 216036135,
+   "kym": "a-wild-pokemon-appears",
+   "keywords": [
+    "pokemon",
+    "wild pokemon appeared",
+    "game boy",
+    "encounter",
+    "battle"
+   ],
+   "example": [
+    "",
+    "ANOTHER MEETING"
+   ],
+   "boxes": [
+    [
+     0.42,
+     0.03,
+     0.55,
+     0.25,
+     "upper",
+     "white",
+     "center",
+     "thick"
+    ],
+    [
+     0.25,
+     0.73,
+     0.7,
+     0.12,
+     "upper",
+     "black",
+     "left",
+     "thick"
+    ]
+   ]
+  },
+  {
+   "id": "limmy-waking-up",
+   "name": "Limmy Waking Up",
+   "imgflip": 320028323,
+   "keywords": [
+    "limmy",
+    "waking up",
+    "tired",
+    "morning",
+    "hungover",
+    "alarm"
+   ],
+   "example": [
+    "me waking up from a 20 minute nap",
+    "what year is it"
+   ]
+  },
+  {
+   "id": "insane-peter",
+   "name": "Insane Peter",
+   "imgflip": 270711192,
+   "keywords": [
+    "family guy",
+    "peter griffin",
+    "straitjacket",
+    "insane",
+    "padded room",
+    "gif"
+   ],
+   "example": [
+    "me after the fifth group project",
+    ""
+   ]
+  },
+  {
+   "id": "bateman-walking",
+   "name": "Bateman Walking",
+   "imgflip": 373996592,
+   "kym": "patrick-bateman-walking",
+   "keywords": [
+    "patrick bateman",
+    "american psycho",
+    "christian bale",
+    "walking",
+    "sigma",
+    "headphones"
+   ],
+   "example": [
+    "me walking out of the exam",
+    "after writing my name"
+   ]
+  },
+  {
+   "id": "homer-sleeping",
+   "name": "Homer Sleeping Peacefully",
+   "imgflip": 166998861,
+   "keywords": [
+    "homer simpson",
+    "simpsons",
+    "sleeping",
+    "peaceful",
+    "bed",
+    "sleep"
+   ],
+   "example": [
+    "me sleeping knowing I saved the file",
+    ""
+   ]
+  },
+  {
+   "id": "fast-guy-explaining",
+   "name": "Fast Guy Explaining",
+   "imgflip": 292752607,
+   "keywords": [
+    "explaining",
+    "fast talking",
+    "hands",
+    "yapping",
+    "gif"
+   ],
+   "example": [
+    "me explaining the plot of a 3 hour movie",
+    "in 10 seconds"
+   ],
+   "source": ""
+  },
+  {
+   "id": "kratos-life",
+   "name": "And My Life Is Yours (Kratos)",
+   "imgflip": 531265826,
+   "keywords": [
+    "kratos",
+    "god of war",
+    "my life is yours",
+    "arms out",
+    "surrender"
+   ],
+   "example": [
+    "me when the boss says pizza is free",
+    "and my life is yours"
+   ]
+  },
+  {
+   "id": "floating-boy",
+   "name": "Floating Boy Chasing Running Boy",
+   "imgflip": 160187182,
+   "kym": "floating-boy-chasing-running-boy",
+   "keywords": [
+    "floating boy",
+    "running boy",
+    "hallway",
+    "chase",
+    "scary"
+   ],
+   "example": [
+    "deadlines",
+    "me"
+   ],
+   "boxes": [
+    [
+     0.0,
+     0.62,
+     0.42,
+     0.12
+    ],
+    [
+     0.48,
+     0.55,
+     0.5,
+     0.13
+    ]
+   ]
+  },
+  {
+   "id": "guy-in-suit",
+   "name": "Guy in the Suit",
+   "imgflip": 399102239,
+   "keywords": [
+    "suit",
+    "outfit change",
+    "dressed up",
+    "transition",
+    "gif"
+   ],
+   "example": [
+    "me when the group chat says \"dress code\"",
+    ""
+   ],
+   "source": ""
+  }
+ ]
+}

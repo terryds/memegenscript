@@ -1,0 +1,66 @@
+name: "Why Is My Sister's Name Rose?"
+source: 
+keywords:
+  - "why is my sisters name rose"
+  - "dad"
+  - "car"
+  - "driving"
+  - "anti joke"
+  - "dad joke"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.04
+    anchor_y: 0.01
+    angle: 0.0
+    scale_x: 0.92
+    scale_y: 0.085
+    align: left
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.04
+    anchor_y: 0.095
+    angle: 0.0
+    scale_x: 0.92
+    scale_y: 0.085
+    align: left
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.04
+    anchor_y: 0.18000000000000002
+    angle: 0.0
+    scale_x: 0.92
+    scale_y: 0.085
+    align: left
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.04
+    anchor_y: 0.265
+    angle: 0.0
+    scale_x: 0.92
+    scale_y: 0.085
+    align: left
+    start: 0.0
+    stop: 1.0
+example:
+  - "\"Dad, why is my sister's name Rose?\""
+  - "\"Because your mother loves roses.\""
+  - "\"Thanks, Dad.\""
+  - "\"No problem, Daffodil.\""
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

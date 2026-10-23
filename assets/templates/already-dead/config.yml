@@ -1,0 +1,41 @@
+name: "Stop, He's Already Dead"
+source: "https://knowyourmeme.com/memes/stop-stop-hes-already-dead"
+keywords:
+  - "simpsons"
+  - "stop hes already dead"
+  - "beating"
+  - "pile on"
+  - "nelson"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.51
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.12
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.86
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.13
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "the internet"
+  - "a guy who said pineapple goes on pizza"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

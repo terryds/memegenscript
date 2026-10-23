@@ -2,7 +2,7 @@
 
 Status: **Batches E, F1, F2 and G done (122 templates, library at 454); meme scout 2026-09-18
 added 4 (library at 460); two Jujutsu Kaisen requests added 2026-09-19 (library at 462); meme scout 2026-09-27
-added 11 (library at 480); meme scout 2026-10-02 added 10 (library at 493); meme scout 2026-10-09 added 12 (library at 506); meme scout 2026-10-16 added 23 (library at 530).** Nothing is pending; the round-2 record is kept further down.
+added 11 (library at 480); meme scout 2026-10-02 added 10 (library at 493); meme scout 2026-10-09 added 12 (library at 506); meme scout 2026-10-16 added 23 (library at 530); meme scout 2026-10-23 added 33 (library at 564).** Nothing is pending; the round-2 record is kept further down.
 
 ## Done: Batch E, Tobey Maguire pack (17 templates, 2026-09-17)
 
@@ -203,6 +203,43 @@ Dropped:
 - Sexual: "Youre going to make me" (a Riley Reid still).
 - Not usable: Bro Please Bro (295×171 px) and Poke with stick (215×250 px), too small for a
   usable template.
+
+## Meme scout 2026-10-23 (33 templates)
+
+Imported via `data/imports/scout-2026-10-23.json` from imgflip top-new and the all-time template
+directory (page 12): `flying-tesla`, `things-to-say` (left-aligned list under the title),
+`rumplestiltskin`, `patrick-jane`, `sentry-mog` (a label per panel), `hypergamy` (the crowd plus
+the one target), `already-dead` (attackers and victim in the bottom panel), `army-clown`,
+`oops-all-berries` (the empty mascot circle plus the banner after "Oops! All"), `let-me-in`,
+`cooler-daniel` (caption strip painted out, a black label under each portrait), `powder-yes`
+(speech bubble plus the powder), `vibe-to-the` (the three black bars), `think-of-the-children`,
+`even-harder` (both subtitles blurred out, one box per panel), `sister-rose` (dialogue painted
+out, four black lines), `miss-my-wife` (the speech bubble), `confused-screaming` (top box above
+the baked caption), `mask-wojak`, `now-thats-what-i-call` (the white panel), `groundhog-day`,
+`wild-pokemon` (the empty opponent spot plus the name after "Wild"), `limmy-waking-up`,
+`homer-sleeping`, `kratos-life` and `floating-boy` (a label per boy). Video-only on imgflip,
+converted to GIF + still: `crab-rave`, `dancin-bois`, `insane-peter`, `fast-guy-explaining`,
+`bateman-walking`, `praying-guy` (Yung Joc) and `guy-in-suit`. Images were resized with
+ImageMagick (1000px wide, JPEG quality 85) because the importer's `sips` step only exists on
+macOS. Fourteen have no Know Your Meme source (none exists, or the search matched an unrelated entry):
+`flying-tesla`, `patrick-jane`, `sentry-mog`, `army-clown`, `dancin-bois`, `even-harder`,
+`sister-rose`, `miss-my-wife`, `mask-wojak`, `now-thats-what-i-call`, `groundhog-day`,
+`homer-sleeping`, `fast-guy-explaining` and `guy-in-suit`.
+
+Search gaps (Search Console, last 28 days), all memes we already had, so the searched phrasing
+went into `aka`: bad day factory (`long-day-factory`), absolute cinema guy (`cinema`), ben
+affleck smoke (`affleck-smoking`), 0 days since last incident (`zero-days`), boo get better
+material (`crow`), 2 guys pointing (`soyjaks`), big guy drinking from pipe (`greedy-pipe`), ai
+reading this script (`ai-reading-the-script`), will be back in avengers doomsday
+(`doomsday-return`), bat signal empty (`batman-signal`). Skipped "megumi github" and "how to
+make did you say potential" (not meme names; `potential-megumi` already matches).
+
+Dropped:
+- Already in the library: Soyjak Pointing (`soyjaks`), Strong dog vs weak dog (`swole`), Where
+  Banana (`where-monkey`, name added to its `aka`), It ain't much but it's honest work (`bihw`),
+  fat guy drinking water (another drawing of `greedy-pipe`, name added to its `aka`), Star Wars
+  "for the better, right?" (`right`).
+- Near-duplicate: throw out of the window (a blank of `boardroom`).
 
 ## Next packs (not planned in detail yet)
 

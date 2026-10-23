@@ -1,0 +1,13 @@
+{
+  "about": "Why Is My Sister's Name Rose? shows a smiling dad behind the wheel of a car with his grinning teenage son in the passenger seat, both looking like the picture of a wholesome father-son drive. Above them is an empty white space for the dialogue. The classic version goes: \"Dad, why is my sister's name Rose?\" \"Because your mother loves roses.\" \"Thanks, Dad.\" \"No problem, Daffodil.\" The last line reveals that the kid asking has an even worse flower name, and the format is now reused for any punchline hidden in the final reply.",
+  "usage": "There are four text boxes stacked in the white space above the car, one per line of dialogue: the kid's question, the dad's explanation, the kid thanking him, and the dad's final reply with the twist.\n\nThe twist line should be short and should reframe the whole conversation, usually by revealing something absurd about the person asking. Swap the names for brands, games, programming languages or pets; the polite back-and-forth before the reveal is what sells it.",
+  "ideas": [
+    ["\"Dad, why is my sister's name Rose?\"", "\"Because your mother loves roses.\"", "\"Thanks, Dad.\"", "\"No problem, Daffodil.\""],
+    ["\"Dad, why is my sister named Java?\"", "\"Because your mom loves coffee.\"", "\"Thanks, Dad.\"", "\"No problem, Segfault.\""],
+    ["\"Dad, why is my brother named Messi?\"", "\"Because I love football.\"", "\"Thanks, Dad.\"", "\"No problem, Own Goal.\""],
+    ["\"Dad, why is my sister named Summer?\"", "\"Because she was born in July.\"", "\"Thanks, Dad.\"", "\"No problem, Tax Season.\""],
+    ["\"Dad, why is the dog named Lucky?\"", "\"Because we found him on a good day.\"", "\"Thanks, Dad.\"", "\"No problem, Accident.\""]
+  ],
+  "aka": ["Dad Why Is My Sister's Name Rose", "Why Is My Sisters Name Rose", "No Problem Daffodil"],
+  "tags": ["dad", "father and son", "car", "anti joke", "dialogue", "twist", "exploitable"]
+}

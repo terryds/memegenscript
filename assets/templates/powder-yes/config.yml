@@ -1,0 +1,41 @@
+name: "The Powder That Makes You Say Yes"
+source: "https://knowyourmeme.com/memes/powder-that-makes-you-say-yes"
+keywords:
+  - "powder"
+  - "say yes"
+  - "comic"
+  - "throwing powder"
+  - "vintage comic"
+text:
+  - style: default
+    color: black
+    font: thin
+    anchor_x: 0.44
+    anchor_y: 0.02
+    angle: 0.0
+    scale_x: 0.36
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.6
+    anchor_y: 0.4
+    angle: 0.0
+    scale_x: 0.38
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "can I copy your homework?"
+  - "the powder that makes you say yes"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

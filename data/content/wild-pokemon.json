@@ -1,0 +1,15 @@
+{
+  "about": "A Wild X Appeared is a blank Pokémon battle screen in Game Boy pixel art: the trainer seen from behind on the left, his party of six Poké Balls lined up on the right, and the dialogue box at the bottom reading \"Wild ___ appeared!\" with the name left empty. The space where the wild Pokémon would normally stand, top right, is empty too. It is the template for anything that shows up suddenly and demands to be dealt with.",
+  "origin": "The line imitates the random encounter message from Nintendo's Pokémon games; Red and Blue reached the United States in 1998. \"A wild X appears!\" became a snowclone for unexpected arrivals.",
+  "usage": "The first box is the empty space at the top right where the opponent would stand: write or describe what appeared, or leave it blank. The second box sits in the dialogue right after \"Wild\": write the name of the thing that appeared, in capitals like the game.\n\nUse it for surprise arrivals: a calendar invite, a relative at the door, a bug report on Friday, a boss in the chat. One or two words in the dialogue box keep the game's look.",
+  "ideas": [
+    ["", "ANOTHER MEETING"],
+    ["", "MERGE CONFLICT"],
+    ["calendar invite", "FRIDAY 4:59 PM"],
+    ["", "MOM IN THE GROUP CHAT"],
+    ["", "SURPRISE QUIZ"],
+    ["", "SPIDER"]
+  ],
+  "aka": ["A Wild X Appears", "Wild Pokemon Appeared", "Blank Wild Pokemon Appears", "Wild X Appeared"],
+  "tags": ["pokemon", "game boy", "pixel art", "random encounter", "snowclone", "gaming", "exploitable"]
+}

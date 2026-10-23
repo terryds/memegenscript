@@ -1,0 +1,15 @@
+{
+  "about": "The Hypergamy Chart is a stark diagram on a white background: a column of six pink stick figures on the left and six blue stick figures on the right. Every single pink figure has an arrow pointing to the same blue figure at the top right, while the other five blue figures get nothing at all. It was drawn to argue a dating theory, but as a meme template the shape is what matters: a whole crowd fixated on one option while equally good alternatives are ignored, which makes it ideal for mocking any situation where everybody wants the same single thing.",
+  "origin": "Know Your Meme dates the chart to a Reddit post in November 2018 that tried to illustrate hypergamy, the claim that people mostly try to date above their status. It was soon reposted ironically and relabeled for unrelated jokes.",
+  "usage": "The first box sits in the white space beside the arrows and names the crowd doing the choosing. The second box sits near the top right and names the one option they all pick. The ignored figures below it are the joke, so you don't need to label them.\n\nIt works for queues, menus and markets: every player picking the same character, every student at the one free outlet, every customer wanting the last parking spot. Pick a target that is obviously not special to get the biggest laugh.",
+  "ideas": [
+    ["every dev on the team", "the one guy who understands the legacy code"],
+    ["everyone at the party", "the one phone charger"],
+    ["the whole office", "the one good microwave"],
+    ["every player in the lobby", "the overpowered character"],
+    ["all my tabs", "the one playing audio"],
+    ["every student", "the one outlet in the library"]
+  ],
+  "aka": ["Hypergamy Graph", "Hypergamy Diagram", "Everyone Picks the Same One Chart"],
+  "tags": ["hypergamy", "chart", "diagram", "arrows", "popular choice", "exploitable", "top new"]
+}

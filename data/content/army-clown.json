@@ -1,0 +1,14 @@
+{
+  "about": "Army Clown is a photo of a squad of soldiers in desert camouflage and helmets, rifles up, stacked tight against a crumbling wall as if about to breach a building, with one member of the team dressed as a full circus clown: rainbow wig, purple jacket, polka-dot jumpsuit and huge yellow shoes. Everyone else is deadly serious, so the clown stands out as the one who clearly does not belong, or the one who belongs exactly as much as the rest of us in a serious situation.",
+  "usage": "Top box: the serious group, the occasion or the mission. Bottom box: who the clown is, usually \"me\" or the one person who did not get the memo.\n\nIt is made for situations where one person brings the wrong energy: the new hire on a crunch-week deploy, the friend who shows up to a funeral in a joke shirt, the guy whose tactical plan is vibes. You can also flip it and make the clown the hidden expert the squad needs.",
+  "ideas": [
+    ["the senior devs fixing prod at 2 a.m.", "me, the intern, who caused it"],
+    ["the rest of the team", "me who joined yesterday"],
+    ["my family at a wedding", "my uncle"],
+    ["the squad in a ranked match", "the friend who picked a joke build"],
+    ["everyone studying for finals", "me with a ukulele"],
+    ["the board meeting", "the guy who suggested an NFT"]
+  ],
+  "aka": ["Clown Soldier", "Clown in the Army", "Army Squad Clown"],
+  "tags": ["clown", "army", "soldiers", "military", "squad", "odd one out", "exploitable"]
+}
