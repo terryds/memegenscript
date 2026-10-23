@@ -1,0 +1,41 @@
+name: "Let Me In"
+source: "https://knowyourmeme.com/memes/let-me-in"
+keywords:
+  - "eric andre"
+  - "let me in"
+  - "gate"
+  - "locked out"
+  - "fence"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.01
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.51
+    angle: 0.0
+    scale_x: 0.62
+    scale_y: 0.14
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me at 8:59"
+  - "the store that opens at 9"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

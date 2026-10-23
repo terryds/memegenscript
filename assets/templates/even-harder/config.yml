@@ -1,0 +1,42 @@
+name: "I'm Gonna Do It Even Harder"
+source: 
+keywords:
+  - "the office"
+  - "michael scott"
+  - "jan"
+  - "stop"
+  - "even harder"
+  - "pettiness"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.05
+    anchor_y: 0.37
+    angle: 0.0
+    scale_x: 0.9
+    scale_y: 0.11
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0.05
+    anchor_y: 0.875
+    angle: 0.0
+    scale_x: 0.9
+    scale_y: 0.115
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "STOP BUYING VIDEO GAMES"
+  - "I'M GONNA BUY THEM EVEN HARDER"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

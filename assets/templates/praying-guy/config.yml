@@ -1,0 +1,45 @@
+name: "Yung Joc Praying"
+source: "https://knowyourmeme.com/memes/yung-joc-crying-praying-on-your-downfall"
+keywords:
+  - "praying"
+  - "prayer"
+  - "please"
+  - "hoping"
+  - "begging"
+  - "gif"
+  - "yung joc"
+  - "black guy praying"
+  - "praying on your downfall"
+text:
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: upper
+    color: white
+    font: thick
+    anchor_x: 0
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 1
+    scale_y: 0.2
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "me watching the loading bar at 99%"
+  - ""
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

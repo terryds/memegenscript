@@ -1,0 +1,30 @@
+name: "Things to Say"
+source: "https://knowyourmeme.com/memes/things-to-say"
+keywords:
+  - "house"
+  - "hugh laurie"
+  - "things to say"
+  - "list"
+  - "house md"
+  - "top new"
+text:
+  - style: default
+    color: white
+    font: thick
+    anchor_x: 0.03
+    anchor_y: 0.3
+    angle: 0.0
+    scale_x: 0.62
+    scale_y: 0.66
+    align: left
+    start: 0.0
+    stop: 1.0
+example:
+  - "- it's not lupus\n- you're all idiots\n- everybody lies"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0

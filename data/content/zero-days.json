@@ -26,7 +26,9 @@
     "Days Since Last X",
     "Zero Days Since Last Accident",
     "0 Days Since",
-    "Futurama Days Since Last Sign"
+    "Futurama Days Since Last Sign",
+    "0 Days Since Last Incident",
+    "Zero Days Since Last Incident"
   ],
   "tags": [
     "days since last",

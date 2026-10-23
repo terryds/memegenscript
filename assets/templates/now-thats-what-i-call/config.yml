@@ -1,0 +1,29 @@
+name: "Now That's What I Call"
+source: 
+keywords:
+  - "now thats what i call"
+  - "album"
+  - "compilation"
+  - "cd"
+  - "music"
+text:
+  - style: upper
+    color: black
+    font: thick
+    anchor_x: 0.17
+    anchor_y: 0.6
+    angle: 0.0
+    scale_x: 0.68
+    scale_y: 0.33
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "MONDAY MEETINGS VOL. 47"
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
