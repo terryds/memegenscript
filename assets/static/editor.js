@@ -71,20 +71,47 @@
 
   // ------------------------------------------------------------------- fonts
 
-  var fontsReady = Promise.all(
-    config.fonts.map(function (font) {
-      if (!window.FontFace) return Promise.resolve();
-      var face = new FontFace(font.id, "url(" + font.url + ")");
-      return face
-        .load()
-        .then(function (loaded) {
-          document.fonts.add(loaded);
-        })
-        .catch(function () {
-          /* the browser falls back to a system font */
-        });
-    }),
-  );
+  // Fonts load on demand: the editor only waits for the fonts its text layers (and the export
+  // watermark) actually use, instead of all of them (the Japanese one alone is ~3.7 MB). A font
+  // picked later loads when a layer first draws with it, then the canvas redraws.
+  var fontsById = {};
+  config.fonts.forEach(function (font) {
+    fontsById[font.id] = font;
+  });
+  var fontLoads = {};
+  var fontsDone = {};
+  function loadFont(id) {
+    if (fontLoads[id]) return fontLoads[id];
+    var font = fontsById[id];
+    if (!font || !window.FontFace) {
+      fontsDone[id] = true;
+      return (fontLoads[id] = Promise.resolve());
+    }
+    var face = new FontFace(font.id, "url(" + font.url + ")");
+    fontLoads[id] = face
+      .load()
+      .then(function (loaded) {
+        document.fonts.add(loaded);
+      })
+      .catch(function () {
+        /* the browser falls back to a system font */
+      })
+      .then(function () {
+        fontsDone[id] = true;
+      });
+    return fontLoads[id];
+  }
+  function fontsInUse() {
+    var ids = state.layers
+      .filter(function (layer) {
+        return layer.type === "text";
+      })
+      .map(function (layer) {
+        return layer.font;
+      });
+    if (config.watermark) ids.push(config.watermark.font);
+    return Promise.all(ids.map(loadFont));
+  }
 
   // ------------------------------------------------------------------- state
 
@@ -349,6 +376,12 @@
     var placeholder = !text && !forExport;
     if (placeholder) text = layer.uppercase ? layer.placeholder.toUpperCase() : layer.placeholder;
     if (!text) return;
+    if (!fontsDone[layer.font]) {
+      loadFont(layer.font).then(function () {
+        layoutCache = {};
+        draw();
+      });
+    }
     var layout = layoutText(layer, text);
     context.save();
     context.globalAlpha = layer.opacity * (placeholder ? 0.45 : 1);
@@ -993,7 +1026,7 @@
   // ------------------------------------------------------------------ export
 
   function exportBlob(type, quality) {
-    return fontsReady.then(function () {
+    return fontsInUse().then(function () {
       var out = document.createElement("canvas");
       out.width = state.width;
       out.height = state.height;
@@ -1138,7 +1171,7 @@
         }
       })
       .then(function () {
-        return fontsReady;
+        return fontsInUse();
       })
       .then(function () {
         layoutCache = {};
