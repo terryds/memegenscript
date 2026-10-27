@@ -1,0 +1,31 @@
+name: "I Am the One Who Knocks"
+source: "https://knowyourmeme.com/memes/i-am-the-one-who-knocks"
+keywords:
+  - "Walter White"
+  - "Breaking Bad"
+  - "I am the one who knocks"
+  - "I am the danger"
+  - "Skyler"
+  - "Bryan Cranston"
+  - "Heisenberg"
+text:
+  - style: default
+    color: '#fff05c'
+    font: thin
+    anchor_x: 0.08
+    anchor_y: 0.8
+    angle: 0.0
+    scale_x: 0.84
+    scale_y: 0.16
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "I am the one who knocks."
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
