@@ -1,0 +1,55 @@
+name: "I Am the Danger / I Am the One Who Knocks"
+source: "https://knowyourmeme.com/memes/i-am-the-one-who-knocks"
+keywords:
+  - "Walter White"
+  - "Breaking Bad"
+  - "I am the danger"
+  - "I am the one who knocks"
+  - "Skyler"
+  - "Bryan Cranston"
+  - "Heisenberg"
+text:
+  - style: default
+    color: '#fff05c'
+    font: thin
+    anchor_x: 0.08
+    anchor_y: 0.335
+    angle: 0.0
+    scale_x: 0.84
+    scale_y: 0.1
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: '#fff05c'
+    font: thin
+    anchor_x: 0.08
+    anchor_y: 0.625
+    angle: 0.0
+    scale_x: 0.84
+    scale_y: 0.09
+    align: center
+    start: 0.0
+    stop: 1.0
+  - style: default
+    color: '#fff05c'
+    font: thin
+    anchor_x: 0.08
+    anchor_y: 0.905
+    angle: 0.0
+    scale_x: 0.84
+    scale_y: 0.085
+    align: center
+    start: 0.0
+    stop: 1.0
+example:
+  - "I am not in danger, Skyler. I am the danger."
+  - "A guy opens his door and gets shot, and you think that of me? No."
+  - "I am the one who knocks."
+overlay:
+  - center_x: 0.5
+    center_y: 0.5
+    angle: 0.0
+    scale: 0.25
+    start: 0.0
+    stop: 1.0
