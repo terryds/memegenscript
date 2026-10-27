@@ -20,7 +20,7 @@ import { MIME_TYPES, sniffFormat } from "../images/format";
 import { editorWatermark } from "../images/layer";
 
 function exampleText(template: Template): string {
-  return template.example.filter(Boolean).join(" / ");
+  return template.example.filter(Boolean).join(" / ").replace(/\s*\n\s*/g, " / ");
 }
 
 /**
