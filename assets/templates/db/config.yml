@@ -6,33 +6,33 @@ text:
   - style: default
     color: white
     font: thick
-    anchor_x: 0.12
-    anchor_y: 0.7
+    anchor_x: 0.08
+    anchor_y: 0.6
     angle: 0.0
-    scale_x: 0.325
-    scale_y: 0.1
+    scale_x: 0.4
+    scale_y: 0.22
     align: center
     start: 0.0
     stop: 1.0
   - style: default
     color: white
     font: thick
-    anchor_x: 0.55
-    anchor_y: 0.45
+    anchor_x: 0.46
+    anchor_y: 0.4
     angle: 0.0
-    scale_x: 0.175
-    scale_y: 0.1
+    scale_x: 0.3
+    scale_y: 0.2
     align: center
     start: 0.0
     stop: 1.0
   - style: default
     color: white
     font: thick
-    anchor_x: 0.74
-    anchor_y: 0.66
+    anchor_x: 0.73
+    anchor_y: 0.6
     angle: 0.0
-    scale_x: 0.2
-    scale_y: 0.1
+    scale_x: 0.26
+    scale_y: 0.2
     align: center
     start: 0.0
     stop: 1.0
