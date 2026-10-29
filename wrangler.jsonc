@@ -34,8 +34,8 @@
     "DEBUG": "false",
     // Name shown on the web pages and in social cards
     "SITE_NAME": "Memegenscript",
-    // Source repository linked from the pages ("" hides the links; the repository is private)
-    "REPO_URL": "",
+    // Source repository linked from the pages (set to "" to hide)
+    "REPO_URL": "https://github.com/terryds/memegenscript",
     // Form linked from the "Request a template" button (set to "" to hide it);
     // a GitHub issue link is offered next to it when REPO_URL is set
     "REQUEST_TEMPLATE_URL": "https://forms.gle/SbsPFknn9NRUjs3P6",
