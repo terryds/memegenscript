@@ -129,11 +129,9 @@ describe("misc", () => {
     expect(await response.text()).toContain("/images/iw/does_testing/in_production.png");
   });
 
-  it("does not link the private source repository", async () => {
-    for (const path of ["/", "/contact", "/privacy", "/agents"]) {
-      const body = await (await get(path)).text();
-      expect(body).not.toContain("github.com/terryds");
-    }
+  it("links the source repository", async () => {
+    const body = await (await get("/")).text();
+    expect(body).toContain('href="https://github.com/terryds/memegenscript"');
   });
 
   it("adds CORS headers", async () => {

@@ -35,11 +35,11 @@ describe("GET /", () => {
 
   it("offers a way to request a missing template", async () => {
     const form = 'href="https://forms.gle/SbsPFknn9NRUjs3P6"';
+    const issue = 'href="https://github.com/terryds/memegenscript/issues/new?template=template-request.yml"';
     const body = await (await get("/")).text();
     const hero = body.slice(body.indexOf('class="hero"'), body.indexOf("</section>"));
     expect(hero).toContain(`<a class="button primary" ${form}`);
-    // The repository is private, so no GitHub issue button sits next to it
-    expect(hero).not.toContain("Request on GitHub");
+    expect(hero).toContain(`<a class="button secondary" ${issue}`);
     // The empty search state points at the form too
     const empty = await (await get("/?q=zzzznotamemezzzz")).text();
     expect(empty).toMatch(/<p class="empty" id="empty" >[^<]*<a href="\/">Show all templates<\/a>\. Still missing\? <a href="https:\/\/forms\.gle\/SbsPFknn9NRUjs3P6"/);
