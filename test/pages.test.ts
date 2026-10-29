@@ -553,3 +553,13 @@ describe("workers.dev alias", () => {
     expect((await get("/memes/futurama-fry")).status).toBe(200);
   });
 });
+
+describe("template image", () => {
+  it("shows the blank template as a plain img, outside <noscript>", async () => {
+    const body = await (await get("/memes/futurama-fry")).text();
+    const img = body.indexOf('alt="Blank Futurama Fry meme template"');
+    expect(img).toBeGreaterThan(-1);
+    expect(body.slice(0, img)).toMatch(/<img src="[^"]*\/images\/fry\.jpg\?width=600"[^>]*$/);
+    expect(body.lastIndexOf("<noscript", img)).toBeLessThan(body.lastIndexOf("</noscript>", img));
+  });
+});

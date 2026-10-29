@@ -161,6 +161,9 @@ button[disabled] { opacity: 0.6; cursor: wait; transform: none; }
 .section-lede { color: var(--muted); margin: 0 0 16px; }
 .featured-grid { grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); }
 .featured-grid .card-title { font-size: 15px; }
+.template-figure { margin: 0 0 16px; }
+.template-figure img { display: block; max-width: 100%; height: auto; border: 3px solid var(--ink); border-radius: var(--radius); }
+.template-figure figcaption { margin-top: 6px; font-size: .9em; opacity: .8; }
 .about { margin-top: 48px; background: var(--surface); border: 3px solid var(--ink); border-radius: var(--radius); padding: 20px 24px; box-shadow: var(--shadow); }
 .about p { max-width: 75ch; }
 /* Uneed "Daily winner" badge: the light version, which stands out on the dark background */

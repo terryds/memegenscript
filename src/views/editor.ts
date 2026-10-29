@@ -231,6 +231,9 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
   const canonical = editorUrl(settings, template);
   const exampleUrl = template.buildExampleUrl(settings);
   const exampleStill = clean(`${settings.BASE_URL}/images/${template.id}/${encode(template.example)}.png`);
+  // The editor draws on a canvas, which search engines can't see as an image, so the page
+  // also shows the blank template as a plain <img> (the only other images are related cards).
+  const blankStill = `${settings.BASE_URL}/images/${template.id}.jpg`;
   const title = pageTitle(template, site);
   const description = describe(template);
   const lines = template.text.length;
@@ -452,6 +455,10 @@ export async function detail(app: AppContext, slug: string): Promise<Response> {
   </div>
 
   <section class="about">
+    <figure class="template-figure">
+      <img src="${escapeHtml(blankStill)}?width=600" alt="Blank ${escapeHtml(template.name)} meme template" loading="lazy" decoding="async">
+      <figcaption>The blank ${escapeHtml(template.name)} meme template. Add your own text in the editor above.</figcaption>
+    </figure>
     ${aboutSection}
     ${usageSection}
     ${ideasSection}
