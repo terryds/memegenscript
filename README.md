@@ -208,7 +208,12 @@ test/              vitest (runs inside workerd via @cloudflare/vitest-pool-worke
 
 ## License and credits
 
-MIT. Portions of the API and the template library come from
+The code is MIT. Portions of the API and the template library come from
 [memegen](https://github.com/jacebrowning/memegen) by Jace Browning (MIT); see
 `LICENSE.txt`. Template images belong to their respective owners. Font licenses are in
-`assets/fonts/`. Meme descriptions quote short, attributed excerpts from Know Your Meme.
+`assets/fonts/`.
+
+The meme descriptions are **not** MIT: the original page content in `data/content/` and
+`data/descriptions.manual.json` is all rights reserved (see `data/content/LICENSE`), and
+`data/descriptions.json` holds Know Your Meme excerpts, kept only as a fact reference.
+If you self-host, bring your own descriptions.

@@ -1,5 +1,9 @@
 MIT License
 
+This license covers the software. It does not cover the meme descriptions in
+data/content/ and data/descriptions.manual.json (see data/content/LICENSE), the
+Know Your Meme excerpts in data/descriptions.json, or the template images.
+
 Copyright 2026 terryds (Memegenscript)
 Copyright 2020 Jace Browning (memegen, on which the API and template library are based)
 

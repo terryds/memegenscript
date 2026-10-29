@@ -1,0 +1,13 @@
+Copyright 2026 terryds (Memegenscript). All rights reserved.
+
+The meme descriptions in this directory (data/content/*.json) and in
+data/descriptions.manual.json are original writing for memegenscript.com.
+They are NOT covered by the MIT license in LICENSE.txt, which applies to the
+software only.
+
+You may read them, run this project locally with them, and send changes to them
+in pull requests. You may not republish them, in whole or in part, on another
+website, app or dataset without written permission.
+
+Self-hosting this project? Replace the content in this directory with your own
+before publishing your site.
